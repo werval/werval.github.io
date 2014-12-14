@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Status.html" title="org.qiweb.api.http.Status" alt="" coords="117,116,172,140"/>
-<area shape="rect" id="node1" href="./Status.html" title="&lt;TABLE&gt;" alt="" coords="107,104,183,152"/>
-<area shape="rect" id="node2_1" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html" title="java.lang.Comparable" alt="" coords="16,11,129,51"/>
-<area shape="rect" id="node2" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html" title="&lt;TABLE&gt;" alt="" coords="5,5,140,56"/>
-<area shape="rect" id="node3_2" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="java.io.Serializable" alt="" coords="175,11,261,51"/>
-<area shape="rect" id="node3" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="&lt;TABLE&gt;" alt="" coords="164,5,272,56"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./QiWebHttpRule.html" title="org.qiweb.test.QiWebHttpRule" alt="" coords="16,116,125,140"/>
-<area shape="rect" id="node1" href="./QiWebHttpRule.html" title="&lt;TABLE&gt;" alt="" coords="5,104,136,152"/>
-<area shape="rect" id="node2_1" href="./QiWebHttpTest.html" title="org.qiweb.test.QiWebHttpTest" alt="" coords="171,116,277,140"/>
-<area shape="rect" id="node2" href="./QiWebHttpTest.html" title="&lt;TABLE&gt;" alt="" coords="160,104,288,152"/>
-<area shape="rect" id="node3_2" href="./QiWebHttpTestSupport.html" title="org.qiweb.test.QiWebHttpTestSupport" alt="" coords="70,11,223,51"/>
-<area shape="rect" id="node3" href="./QiWebHttpTestSupport.html" title="&lt;TABLE&gt;" alt="" coords="59,5,234,56"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./XXSSProtection.html" title="org.qiweb.filters.XXSSProtection" alt="" coords="16,117,129,141"/>
-<area shape="rect" id="node1" href="./XXSSProtection.html" title="&lt;TABLE&gt;" alt="" coords="5,105,140,153"/>
-<area shape="rect" id="node2_1" href="./XXSSProtection.Filter.html" title="org.qiweb.filters.XXSSProtection.Filter" alt="" coords="49,227,96,251"/>
-<area shape="rect" id="node2" href="./XXSSProtection.Filter.html" title="&lt;TABLE&gt;" alt="" coords="37,215,109,263"/>
-<area shape="rect" id="node3_2" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html" title="java.lang.annotation.Annotation" alt="" coords="31,11,115,51"/>
-<area shape="rect" id="node3" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html" title="&lt;TABLE&gt;" alt="" coords="20,5,125,56"/>
-</map>

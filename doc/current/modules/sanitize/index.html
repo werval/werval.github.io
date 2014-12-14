@@ -2,7 +2,7 @@
 <html lang="en">
  <head> 
   <meta charset="utf-8"> 
-  <title>JSON Module</title> 
+  <title>Sanitize Module</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta name="description" content="Werval Documentation"> 
   <meta name="keywords" content="werval, documentation"> 
@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="../../index.html">Werval 0</a> 
+      <a class="navbar-brand" href="../../index.html">Werval 0.5.0</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,7 +50,7 @@
        <li><a href="../../api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development Version<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.5.0)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
          <li><a href="/doc/current/index.html">Current Version (0.5.0)</a></li> 
          <li class="divider"></li> 
@@ -67,16 +67,25 @@
     <ol class="breadcrumb"> 
      <li><a href="../../index.html">Documentation</a></li> 
      <li><a href="../../modules/index.html">Modules</a></li> 
-     <li class="active">JSON Module</li> 
+     <li class="active">Sanitize Module</li> 
     </ol> 
     <div class="page-header"> 
-     <h1>JSON Module</h1> 
+     <h1>Sanitize Module</h1> 
     </div> 
     <p></p> 
     <div id="preamble"> 
      <div class="sectionbody"> 
       <div class="paragraph"> 
-       <p>The JSON module provide a Plugin allowing easy production and consumption of JSON thanks to <a href="http://wiki.fasterxml.com/JacksonHome">Jackson</a>.</p> 
+       <p>The Sanitize module provide a <code>SanitizePlugin</code> that provide utilities for input/output sanitization and encoding thanks to <a href="https://www.owasp.org/">OWASP</a> projects.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>HTML/CSS/Javascript sanitization uses <a href="https://code.google.com/p/owaspantisamy/">AntiSamy</a>. By default, the <a href="https://code.google.com/p/owaspantisamy/downloads/detail?name=antisamy-slashdot-1.4.4.xml">slashdot policy</a> used. You can provide your policy through the <code>sanitize.policy</code> configuration property. All default AntiySamy policies are bundled within the module at the classpath’s root.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>JSON sanitization uses <a href="https://code.google.com/p/json-sanitizer/">json-sanitizer</a>.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Encoding for output uses <a href="https://code.google.com/p/owasp-java-encoder/">java-encoder</a>.</p> 
       </div> 
      </div> 
     </div> 
@@ -85,7 +94,7 @@
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2014 | Werval 0 | The Werval Community</p> 
+   <p class="muted credit">© 2014 | Werval 0.5.0 | The Werval Community</p> 
    <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
   </div> 
   <!-- Le javascript

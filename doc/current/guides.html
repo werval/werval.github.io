@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="index.html">Werval 0</a> 
+      <a class="navbar-brand" href="index.html">Werval 0.5.0</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,9 @@
        <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.5.0)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.5.0)</a></li> 
          <li class="divider"></li> 
          <li><a href="/doc/develop/index.html">Development Version</a></li> 
          <li class="divider"></li> 
@@ -147,7 +147,7 @@
        <div class="content"> 
         <pre class="CodeRay"><code class="groovy language-groovy">buildscript {
   repositories { maven { url 'https://repo.codeartisans.org/werval' } }    // &lt;1&gt;
-  dependencies { classpath 'io.werval:io.werval.gradle:0' } // &lt;2&gt;
+  dependencies { classpath 'io.werval:io.werval.gradle:0.5.0' } // &lt;2&gt;
 }
 
 apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre> 
@@ -504,7 +504,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
         <p><code>apply plugin: 'io.werval.module'</code></p> 
        </div> 
        <div class="paragraph"> 
-        <p>You can also start from the <code>qiweb-skel-module</code> skeleton that comes with a complete sample Plugin including unit tests.</p> 
+        <p>You can also start from the <code>werval-skel-module</code> skeleton that comes with a complete sample Plugin including unit tests.</p> 
        </div> 
       </div> 
       <div class="sect2"> 
@@ -972,7 +972,7 @@ dist.sh                 Create distributions archives, without tests</pre>
          <p>The Werval website provide general information about Werval and its community and embedd documentation sites for all past, current and develop versions documentations mini-sites.</p> 
         </div> 
         <div class="paragraph"> 
-         <p>Notable things included in the website are out of the Werval releases lifecycle, like Skeletons and Samples. Thus, this is built in a separate project, in a separate git repository named <code>qiweb-website</code>.</p> 
+         <p>Notable things included in the website are out of the Werval releases lifecycle, like Skeletons and Samples. Thus, this is built in a separate project, in a separate git repository named <code>werval-website</code>.</p> 
         </div> 
         <div class="paragraph"> 
          <p>The Werval website is generated using JBake again.</p> 
@@ -1026,7 +1026,7 @@ dist.sh                 Create distributions archives, without tests</pre>
          <p><code>io.werval.doc</code> styles the Werval Documentation for DevShell and distributions archives.</p> 
         </div> 
         <div class="paragraph"> 
-         <p><code>org.qiweb.website</code> embed the Werval Documentation as is and styles the website home and some other root pages.</p> 
+         <p><code>io.werval.website</code> embed the Werval Documentation as is and styles the website home and some other root pages.</p> 
         </div> 
        </div> 
       </div> 
@@ -1037,7 +1037,7 @@ dist.sh                 Create distributions archives, without tests</pre>
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2014 | Werval 0 | The Werval Community</p> 
+   <p class="muted credit">© 2014 | Werval 0.5.0 | The Werval Community</p> 
    <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
   </div> 
   <!-- Le javascript

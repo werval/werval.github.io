@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./DevShellSPI.SourceWatcher.html" title="org.qiweb.spi.dev.DevShellSPI.SourceWatcher" alt="" coords="123,11,233,51"/>
-<area shape="rect" id="node1" href="./DevShellSPI.SourceWatcher.html" title="&lt;TABLE&gt;" alt="" coords="113,5,243,56"/>
-<area shape="rect" id="node2_1" href="./DevShellSPI.SourceChangeListener.html" title="org.qiweb.spi.dev.DevShellSPI.SourceChangeListener" alt="" coords="16,123,169,163"/>
-<area shape="rect" id="node2" href="./DevShellSPI.SourceChangeListener.html" title="&lt;TABLE&gt;" alt="" coords="5,117,180,168"/>
-<area shape="rect" id="node3_2" href="./DevShellSPI.SourceWatch.html" title="org.qiweb.spi.dev.DevShellSPI.SourceWatch" alt="" coords="215,123,312,163"/>
-<area shape="rect" id="node3" href="./DevShellSPI.SourceWatch.html" title="&lt;TABLE&gt;" alt="" coords="204,117,323,168"/>
-</map>

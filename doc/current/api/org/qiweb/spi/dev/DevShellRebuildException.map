@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="../../api/exceptions/QiWebException.html" title="org.qiweb.api.exceptions.QiWebException" alt="" coords="16,19,132,43"/>
-<area shape="rect" id="node1" href="../../api/exceptions/QiWebException.html" title="&lt;TABLE&gt;" alt="" coords="5,7,143,55"/>
-<area shape="rect" id="node2_1" href="./DevShellRebuildException.html" title="org.qiweb.spi.dev.DevShellRebuildException" alt="" coords="61,129,236,153"/>
-<area shape="rect" id="node2" href="./DevShellRebuildException.html" title="&lt;TABLE&gt;" alt="" coords="51,117,247,165"/>
-<area shape="rect" id="node3_2" href="./DevShellSPI.html" title="org.qiweb.spi.dev.DevShellSPI" alt="" coords="177,11,269,51"/>
-<area shape="rect" id="node3" href="./DevShellSPI.html" title="&lt;TABLE&gt;" alt="" coords="167,5,280,56"/>
-</map>

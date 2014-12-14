@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Cookies.html" title="org.qiweb.api.http.Cookies" alt="" coords="16,11,100,51"/>
-<area shape="rect" id="node1" href="./Cookies.html" title="&lt;TABLE&gt;" alt="" coords="5,5,111,56"/>
-<area shape="rect" id="node2_1" href="./MutableCookies.html" title="org.qiweb.api.http.MutableCookies" alt="" coords="75,109,188,149"/>
-<area shape="rect" id="node2" href="./MutableCookies.html" title="&lt;TABLE&gt;" alt="" coords="64,104,199,155"/>
-<area shape="rect" id="node3_2" href="./ResponseHeader.html" title="org.qiweb.api.http.ResponseHeader" alt="" coords="145,11,267,51"/>
-<area shape="rect" id="node3" href="./ResponseHeader.html" title="&lt;TABLE&gt;" alt="" coords="135,5,277,56"/>
-</map>

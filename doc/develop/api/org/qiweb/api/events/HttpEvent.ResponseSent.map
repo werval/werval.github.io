@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./HttpEvent.html" title="org.qiweb.api.events.HttpEvent" alt="" coords="27,11,111,51"/>
-<area shape="rect" id="node1" href="./HttpEvent.html" title="&lt;TABLE&gt;" alt="" coords="16,5,121,56"/>
-<area shape="rect" id="node2_1" href="./HttpEvent.ResponseSent.html" title="org.qiweb.api.events.HttpEvent.ResponseSent" alt="" coords="16,116,121,140"/>
-<area shape="rect" id="node2" href="./HttpEvent.ResponseSent.html" title="&lt;TABLE&gt;" alt="" coords="5,104,132,152"/>
-</map>

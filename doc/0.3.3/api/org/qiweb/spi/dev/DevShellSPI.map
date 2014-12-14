@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./DevShellSPI.html" title="org.qiweb.spi.dev.DevShellSPI" alt="" coords="133,11,225,51"/>
-<area shape="rect" id="node1" href="./DevShellSPI.html" title="&lt;TABLE&gt;" alt="" coords="122,5,235,56"/>
-<area shape="rect" id="node2_1" href="./DevShellSPIAdapter.html" title="org.qiweb.spi.dev.DevShellSPIAdapter" alt="" coords="16,116,155,140"/>
-<area shape="rect" id="node2" href="./DevShellSPIAdapter.html" title="&lt;TABLE&gt;" alt="" coords="5,104,165,152"/>
-<area shape="rect" id="node3_2" href="./DevShellSPIWrapper.html" title="org.qiweb.spi.dev.DevShellSPIWrapper" alt="" coords="201,116,343,140"/>
-<area shape="rect" id="node3" href="./DevShellSPIWrapper.html" title="&lt;TABLE&gt;" alt="" coords="190,104,354,152"/>
-</map>

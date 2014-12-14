@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Filter.html" title="org.qiweb.api.filters.Filter" alt="" coords="77,123,161,163"/>
-<area shape="rect" id="node1" href="./Filter.html" title="&lt;TABLE&gt;" alt="" coords="67,117,172,168"/>
-<area shape="rect" id="node2_1" href="./FilterChain.html" title="org.qiweb.api.filters.FilterChain" alt="" coords="16,11,100,51"/>
-<area shape="rect" id="node2" href="./FilterChain.html" title="&lt;TABLE&gt;" alt="" coords="5,5,111,56"/>
-<area shape="rect" id="node3_2" href="./FilterWith.html" title="org.qiweb.api.filters.FilterWith" alt="" coords="145,19,219,43"/>
-<area shape="rect" id="node3" href="./FilterWith.html" title="&lt;TABLE&gt;" alt="" coords="135,7,229,55"/>
-</map>

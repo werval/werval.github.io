@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./FormUploads.html" title="org.qiweb.api.http.FormUploads" alt="" coords="16,109,113,149"/>
-<area shape="rect" id="node1" href="./FormUploads.html" title="&lt;TABLE&gt;" alt="" coords="5,104,124,155"/>
-<area shape="rect" id="node2_1" href="./FormUploads.Upload.html" title="org.qiweb.api.http.FormUploads.Upload" alt="" coords="23,208,107,248"/>
-<area shape="rect" id="node2" href="./FormUploads.Upload.html" title="&lt;TABLE&gt;" alt="" coords="12,203,117,253"/>
-<area shape="rect" id="node3_2" href="./RequestBody.html" title="org.qiweb.api.http.RequestBody" alt="" coords="16,11,113,51"/>
-<area shape="rect" id="node3" href="./RequestBody.html" title="&lt;TABLE&gt;" alt="" coords="5,5,124,56"/>
-</map>

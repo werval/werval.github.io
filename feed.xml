@@ -6,11 +6,45 @@
     <atom:link href="http://werval.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>dim., 14 déc. 2014 16:53:42 +0100</pubDate>
-    <lastBuildDate>dim., 14 déc. 2014 16:53:42 +0100</lastBuildDate>
+    <pubDate>dim., 14 déc. 2014 23:09:04 +0100</pubDate>
+    <lastBuildDate>dim., 14 déc. 2014 23:09:04 +0100</lastBuildDate>
 
     <item>
-      <title>Werval 0.4 is out!</title>
+      <title>Werval 0.5.0 is out!</title>
+      <link>http://werval.io/news/2014-12-14_release_0.5.0.html</link>
+      <pubDate>dim., 14 déc. 2014 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">news/2014-12-14_release_0.5.0.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Following the &lt;a href=&quot;2014-11-28_release_0.4.0.html&quot;&gt;0.4.0&lt;/a&gt; release, here is &lt;code&gt;0.5.0&lt;/code&gt;.
+This release is the first under the new project name &lt;code&gt;werval&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.
+A lightweight core, live reload dev mode, useful modules, plugins for several build tools and
+multiple languages support leave you free to choose the right architecture for your domain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-gradle.html&quot;&gt;Get started using Gradle&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-maven.html&quot;&gt;Get started using maven&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Keep in sight that this is an early access release and that some edges may still be rough.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you encounter any issue, please report by creating a
+&lt;a href=&quot;https://github.com/werval/werval/issues/new&quot;&gt;new issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Werval 0.4.0 is out!</title>
       <link>http://werval.io/news/2014-11-28_release_0.4.0.html</link>
       <pubDate>ven., 28 nov. 2014 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">news/2014-11-28_release_0.4.0.html</guid>
@@ -19,7 +53,7 @@
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;After almost two years of development driven by usage in various applications put to production, we are pleased to
-announce the immediate availability of Werval 0.4.&lt;/p&gt;
+announce the immediate availability of Werval &lt;code&gt;0.4.0&lt;/code&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.

@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./QiWebHttpRule.html" title="org.qiweb.test.QiWebHttpRule" alt="" coords="119,116,229,140"/>
-<area shape="rect" id="node1" href="./QiWebHttpRule.html" title="&lt;TABLE&gt;" alt="" coords="109,104,239,152"/>
-<area shape="rect" id="node2_1" href="./QiWebHttpTestSupport.html" title="org.qiweb.test.QiWebHttpTestSupport" alt="" coords="16,11,169,51"/>
-<area shape="rect" id="node2" href="./QiWebHttpTestSupport.html" title="&lt;TABLE&gt;" alt="" coords="5,5,180,56"/>
-<area shape="rect" id="node3_2" href="http://junit.org/javadoc/latest/org/junit/rules/TestRule.html" title="org.junit.rules.TestRule" alt="" coords="215,11,299,51"/>
-<area shape="rect" id="node3" href="http://junit.org/javadoc/latest/org/junit/rules/TestRule.html" title="&lt;TABLE&gt;" alt="" coords="204,5,309,56"/>
-</map>

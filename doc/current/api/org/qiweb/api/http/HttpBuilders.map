@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./HttpBuilders.html" title="org.qiweb.api.http.HttpBuilders" alt="" coords="97,11,187,51"/>
-<area shape="rect" id="node1" href="./HttpBuilders.html" title="&lt;TABLE&gt;" alt="" coords="86,5,198,56"/>
-<area shape="rect" id="node2_1" href="./HttpBuilders.CookieBuilder.html" title="org.qiweb.api.http.HttpBuilders.CookieBuilder" alt="" coords="16,123,116,163"/>
-<area shape="rect" id="node2" href="./HttpBuilders.CookieBuilder.html" title="&lt;TABLE&gt;" alt="" coords="5,117,127,168"/>
-<area shape="rect" id="node3_2" href="../../spi/http/HttpBuildersSPI.html" title="org.qiweb.spi.http.HttpBuildersSPI" alt="" coords="162,123,274,163"/>
-<area shape="rect" id="node3" href="../../spi/http/HttpBuildersSPI.html" title="&lt;TABLE&gt;" alt="" coords="151,117,285,168"/>
-</map>
