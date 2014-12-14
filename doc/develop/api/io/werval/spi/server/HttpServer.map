@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../ApplicationSPI.html" title="io.werval.spi.ApplicationSPI" alt="" coords="16,205,120,245"/>
+<area shape="rect" id="node1" href="../ApplicationSPI.html" title="&lt;TABLE&gt;" alt="" coords="5,200,131,251"/>
+<area shape="rect" id="node2_1" href="../dev/DevShellSPI.html" title="io.werval.spi.dev.DevShellSPI" alt="" coords="166,205,258,245"/>
+<area shape="rect" id="node2" href="../dev/DevShellSPI.html" title="&lt;TABLE&gt;" alt="" coords="155,200,269,251"/>
+<area shape="rect" id="node3_2" href="./HttpServer.html" title="io.werval.spi.server.HttpServer" alt="" coords="157,107,241,147"/>
+<area shape="rect" id="node3" href="./HttpServer.html" title="&lt;TABLE&gt;" alt="" coords="146,101,251,152"/>
+<area shape="rect" id="node4_3" href="./HttpServerAdapter.html" title="io.werval.spi.server.HttpServerAdapter" alt="" coords="304,213,432,237"/>
+<area shape="rect" id="node4" href="./HttpServerAdapter.html" title="&lt;TABLE&gt;" alt="" coords="293,201,443,249"/>
+<area shape="rect" id="node5_4" href="../../test/WervalHttpTest.html" title="io.werval.test.WervalHttpTest" alt="" coords="93,17,201,41"/>
+<area shape="rect" id="node5" href="../../test/WervalHttpTest.html" title="&lt;TABLE&gt;" alt="" coords="82,5,211,53"/>
+</map>

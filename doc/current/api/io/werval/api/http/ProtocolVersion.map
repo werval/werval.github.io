@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ProtocolVersion.html" title="io.werval.api.http.ProtocolVersion" alt="" coords="177,116,288,140"/>
+<area shape="rect" id="node1" href="./ProtocolVersion.html" title="&lt;TABLE&gt;" alt="" coords="167,104,299,152"/>
+<area shape="rect" id="node2_1" href="./RequestHeader.html" title="io.werval.api.http.RequestHeader" alt="" coords="16,11,127,51"/>
+<area shape="rect" id="node2" href="./RequestHeader.html" title="&lt;TABLE&gt;" alt="" coords="5,5,137,56"/>
+<area shape="rect" id="node3_2" href="./ResponseHeader.html" title="io.werval.api.http.ResponseHeader" alt="" coords="172,11,293,51"/>
+<area shape="rect" id="node3" href="./ResponseHeader.html" title="&lt;TABLE&gt;" alt="" coords="161,5,304,56"/>
+<area shape="rect" id="node4_3" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="java.io.Serializable" alt="" coords="339,11,425,51"/>
+<area shape="rect" id="node4" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="&lt;TABLE&gt;" alt="" coords="328,5,436,56"/>
+</map>

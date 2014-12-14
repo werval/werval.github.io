@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./QiWebRule.html" title="org.qiweb.test.QiWebRule" alt="" coords="77,116,162,140"/>
+<area shape="rect" id="node1" href="./QiWebRule.html" title="&lt;TABLE&gt;" alt="" coords="66,104,173,152"/>
+<area shape="rect" id="node2_1" href="./QiWebTest.html" title="org.qiweb.test.QiWebTest" alt="" coords="123,212,206,236"/>
+<area shape="rect" id="node2" href="./QiWebTest.html" title="&lt;TABLE&gt;" alt="" coords="113,200,217,248"/>
+<area shape="rect" id="node3_2" href="./QiWebTestSupport.html" title="org.qiweb.test.QiWebTestSupport" alt="" coords="145,11,275,51"/>
+<area shape="rect" id="node3" href="./QiWebTestSupport.html" title="&lt;TABLE&gt;" alt="" coords="135,5,285,56"/>
+<area shape="rect" id="node4_3" href="http://junit.org/apidocs/org/junit/rules/TestRule.html" title="org.junit.rules.TestRule" alt="" coords="16,11,100,51"/>
+<area shape="rect" id="node4" href="http://junit.org/apidocs/org/junit/rules/TestRule.html" title="&lt;TABLE&gt;" alt="" coords="5,5,111,56"/>
+</map>

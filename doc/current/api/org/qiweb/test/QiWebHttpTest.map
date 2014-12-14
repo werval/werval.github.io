@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../spi/ApplicationSPI.html" title="org.qiweb.spi.ApplicationSPI" alt="" coords="69,400,173,440"/>
+<area shape="rect" id="node1" href="../spi/ApplicationSPI.html" title="&lt;TABLE&gt;" alt="" coords="59,395,184,445"/>
+<area shape="rect" id="node2_1" href="../spi/server/HttpServer.html" title="org.qiweb.spi.server.HttpServer" alt="" coords="125,301,209,341"/>
+<area shape="rect" id="node2" href="../spi/server/HttpServer.html" title="&lt;TABLE&gt;" alt="" coords="114,296,219,347"/>
+<area shape="rect" id="node3_2" href="./QiWebHttpRule.html" title="org.qiweb.test.QiWebHttpRule" alt="" coords="16,116,125,140"/>
+<area shape="rect" id="node3" href="./QiWebHttpRule.html" title="&lt;TABLE&gt;" alt="" coords="5,104,136,152"/>
+<area shape="rect" id="node4_3" href="./QiWebHttpTest.html" title="org.qiweb.test.QiWebHttpTest" alt="" coords="68,212,175,236"/>
+<area shape="rect" id="node4" href="./QiWebHttpTest.html" title="&lt;TABLE&gt;" alt="" coords="57,200,185,248"/>
+<area shape="rect" id="node5_4" href="./QiWebHttpTestSupport.html" title="org.qiweb.test.QiWebHttpTestSupport" alt="" coords="45,11,198,51"/>
+<area shape="rect" id="node5" href="./QiWebHttpTestSupport.html" title="&lt;TABLE&gt;" alt="" coords="34,5,209,56"/>
+</map>

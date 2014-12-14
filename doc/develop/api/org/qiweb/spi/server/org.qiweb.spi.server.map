@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./HttpServer.html" title="org.qiweb.spi.server.HttpServer" alt="" coords="38,11,122,51"/>
+<area shape="rect" id="node1" href="./HttpServer.html" title="&lt;TABLE&gt;" alt="" coords="27,5,133,56"/>
+<area shape="rect" id="node2_1" href="./HttpServerAdapter.html" title="org.qiweb.spi.server.HttpServerAdapter" alt="" coords="16,116,144,140"/>
+<area shape="rect" id="node2" href="./HttpServerAdapter.html" title="&lt;TABLE&gt;" alt="" coords="5,104,155,152"/>
+<area shape="rect" id="node3_2" href="./HttpServerHelper.html" title="org.qiweb.spi.server.HttpServerHelper" alt="" coords="168,19,288,43"/>
+<area shape="rect" id="node3" href="./HttpServerHelper.html" title="&lt;TABLE&gt;" alt="" coords="157,7,299,55"/>
+</map>

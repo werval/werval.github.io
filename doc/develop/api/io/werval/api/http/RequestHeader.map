@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Cookies.html" title="io.werval.api.http.Cookies" alt="" coords="16,123,100,163"/>
+<area shape="rect" id="node1" href="./Cookies.html" title="&lt;TABLE&gt;" alt="" coords="5,117,111,168"/>
+<area shape="rect" id="node2_1" href="./Headers.html" title="io.werval.api.http.Headers" alt="" coords="145,123,229,163"/>
+<area shape="rect" id="node2" href="./Headers.html" title="&lt;TABLE&gt;" alt="" coords="135,117,240,168"/>
+<area shape="rect" id="node3_2" href="./Method.html" title="io.werval.api.http.Method" alt="" coords="275,131,337,155"/>
+<area shape="rect" id="node3" href="./Method.html" title="&lt;TABLE&gt;" alt="" coords="265,119,347,167"/>
+<area shape="rect" id="node4_3" href="./ProtocolVersion.html" title="io.werval.api.http.ProtocolVersion" alt="" coords="383,131,493,155"/>
+<area shape="rect" id="node4" href="./ProtocolVersion.html" title="&lt;TABLE&gt;" alt="" coords="372,119,504,167"/>
+<area shape="rect" id="node5_4" href="./QueryString.html" title="io.werval.api.http.QueryString" alt="" coords="539,123,627,163"/>
+<area shape="rect" id="node5" href="./QueryString.html" title="&lt;TABLE&gt;" alt="" coords="529,117,638,168"/>
+<area shape="rect" id="node6_5" href="./Request.html" title="io.werval.api.http.Request" alt="" coords="673,123,757,163"/>
+<area shape="rect" id="node6" href="./Request.html" title="&lt;TABLE&gt;" alt="" coords="663,117,768,168"/>
+<area shape="rect" id="node7_6" href="./RequestHeader.html" title="io.werval.api.http.RequestHeader" alt="" coords="528,11,639,51"/>
+<area shape="rect" id="node7" href="./RequestHeader.html" title="&lt;TABLE&gt;" alt="" coords="517,5,649,56"/>
+<area shape="rect" id="node8_7" href="../i18n/Lang.html" title="io.werval.api.i18n.Lang" alt="" coords="803,123,887,163"/>
+<area shape="rect" id="node8" href="../i18n/Lang.html" title="&lt;TABLE&gt;" alt="" coords="792,117,897,168"/>
+<area shape="rect" id="node9_8" href="../mime/MediaRange.html" title="io.werval.api.mime.MediaRange" alt="" coords="933,123,1026,163"/>
+<area shape="rect" id="node9" href="../mime/MediaRange.html" title="&lt;TABLE&gt;" alt="" coords="922,117,1037,168"/>
+</map>

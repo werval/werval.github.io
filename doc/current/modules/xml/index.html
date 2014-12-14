@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>XML Module</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Werval Documentation"> 
+  <meta name="keywords" content="werval, documentation"> 
+  <!-- Le styles --> 
+  <!-- See https://github.com/nerk/asciidoctor-bs-themes --> 
+  <link href="../../css/bootstrap_lumen.css" rel="stylesheet"> 
+  <link href="../../css/base.css" rel="stylesheet"> 
+  <link href="../../css/io.werval.doc.css" rel="stylesheet"> 
+  <link href="../../css/prettify.css" rel="stylesheet"> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+  <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->  
+  <!-- Async Analytics --> 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55982374-1', 'auto');
+      ga('send', 'pageview');
+    </script> 
+ </head> 
+ <body onload="prettyPrint()" class="article toc2 toc-right"> 
+  <div id="wrap"> 
+   <!-- Fixed navbar --> 
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="../../index.html">Werval 0</a> 
+     </div> 
+     <div class="navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting started <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="../../get-started-gradle.html">Get started using Gradle</a></li> 
+         <li><a href="../../get-started-maven.html">Get started using Maven</a></li> 
+         <li class="divider"></li> 
+         <li><a href="../../getting-started.html">What are Gradle &amp; Maven?</a></li> 
+        </ul> </li> 
+       <li><a href="../../guides.html">Guides</a></li> 
+       <li><a href="../../manual.html">Manual</a></li> 
+       <li><a href="../../modules/index.html">Modules</a></li> 
+       <li><a href="../../api/index.html" target="_blank">API Javadoc</a></li> 
+      </ul> 
+      <ul class="nav navbar-nav navbar-right"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0)<span class="caret"></span></a> 
+        <ul class="dropdown-menu" role="menu"> 
+         <li><a href="/doc/current/index.html">Current Version (0)</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/doc/develop/index.html">Development Version</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/">Werval Home</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+     <!--/.nav-collapse --> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <ol class="breadcrumb"> 
+     <li><a href="../../index.html">Documentation</a></li> 
+     <li><a href="../../modules/index.html">Modules</a></li> 
+     <li class="active">XML Module</li> 
+    </ol> 
+    <div class="page-header"> 
+     <h1>XML Module</h1> 
+    </div> 
+    <p></p> 
+    <div id="preamble"> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>The XML module provide a Plugin allowing easy production and consumption of XML. Secure by default, gradually relaxable.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="xml_processing"><a class="anchor" href="#xml_processing"></a>XML Processing</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>The Java ecosystem is rich when it somes to XML librairies, maybe too much. But it seems to be the case in many stacks. This modules leverage the standard <code>JAXP</code> APIs providing <code>StAX</code>, <code>SAX</code>, <code>DOM</code>, <code>XSLT</code> and <code>XPath</code> processing. No fancy fluent API is provided but the plugin expose a collection of utility methods that should cover most of the frequent use cases.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Under the hood, Woodstox is used for stream pull parsing (StAX) ; <a href="https://xerces.apache.org/xerces2-j/">Xerces</a> for stream push parsing (SAX &amp; SAX2), DOM handling and Schema validation ; and <a href="http://saxonica.com/">Saxon</a> for XSLT, XPath and XQuery support.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Special attention has been taken to normalize and tighten the security of XML processing amongst used libraries.</p> 
+      </div> 
+      <div class="admonitionblock important"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Important 
+           </div> </td> 
+          <td class="content"> 
+           <div class="title">
+             DTD is dangerous 
+           </div> 
+           <div class="paragraph"> 
+            <p>By default, <code>DTD</code> processing is disabled. It can easily be enabled by using the <code>setValidating()</code> method of <code>SAXParserFactory</code> or <code>DocumentBuilderFactory</code>.</p> 
+           </div> 
+           <div class="paragraph"> 
+            <p>But before enabling it beware that if you process documents coming from untrusted sources, one could easily DoS the application (eg. <code>OutOfMemoryError</code> using not so cleverly crafter regular expressions or simply consume all your computing power using exponential or polynomial nested entity references). Theses attacks are know as <strong>XML Entity Expansion Attacks</strong> or <a href="https://en.wikipedia.org/wiki/Billion_laughs">Billion laughs</a>.</p> 
+           </div> 
+           <div class="paragraph"> 
+            <p>You have been warned.</p> 
+           </div> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="external_entities"><a class="anchor" href="#external_entities"></a>External Entities</h3> 
+       <div class="paragraph"> 
+        <p>Default behaviour is to fail on any external entities lookup. That’s pretty good for your safety as this could be used to read files from the file system, internal network, or DoS the application. But it is not good if you need complex validation and/or transformation processing. Think of this as firewall rules, you start with a simple <code>Deny All</code> rule then open what you need, knowing what you are doing.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <p></p> 
+   </div> 
+   <div id="push"></div> 
+  </div> 
+  <div id="footer"> 
+   <p class="muted credit">© 2014 | Werval 0 | The Werval Community</p> 
+   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+  </div> 
+  <!-- Le javascript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="../../js/jquery-1.11.1.min.js"></script> 
+  <script src="../../js/bootstrap.min.js"></script> 
+  <script src="../../js/prettify.js"></script> 
+  <script src="../../js/io.werval.doc.js"></script>  
+ </body>
+</html>

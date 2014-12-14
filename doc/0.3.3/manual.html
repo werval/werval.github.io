@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>QiWeb Manual</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="QiWeb Documentation"> 
+  <meta name="keywords" content="qiweb, documentation"> 
+  <!-- Le styles --> 
+  <!-- See https://github.com/nerk/asciidoctor-bs-themes --> 
+  <link href="css/bootstrap_lumen.css" rel="stylesheet"> 
+  <link href="css/base.css" rel="stylesheet"> 
+  <link href="css/org.qiweb.doc.css" rel="stylesheet"> 
+  <link href="css/prettify.css" rel="stylesheet"> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->  
+  <!-- Async Analytics --> 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55982374-1', 'auto');
+      ga('send', 'pageview');
+    </script> 
+ </head> 
+ <body onload="prettyPrint()" class="article toc2 toc-right"> 
+  <div id="wrap"> 
+   <!-- Fixed navbar --> 
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="index.html">QiWeb 0.3.3</a> 
+     </div> 
+     <div class="navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting started <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="get-started-gradle.html">Get started using Gradle</a></li> 
+         <li><a href="get-started-maven.html">Get started using Maven</a></li> 
+         <li class="divider"></li> 
+         <li><a href="getting-started.html">What are Gradle &amp; Maven?</a></li> 
+        </ul> </li> 
+       <li><a href="guides.html">Guides</a></li> 
+       <li><a href="manual.html">Manual</a></li> 
+       <li><a href="modules/index.html">Modules</a></li> 
+       <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
+       <li><a href="release-notes.html">Release notes</a></li> 
+      </ul> 
+      <ul class="nav navbar-nav navbar-right"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">0.3.3<span class="caret"></span></a> 
+        <ul class="dropdown-menu" role="menu"> 
+         <li><a href="/doc/current/index.html">Current Version (0.4.0)</a></li> 
+         <li><a href="/doc/0.3.3/index.html">0.3.3</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/doc/develop/index.html">Development Version</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/">QiWeb Home</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+     <!--/.nav-collapse --> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <ol class="breadcrumb"> 
+     <li><a href="index.html">Documentation</a></li> 
+     <li class="active">QiWeb Manual</li> 
+    </ol> 
+    <div class="page-header"> 
+     <h1>QiWeb Manual</h1> 
+    </div> 
+    <p></p> 
+    <div id="preamble"> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>The QiWeb Manual is intended to be a comprehensive guide to the development kit version 0.3.3.</p> 
+      </div> 
+      <div class="admonitionblock caution"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Caution 
+           </div> </td> 
+          <td class="content"> Work in progress! </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <div id="toc" class="toc2"> 
+       <div id="toctitle" class="title">
+         QiWeb Manual 
+       </div> 
+       <ul class="sectlevel1"> 
+        <li><a href="#introduction">1. Introduction</a></li> 
+        <li><a href="#application">2. Application</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#structure">2.1. Structure</a></li> 
+          <li><a href="#modes">2.2. Modes</a></li> 
+          <li><a href="#runtime_models">2.3. Runtime Models</a></li> 
+          <li><a href="#threading_model">2.4. Threading Model</a></li> 
+          <li><a href="#summary">2.5. Summary</a></li> 
+         </ul> </li> 
+        <li><a href="#configuration">3. Configuration</a></li> 
+        <li><a href="#the_global_object">4. The Global object</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#instanciation">4.1. Instanciation</a></li> 
+          <li><a href="#invocation">4.2. Invocation</a></li> 
+          <li><a href="#error_handling">4.3. Error handling</a></li> 
+         </ul> </li> 
+        <li><a href="#lifecycle">5. Lifecycle</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#startup_explained">5.1. Startup explained</a></li> 
+          <li><a href="#shutdown_explained">5.2. Shutdown explained</a></li> 
+         </ul> </li> 
+        <li><a href="#interactions">6. Interactions</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#routes">6.1. Routes</a></li> 
+          <li><a href="#controllers">6.2. Controllers</a></li> 
+          <li><a href="#outcomes">6.3. Outcomes</a></li> 
+          <li><a href="#filters">6.4. Filters</a></li> 
+         </ul> </li> 
+        <li><a href="#http">7. HTTP</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#session">7.1. Session</a></li> 
+          <li><a href="#cookies">7.2. Cookies</a></li> 
+          <li><a href="#forms_uploads">7.3. Forms &amp; Uploads</a></li> 
+          <li><a href="#query_string">7.4. Query String</a></li> 
+         </ul> </li> 
+        <li><a href="#plugins">8. Plugins</a></li> 
+        <li><a href="#core_controllers_and_filters">9. Core Controllers and Filters</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#controllers_2">9.1. Controllers</a></li> 
+          <li><a href="#filters_2">9.2. Filters</a></li> 
+         </ul> </li> 
+        <li><a href="#testing">10. Testing</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#qiwebtest_usage">10.1. QiWebTest usage</a></li> 
+          <li><a href="#qiwebrule_usage">10.2. QiWebRule usage</a></li> 
+          <li><a href="#in_practice">10.3. In practice</a></li> 
+          <li><a href="#testing_http">10.4. Testing HTTP</a></li> 
+          <li><a href="#testing_browser_based_uis">10.5. Testing browser based UIs</a></li> 
+         </ul> </li> 
+        <li><a href="#unsorted">11. UNSORTED</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#logging">11.1. Logging</a></li> 
+          <li><a href="#character_encoding">11.2. Character encoding</a></li> 
+         </ul> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="introduction"><a class="anchor" href="#introduction"></a>1. Introduction</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>QiWeb is a HTTP development kit. QiWeb is not a full stack framework.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>In other words, QiWeb don’t compell you to use any persistence mechanism nor templating engine. You are free to choose whatever may suit your needs.</p> 
+      </div> 
+      <div class="imageblock"> 
+       <div class="content"> 
+        <img src="images/overview.png" alt="Overview" width="640"> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="application"><a class="anchor" href="#application"></a>2. Application</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>A QiWeb Application is nothing but a plain old Java program. The framework provide a default <code>main</code> class/method for you to reuse but you can also write yours if you need it. The minimal requirement is a configuration file named <code>application.conf</code> containing a <code>app.secret</code> entry.</p> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="structure"><a class="anchor" href="#structure"></a>2.1. Structure</h3> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="modes"><a class="anchor" href="#modes"></a>2.2. Modes</h3> 
+       <div class="paragraph"> 
+        <p>A QiWeb Application can run in three different modes:</p> 
+       </div> 
+       <div class="olist arabic"> 
+        <ol class="arabic"> 
+         <li> <p><strong>Development</strong>: the HTTP stack is single-threaded, source code is watched for changes, Application is restarted on-demand and stacktraces are disclosed in responses.</p> </li> 
+         <li> <p><strong>Test</strong>: the HTTP stack is single-threaded and Application run from compiled bytecode.</p> </li> 
+         <li> <p><strong>Production</strong>: the HTTP stack is multi-threaded and Application run from compiled bytecode.</p> </li> 
+        </ol> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="runtime_models"><a class="anchor" href="#runtime_models"></a>2.3. Runtime Models</h3> 
+       <div class="paragraph"> 
+        <p>A QiWeb Application can run according to three different runtime models:</p> 
+       </div> 
+       <div class="olist arabic"> 
+        <ol class="arabic"> 
+         <li> <p><strong>Heavyweight</strong>, with HTTP Service, most used runtime model for a HTTP application.</p> </li> 
+         <li> <p><strong>Middleweight</strong>, with HTTP Context but without HTTP Service, typical runtime model for controller tests.</p> </li> 
+         <li> <p><strong>Lightweight</strong>, with <strong>no</strong> HTTP support, usefull for applying the worker runtime model easily ; that is execute some application code in a lightweight process.</p> </li> 
+        </ol> 
+       </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> See the Deploy on Heroku guide for lightweight mode usage example implementing Heroku workers. </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="threading_model"><a class="anchor" href="#threading_model"></a>2.4. Threading Model</h3> 
+       <div class="paragraph"> 
+        <p>QiWeb has a quite simple threading model based on the Netty one.</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>Netty</p> </li> 
+         <li> <p>Netty Selector Threads, default to <code>Runtime.availableProcessors()</code> -Netty IO Threads, default to <code>Runtime.availableProcessors()</code></p> </li> 
+         <li> <p>Controllers</p> </li> 
+         <li> <p>Optional Controller Execution Thread Pool</p> </li> 
+         <li> <p>It means that by default, your controller code is executed on the IO Threads and that any controller doing blocking operations will slow your application down.</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="summary"><a class="anchor" href="#summary"></a>2.5. Summary</h3> 
+       <table class="tableblock frame-all grid-all" style="width:100%; "> 
+        <colgroup> 
+         <col style="width:14%;"> 
+         <col style="width:28%;"> 
+         <col style="width:28%;"> 
+         <col style="width:28%;"> 
+        </colgroup> 
+        <thead> 
+         <tr> 
+          <th class="tableblock halign-left valign-top"></th> 
+          <th class="tableblock halign-left valign-top">Development Mode</th> 
+          <th class="tableblock halign-left valign-top">Test Mode</th> 
+          <th class="tableblock halign-left valign-top">Production Mode</th> 
+         </tr> 
+        </thead> 
+        <tbody> 
+         <tr> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p><strong>Heavyweight Runtime</strong></p> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p>Typical use while coding</p> 
+            </div> 
+            <div class="ulist"> 
+             <ul> 
+              <li> <p>Single-thread HTTP stack <code>1*acceptors</code>+<code>1*acceptors</code></p> </li> 
+              <li> <p>Reload on source changes</p> </li> 
+              <li> <p>Stacktraces disclosed in responses</p> </li> 
+             </ul> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p>For tests that require a complete HTTP stack</p> 
+            </div> 
+            <div class="ulist"> 
+             <ul> 
+              <li> <p>Single-thread HTTP stack <code>1*acceptors</code>+<code>1*acceptors</code></p> </li> 
+              <li> <p>Compiled bytecode execution</p> </li> 
+             </ul> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p>Typical production model</p> 
+            </div> 
+            <div class="ulist"> 
+             <ul> 
+              <li> <p>Multi-thread HTTP stack <code>cores*acceptors</code>+<code>cores*io</code></p> </li> 
+              <li> <p>Compiled bytecode execution</p> </li> 
+             </ul> 
+            </div> 
+           </div></td> 
+         </tr> 
+         <tr> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p><strong>Middleweight Runtime</strong></p> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p><code>404 No use case found</code></p> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p>For QiWeb integrations tests that do not require a complete HTTP stack</p> 
+            </div> 
+            <div class="ulist"> 
+             <ul> 
+              <li> <p>No true HTTP stack</p> </li> 
+              <li> <p>Compiled bytecode execution</p> </li> 
+             </ul> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p>For <strong>hackish</strong> worker process that require an HTTP context but no HTTP stack</p> 
+            </div> 
+            <div class="ulist"> 
+             <ul> 
+              <li> <p>No true HTTP stack</p> </li> 
+              <li> <p>Compiled bytecode execution</p> </li> 
+             </ul> 
+            </div> 
+           </div></td> 
+         </tr> 
+         <tr> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p><strong>Lightweight Runtime</strong></p> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p><code>404 No use case found</code></p> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p>Typical use case for QiWeb integrations tests that need no HTTP support</p> 
+            </div> 
+            <div class="ulist"> 
+             <ul> 
+              <li> <p>No HTTP support</p> </li> 
+              <li> <p>Compiled bytecode execution</p> </li> 
+             </ul> 
+            </div> 
+           </div></td> 
+          <td class="tableblock halign-left valign-top"> 
+           <div> 
+            <div class="paragraph"> 
+             <p>Typical worker process model</p> 
+            </div> 
+            <div class="ulist"> 
+             <ul> 
+              <li> <p>No HTTP support</p> </li> 
+              <li> <p>Compiled bytecode execution</p> </li> 
+             </ul> 
+            </div> 
+           </div></td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="configuration"><a class="anchor" href="#configuration"></a>3. Configuration</h2> 
+     <div class="sectionbody"> 
+      <div class="admonitionblock note"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Note 
+           </div> </td> 
+          <td class="content"> QiWeb configuration use the <a href="hocon.html">HOCON format</a> ("Human Optimized Config Object Notation"). It is parsed using <a href="https://github.com/typesafehub/config">Typesafe Config</a>. </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <div class="paragraph"> 
+       <p>The <code>application.conf</code> file must be present at the root of your classpath and must at least contain one single entry: <code>app.secret</code> which is the secret key your application will use to sign session cookies. For all other configuration properties, the QiWeb Runtime provide a <code>reference.conf</code> file that the Config library automatically loads. You can of course override all theses configuration properties in your <code>application.conf</code> file.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>If you need to add configuration properties for your application you are encouraged to do so in your <code>application.conf</code> file.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>All configuration properties are available to your controllers and filters via the Context object.</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">static</span> <span class="include">org.qiweb.api.context.CurrentContext</span>.*;
+<span class="directive">public</span> MyController {
+  <span class="directive">public</span> Outcome aControllerMethod() {
+    <span class="predefined-type">String</span> configValue = application().config().string(<span class="string"><span class="delimiter">"</span><span class="content">your.custom.config.key</span><span class="delimiter">"</span></span>);
+    <span class="comment">// Do what you have to do according to the configuration value</span>
+    <span class="keyword">return</span> outcomes().ok(<span class="string"><span class="delimiter">"</span><span class="content">whatever</span><span class="delimiter">"</span></span>).build();
+  }
+}</code></pre> 
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>All configuration properties can be overriden by defining System Properties. This means that you can easily provide all configuration on the command line.</p> 
+      </div> 
+      <div class="admonitionblock important"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Important 
+           </div> </td> 
+          <td class="content"> Every system property is also present in the configuration. For example, the <code>java.home</code> System Property is automatically present in the configuration at the <code>java.home</code> key. In other words, and if you need it, keep in mind that you can use configuration properties from the command line without defining a default value in any configuration file. </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Moreover, some special System Properties allow to use an alternate config file:</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p><code>config.resource</code> to load configuration from the classpath</p> </li> 
+        <li> <p><code>config.file</code> to load configuration from the filesystem</p> </li> 
+        <li> <p><code>config.url</code> to load configuration from an URL</p> </li> 
+       </ul> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Note that this will replace the <code>application.conf</code> file, not add to it. You still can leverage the inclusion mechanism of HOCON to include your <code>application.conf</code> file from the one you specified using one of the System Properties described above.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="the_global_object"><a class="anchor" href="#the_global_object"></a>4. The Global object</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="instanciation"><a class="anchor" href="#instanciation"></a>4.1. Instanciation</h3> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>Controllers</p> </li> 
+         <li> <p>Filters</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="invocation"><a class="anchor" href="#invocation"></a>4.2. Invocation</h3> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>Controllers</p> </li> 
+         <li> <p>Filters</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="error_handling"><a class="anchor" href="#error_handling"></a>4.3. Error handling</h3> 
+       <div class="paragraph"> 
+        <p>When an error happen inside the Application it is recorded.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Each recorded Error has an <code>ID</code>, a timestamp, the related request <code>ID</code> and the original exception. This is pretty useful as is to write unit/integration tests that check error handling in your Application. And of course to track down bugs when used in conjunction with SLF4J MDC.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You can override the <code>Global::onApplicationError()</code> method to hook into the error handling system. Errors will be recorded <em>after</em> this method is called. That way, if your Global object throws, it gets recorded too.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Error records are held in-memory, if you want to persist them someway, you’ll have to provide the appropriate mechanism.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>By default, a maximum of <code>100</code> errors are held into memory in a <strong>first-in/first-out</strong> fashion. You can increase or decrease this number by setting the <code>app.errors.record.max</code> configuration property.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="lifecycle"><a class="anchor" href="#lifecycle"></a>5. Lifecycle</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="startup_explained"><a class="anchor" href="#startup_explained"></a>5.1. Startup explained</h3> 
+       <div class="paragraph"> 
+        <p>Application startup is sequential and pretty straightfoward:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>load configuration</p> </li> 
+         <li> <p>create application thread pools</p> </li> 
+         <li> <p>load the Global object</p> </li> 
+         <li> <p>resolve application routes</p> </li> 
+         <li> <p>activate registered plugins</p> </li> 
+         <li> <p>resolve plugins routes</p> </li> 
+         <li> <p>notify the Global object of application activation</p> </li> 
+         <li> <p>bind HTTP server</p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>After that, the application is ready to process requests.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="shutdown_explained"><a class="anchor" href="#shutdown_explained"></a>5.2. Shutdown explained</h3> 
+       <div class="paragraph"> 
+        <p>Shutting your application down gracefully is as critical as running it.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>While startup fail fast, shutdown fail safe. In other words, startup fail on first error while shutdown always succeed. If errors happen during shutdown they are collected and logged once shut down in a single stacktrace thanks to Java 7 suppressed exceptions.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Application shutdown is sequential and pretty straightfoward:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>unbind HTTP server</p> </li> 
+         <li> <p>notify the Global object of application passivation</p> </li> 
+         <li> <p>passivate registered plugins</p> </li> 
+         <li> <p>stop application thread pools</p> </li> 
+        </ul> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="graceful_shutdown"><a class="anchor" href="#graceful_shutdown"></a>5.2.1. Graceful shutdown</h4> 
+        <div class="paragraph"> 
+         <p>When shut down is requested (Ctrl-C, kill command etc…) the runtime is put in shutting down state for a maximum amount of time defined by the <code>qiweb.shutdown.timeout</code> configuration property that default to 5 seconds. Obviously, if there are no requests to process your application will shutdown immediatly.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>While shutting down, your application will continue to serve running requests till they complete. Clients using HTTP 1.1 Keep-Alive will see your application respond with a <code>Connection</code> header with <code>Close</code> value and effectively close the connection.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Moreover, your application will respond to new incoming requests with a <code>503 Service Unavailable</code> status. You can set the <code>qiweb.shutdown.retry-after</code> configuration property so that a <code>Retry-After</code> header is added to theses responses.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>If your application is running on multiple nodes behind a balancer you can lower this value to 0, yes <strong>zero</strong>, allowing your clients to reconnect immediatly to another node. Pretty useful for zero-downtime upgrades.</p> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="interactions"><a class="anchor" href="#interactions"></a>6. Interactions</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="routes"><a class="anchor" href="#routes"></a>6.1. Routes</h3> 
+       <div class="paragraph"> 
+        <p>Routes are defined by:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>a HTTP method ;</p> </li> 
+         <li> <p>a path expression ;</p> </li> 
+         <li> <p>a fully qualified method name ;</p> </li> 
+         <li> <p>optionaly a method parameters definition ;</p> </li> 
+         <li> <p>and finaly optional modifiers.</p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The default QiWeb router allows for textual representation of routes definition.</p> 
+       </div> 
+       <div class="literalblock"> 
+        <div class="content"> 
+         <pre>http-method path-expression controller-fqcn.method-name[(parameters)] [modifiers]</pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You can also express routes definitions in code using the Routes API.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Request URI Path and QueryString are the source of Controller Parameters.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You can also handle all the routing in your Global object.</p> 
+       </div> 
+       <div class="admonitionblock note"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Note 
+            </div> </td> 
+           <td class="content"> URI Fragment identifier is considered useful on the client side only, hence not taken into account when routing. However, the reverse routing API allow you to append a fragment identifier to generated URIs. </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="controllers"><a class="anchor" href="#controllers"></a>6.2. Controllers</h3> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="outcomes"><a class="anchor" href="#outcomes"></a>6.3. Outcomes</h3> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="filters"><a class="anchor" href="#filters"></a>6.4. Filters</h3> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="http"><a class="anchor" href="#http"></a>7. HTTP</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="session"><a class="anchor" href="#session"></a>7.1. Session</h3> 
+       <div class="paragraph"> 
+        <p>As QiWeb is stateless oriented, it provides no way to keep session state server side. Instead a simple session Cookie is used to keep state accross user requests.</p> 
+       </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> If you need to keep server side state think about your database or cache system of choice. </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The Session Cookie contains a <code>Map&lt;String,String&gt;</code> and is signed using the mandatory Application Secret. Signature use the HmacSHA1 algorithm.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="cookies"><a class="anchor" href="#cookies"></a>7.2. Cookies</h3> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="forms_uploads"><a class="anchor" href="#forms_uploads"></a>7.3. Forms &amp; Uploads</h3> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="query_string"><a class="anchor" href="#query_string"></a>7.4. Query String</h3> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">static</span> <span class="include">org.qiweb.api.context.CurrentContext</span>.*;
+<span class="directive">public</span> MyController {
+  <span class="directive">public</span> Outcome aControllerMethod() {
+    <span class="predefined-type">String</span> singleFoo = request().queryString().singleValueOf(<span class="string"><span class="delimiter">"</span><span class="content">foo</span><span class="delimiter">"</span></span>);
+    <span class="comment">// Do what you have to do according to the foo value</span>
+    <span class="keyword">return</span> outcomes().ok(<span class="string"><span class="delimiter">"</span><span class="content">whatever</span><span class="delimiter">"</span></span>).build();
+  }
+}</code></pre> 
+        </div> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="multiple_values"><a class="anchor" href="#multiple_values"></a>7.4.1. Multiple values</h4> 
+        <div class="paragraph"> 
+         <p>Query strings can contain multiple values for the same parameter. How this is handled is not stated in the HTTP 1.0 nor 1.1 RFCs and, by so, open to interpretation. You, and others, are free to do it the way you, or they, want. This while being conform to the HTTP protocol. See <a href="https://www.owasp.org/images/b/ba/AppsecEU09_CarettoniDiPaola_v0.8.pdf">HTTP Parameter Pollution</a> at OWASP.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Frameworks usually handle this in their own each way. When using one framework you get used to its way of doing things ovelooking the fact that you can get powned in pretty silly ways. See the OWASP paper cited above for numerous examples.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>QiWeb, like other frameworks, has a default behaviour. It’s a bit simple, but this is for good. No multi-value parameters is allowed. A request coming with multiple values (eg. <code>foo=bar&amp;foo=baz</code>) is, by default, rejected with a <code>400 Bad Request</code> status and a warning is logged.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>On the other hand, and if you really need it, you can easily enable multiple values support by setting the <code>qiweb.http.query-string.multi-valued</code> to yes.</p> 
+        </div> 
+        <div class="admonitionblock tip"> 
+         <table> 
+          <tbody> 
+           <tr> 
+            <td class="icon"> 
+             <div class="title">
+               Tip 
+             </div> </td> 
+            <td class="content"> Did you take a look at the OWASP link mentioned earlier? No? Now is a good time. </td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <div class="paragraph"> 
+         <p>When enabled, <code>foo=bar&amp;foo=baz</code> is accepted and your application code can access the values easily:</p> 
+        </div> 
+        <div class="listingblock"> 
+         <div class="content"> 
+          <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">static</span> <span class="include">org.qiweb.api.context.CurrentContext</span>.*;
+<span class="directive">public</span> MyController {
+  <span class="directive">public</span> Outcome aControllerMethod() {
+    <span class="predefined-type">String</span> singleFoo        = request().queryString().singleValueOf(<span class="string"><span class="delimiter">"</span><span class="content">foo</span><span class="delimiter">"</span></span>); <b>(1)</b>
+    <span class="predefined-type">List</span>&lt;<span class="predefined-type">String</span>&gt; allFoos    = request().queryString().valuesOf(<span class="string"><span class="delimiter">"</span><span class="content">foo</span><span class="delimiter">"</span></span>);      <b>(2)</b>
+    <span class="predefined-type">String</span> firstFoo         = request().queryString().firstValueOf(<span class="string"><span class="delimiter">"</span><span class="content">foo</span><span class="delimiter">"</span></span>);  <b>(3)</b>
+    <span class="predefined-type">String</span> lastFoo          = request().queryString().lastValueOf(<span class="string"><span class="delimiter">"</span><span class="content">foo</span><span class="delimiter">"</span></span>);   <b>(4)</b>
+    <span class="comment">// Do what you have to do according to the foo values</span>
+    <span class="keyword">return</span> outcomes().ok(<span class="string"><span class="delimiter">"</span><span class="content">whatever</span><span class="delimiter">"</span></span>).build();
+  }
+}</code></pre> 
+         </div> 
+        </div> 
+        <div class="olist arabic"> 
+         <ol class="arabic"> 
+          <li> <p>Get a single value, throws if there are multiple values</p> </li> 
+          <li> <p>Get all values</p> </li> 
+          <li> <p>Get first value</p> </li> 
+          <li> <p>Get last value</p> </li> 
+         </ol> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The <code>QueryString</code> API leave you in control regarding which value you want to use.</p> 
+        </div> 
+        <div class="admonitionblock note"> 
+         <table> 
+          <tbody> 
+           <tr> 
+            <td class="icon"> 
+             <div class="title">
+               Note 
+             </div> </td> 
+            <td class="content"> Enabling <code>qiweb.http.query-string.multi-valued</code> do not enable any <strong>syntax</strong>. A request with multiple <code>foo[]</code> values will pass but the values will be in the <code>"foo[]"</code> parameter, not <code>"foo"</code>. Be careful, there’s no magic. Speaking of which, something along the line of Ruby on Rails <a href="http://guides.rubyonrails.org/action_controller_overview.html#hash-and-array-parameters">Hash and Array Parameters</a> could be implemented as a library, pull-requests are welcome! </td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="plugins"><a class="anchor" href="#plugins"></a>8. Plugins</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>QiWeb Plugins are bound to the Application lifecycle and provide an API to the Application code. In other words, Plugins are activated/passivated alongside the Application and they provide a facade you can use in your controllers/filters.</p> 
+      </div> 
+      <div class="admonitionblock tip"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Tip 
+           </div> </td> 
+          <td class="content"> To use a plugin in your Application it is enough for it to be on the classpath and declared in your configuration. </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Writing a plugin is as easy as implementing <code>org.qiweb.api.Plugin</code>. As an example is worth a thousand words, we’ll go through the process of writing a <strong>Hello World</strong> Plugin.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Our <code>HelloWorldPlugin</code> will expose a <code>HelloWorld</code> API to the Application code;</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="java language-java"><span class="directive">public</span> <span class="type">class</span> <span class="class">HelloWorld</span>
+{
+    <span class="directive">public</span> <span class="predefined-type">String</span> sayHello( <span class="predefined-type">String</span> name )
+    {
+        <span class="keyword">return</span> <span class="predefined-type">String</span>.format( <span class="string"><span class="delimiter">"</span><span class="content">Hello %s!</span><span class="delimiter">"</span></span>, name );
+    }
+}</code></pre> 
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>and by so be declared that way;</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="java language-java"><span class="directive">public</span> <span class="type">class</span> <span class="class">HelloWorldPlugin</span> <span class="directive">extends</span> org.qiweb.api.PluginAdapter&lt;HelloWorld&gt;
+{
+    <span class="directive">private</span> <span class="directive">final</span> HelloWorld api = <span class="keyword">new</span> HelloWorld();
+
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="predefined-type">Class</span>&lt;HelloWorld&gt; apiType()
+    {
+        <span class="keyword">return</span> HelloWorld.class;
+    }
+
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> HelloWorld api()
+    {
+        <span class="keyword">return</span> api;
+    }
+}</code></pre> 
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Now, you need to register the Plugin into your Application in its configuration:</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="bash language-bash">app.plugins = [ "fqcn.of.HelloWorldPlugin" ]</code></pre> 
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Et voilà! Finaly, here is how to use the Plugin from your Application code:</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="java language-java">HelloWorld helloWorld = application().plugin( HelloWorld.class );
+<span class="predefined-type">String</span> greeting = helloWorld.sayHello( <span class="string"><span class="delimiter">"</span><span class="content">World</span><span class="delimiter">"</span></span> );
+<span class="comment">// Do something clever with greeting</span></code></pre> 
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>To go further, the <code>Plugin</code> interface declare two lifecycle methods:</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p><code>onActivation( Application application );</code></p> </li> 
+        <li> <p><code>onPassivation( Application application );</code></p> </li> 
+       </ul> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Theses two are NOOP methods in the <code>PluginAdapter</code> class used above. Override theses to hook your Plugin in the Application lifecycle.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="core_controllers_and_filters"><a class="anchor" href="#core_controllers_and_filters"></a>9. Core Controllers and Filters</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="controllers_2"><a class="anchor" href="#controllers_2"></a>9.1. Controllers</h3> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>Default</code></p> </li> 
+         <li> <p><code>Classpath</code></p> </li> 
+         <li> <p><code>Static</code></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="filters_2"><a class="anchor" href="#filters_2"></a>9.2. Filters</h3> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>@Cached</code></p> </li> 
+         <li> <p><code>@MDCSessionID</code></p> </li> 
+         <li> <p>…</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="testing"><a class="anchor" href="#testing"></a>10. Testing</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>The <code>org.qiweb.test</code> module provide <a href="http://junit.org">JUnit</a> based construct to ease tests implementation.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>First construct is <code>QiWebTest</code> that should be subclassed by your test classes. Second one is <code>QiWebRule</code>, a JUnit Rule to be declared in your test classes. Both have the same extension points, choose the one that suits your needs and habits.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Using the JUnit Rule is the prefered way of writing QiWeb tests as it don’t force you to extend from any base class.</p> 
+      </div> 
+      <div class="admonitionblock tip"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Tip 
+           </div> </td> 
+          <td class="content"> QiWeb JUnit Support has transparent integration with <a href="https://code.google.com/p/rest-assured/">rest-assured</a> if it is detected on the tests classpath. rest-assured base URL is automatically set accordingly to the QiWeb configuration so can use relative paths when using it. </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="qiwebtest_usage"><a class="anchor" href="#qiwebtest_usage"></a>10.1. QiWebTest usage</h3> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">org.junit.Test</span>;
+<span class="keyword">import</span> <span class="include">org.qiweb.test.QiWebTest</span>;
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyTest</span> <span class="directive">extends</span> QiWebTest {
+  <span class="annotation">@Test</span>
+  <span class="directive">public</span> <span class="type">void</span> myTest() {
+    <span class="comment">// Assert what you have to here</span>
+  }
+}</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Your Application will be activated/passivated around each test method.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="qiwebrule_usage"><a class="anchor" href="#qiwebrule_usage"></a>10.2. QiWebRule usage</h3> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">org.junit.Rule</span>;
+<span class="keyword">import</span> <span class="include">org.junit.Test</span>;
+<span class="keyword">import</span> <span class="include">org.qiweb.test.QiWebTest</span>;
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyTest</span> {
+  <span class="annotation">@Rule</span> <span class="directive">public</span> QiWebRule qiweb = <span class="keyword">new</span> QiWebRule();
+  <span class="annotation">@Test</span>
+  <span class="directive">public</span> <span class="type">void</span> myTest() {
+    <span class="comment">// Assert what you have to here</span>
+  }
+}</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>As expected, this will activate/passivate your Application around each test method.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>If you prefer to have your Application activated/passivated around each test class, use the JUnit <code>@ClassRule</code> annotation.</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">org.junit.ClassRule</span>;
+<span class="keyword">import</span> <span class="include">org.junit.Test</span>;
+<span class="keyword">import</span> <span class="include">org.qiweb.test.QiWebTest</span>;
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">MyTest</span> {
+  <span class="annotation">@ClassRule</span> <span class="directive">public</span> <span class="directive">static</span> <span class="directive">final</span> QiWebRule QIWEB = <span class="keyword">new</span> QiWebRule();
+  <span class="annotation">@Test</span>
+  <span class="directive">public</span> <span class="type">void</span> myTest() {
+    <span class="comment">// Assert what you have to here</span>
+  }
+}</code></pre> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="in_practice"><a class="anchor" href="#in_practice"></a>10.3. In practice</h3> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>HTTP or not HTTP</p> </li> 
+         <li> <p>Automatic free port usage, allowing tests to be run in parallel</p> </li> 
+         <li> <p>Per Method / Per Class</p> </li> 
+         <li> <p>Logging</p> </li> 
+         <li> <p>Configuration</p> </li> 
+         <li> <p>Routes</p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="testing_http"><a class="anchor" href="#testing_http"></a>10.4. Testing HTTP</h3> 
+       <div class="paragraph"> 
+        <p>The QiWeb Team recommend <a href="https://code.google.com/p/rest-assured/">rest-assured</a>. All HTTP assertions in the SDK are done using <code>rest-assured</code>, see the tests source code for numerous examples.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="testing_browser_based_uis"><a class="anchor" href="#testing_browser_based_uis"></a>10.5. Testing browser based UIs</h3> 
+       <div class="paragraph"> 
+        <p>The QiWeb Team recommand <a href="http://fluentlenium.org/">FluentLenium</a>. All browser based UI assertions in the samples are done using <code>FluentLenium</code>, see the tests source code for numerous examples.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="unsorted"><a class="anchor" href="#unsorted"></a>11. UNSORTED</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="logging"><a class="anchor" href="#logging"></a>11.1. Logging</h3> 
+       <div class="paragraph"> 
+        <p>QiWeb use the <a href="http://www.slf4j.org">SLF4J</a> API (Simple Logging Facade for Java) but you have to choose what SLF4J implementation to use. We strongly recommend <a href="http://logback.qos.ch/">Logback</a>. You have full control on logging configuration.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>All QiWeb loggers are present in the <code>org.qiweb</code> namespace according to code packages. Here are the most useful:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><code>org.qiweb.runtime.server</code> QiWeb Http Server</p> </li> 
+         <li> <p><code>org.qiweb.runtime.routes</code> QiWeb Http Router</p> </li> 
+         <li> <p><code>org.qiweb.runtime.controllers</code> QiWeb Controller</p> </li> 
+         <li> <p><code>org.qiweb.runtime.filters</code> QiWeb Controller Filters</p> </li> 
+         <li> <p>etc…</p> </li> 
+        </ul> 
+       </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> QiWeb Runtime leverage SLF4J <a href="http://www.slf4j.org/manual.html#mdc">Mapped Diagnosic Context</a>, aka. MDC, by putting the current request ID at the <code>X-QiWeb-Request-ID</code> key. Moreover, you can enable the <code>qiweb.http.log.context.client_ip</code> configuration property to add the current request client IP address at the <code>X-QiWeb-Client-IP</code> key. You can use theses keys in your loggers output patterns. </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="character_encoding"><a class="anchor" href="#character_encoding"></a>11.2. Character encoding</h3> 
+       <div class="paragraph"> 
+        <p>By default all character encoding is done in UTF-8. Character encoding can be changed by setting the <code>qiweb.character-encoding</code> configuration property.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>QiWeb ignore the runtime platform default encoding and complies to its configuration only. This is the only way to get a consistent behaviour accross different environments and prevent <a href="https://en.wikipedia.org/wiki/Mojibake">mojibakes</a>.</p> 
+       </div> 
+       <div class="admonitionblock caution"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Caution 
+            </div> </td> 
+           <td class="content"> Even tough QiWeb does its best to ensure uniform character encoding for your application, you may use libraries that don’t. In such a case you should <a href="http://stackoverflow.com/questions/361975/setting-the-default-java-character-encoding">set the default Java character encoding</a> using the <code>file.encoding</code> system property. </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+       <div class="paragraph"> 
+        <p>All QiWeb APIs allows you to override character encoding when relevant.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <p></p> 
+   </div> 
+   <div id="push"></div> 
+  </div> 
+  <div id="footer"> 
+   <p class="muted credit">© 2014 | QiWeb 0.3.3 | The QiWeb Community</p> 
+   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+  </div> 
+  <!-- Le javascript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="js/jquery-1.11.1.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/prettify.js"></script> 
+  <script src="js/org.qiweb.doc.js"></script>  
+ </body>
+</html>

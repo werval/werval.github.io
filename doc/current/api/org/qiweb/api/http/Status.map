@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ResponseHeader.html" title="org.qiweb.api.http.ResponseHeader" alt="" coords="16,11,137,51"/>
+<area shape="rect" id="node1" href="./ResponseHeader.html" title="&lt;TABLE&gt;" alt="" coords="5,5,148,56"/>
+<area shape="rect" id="node2_1" href="./Status.html" title="org.qiweb.api.http.Status" alt="" coords="212,116,267,140"/>
+<area shape="rect" id="node2" href="./Status.html" title="&lt;TABLE&gt;" alt="" coords="201,104,277,152"/>
+<area shape="rect" id="node3_2" href="./StatusClass.html" title="org.qiweb.api.http.StatusClass" alt="" coords="186,205,293,245"/>
+<area shape="rect" id="node3" href="./StatusClass.html" title="&lt;TABLE&gt;" alt="" coords="175,200,303,251"/>
+<area shape="rect" id="node4_3" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html" title="java.lang.Comparable" alt="" coords="183,11,296,51"/>
+<area shape="rect" id="node4" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html" title="&lt;TABLE&gt;" alt="" coords="172,5,307,56"/>
+<area shape="rect" id="node5_4" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="java.io.Serializable" alt="" coords="341,11,428,51"/>
+<area shape="rect" id="node5" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="&lt;TABLE&gt;" alt="" coords="331,5,439,56"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Cache.html" title="org.qiweb.api.cache.Cache" alt="" coords="86,120,170,160"/>
+<area shape="rect" id="node1" href="./Cache.html" title="&lt;TABLE&gt;" alt="" coords="75,115,181,165"/>
+<area shape="rect" id="node3_1" href="../../spi/cache/CacheAdapter.html" title="org.qiweb.spi.cache.CacheAdapter" alt="" coords="77,227,179,251"/>
+<area shape="rect" id="node3" href="../../spi/cache/CacheAdapter.html" title="&lt;TABLE&gt;" alt="" coords="66,215,190,263"/>
+<area shape="rect" id="node2_2" href="./CachePlugin.html" title="org.qiweb.api.cache.CachePlugin" alt="" coords="16,17,109,41"/>
+<area shape="rect" id="node2" href="./CachePlugin.html" title="&lt;TABLE&gt;" alt="" coords="5,5,120,53"/>
+<area shape="rect" id="node4_3" href="../../test/cache/CacheTest.html" title="org.qiweb.test.cache.CacheTest" alt="" coords="155,17,235,41"/>
+<area shape="rect" id="node4" href="../../test/cache/CacheTest.html" title="&lt;TABLE&gt;" alt="" coords="144,5,245,53"/>
+</map>

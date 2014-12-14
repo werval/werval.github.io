@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ActivationException.html" title="org.qiweb.api.exceptions.ActivationException" alt="" coords="16,113,149,137"/>
+<area shape="rect" id="node1" href="./ActivationException.html" title="&lt;TABLE&gt;" alt="" coords="5,101,160,149"/>
+<area shape="rect" id="node2_1" href="./IllegalRouteException.html" title="org.qiweb.api.exceptions.IllegalRouteException" alt="" coords="195,113,341,137"/>
+<area shape="rect" id="node2" href="./IllegalRouteException.html" title="&lt;TABLE&gt;" alt="" coords="184,101,352,149"/>
+<area shape="rect" id="node3_2" href="./ParameterBinderException.html" title="org.qiweb.api.exceptions.ParameterBinderException" alt="" coords="387,113,565,137"/>
+<area shape="rect" id="node3" href="./ParameterBinderException.html" title="&lt;TABLE&gt;" alt="" coords="377,101,575,149"/>
+<area shape="rect" id="node4_3" href="./PassivationException.html" title="org.qiweb.api.exceptions.PassivationException" alt="" coords="611,113,755,137"/>
+<area shape="rect" id="node4" href="./PassivationException.html" title="&lt;TABLE&gt;" alt="" coords="600,101,765,149"/>
+<area shape="rect" id="node5_4" href="./QiWebException.html" title="org.qiweb.api.exceptions.QiWebException" alt="" coords="521,17,637,41"/>
+<area shape="rect" id="node5" href="./QiWebException.html" title="&lt;TABLE&gt;" alt="" coords="510,5,647,53"/>
+<area shape="rect" id="node6_5" href="./RouteNotFoundException.html" title="org.qiweb.api.exceptions.RouteNotFoundException" alt="" coords="800,113,971,137"/>
+<area shape="rect" id="node6" href="./RouteNotFoundException.html" title="&lt;TABLE&gt;" alt="" coords="789,101,981,149"/>
+<area shape="rect" id="node7_6" href="./TemplateException.html" title="org.qiweb.api.exceptions.TemplateException" alt="" coords="1017,113,1146,137"/>
+<area shape="rect" id="node7" href="./TemplateException.html" title="&lt;TABLE&gt;" alt="" coords="1006,101,1157,149"/>
+</map>

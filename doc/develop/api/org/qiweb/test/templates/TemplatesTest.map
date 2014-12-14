@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../../api/templates/Templates.html" title="org.qiweb.api.templates.Templates" alt="" coords="25,217,109,257"/>
+<area shape="rect" id="node1" href="../../api/templates/Templates.html" title="&lt;TABLE&gt;" alt="" coords="15,212,120,263"/>
+<area shape="rect" id="node2_1" href="../QiWebTest.html" title="org.qiweb.test.QiWebTest" alt="" coords="26,17,109,41"/>
+<area shape="rect" id="node2" href="../QiWebTest.html" title="&lt;TABLE&gt;" alt="" coords="15,5,119,53"/>
+<area shape="rect" id="node3_2" href="./TemplatesTest.html" title="org.qiweb.test.templates.TemplatesTest" alt="" coords="16,115,119,139"/>
+<area shape="rect" id="node3" href="./TemplatesTest.html" title="&lt;TABLE&gt;" alt="" coords="5,103,129,151"/>
+</map>

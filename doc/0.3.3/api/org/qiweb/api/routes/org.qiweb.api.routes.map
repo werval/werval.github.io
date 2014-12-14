@@ -1,0 +1,30 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ControllerCallRecorder.html" title="org.qiweb.api.routes.ControllerCallRecorder" alt="" coords="16,11,271,51"/>
+<area shape="rect" id="node1" href="./ControllerCallRecorder.html" title="&lt;TABLE&gt;" alt="" coords="5,5,281,56"/>
+<area shape="rect" id="node2_1" href="./ControllerParams.html" title="org.qiweb.api.routes.ControllerParams" alt="" coords="316,19,437,43"/>
+<area shape="rect" id="node2" href="./ControllerParams.html" title="&lt;TABLE&gt;" alt="" coords="305,7,448,55"/>
+<area shape="rect" id="node3_2" href="./ControllerParams.ParamValue.html" title="org.qiweb.api.routes.ControllerParams.ParamValue" alt="" coords="483,11,590,51"/>
+<area shape="rect" id="node3" href="./ControllerParams.ParamValue.html" title="&lt;TABLE&gt;" alt="" coords="473,5,601,56"/>
+<area shape="rect" id="node4_3" href="./ControllerParams.Param.html" title="org.qiweb.api.routes.ControllerParams.Param" alt="" coords="636,19,693,43"/>
+<area shape="rect" id="node4" href="./ControllerParams.Param.html" title="&lt;TABLE&gt;" alt="" coords="625,7,704,55"/>
+<area shape="rect" id="node5_4" href="./ParameterBinder.html" title="org.qiweb.api.routes.ParameterBinder" alt="" coords="739,11,881,51"/>
+<area shape="rect" id="node5" href="./ParameterBinder.html" title="&lt;TABLE&gt;" alt="" coords="729,5,891,56"/>
+<area shape="rect" id="node6_5" href="./ParameterBinders.html" title="org.qiweb.api.routes.ParameterBinders" alt="" coords="926,11,1051,51"/>
+<area shape="rect" id="node6" href="./ParameterBinders.html" title="&lt;TABLE&gt;" alt="" coords="915,5,1062,56"/>
+<area shape="rect" id="node7_6" href="./ReverseOutcome.html" title="org.qiweb.api.routes.ReverseOutcome" alt="" coords="1097,19,1219,43"/>
+<area shape="rect" id="node7" href="./ReverseOutcome.html" title="&lt;TABLE&gt;" alt="" coords="1087,7,1229,55"/>
+<area shape="rect" id="node8_7" href="./ReverseRoute.html" title="org.qiweb.api.routes.ReverseRoute" alt="" coords="1264,11,1367,51"/>
+<area shape="rect" id="node8" href="./ReverseRoute.html" title="&lt;TABLE&gt;" alt="" coords="1253,5,1377,56"/>
+<area shape="rect" id="node9_8" href="./ReverseRoutes.html" title="org.qiweb.api.routes.ReverseRoutes" alt="" coords="1413,11,1522,51"/>
+<area shape="rect" id="node9" href="./ReverseRoutes.html" title="&lt;TABLE&gt;" alt="" coords="1402,5,1533,56"/>
+<area shape="rect" id="node10_9" href="./Route.html" title="org.qiweb.api.routes.Route" alt="" coords="1568,11,1652,51"/>
+<area shape="rect" id="node10" href="./Route.html" title="&lt;TABLE&gt;" alt="" coords="1557,5,1663,56"/>
+<area shape="rect" id="node11_10" href="./RouteBuilder.html" title="org.qiweb.api.routes.RouteBuilder" alt="" coords="1697,11,1792,51"/>
+<area shape="rect" id="node11" href="./RouteBuilder.html" title="&lt;TABLE&gt;" alt="" coords="1687,5,1803,56"/>
+<area shape="rect" id="node12_11" href="./RouteBuilder.RouteDeclaration.html" title="org.qiweb.api.routes.RouteBuilder.RouteDeclaration" alt="" coords="1838,11,1958,51"/>
+<area shape="rect" id="node12" href="./RouteBuilder.RouteDeclaration.html" title="&lt;TABLE&gt;" alt="" coords="1827,5,1969,56"/>
+<area shape="rect" id="node13_12" href="./RouteBuilder.RouteParser.html" title="org.qiweb.api.routes.RouteBuilder.RouteParser" alt="" coords="2004,11,2096,51"/>
+<area shape="rect" id="node13" href="./RouteBuilder.RouteParser.html" title="&lt;TABLE&gt;" alt="" coords="1993,5,2107,56"/>
+<area shape="rect" id="node14_13" href="./Routes.html" title="org.qiweb.api.routes.Routes" alt="" coords="2141,11,2225,51"/>
+<area shape="rect" id="node14" href="./Routes.html" title="&lt;TABLE&gt;" alt="" coords="2131,5,2236,56"/>
+</map>

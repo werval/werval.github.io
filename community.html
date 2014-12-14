@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Community</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content=""> 
+  <meta name="author" content=""> 
+  <meta name="keywords" content=""> 
+  <meta name="generator" content="Werval"> 
+  <!-- Le styles --> 
+  <!-- See https://github.com/nerk/asciidoctor-bs-themes --> 
+  <link href="doc/develop/css/bootstrap_lumen.css" rel="stylesheet"> 
+  <link href="doc/develop/css/base.css" rel="stylesheet"> 
+  <link href="doc/develop/css/io.werval.doc.css" rel="stylesheet"> 
+  <link href="doc/develop/css/prettify.css" rel="stylesheet"> 
+  <link href="css/io.werval.website.css" rel="stylesheet"> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+  <!--[if lt IE 9]>
+      <script src="doc/develop/js/html5shiv.min.js"></script>
+    <![endif]--> 
+  <!-- Fav and touch icons --> 
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">--> 
+  <link rel="shortcut icon" href="favicon.ico">  
+  <!-- Async Analytics --> 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55982374-1', 'auto');
+      ga('send', 'pageview');
+    </script> 
+ </head> 
+ <body onload="prettyPrint()" class="article toc2 toc-right"> 
+  <div id="wrap"> 
+   <!-- Fixed navbar --> 
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="index.html">Werval</a> 
+     </div> 
+     <div class="navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li><a href="news.html">News</a></li> 
+       <li><a href="doc/index.html">Documentation</a></li> 
+       <li><a href="resources/skeletons.html">Skeletons</a></li> 
+       <li><a href="resources/samples.html">Samples</a></li> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="community.html">Community</a></li> 
+         <li><a href="faq.html">F.A.Q</a></li> 
+         <li><a href="security.html">Security</a></li> 
+         <li><a href="downloads.html">Downloads</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div>
+     <!--/.nav-collapse --> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <div class="page-header"> 
+     <h1> Community </h1> 
+    </div> 
+    <p></p>
+    <div id="preamble"> 
+     <div class="sectionbody"> 
+      <div id="toc" class="toc2"> 
+       <div id="toctitle" class="title">
+        Get involved
+       </div> 
+       <ul class="sectlevel1"> 
+        <li><a href="#join_the_discussion">Join the discussion</a></li> 
+        <li><a href="#report_bugs">Report bugs</a></li> 
+        <li><a href="#request_features_enhancements">Request features &amp; enhancements</a></li> 
+        <li><a href="#propose_patches">Propose patches</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#contribution_workflow">Contribution workflow</a></li> 
+          <li><a href="#contribute_documentation">Contribute documentation</a></li> 
+         </ul> </li> 
+        <li><a href="#create_modules">Create modules</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="join_the_discussion"><a class="anchor" href="#join_the_discussion"></a>Join the discussion</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>To discuss with the Werval community, post questions and get answers, join us at <a href="http://freenode.net/">freenode</a>, IRC channel <code>##werval</code>.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>If you found a bug, want to request a new feature or enhancement or would like to contribute to Werval, keep reading.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="report_bugs"><a class="anchor" href="#report_bugs"></a>Report bugs</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>If you encounter an issue, please report it by creating a <a href="https://github.com/werval/werval/issues/new">new issue</a> with as much detail as you can get.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Before doing so, please search for existing issues and make sure your bug hasn’t been reported yet.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Remember that you can paste programs output, error traces etc.. into the issue and attach log files, screenshots to it. Anything that could allow us to reproduce the bug in order to fix it is welcome!</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>If you happen to have some coding skills but don’t want to dive into Werval source code, a test-case that reproduce the bug would be awesome.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="request_features_enhancements"><a class="anchor" href="#request_features_enhancements"></a>Request features &amp; enhancements</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Feature or enhancement requests are more than welcome. They are as important as bugs as they give the opportunity to discuss what’s in, what’s missing etc…</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Simply report them by creating a <a href="https://github.com/werval/werval/issues/new">new issue</a> describing the feature or enhancement you have in mind.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="propose_patches"><a class="anchor" href="#propose_patches"></a>Propose patches</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Werval is written using the Java language (but not limited to it, see the F.A.Q). The source code is managed using <code>git</code>. You’ll need to use theses two technologies for contributing new code to Werval.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Of course, the first step is to <a href="doc/current/guides.html#build_werval_from_sources">Build Werval from sources</a>.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Once you’re confident the build is working on your computer, you’ll want a convy IDE supporting Java 8. Werval is built using Gradle that is supported by many IDEs, see the <a href="http://www.gradle.org/tooling">Gradle Tooling</a> page at <code>gradle.org</code>.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>We recommand <a href="https://netbeans.org/">Netbeans</a> but <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a> or <a href="https://eclipse.org/">Eclipse</a> will do. If you are adventurous, any text editor can be used.</p> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="contribution_workflow"><a class="anchor" href="#contribution_workflow"></a>Contribution workflow</h3> 
+       <div class="paragraph"> 
+        <p>We generally uses a Commit-Then-Review policy on most changes. This allows a reasonable high velocity of development.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Courtesy of Vincent Driessen, we borrowed the <a href="http://nvie.com/posts/a-successful-git-branching-model/">git-flow</a> branching model.</p> 
+       </div> 
+       <div class="imageblock" style="text-align: center"> 
+        <div class="content"> 
+         <img src="images/git-flow-model.png" alt="Git Flow"> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>It looks more complicated than it is. Here are the guidelines;</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>Never commit to the <code>master</code> branch while developing!!</p> </li> 
+         <li> <p>The <code>develop</code> branch is the equivalent of trunk in subversion.</p> </li> 
+         <li> <p>Any changes that are not trivial, start a feature branch.</p> </li> 
+         <li> <p>The following names are reserved for not feature branches; <code>master</code>, <code>develop</code>, <code>hotfix/*</code>, <code>release/*</code></p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Day-to-day development revolves around the <code>develop</code> branch and it is this branch that you typically clone from our repository if you intend to contribute to Werval itself. If you create a new feature, or make some larger piece of refactoring, then please create a <em>feature branch</em> (see article for details).</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The <code>release/*</code> and <code>hotfix/*</code> branches are for release management only, and doesn’t affect most contributors from a commit perspective.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>For convenience you should install and use the <a href="https://github.com/nvie/gitflow">git-flow git extension</a> that implement this branching model by adding git commands. You may find the <a href="http://danielkummer.github.io/git-flow-cheatsheet/">git-flow cheatsheet</a> helpful too. It is available in several languages.</p> 
+       </div> 
+       <div class="admonitionblock note"> 
+        <table> 
+         <tbody>
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+             Note
+            </div> </td> 
+           <td class="content"> 
+            <div class="title">
+             Gitlab Merge Requests
+            </div> 
+            <div class="paragraph"> 
+             <p>We also accept contributions as Gitlab Merge Requests.</p> 
+            </div> 
+            <div class="paragraph"> 
+             <p>Merge requests let you tell others about changes you’ve pushed to a Gitlab repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.</p> 
+            </div> 
+            <div class="paragraph"> 
+             <p>See the <a href="https://scm.codeartisans.org/help/workflow">Gitlab Help</a> about this. Choose the workflow you’re confy with.</p> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+        </table> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="contribute_documentation"><a class="anchor" href="#contribute_documentation"></a>Contribute documentation</h3> 
+       <div class="paragraph"> 
+        <p>If you want to contribute to the documentation effort, well that’s really good news!</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The Werval documentation lies alongside the source code. It is written using the <code>AsciiDoc</code> format and processed using <code>AsciiDoctor</code>, here is the <a href="http://asciidoctor.org/docs/user-manual/">User Manual</a>. All you need is a text editor.</p> 
+       </div> 
+       <div class="admonitionblock note"> 
+        <table> 
+         <tbody>
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+             Note
+            </div> </td> 
+           <td class="content"> Documentation contribution workflow is the very same as for code contributions, see above. </td> 
+          </tr> 
+         </tbody>
+        </table> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The Werval build system generates a HTML version of the documentation. You should start by building Werval from the source, see above.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Once that the build pass on your computer, see the <a href="/doc/current/guides.html#werval_documentation">Werval Documentation</a> guide.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="create_modules"><a class="anchor" href="#create_modules"></a>Create modules</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>See the <a href="/doc/current/guides.html#write_modules">Writing Werval Modules</a> guide.</p> 
+      </div> 
+     </div> 
+    </div>
+    <p></p> 
+   </div> 
+   <div id="push"></div> 
+  </div> 
+  <div id="footer"> 
+   <p class="muted credit">© 2014 | The Werval Community</p> 
+   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+  </div>  
+  <!-- Le javascript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="doc/develop/js/jquery-1.11.1.min.js"></script> 
+  <script src="doc/develop/js/bootstrap.min.js"></script> 
+  <script src="doc/develop/js/prettify.js"></script> 
+  <script src="doc/develop/js/io.werval.doc.js"></script> 
+  <script src="js/io.werval.website.js"></script>  
+ </body>
+</html>

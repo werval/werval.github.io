@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Plugin.html" title="org.qiweb.api.Plugin" alt="" coords="113,11,205,51"/>
+<area shape="rect" id="node1" href="./Plugin.html" title="&lt;TABLE&gt;" alt="" coords="102,5,215,56"/>
+<area shape="rect" id="node2_1" href="./Plugin.Void.html" title="org.qiweb.api.Plugin.Void" alt="" coords="19,116,63,140"/>
+<area shape="rect" id="node2" href="./Plugin.Void.html" title="&lt;TABLE&gt;" alt="" coords="5,104,77,152"/>
+<area shape="rect" id="node3_2" href="./cache/CachePlugin.html" title="org.qiweb.api.cache.CachePlugin" alt="" coords="112,116,205,140"/>
+<area shape="rect" id="node3" href="./cache/CachePlugin.html" title="&lt;TABLE&gt;" alt="" coords="101,104,216,152"/>
+<area shape="rect" id="node4_3" href="./templates/TemplatesPlugin.html" title="org.qiweb.api.templates.TemplatesPlugin" alt="" coords="251,116,365,140"/>
+<area shape="rect" id="node4" href="./templates/TemplatesPlugin.html" title="&lt;TABLE&gt;" alt="" coords="240,104,376,152"/>
+</map>

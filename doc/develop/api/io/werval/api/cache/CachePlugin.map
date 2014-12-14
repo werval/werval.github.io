@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../Plugin.html" title="io.werval.api.Plugin" alt="" coords="85,11,177,51"/>
+<area shape="rect" id="node1" href="../Plugin.html" title="&lt;TABLE&gt;" alt="" coords="75,5,188,56"/>
+<area shape="rect" id="node3_1" href="./CachePlugin.html" title="io.werval.api.cache.CachePlugin" alt="" coords="85,116,178,140"/>
+<area shape="rect" id="node3" href="./CachePlugin.html" title="&lt;TABLE&gt;" alt="" coords="74,104,189,152"/>
+<area shape="rect" id="node2_2" href="./Cache.html" title="io.werval.api.cache.Cache" alt="" coords="16,205,100,245"/>
+<area shape="rect" id="node2" href="./Cache.html" title="&lt;TABLE&gt;" alt="" coords="5,200,111,251"/>
+<area shape="rect" id="node4_3" href="../../spi/cache/MapCachePlugin.html" title="io.werval.spi.cache.MapCachePlugin" alt="" coords="145,213,264,237"/>
+<area shape="rect" id="node4" href="../../spi/cache/MapCachePlugin.html" title="&lt;TABLE&gt;" alt="" coords="135,201,275,249"/>
+</map>

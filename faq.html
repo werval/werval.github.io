@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Frequenty Asked Questions about Werval</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content=""> 
+  <meta name="author" content=""> 
+  <meta name="keywords" content=""> 
+  <meta name="generator" content="Werval"> 
+  <!-- Le styles --> 
+  <!-- See https://github.com/nerk/asciidoctor-bs-themes --> 
+  <link href="doc/develop/css/bootstrap_lumen.css" rel="stylesheet"> 
+  <link href="doc/develop/css/base.css" rel="stylesheet"> 
+  <link href="doc/develop/css/io.werval.doc.css" rel="stylesheet"> 
+  <link href="doc/develop/css/prettify.css" rel="stylesheet"> 
+  <link href="css/io.werval.website.css" rel="stylesheet"> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+  <!--[if lt IE 9]>
+      <script src="doc/develop/js/html5shiv.min.js"></script>
+    <![endif]--> 
+  <!-- Fav and touch icons --> 
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">--> 
+  <link rel="shortcut icon" href="favicon.ico">  
+  <!-- Async Analytics --> 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55982374-1', 'auto');
+      ga('send', 'pageview');
+    </script> 
+ </head> 
+ <body onload="prettyPrint()" class="article toc2 toc-right"> 
+  <div id="wrap"> 
+   <!-- Fixed navbar --> 
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="index.html">Werval</a> 
+     </div> 
+     <div class="navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li><a href="news.html">News</a></li> 
+       <li><a href="doc/index.html">Documentation</a></li> 
+       <li><a href="resources/skeletons.html">Skeletons</a></li> 
+       <li><a href="resources/samples.html">Samples</a></li> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="community.html">Community</a></li> 
+         <li><a href="faq.html">F.A.Q</a></li> 
+         <li><a href="security.html">Security</a></li> 
+         <li><a href="downloads.html">Downloads</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div>
+     <!--/.nav-collapse --> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <div class="page-header"> 
+     <h1> Frequenty Asked Questions about Werval </h1> 
+    </div> 
+    <p></p>
+    <div id="preamble"> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>New FAQs should be submitted as a new <a href="https://github.com/werval/werval/issues/new">GitLab Issue</a>, once accepted it will be appended to the bottom of this document.</p> 
+      </div> 
+      <div id="toc" class="toc2"> 
+       <div id="toctitle" class="title">
+        Questions
+       </div> 
+       <ul class="sectlevel1"> 
+        <li><a href="#how_is_werval_pronounced">How is "Werval" pronounced?</a></li> 
+        <li><a href="#what_the_heck_is_this_name">What the heck is this name?</a></li> 
+        <li><a href="#why_choose_java_as_implementation_language">Why choose Java as implementation language?</a></li> 
+        <li><a href="#can_i_write_my_application_code_in_put_your_language_here">Can I write my application code in {put.your.language.here}?</a></li> 
+        <li><a href="#is_it_possible_to_embedd_the_werval_runtime">Is it possible to embedd the Werval Runtime?</a></li> 
+        <li><a href="#i_found_a_bug_what_to_do">I found a bug! What to do?</a></li> 
+        <li><a href="#can_i_use_werval_in_my_commercial_applications_under_a_closed_source_proprietary_license">Can I use Werval in my commercial applications under a closed-source, proprietary license?</a></li> 
+        <li><a href="#what_to_do_when_i_can_see_no_logs_and_get_a_weird_message_from_slf4j">What to do when I can see no logs and get a weird message from SLF4J?</a></li> 
+        <li><a href="#can_i_build_werval_application_using_put_your_build_system_here">Can I build Werval Application using {put.your.build.system.here}?</a></li> 
+        <li><a href="#what_are_the_main_sources_of_inspiration_of_werval">What are the main sources of inspiration of Werval?</a></li> 
+        <li><a href="#are_websockets_supported">Are WebSockets supported?</a></li> 
+        <li><a href="#is_spdy_http_2_0_supported">Is SPDY/HTTP 2.0 supported?</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="how_is_werval_pronounced"><a class="anchor" href="#how_is_werval_pronounced"></a>How is "Werval" pronounced?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Werval is pronouced "werval".</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="what_the_heck_is_this_name"><a class="anchor" href="#what_the_heck_is_this_name"></a>What the heck is this name?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Werval is the name of Werval.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Read it many times.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>…</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>What was the question already?</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="why_choose_java_as_implementation_language"><a class="anchor" href="#why_choose_java_as_implementation_language"></a>Why choose Java as implementation language?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>First, the Java programming language is widely used and well known by a lot of developpers. It emerged in the early 90s, that is more than 20 years ago. So it is old enough to be considered as mature. With an eventful history, it keeps moving.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Second, the main Java running platform, a.k.a the JVM, is quite ubiquitous on the x86 architecture, supported on almost every operating system and cloud provider. It is now open-source and already available to ARM architectures since Java 8.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Third, Java:</p> 
+      </div> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>has excellent developer tooling (IDEs with automated complex refactorings, continuous integration, static code analysis etc…) ;</p> </li> 
+        <li> <p>comes with a large choice of 3rd party libraries ;</p> </li> 
+        <li> <p>is hugely specified and documented.</p> </li> 
+       </ul> 
+      </div> 
+      <div class="paragraph"> 
+       <p>And last but not least, the JVM is not tight to the Java programming language as it can run code written in <a href="https://en.wikipedia.org/wiki/List_of_JVM_languages">over 50 languages</a>.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="can_i_write_my_application_code_in_put_your_language_here"><a class="anchor" href="#can_i_write_my_application_code_in_put_your_language_here"></a>Can I write my application code in {put.your.language.here}?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>As long as it runs on the JVM, yes!</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>There are some guides for specific languages but the idea is pretty simple and applicable to any. The Global object allows you take control of controllers and filters instanciation and invocation. You just have to write some glue code. Ah, I see your Global object is already in Groovy, cool.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Development mode should work in most situations provided your build system is set up correctly.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="is_it_possible_to_embedd_the_werval_runtime"><a class="anchor" href="#is_it_possible_to_embedd_the_werval_runtime"></a>Is it possible to embedd the Werval Runtime?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>The framework provide a default <code>main</code> class/method for you to reuse but you can also write yours if you need it. This way of running a Werval Application can be seen as embedding Werval.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="i_found_a_bug_what_to_do"><a class="anchor" href="#i_found_a_bug_what_to_do"></a>I found a bug! What to do?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Simply create a <a href="https://github.com/werval/werval/issues/new">new issue</a>. Please provide accurate and useful information when doing so.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>If you don’t know how to properly report a bug, read <a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html">How to Report Bugs Effectively</a> by Simon Tatham first.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="can_i_use_werval_in_my_commercial_applications_under_a_closed_source_proprietary_license"><a class="anchor" href="#can_i_use_werval_in_my_commercial_applications_under_a_closed_source_proprietary_license"></a>Can I use Werval in my commercial applications under a closed-source, proprietary license?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Yes. The <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a> is very business-friendly. Please observe the obligations on your part, especially regarding notices, trademarks and patent licensing terms.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="what_to_do_when_i_can_see_no_logs_and_get_a_weird_message_from_slf4j"><a class="anchor" href="#what_to_do_when_i_can_see_no_logs_and_get_a_weird_message_from_slf4j"></a>What to do when I can see no logs and get a weird message from SLF4J?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Werval use the <a href="http://www.slf4j.org">SLF4J</a> API (Simple Logging Facade for Java) but you have to choose what SLF4J implementation to use. We strongly recommend <a href="http://logback.qos.ch/">Logback</a>.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>If you don’t have any SLF4J implementation in your application classpath, you’ll get the following warning:</p> 
+      </div> 
+      <div class="literalblock"> 
+       <div class="content"> 
+        <pre>SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.</pre> 
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>From there you simply add Logback (or any SLF4J implementation) to your dependencies and configure it the way you want. And voila!</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="can_i_build_werval_application_using_put_your_build_system_here"><a class="anchor" href="#can_i_build_werval_application_using_put_your_build_system_here"></a>Can I build Werval Application using {put.your.build.system.here}?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Sure, Werval is build system agnostic. Integration with Gradle and Maven are provided, if you happen to use another build system you’ll have to write some code but it’s definitely possible.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>See the <a href="current/getting-started.html">Getting Started</a> page.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="what_are_the_main_sources_of_inspiration_of_werval"><a class="anchor" href="#what_are_the_main_sources_of_inspiration_of_werval"></a>What are the main sources of inspiration of Werval?</h2> 
+     <div class="sectionbody"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p><a href="https://www.playframework.com/">Play Framework</a></p> </li> 
+        <li> <p><a href="http://qi4j.org/">Qi4j</a></p> </li> 
+        <li> <p>A lot of other http/web frameworks (Rails, Django, Grails etc…)</p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="are_websockets_supported"><a class="anchor" href="#are_websockets_supported"></a>Are WebSockets supported?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Not yet, see <a href="https://github.com/werval/werval/issues/30">#30</a></p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="is_spdy_http_2_0_supported"><a class="anchor" href="#is_spdy_http_2_0_supported"></a>Is SPDY/HTTP 2.0 supported?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Not yet.</p> 
+      </div> 
+     </div> 
+    </div>
+    <p></p> 
+   </div> 
+   <div id="push"></div> 
+  </div> 
+  <div id="footer"> 
+   <p class="muted credit">© 2014 | The Werval Community</p> 
+   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+  </div>  
+  <!-- Le javascript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="doc/develop/js/jquery-1.11.1.min.js"></script> 
+  <script src="doc/develop/js/bootstrap.min.js"></script> 
+  <script src="doc/develop/js/prettify.js"></script> 
+  <script src="doc/develop/js/io.werval.doc.js"></script> 
+  <script src="js/io.werval.website.js"></script>  
+ </body>
+</html>

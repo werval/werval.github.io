@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Headers.html" title="io.werval.api.http.Headers" alt="" coords="145,109,229,149"/>
+<area shape="rect" id="node1" href="./Headers.html" title="&lt;TABLE&gt;" alt="" coords="135,104,240,155"/>
+<area shape="rect" id="node2_1" href="./Headers.Names.html" title="io.werval.api.http.Headers.Names" alt="" coords="16,208,100,248"/>
+<area shape="rect" id="node2" href="./Headers.Names.html" title="&lt;TABLE&gt;" alt="" coords="5,203,111,253"/>
+<area shape="rect" id="node3_2" href="./Headers.Values.html" title="io.werval.api.http.Headers.Values" alt="" coords="145,208,229,248"/>
+<area shape="rect" id="node3" href="./Headers.Values.html" title="&lt;TABLE&gt;" alt="" coords="135,203,240,253"/>
+<area shape="rect" id="node4_3" href="./MutableHeaders.html" title="io.werval.api.http.MutableHeaders" alt="" coords="275,208,390,248"/>
+<area shape="rect" id="node4" href="./MutableHeaders.html" title="&lt;TABLE&gt;" alt="" coords="265,203,401,253"/>
+<area shape="rect" id="node5_4" href="./RequestHeader.html" title="io.werval.api.http.RequestHeader" alt="" coords="132,11,243,51"/>
+<area shape="rect" id="node5" href="./RequestHeader.html" title="&lt;TABLE&gt;" alt="" coords="121,5,253,56"/>
+</map>

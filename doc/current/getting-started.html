@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Get started using Werval</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Werval Documentation"> 
+  <meta name="keywords" content="werval, documentation"> 
+  <!-- Le styles --> 
+  <!-- See https://github.com/nerk/asciidoctor-bs-themes --> 
+  <link href="css/bootstrap_lumen.css" rel="stylesheet"> 
+  <link href="css/base.css" rel="stylesheet"> 
+  <link href="css/io.werval.doc.css" rel="stylesheet"> 
+  <link href="css/prettify.css" rel="stylesheet"> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->  
+  <!-- Async Analytics --> 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55982374-1', 'auto');
+      ga('send', 'pageview');
+    </script> 
+ </head> 
+ <body onload="prettyPrint()" class="article toc2 toc-right"> 
+  <div id="wrap"> 
+   <!-- Fixed navbar --> 
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="index.html">Werval 0</a> 
+     </div> 
+     <div class="navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting started <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="get-started-gradle.html">Get started using Gradle</a></li> 
+         <li><a href="get-started-maven.html">Get started using Maven</a></li> 
+         <li class="divider"></li> 
+         <li><a href="getting-started.html">What are Gradle &amp; Maven?</a></li> 
+        </ul> </li> 
+       <li><a href="guides.html">Guides</a></li> 
+       <li><a href="manual.html">Manual</a></li> 
+       <li><a href="modules/index.html">Modules</a></li> 
+       <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
+      </ul> 
+      <ul class="nav navbar-nav navbar-right"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0)<span class="caret"></span></a> 
+        <ul class="dropdown-menu" role="menu"> 
+         <li><a href="/doc/current/index.html">Current Version (0)</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/doc/develop/index.html">Development Version</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/">Werval Home</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+     <!--/.nav-collapse --> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <ol class="breadcrumb"> 
+     <li><a href="index.html">Documentation</a></li> 
+     <li class="active">Get started using Werval</li> 
+    </ol> 
+    <div class="page-header"> 
+     <h1>Get started using Werval</h1> 
+    </div> 
+    <p></p> 
+    <div id="preamble"> 
+     <div class="sectionbody"> 
+      <div id="toc" class="toc2"> 
+       <div id="toctitle" class="title">
+         Getting Started 
+       </div> 
+       <ul class="sectlevel1"> 
+        <li><a href="#gradle_maven_huh">Gradle, Maven, huh!?</a></li> 
+        <li><a href="#choose_your_side_of_the_force">Choose your side of the force</a></li> 
+        <li><a href="#our_advice">Our advice</a></li> 
+        <li><a href="#put_your_build_system_here">{put.your.build.system.here}</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="gradle_maven_huh"><a class="anchor" href="#gradle_maven_huh"></a>Gradle, Maven, huh!?</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p><a href="http://gradle.org/">Gradle</a> and <a href="http://maven.apache.org/">Maven</a> are both tools you use to build your code. In their family you’ll perhaps recognize one of make, cmake, slang, scons, rake, sbt, grunt, and the list goes on ….</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Werval support both of Gradle and Maven hence the Getting Started guide being available for each one of them.</p> 
+      </div> 
+      <div class="admonitionblock tip"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Tip 
+           </div> </td> 
+          <td class="content"> 
+           <div class="title">
+             New to Java? 
+           </div> 
+           <div class="paragraph"> 
+            <p>See theses two presentations about Java build tools:</p> 
+           </div> 
+           <div class="ulist"> 
+            <ul> 
+             <li> <p><a href="http://pages.zeroturnaround.com/rs/zeroturnaround/images/java-build-tools-part-1.pdf">An Introductory Crash Course to Getting Started with Maven Gradle and Ant + Ivy</a>.</p> </li> 
+             <li> <p><a href="http://pages.zeroturnaround.com/rs/zeroturnaround/images/java-build-tools-part-2.pdf">A Decision Maker’s Comparison of Maven Gradle and Ant + Ivy</a>.</p> </li> 
+            </ul> 
+           </div> </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="choose_your_side_of_the_force"><a class="anchor" href="#choose_your_side_of_the_force"></a>Choose your side of the force</h2> 
+     <div class="sectionbody"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p><a href="get-started-gradle.html">Get started using Gradle</a></p> </li> 
+        <li> <p><a href="get-started-maven.html">Get started using Maven</a></p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="our_advice"><a class="anchor" href="#our_advice"></a>Our advice</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p><em>TL;DR</em> We recommend using Gradle.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Everything Werval is automated using Gradle, from the SDK build to the baking and publication of a website embedding versioned documentation for past, current and development releases. The only exception is the Maven support that is built using, well, Maven.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>We love Gradle. Mainly for its DSL expressiveness and extensibility. But, Maven is very commonly used and changing the build tool used in an organisation can be challenging. We implement new features in Gradle support and port them to Maven support afterwards, if even possible. In other words, work on the Werval Maven support is motivated by ease of adoption only.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>So, do we need to say more? Gradle is where our build love goes.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Choose your side of the force.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="put_your_build_system_here"><a class="anchor" href="#put_your_build_system_here"></a>{put.your.build.system.here}</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>If you prefer another build tool or even want to write shell scripts on your own, its still possible to use Werval.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>A Werval application is a plain old java program (main class) so it’s a no brainer to run it in production mode. Tests of Werval applications are simple JUnit tests, again, no brainer to run.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Obvisouly, the classpath should be set up properly with regard to your application dependencies. Finally, to make Werval development mode work in another build tool you’ll probably need to write some code. Have a look at the Gradle and Maven support source code for insights in theses matter.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>If you get to something reusable, please contribute it. We are very interested in such a contribution.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <p></p> 
+   </div> 
+   <div id="push"></div> 
+  </div> 
+  <div id="footer"> 
+   <p class="muted credit">© 2014 | Werval 0 | The Werval Community</p> 
+   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+  </div> 
+  <!-- Le javascript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="js/jquery-1.11.1.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/prettify.js"></script> 
+  <script src="js/io.werval.doc.js"></script>  
+ </body>
+</html>

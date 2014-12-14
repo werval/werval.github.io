@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Events.html" title="org.qiweb.api.events.Events" alt="" coords="150,11,234,51"/>
+<area shape="rect" id="node1" href="./Events.html" title="&lt;TABLE&gt;" alt="" coords="139,5,245,56"/>
+<area shape="rect" id="node2_1" href="./Registration.html" title="org.qiweb.api.events.Registration" alt="" coords="16,123,104,163"/>
+<area shape="rect" id="node2" href="./Registration.html" title="&lt;TABLE&gt;" alt="" coords="5,117,115,168"/>
+<area shape="rect" id="node3_2" href="../../spi/events/EventsSPI.html" title="org.qiweb.spi.events.EventsSPI" alt="" coords="150,123,234,163"/>
+<area shape="rect" id="node3" href="../../spi/events/EventsSPI.html" title="&lt;TABLE&gt;" alt="" coords="139,117,245,168"/>
+<area shape="rect" id="node4_3" href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html" title="java.util.function.Consumer" alt="" coords="279,123,382,163"/>
+<area shape="rect" id="node4" href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html" title="&lt;TABLE&gt;" alt="" coords="269,117,393,168"/>
+</map>

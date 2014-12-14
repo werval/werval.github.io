@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Filter.html" title="org.qiweb.api.filters.Filter" alt="" coords="527,11,611,51"/>
+<area shape="rect" id="node1" href="./Filter.html" title="&lt;TABLE&gt;" alt="" coords="517,5,622,56"/>
+<area shape="rect" id="node2_1" href="../../filters/AcceptContentTypes.Filter.html" title="org.qiweb.filters.AcceptContentTypes.Filter" alt="" coords="18,116,65,140"/>
+<area shape="rect" id="node2" href="../../filters/AcceptContentTypes.Filter.html" title="&lt;TABLE&gt;" alt="" coords="5,104,77,152"/>
+<area shape="rect" id="node3_2" href="../../filters/Cached.Filter.html" title="org.qiweb.filters.Cached.Filter" alt="" coords="114,116,161,140"/>
+<area shape="rect" id="node3" href="../../filters/Cached.Filter.html" title="&lt;TABLE&gt;" alt="" coords="101,104,173,152"/>
+<area shape="rect" id="node4_3" href="../../filters/ContentSecurityPolicy.Filter.html" title="org.qiweb.filters.ContentSecurityPolicy.Filter" alt="" coords="210,116,257,140"/>
+<area shape="rect" id="node4" href="../../filters/ContentSecurityPolicy.Filter.html" title="&lt;TABLE&gt;" alt="" coords="197,104,269,152"/>
+<area shape="rect" id="node5_4" href="../../filters/DoNotTrack.Filter.html" title="org.qiweb.filters.DoNotTrack.Filter" alt="" coords="306,116,353,140"/>
+<area shape="rect" id="node5" href="../../filters/DoNotTrack.Filter.html" title="&lt;TABLE&gt;" alt="" coords="293,104,365,152"/>
+<area shape="rect" id="node6_5" href="../../filters/HSTS.Filter.html" title="org.qiweb.filters.HSTS.Filter" alt="" coords="402,116,449,140"/>
+<area shape="rect" id="node6" href="../../filters/HSTS.Filter.html" title="&lt;TABLE&gt;" alt="" coords="389,104,461,152"/>
+<area shape="rect" id="node7_6" href="../../filters/LogIfSlow.Filter.html" title="org.qiweb.filters.LogIfSlow.Filter" alt="" coords="498,116,545,140"/>
+<area shape="rect" id="node7" href="../../filters/LogIfSlow.Filter.html" title="&lt;TABLE&gt;" alt="" coords="485,104,557,152"/>
+<area shape="rect" id="node8_7" href="../../filters/NeverCached.Filter.html" title="org.qiweb.filters.NeverCached.Filter" alt="" coords="594,116,641,140"/>
+<area shape="rect" id="node8" href="../../filters/NeverCached.Filter.html" title="&lt;TABLE&gt;" alt="" coords="581,104,653,152"/>
+<area shape="rect" id="node9_8" href="../../filters/RemoveHeaders.Filter.html" title="org.qiweb.filters.RemoveHeaders.Filter" alt="" coords="690,116,737,140"/>
+<area shape="rect" id="node9" href="../../filters/RemoveHeaders.Filter.html" title="&lt;TABLE&gt;" alt="" coords="677,104,749,152"/>
+<area shape="rect" id="node10_9" href="../../filters/SetHeader.Filter.html" title="org.qiweb.filters.SetHeader.Filter" alt="" coords="786,116,833,140"/>
+<area shape="rect" id="node10" href="../../filters/SetHeader.Filter.html" title="&lt;TABLE&gt;" alt="" coords="773,104,845,152"/>
+<area shape="rect" id="node11_10" href="../../filters/XContentTypeOptions.Filter.html" title="org.qiweb.filters.XContentTypeOptions.Filter" alt="" coords="882,116,929,140"/>
+<area shape="rect" id="node11" href="../../filters/XContentTypeOptions.Filter.html" title="&lt;TABLE&gt;" alt="" coords="869,104,941,152"/>
+<area shape="rect" id="node12_11" href="../../filters/XFrameOptions.Filter.html" title="org.qiweb.filters.XFrameOptions.Filter" alt="" coords="978,116,1025,140"/>
+<area shape="rect" id="node12" href="../../filters/XFrameOptions.Filter.html" title="&lt;TABLE&gt;" alt="" coords="965,104,1037,152"/>
+<area shape="rect" id="node13_12" href="../../filters/XXSSProtection.Filter.html" title="org.qiweb.filters.XXSSProtection.Filter" alt="" coords="1074,116,1121,140"/>
+<area shape="rect" id="node13" href="../../filters/XXSSProtection.Filter.html" title="&lt;TABLE&gt;" alt="" coords="1061,104,1133,152"/>
+</map>

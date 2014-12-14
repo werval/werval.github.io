@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../../api/events/Event.html" title="org.qiweb.api.events.Event" alt="" coords="85,223,169,263"/>
+<area shape="rect" id="node1" href="../../api/events/Event.html" title="&lt;TABLE&gt;" alt="" coords="75,217,180,268"/>
+<area shape="rect" id="node2_1" href="../../api/events/Events.html" title="org.qiweb.api.events.Events" alt="" coords="16,11,100,51"/>
+<area shape="rect" id="node2" href="../../api/events/Events.html" title="&lt;TABLE&gt;" alt="" coords="5,5,111,56"/>
+<area shape="rect" id="node4_2" href="./EventsSPI.html" title="org.qiweb.spi.events.EventsSPI" alt="" coords="85,111,169,151"/>
+<area shape="rect" id="node4" href="./EventsSPI.html" title="&lt;TABLE&gt;" alt="" coords="75,105,180,156"/>
+<area shape="rect" id="node3_3" href="../ApplicationSPI.html" title="org.qiweb.spi.ApplicationSPI" alt="" coords="146,11,250,51"/>
+<area shape="rect" id="node3" href="../ApplicationSPI.html" title="&lt;TABLE&gt;" alt="" coords="135,5,261,56"/>
+</map>

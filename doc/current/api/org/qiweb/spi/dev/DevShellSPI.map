@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./DevShellRebuildException.html" title="org.qiweb.spi.dev.DevShellRebuildException" alt="" coords="16,229,191,253"/>
+<area shape="rect" id="node1" href="./DevShellRebuildException.html" title="&lt;TABLE&gt;" alt="" coords="5,217,201,265"/>
+<area shape="rect" id="node2_1" href="./DevShellSPI.html" title="org.qiweb.spi.dev.DevShellSPI" alt="" coords="304,111,396,151"/>
+<area shape="rect" id="node2" href="./DevShellSPI.html" title="&lt;TABLE&gt;" alt="" coords="293,105,407,156"/>
+<area shape="rect" id="node3_2" href="./DevShellSPIAdapter.html" title="org.qiweb.spi.dev.DevShellSPIAdapter" alt="" coords="237,229,375,253"/>
+<area shape="rect" id="node3" href="./DevShellSPIAdapter.html" title="&lt;TABLE&gt;" alt="" coords="226,217,386,265"/>
+<area shape="rect" id="node4_3" href="./DevShellSPIWrapper.html" title="org.qiweb.spi.dev.DevShellSPIWrapper" alt="" coords="421,229,564,253"/>
+<area shape="rect" id="node4" href="./DevShellSPIWrapper.html" title="&lt;TABLE&gt;" alt="" coords="411,217,575,265"/>
+<area shape="rect" id="node5_4" href="../server/HttpServer.html" title="org.qiweb.spi.server.HttpServer" alt="" coords="308,11,392,51"/>
+<area shape="rect" id="node5" href="../server/HttpServer.html" title="&lt;TABLE&gt;" alt="" coords="297,5,403,56"/>
+</map>
