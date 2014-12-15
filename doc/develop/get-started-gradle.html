@@ -126,6 +126,9 @@ Java HotSpot(TM) 64-Bit Server VM (build XX.XX-bXX, mixed mode)</code></pre>
         </tbody> 
        </table> 
       </div> 
+      <div class="paragraph"> 
+       <p>For the impatients, here is how to get a Gradle skeleton running in development mode quickly:</p> 
+      </div> 
       <div class="admonitionblock tip"> 
        <table> 
         <tbody> 
@@ -140,7 +143,7 @@ Java HotSpot(TM) 64-Bit Server VM (build XX.XX-bXX, mixed mode)</code></pre>
            </div> 
            <div class="listingblock"> 
             <div class="content"> 
-             <pre class="CodeRay"><code>git archive --format=tar --prefix=werval-gradle/ --remote=git@github.com:werval/werval-skel-gradle.git master | tar -xf - &lt;1&gt;
+             <pre class="CodeRay"><code>svn export https://github.com/werval/werval-skel-gradle/trunk werval-gradle &lt;1&gt;
 cd werval-gradle
 gradle devshell &lt;2&gt;</code></pre> 
             </div> 
@@ -165,7 +168,7 @@ gradle devshell &lt;2&gt;</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="bash language-bash">git archive --format=tar --prefix=YOUR_APP_NAME/ --remote=git@github.com:werval/werval-skel-gradle.git master | tar -xf -</code></pre> 
+        <pre class="CodeRay"><code class="bash language-bash">svn export https://github.com/werval/werval-skel-gradle/trunk YOUR_APP_NAME</code></pre> 
        </div> 
       </div> 
       <div class="paragraph"> 
@@ -181,16 +184,16 @@ gradle devshell &lt;2&gt;</code></pre>
            </div> </td> 
           <td class="content"> 
            <div class="title">
-             What is this horrible command? 
+             Why use Subversion? 
            </div> 
            <div class="paragraph"> 
-            <p>What the <em>horrible</em> command above does is to export the content of a git repository at a given reference to a directory of your choice without creating a clone. In other words, it simply downloads the content of a git repository at a given reference.</p> 
+            <p>Github does not support <code>git archive</code> which is the equivalent of <code>svn export</code>. Github provide a subversion view of git repositories, we’re leveraging that.</p> 
+           </div> 
+           <div class="paragraph"> 
+            <p><code>trunk</code> contains the <code>master</code> branch. You can list available branches and tags using <code>svn ls https://github.com/werval/werval-skel-gradle</code>.</p> 
            </div> 
            <div class="paragraph"> 
             <p>A command line client for easy usage of application skeletons is under active discussion, planned and will be added in a future release.</p> 
-           </div> 
-           <div class="paragraph"> 
-            <p>For the time being, you’ll have to copy/paste/edit, or type, this horrible command :)</p> 
            </div> </td> 
          </tr> 
         </tbody> 
@@ -316,7 +319,7 @@ gradle devshell &lt;2&gt;</code></pre>
        </div> 
        <div class="content"> 
         <pre class="CodeRay"><code class="groovy language-groovy">buildscript {
-	repositories { maven { url 'https://repo.codeartisans.org/werval' } }    // &lt;1&gt;
+	repositories { jcenter() }    // &lt;1&gt;
 	dependencies { classpath 'io.werval:io.werval.gradle:0' } // &lt;2&gt;
 }
 
@@ -325,7 +328,7 @@ apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre>
       </div> 
       <div class="colist arabic"> 
        <ol> 
-        <li> <p>Declare Werval repository for the build</p> </li> 
+        <li> <p>Add JCenter repository</p> </li> 
         <li> <p>Add Werval Gradle Plugin to build classpath</p> </li> 
         <li> <p>Apply the Werval Gradle plugin</p> </li> 
        </ol> 

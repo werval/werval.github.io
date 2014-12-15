@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.routes.ParameterBinder<T>
-	c27567 [label=<<table title="io.werval.api.routes.ParameterBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinder.html">
+	c27421 [label=<<table title="io.werval.api.routes.ParameterBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ParameterBinder&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ParameterBinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ParameterBinders
-	c27568 [label=<<table title="io.werval.api.routes.ParameterBinders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ParameterBinders.html">
+	c27422 [label=<<table title="io.werval.api.routes.ParameterBinders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ParameterBinders.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ParameterBinders </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ParameterBinders.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ParameterBinders COMPOSED io.werval.api.routes.ParameterBinder<T>
-	c27568:p -> c27567:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c27422:p -> c27421:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 }
 

@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.ByteSource
-	c21966 [label=<<table title="io.werval.util.ByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteSource.html">
+	c21850 [label=<<table title="io.werval.util.ByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ByteSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ByteSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.InputStreamByteSource
-	c21980 [label=<<table title="io.werval.util.InputStreamByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./InputStreamByteSource.html">
+	c21864 [label=<<table title="io.werval.util.InputStreamByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./InputStreamByteSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> InputStreamByteSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./InputStreamByteSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.util.InputStreamByteSource implements io.werval.util.ByteSource
-	c21966:p -> c21980:p [dir=back,arrowtail=empty,style=dashed];
+	c21850:p -> c21864:p [dir=back,arrowtail=empty,style=dashed];
 }
 

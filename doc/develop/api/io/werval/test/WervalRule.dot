@@ -10,34 +10,34 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.test.WervalRule
-	c38401 [label=<<table title="io.werval.test.WervalRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WervalRule.html">
+	c38198 [label=<<table title="io.werval.test.WervalRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WervalRule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalRule </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalRule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalTest
-	c38402 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTest.html">
+	c38199 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalTestSupport
-	c38403 [label=<<table title="io.werval.test.WervalTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTestSupport.html">
+	c38200 [label=<<table title="io.werval.test.WervalTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTestSupport.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WervalTestSupport </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalTestSupport.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.test.WervalRule implements io.werval.test.WervalTestSupport
-	c38403:p -> c38401:p [dir=back,arrowtail=empty,style=dashed];
+	c38200:p -> c38198:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.test.WervalRule implements org.junit.rules.TestRule
-	c38412:p -> c38401:p [dir=back,arrowtail=empty,style=dashed];
+	c38208:p -> c38198:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.test.WervalRule COMPOSED io.werval.test.WervalTest
-	c38401:p -> c38402:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c38198:p -> c38199:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	//io.werval.test.WervalTest implements io.werval.test.WervalTestSupport
-	c38403:p -> c38402:p [dir=back,arrowtail=empty,style=dashed];
+	c38200:p -> c38199:p [dir=back,arrowtail=empty,style=dashed];
 	// org.junit.rules.TestRule
-	c38412 [label=<<table title="org.junit.rules.TestRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://junit.org/apidocs/org/junit/rules/TestRule.html">
+	c38208 [label=<<table title="org.junit.rules.TestRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://junit.org/apidocs/org/junit/rules/TestRule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> TestRule </td></tr>

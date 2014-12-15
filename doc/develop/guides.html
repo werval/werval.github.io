@@ -146,7 +146,7 @@
        </div> 
        <div class="content"> 
         <pre class="CodeRay"><code class="groovy language-groovy">buildscript {
-  repositories { maven { url 'https://repo.codeartisans.org/werval' } }    // &lt;1&gt;
+  repositories { jcenter() }    // &lt;1&gt;
   dependencies { classpath 'io.werval:io.werval.gradle:0' } // &lt;2&gt;
 }
 
@@ -155,7 +155,7 @@ apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre>
       </div> 
       <div class="colist arabic"> 
        <ol> 
-        <li> <p>Declare Werval repository for the build</p> </li> 
+        <li> <p>Add JCenter repository</p> </li> 
         <li> <p>Add Werval Gradle Plugin to build classpath</p> </li> 
         <li> <p>Apply the Werval Gradle plugin</p> </li> 
        </ol> 
@@ -504,7 +504,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
         <p><code>apply plugin: 'io.werval.module'</code></p> 
        </div> 
        <div class="paragraph"> 
-        <p>You can also start from the <code>qiweb-skel-module</code> skeleton that comes with a complete sample Plugin including unit tests.</p> 
+        <p>You can also start from the <code>werval-skel-module</code> skeleton that comes with a complete sample Plugin including unit tests.</p> 
        </div> 
       </div> 
       <div class="sect2"> 
@@ -972,7 +972,7 @@ dist.sh                 Create distributions archives, without tests</pre>
          <p>The Werval website provide general information about Werval and its community and embedd documentation sites for all past, current and develop versions documentations mini-sites.</p> 
         </div> 
         <div class="paragraph"> 
-         <p>Notable things included in the website are out of the Werval releases lifecycle, like Skeletons and Samples. Thus, this is built in a separate project, in a separate git repository named <code>qiweb-website</code>.</p> 
+         <p>Notable things included in the website are out of the Werval releases lifecycle, like Skeletons and Samples. Thus, this is built in a separate project, in a separate git repository named <code>werval-website</code>.</p> 
         </div> 
         <div class="paragraph"> 
          <p>The Werval website is generated using JBake again.</p> 
@@ -1026,7 +1026,7 @@ dist.sh                 Create distributions archives, without tests</pre>
          <p><code>io.werval.doc</code> styles the Werval Documentation for DevShell and distributions archives.</p> 
         </div> 
         <div class="paragraph"> 
-         <p><code>org.qiweb.website</code> embed the Werval Documentation as is and styles the website home and some other root pages.</p> 
+         <p><code>io.werval.website</code> embed the Werval Documentation as is and styles the website home and some other root pages.</p> 
         </div> 
        </div> 
       </div> 

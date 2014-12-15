@@ -6,8 +6,8 @@
     <atom:link href="http://werval.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>dim., 14 déc. 2014 23:09:04 +0100</pubDate>
-    <lastBuildDate>dim., 14 déc. 2014 23:09:04 +0100</lastBuildDate>
+    <pubDate>lun., 15 déc. 2014 13:26:32 +0100</pubDate>
+    <lastBuildDate>lun., 15 déc. 2014 13:26:32 +0100</lastBuildDate>
 
     <item>
       <title>Werval 0.5.0 is out!</title>
@@ -20,6 +20,9 @@
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Following the &lt;a href=&quot;2014-11-28_release_0.4.0.html&quot;&gt;0.4.0&lt;/a&gt; release, here is &lt;code&gt;0.5.0&lt;/code&gt;.
 This release is the first under the new project name &lt;code&gt;werval&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;One feature was added along the way: a &lt;a href=&quot;../doc/current/modules/sanitize/index.html&quot;&gt;Sanitize&lt;/a&gt; module that provide utilities for input/output sanitization and encoding thanks to several OWASP projects.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.

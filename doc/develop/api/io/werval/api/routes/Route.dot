@@ -10,59 +10,59 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.context.Context
-	c32023 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../context/Context.html">
+	c31853 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../context/Context.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Context </td></tr>
 		</table></td></tr>
 		</table>>, URL="../context/Context.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Method
-	c32055 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/Method.html">
+	c31885 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/Method.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Method </td></tr>
 		</table></td></tr>
 		</table>>, URL="../http/Method.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.Route
-	c32087 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Route.html">
+	c31917 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Route.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Route </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Route.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.RouteBuilder
-	c32088 [label=<<table title="io.werval.api.routes.RouteBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RouteBuilder.html">
+	c31918 [label=<<table title="io.werval.api.routes.RouteBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RouteBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RouteBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RouteBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.Routes
-	c32091 [label=<<table title="io.werval.api.routes.Routes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Routes.html">
+	c31921 [label=<<table title="io.werval.api.routes.Routes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Routes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Routes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Routes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.context.Context NAVASSOC io.werval.api.routes.Route
-	c32023:p -> c32087:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c31853:p -> c31917:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.routes.Route HAS io.werval.api.http.Method
-	c32087:p -> c32055:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c31917:p -> c31885:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.Route HAS java.lang.Class<T>
-	c32087:p -> c32198:p [taillabel="1", label="controller-type", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c31917:p -> c32027:p [taillabel="1", label="controller-type", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.Route HAS java.lang.reflect.Method
-	c32087:p -> c32199:p [taillabel="1", label="controller-method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c31917:p -> c32028:p [taillabel="1", label="controller-method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.RouteBuilder NAVASSOC io.werval.api.routes.Route
-	c32088:p -> c32087:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c31918:p -> c31917:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.routes.Routes NAVCOMPOSED io.werval.api.routes.Route
-	c32091:p -> c32087:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c31921:p -> c31917:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// java.lang.reflect.Method
-	c32199 [label=<<table title="java.lang.reflect.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html">
+	c32028 [label=<<table title="java.lang.reflect.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Method </td></tr>
 		</table></td></tr>
 		</table>>, URL="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// java.lang.Class<T>
-	c32198 [label=<<table title="java.lang.Class" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">
+	c32027 [label=<<table title="java.lang.Class" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Class&lt;T&gt; </td></tr>
 		</table></td></tr>

@@ -10,47 +10,47 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.context.Context
-	c30706 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../context/Context.html">
+	c30543 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../context/Context.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Context </td></tr>
 		</table></td></tr>
 		</table>>, URL="../context/Context.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Request
-	c30745 [label=<<table title="io.werval.api.http.Request" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Request.html">
+	c30582 [label=<<table title="io.werval.api.http.Request" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Request.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Request </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Request.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestBody
-	c30746 [label=<<table title="io.werval.api.http.RequestBody" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestBody.html">
+	c30583 [label=<<table title="io.werval.api.http.RequestBody" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestBody.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestBody </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestBody.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader
-	c30747 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
+	c30584 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.http.HttpBuildersSPI.RequestBuilder
-	c30862 [label=<<table title="io.werval.spi.http.HttpBuildersSPI.RequestBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/http/HttpBuildersSPI.RequestBuilder.html">
+	c30699 [label=<<table title="io.werval.spi.http.HttpBuildersSPI.RequestBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/http/HttpBuildersSPI.RequestBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../spi/http/HttpBuildersSPI.RequestBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.context.Context NAVCOMPOSED io.werval.api.http.Request
-	c30706:p -> c30745:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c30543:p -> c30582:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.api.http.Request implements io.werval.api.http.RequestHeader
-	c30747:p -> c30745:p [dir=back,arrowtail=empty,style=dashed];
+	c30584:p -> c30582:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.http.Request NAVCOMPOSED io.werval.api.http.RequestBody
-	c30745:p -> c30746:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c30582:p -> c30583:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.spi.http.HttpBuildersSPI.RequestBuilder NAVASSOC io.werval.api.http.Request
-	c30862:p -> c30745:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c30699:p -> c30582:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

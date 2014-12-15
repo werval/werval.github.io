@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.spi.http.HttpBuildersSPI
-	c3740 [label=<<table title="io.werval.spi.http.HttpBuildersSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpBuildersSPI.html">
+	c3721 [label=<<table title="io.werval.spi.http.HttpBuildersSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpBuildersSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpBuildersSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpBuildersSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.http.HttpBuildersSPI.RequestBuilder
-	c3741 [label=<<table title="io.werval.spi.http.HttpBuildersSPI.RequestBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpBuildersSPI.RequestBuilder.html">
+	c3722 [label=<<table title="io.werval.spi.http.HttpBuildersSPI.RequestBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpBuildersSPI.RequestBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpBuildersSPI.RequestBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.http.HttpBuildersSPI NAVASSOC io.werval.spi.http.HttpBuildersSPI.RequestBuilder
-	c3740:p -> c3741:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c3721:p -> c3722:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

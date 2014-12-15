@@ -10,14 +10,14 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.mime.MediaRange
-	c1565 [label=<<table title="io.werval.api.mime.MediaRange" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MediaRange.html">
+	c1557 [label=<<table title="io.werval.api.mime.MediaRange" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MediaRange.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MediaRange </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MediaRange.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.mime.MimeTypes
-	c1566 [label=<<table title="io.werval.api.mime.MimeTypes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MimeTypes.html">
+	c1558 [label=<<table title="io.werval.api.mime.MimeTypes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MimeTypes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MimeTypes </td></tr>

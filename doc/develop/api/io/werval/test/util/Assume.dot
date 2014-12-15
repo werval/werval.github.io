@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.test.util.Assume
-	c6220 [label=<<table title="io.werval.test.util.Assume" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Assume.html">
+	c6188 [label=<<table title="io.werval.test.util.Assume" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Assume.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Assume </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Assume.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.test.util.Assume extends org.junit.Assume
-	c6225:p -> c6220:p [dir=back,arrowtail=empty];
+	c6192:p -> c6188:p [dir=back,arrowtail=empty];
 	// org.junit.Assume
-	c6225 [label=<<table title="org.junit.Assume" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://junit.org/apidocs/org/junit/Assume.html">
+	c6192 [label=<<table title="org.junit.Assume" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://junit.org/apidocs/org/junit/Assume.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Assume </td></tr>
 		</table></td></tr>

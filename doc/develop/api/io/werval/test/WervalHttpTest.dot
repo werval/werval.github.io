@@ -10,49 +10,49 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.spi.ApplicationSPI
-	c38002 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/ApplicationSPI.html">
+	c37801 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/ApplicationSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="../spi/ApplicationSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.server.HttpServer
-	c38018 [label=<<table title="io.werval.spi.server.HttpServer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/server/HttpServer.html">
+	c37817 [label=<<table title="io.werval.spi.server.HttpServer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/server/HttpServer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpServer </td></tr>
 		</table></td></tr>
 		</table>>, URL="../spi/server/HttpServer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalHttpRule
-	c38022 [label=<<table title="io.werval.test.WervalHttpRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpRule.html">
+	c37821 [label=<<table title="io.werval.test.WervalHttpRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpRule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalHttpRule </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalHttpRule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalHttpTest
-	c38023 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WervalHttpTest.html">
+	c37822 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WervalHttpTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalHttpTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalHttpTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalHttpTestSupport
-	c38024 [label=<<table title="io.werval.test.WervalHttpTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpTestSupport.html">
+	c37823 [label=<<table title="io.werval.test.WervalHttpTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpTestSupport.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WervalHttpTestSupport </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalHttpTestSupport.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.server.HttpServer NAVCOMPOSED io.werval.spi.ApplicationSPI
-	c38018:p -> c38002:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c37817:p -> c37801:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.test.WervalHttpRule implements io.werval.test.WervalHttpTestSupport
-	c38024:p -> c38022:p [dir=back,arrowtail=empty,style=dashed];
+	c37823:p -> c37821:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.test.WervalHttpRule COMPOSED io.werval.test.WervalHttpTest
-	c38022:p -> c38023:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c37821:p -> c37822:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	//io.werval.test.WervalHttpTest implements io.werval.test.WervalHttpTestSupport
-	c38024:p -> c38023:p [dir=back,arrowtail=empty,style=dashed];
+	c37823:p -> c37822:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.test.WervalHttpTest NAVCOMPOSED io.werval.spi.ApplicationSPI
-	c38023:p -> c38002:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c37822:p -> c37801:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.test.WervalHttpTest NAVCOMPOSED io.werval.spi.server.HttpServer
-	c38023:p -> c38018:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c37822:p -> c37817:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

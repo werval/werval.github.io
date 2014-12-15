@@ -90,13 +90,7 @@
         Catalog
        </div> 
        <ul class="sectlevel1"> 
-        <li><a href="#overview">Overview</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#copy_n_forget_workflow">Copy’n forget workflow</a></li> 
-          <li><a href="#managed_workflow">Managed workflow</a></li> 
-          <li><a href="#choose_a_skeleton">Choose a skeleton</a></li> 
-         </ul> </li> 
+        <li><a href="#choose_a_skeleton">Choose a skeleton</a></li> 
         <li><a href="#gradle_skeletons">Gradle Skeletons</a></li> 
         <li> 
          <ul class="sectlevel2"> 
@@ -113,220 +107,70 @@
      </div> 
     </div> 
     <div class="sect1"> 
-     <h2 id="overview"><a class="anchor" href="#overview"></a>Overview</h2> 
+     <h2 id="choose_a_skeleton"><a class="anchor" href="#choose_a_skeleton"></a>Choose a skeleton</h2> 
      <div class="sectionbody"> 
       <div class="paragraph"> 
-       <p>Skeletons can be used in two ways. One can copy a skeleton and <em>forget</em> it from a change management point of view. Or, one can <em>fork</em> from a skeletons, allowing her to track the skeleton history and merge future changes.</p> 
+       <p>Officially supported skeletons aim to cover frequent use cases. They are for now limited to the following three types of applications: <em>HTTP Resources</em>, <em>WebApp</em> and <em>Single Page Application</em>. All skeletons have a Gradle and a Maven flavour.</p> 
+      </div> 
+      <div class="hdlist"> 
+       <table> 
+        <tbody>
+         <tr> 
+          <td class="hdlist1"> _HTTP Resources </td> 
+          <td class="hdlist2"> <p>Lightweight application using only Werval’s core and the JSON module or course</p> </td> 
+         </tr> 
+         <tr> 
+          <td class="hdlist1"> WebApp </td> 
+          <td class="hdlist2"> <p>JSON resources and a server-side template engine</p> </td> 
+         </tr> 
+         <tr> 
+          <td class="hdlist1"> Single Page Application </td> 
+          <td class="hdlist2"> <p>JSON resources and a client-side javascript application built using <a href="http://gulpjs.com/">gulp</a> &amp; <a href="http://browserify.org/">browserify</a>.</p> </td> 
+         </tr> 
+        </tbody>
+       </table> 
       </div> 
       <div class="paragraph"> 
-       <p>Obviously the steps involved are differents. First workflow is a oneliner, second one is a bit more convoluted. Choose the one that best suits your needs ; your mileage may vary.</p> 
-      </div> 
-      <div class="paragraph"> 
-       <p>The next sections detail the git commands for theses two workflows.</p> 
-      </div> 
-      <div class="sect2"> 
-       <h3 id="copy_n_forget_workflow"><a class="anchor" href="#copy_n_forget_workflow"></a>Copy’n forget workflow</h3> 
-       <div class="admonitionblock tip"> 
-        <table> 
-         <tbody>
-          <tr> 
-           <td class="icon"> 
-            <div class="title">
-             Tip
-            </div> </td> 
-           <td class="content"> See the <code>git-archive</code> and <code>tar</code> man pages for detailled explanation of each options used here. </td> 
-          </tr> 
-         </tbody>
-        </table> 
-       </div> 
-       <div class="paragraph"> 
-        <p>The following command will create a new project from a given skeleton.</p> 
-       </div> 
-       <div class="listingblock"> 
-        <div class="content"> 
-         <pre>git archive --prefix=$PROJECT_NAME/ --format=tar --remote=$SKELETON_URL $SKELETON_REF | tar xf -</pre> 
-        </div> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Pretty neat, isn’t it?</p> 
-       </div> 
-       <div class="admonitionblock caution"> 
-        <table> 
-         <tbody>
-          <tr> 
-           <td class="icon"> 
-            <div class="title">
-             Caution
-            </div> </td> 
-           <td class="content"> Watchout for the trailing slash (<code>/</code>) in the <code>--prefix</code> option, don’t miss it! </td> 
-          </tr> 
-         </tbody>
-        </table> 
-       </div> 
-       <div class="paragraph"> 
-        <p><code>SKELETON_REF</code> is the version of the application skeleton you want to use. You’ll use:</p> 
-       </div> 
-       <div class="ulist"> 
-        <ul> 
-         <li> <p><code>master</code> to get the latest stable version ;</p> </li> 
-         <li> <p><code>develop</code> to get the latest development version ;</p> </li> 
-         <li> <p>or a version identifier to get a specific version.</p> </li> 
-        </ul> 
-       </div> 
-       <div class="paragraph"> 
-        <p>The newly created directory contains the project files not managed by any source code manager. If you want to use <code>git</code>, change into the directory and issue <code>git init</code> as usual.</p> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Here is a sample command line for the <code>werval-skel-gradle</code> skeleton and a new project’s name of <code>awesome-app</code>:</p> 
-       </div> 
-       <div class="listingblock"> 
-        <div class="content"> 
-         <pre>git archive --prefix=awesome-app/ --format=tar --remote=git@github.com:werval/werval-skel-gradle.git master | tar xf -</pre> 
-        </div> 
-       </div> 
-       <div class="admonitionblock note"> 
-        <table> 
-         <tbody>
-          <tr> 
-           <td class="icon"> 
-            <div class="title">
-             Note
-            </div> </td> 
-           <td class="content"> Bellow you’ll find the catalog of available skeletons. For each skeleton you’ll also find a quick copy’n paste command for this workflow. </td> 
-          </tr> 
-         </tbody>
-        </table> 
-       </div> 
-      </div> 
-      <div class="sect2"> 
-       <h3 id="managed_workflow"><a class="anchor" href="#managed_workflow"></a>Managed workflow</h3> 
-       <div class="admonitionblock tip"> 
-        <table> 
-         <tbody>
-          <tr> 
-           <td class="icon"> 
-            <div class="title">
-             Tip
-            </div> </td> 
-           <td class="content"> See <code>git-clone</code>, <code>git-branch</code>, <code>git-remote</code>, <code>git-push</code>, <code>git-fetch</code> and <code>git-merge</code> man pages for detailled explanation of each options used here. Yes, six of them! </td> 
-          </tr> 
-         </tbody>
-        </table> 
-       </div> 
-       <div class="listingblock"> 
-        <div class="title">
-         The git command
-        </div> 
-        <div class="content"> 
-         <pre>git clone --depth=1 --single-branch --branch $SKELETON_BRANCH --origin skeleton $SKELETON_URL $PROJECT_NAME</pre> 
-        </div> 
-       </div> 
-       <div class="paragraph"> 
-        <p>This creates a git repository in a directory named <code>MY_PROJECT</code> from the <code>master</code> branch of the <code>werval-skel-gradle</code> skeleton. The new repository <code>master</code> branch contains a single commit, the last one from the skeleton history, and a <code>git</code> remote named <code>skeleton</code> for fetching its future changes.</p> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Now we need to setup a <code>skeleton</code> branch that track the original skeleton branch for fetching future changes.</p> 
-       </div> 
-       <div class="listingblock"> 
-        <div class="content"> 
-         <pre>git branch --track skeleton skeleton/master</pre> 
-        </div> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Next, we’ll want to add a remote repository for our new project and push all branches there.</p> 
-       </div> 
-       <div class="listingblock"> 
-        <div class="content"> 
-         <pre>git remote add origin git@yourgitservice.org:your-repository.git
-git branch --track master origin/master
-git push --all</pre> 
-        </div> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Voila! Your new application is setup in a git repository with a <code>skeleton</code> branch tracking the skeleton upstream and a <code>master</code> branch tracking your remote repository’s <code>master</code> branch. You can now start working in the <code>master</code> branch as usual.</p> 
-       </div> 
-       <div class="admonitionblock tip"> 
-        <table> 
-         <tbody>
-          <tr> 
-           <td class="icon"> 
-            <div class="title">
-             Tip
-            </div> </td> 
-           <td class="content"> Now is a good time to embrace <a href="https://github.com/nvie/gitflow">gitflow</a>. </td> 
-          </tr> 
-         </tbody>
-        </table> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Here is how you get future skeleton changes in the <code>skeleton</code> branch and merge them with the branch of your choice:</p> 
-       </div> 
-       <div class="listingblock"> 
-        <div class="content"> 
-         <pre>git fetch skeleton master:skeleton
-git merge heads/skeleton</pre> 
-        </div> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Of course, you’ll have to resolve conflicts as they rise ; that’s usual source control work.</p> 
-       </div> 
-       <div class="admonitionblock note"> 
-        <table> 
-         <tbody>
-          <tr> 
-           <td class="icon"> 
-            <div class="title">
-             Note
-            </div> </td> 
-           <td class="content"> We mainly use this workflow for internal skeletons. As all this is <em>simple</em> <code>git</code> usage, you could do that too. </td> 
-          </tr> 
-         </tbody>
-        </table> 
-       </div> 
-      </div> 
-      <div class="sect2"> 
-       <h3 id="choose_a_skeleton"><a class="anchor" href="#choose_a_skeleton"></a>Choose a skeleton</h3> 
-       <div class="paragraph"> 
-        <p>Officially supported skeletons aim to cover frequent use cases. They are for now limited to the following three types of applications: <em>HTTP Resources</em>, <em>WebApp</em> and <em>Single Page Application</em>. All skeletons have a Gradle and a Maven flavour.</p> 
-       </div> 
-       <div class="hdlist"> 
-        <table> 
-         <tbody>
-          <tr> 
-           <td class="hdlist1"> _HTTP Resources </td> 
-           <td class="hdlist2"> <p>Lightweight application using only Werval’s core and the JSON module or course</p> </td> 
-          </tr> 
-          <tr> 
-           <td class="hdlist1"> WebApp </td> 
-           <td class="hdlist2"> <p>JSON resources and a server-side template engine</p> </td> 
-          </tr> 
-          <tr> 
-           <td class="hdlist1"> Single Page Application </td> 
-           <td class="hdlist2"> <p>JSON resources and a client-side javascript application built using <a href="http://gulpjs.com/">gulp</a> &amp; <a href="http://browserify.org/">browserify</a>.</p> </td> 
-          </tr> 
-         </tbody>
-        </table> 
-       </div> 
-       <div class="paragraph"> 
-        <p>None of the skeletons include a persistence mechanism, you’ll have to implement yours, see the available <a href="../doc/current/modules/index.html">modules</a>.</p> 
-       </div> 
+       <p>None of the skeletons include a persistence mechanism, you’ll have to implement yours, see the available <a href="../doc/current/modules/index.html">modules</a>.</p> 
       </div> 
      </div> 
     </div> 
     <div class="sect1"> 
      <h2 id="gradle_skeletons"><a class="anchor" href="#gradle_skeletons"></a>Gradle Skeletons</h2> 
      <div class="sectionbody"> 
+      <div class="admonitionblock important"> 
+       <table> 
+        <tbody>
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+            Important
+           </div> </td> 
+          <td class="content"> 
+           <div class="title">
+            Why use Subversion to download skeletons?
+           </div> 
+           <div class="paragraph"> 
+            <p>Github does not support <code>git archive</code> which is the equivalent of <code>svn export</code>. Github provide a subversion view of git repositories, we’re leveraging that.</p> 
+           </div> 
+           <div class="paragraph"> 
+            <p><code>trunk</code> contains the <code>master</code> branch. You can list available branches and tags using <code>svn ls https://github.com/werval/werval-skel-gradle</code> for example.</p> 
+           </div> 
+           <div class="paragraph"> 
+            <p>A command line client for easy usage of application skeletons is under active discussion, planned and will be added in a future release, see <a href="https://github.com/werval/werval/issues/99">#99</a>.</p> 
+           </div> </td> 
+         </tr> 
+        </tbody>
+       </table> 
+      </div> 
       <div class="sect2"> 
        <h3 id="http_resources"><a class="anchor" href="#http_resources"></a>HTTP Resources</h3> 
        <div class="paragraph"> 
         <p>See <a href="https://github.com/werval/werval-skel-gradle">https://github.com/werval/werval-skel-gradle</a></p> 
        </div> 
        <div class="listingblock"> 
-        <div class="title">
-         Copy’n paste for copy’n forget workflow
-        </div> 
         <div class="content"> 
-         <pre>git archive --prefix=my-project/ --format=tar --remote=git@github.com:werval/werval-skel-gradle.git master | tar xf -</pre> 
+         <pre>svn export https://github.com/werval/werval-skel-gradle/trunk YOUR_APP_NAME</pre> 
         </div> 
        </div> 
       </div> 
@@ -336,11 +180,8 @@ git merge heads/skeleton</pre>
         <p>See <a href="https://github.com/werval/werval-skel-gradle-spa">https://github.com/werval/werval-skel-gradle-spa</a></p> 
        </div> 
        <div class="listingblock"> 
-        <div class="title">
-         Copy’n paste for copy’n forget workflow
-        </div> 
         <div class="content"> 
-         <pre>git archive --prefix=my-project/ --format=tar --remote=git@github.com:werval/werval-skel-gradle-spa.git master | tar xf -</pre> 
+         <pre>svn export https://github.com/werval/werval-skel-gradle-spa/trunk YOUR_APP_NAME</pre> 
         </div> 
        </div> 
       </div> 
@@ -355,11 +196,8 @@ git merge heads/skeleton</pre>
         <p>See <a href="https://github.com/werval/werval-skel-maven">https://github.com/werval/werval-skel-maven</a></p> 
        </div> 
        <div class="listingblock"> 
-        <div class="title">
-         Copy’n paste for copy’n forget workflow
-        </div> 
         <div class="content"> 
-         <pre>git archive --prefix=my-project/ --format=tar --remote=git@github.com:werval/werval-skel-maven.git master | tar xf -</pre> 
+         <pre>svn export https://github.com/werval/werval-skel-maven/trunk YOUR_APP_NAME</pre> 
         </div> 
        </div> 
       </div> 
