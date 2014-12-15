@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.RequestHeader
-	c24348 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/RequestHeader.html">
+	c24219 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="../http/RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.mime.MediaRange
-	c24355 [label=<<table title="io.werval.api.mime.MediaRange" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MediaRange.html">
+	c24226 [label=<<table title="io.werval.api.mime.MediaRange" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MediaRange.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MediaRange </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MediaRange.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.mime.MediaRange
-	c24348:p -> c24355:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c24219:p -> c24226:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

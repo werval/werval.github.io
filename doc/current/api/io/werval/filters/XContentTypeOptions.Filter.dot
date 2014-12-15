@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c39010 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c38803 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XContentTypeOptions
-	c39089 [label=<<table title="io.werval.filters.XContentTypeOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.html">
+	c38882 [label=<<table title="io.werval.filters.XContentTypeOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> XContentTypeOptions </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./XContentTypeOptions.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XContentTypeOptions.Filter
-	c39090 [label=<<table title="io.werval.filters.XContentTypeOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./XContentTypeOptions.Filter.html">
+	c38883 [label=<<table title="io.werval.filters.XContentTypeOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./XContentTypeOptions.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./XContentTypeOptions.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XContentTypeOptions NAVASSOC io.werval.filters.XContentTypeOptions.Filter
-	c39089:p -> c39090:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c38882:p -> c38883:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.XContentTypeOptions.Filter implements io.werval.api.filters.Filter<T>
-	c39010:p -> c39090:p [dir=back,arrowtail=empty,style=dashed];
+	c38803:p -> c38883:p [dir=back,arrowtail=empty,style=dashed];
 }
 

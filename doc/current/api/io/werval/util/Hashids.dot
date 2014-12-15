@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.Hashids
-	c18403 [label=<<table title="io.werval.util.Hashids" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Hashids.html">
+	c18306 [label=<<table title="io.werval.util.Hashids" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Hashids.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Hashids </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Hashids.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Hashids.Builder
-	c18404 [label=<<table title="io.werval.util.Hashids.Builder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hashids.Builder.html">
+	c18307 [label=<<table title="io.werval.util.Hashids.Builder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hashids.Builder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Builder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Hashids.Builder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Hashids.Builder NAVASSOC io.werval.util.Hashids
-	c18404:p -> c18403:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c18307:p -> c18306:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

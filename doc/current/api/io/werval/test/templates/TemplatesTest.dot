@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.templates.Templates
-	c36613 [label=<<table title="io.werval.api.templates.Templates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/templates/Templates.html">
+	c36419 [label=<<table title="io.werval.api.templates.Templates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/templates/Templates.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Templates </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../api/templates/Templates.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalTest
-	c36708 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../WervalTest.html">
+	c36514 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../WervalTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="../WervalTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.templates.TemplatesTest
-	c36712 [label=<<table title="io.werval.test.templates.TemplatesTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./TemplatesTest.html">
+	c36518 [label=<<table title="io.werval.test.templates.TemplatesTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./TemplatesTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> TemplatesTest </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./TemplatesTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.test.templates.TemplatesTest extends io.werval.test.WervalTest
-	c36708:p -> c36712:p [dir=back,arrowtail=empty];
+	c36514:p -> c36518:p [dir=back,arrowtail=empty];
 	// io.werval.test.templates.TemplatesTest NAVASSOC io.werval.api.templates.Templates
-	c36712:p -> c36613:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c36518:p -> c36419:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

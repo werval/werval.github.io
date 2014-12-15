@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c18119 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c18023 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.HSTS
-	c18187 [label=<<table title="io.werval.filters.HSTS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSTS.html">
+	c18091 [label=<<table title="io.werval.filters.HSTS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSTS.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> HSTS </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./HSTS.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.HSTS.Filter
-	c18188 [label=<<table title="io.werval.filters.HSTS.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HSTS.Filter.html">
+	c18092 [label=<<table title="io.werval.filters.HSTS.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HSTS.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HSTS.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.HSTS NAVASSOC io.werval.filters.HSTS.Filter
-	c18187:p -> c18188:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c18091:p -> c18092:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.HSTS.Filter implements io.werval.api.filters.Filter<T>
-	c18119:p -> c18188:p [dir=back,arrowtail=empty,style=dashed];
+	c18023:p -> c18092:p [dir=back,arrowtail=empty,style=dashed];
 }
 

@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.QueryString
-	c28673 [label=<<table title="io.werval.api.http.QueryString" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./QueryString.html">
+	c28521 [label=<<table title="io.werval.api.http.QueryString" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./QueryString.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> QueryString </td></tr>
 		</table></td></tr>
 		</table>>, URL="./QueryString.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader
-	c28678 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
+	c28526 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.QueryString
-	c28678:p -> c28673:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c28526:p -> c28521:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

@@ -10,13 +10,13 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.test.cache.CacheTest
-	c4316 [label=<<table title="io.werval.test.cache.CacheTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CacheTest.html">
+	c4294 [label=<<table title="io.werval.test.cache.CacheTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CacheTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CacheTest </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./CacheTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.cache.CacheTest.Controller
-	c4317 [label=<<table title="io.werval.test.cache.CacheTest.Controller" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CacheTest.Controller.html">
+	c4295 [label=<<table title="io.werval.test.cache.CacheTest.Controller" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CacheTest.Controller.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Controller </td></tr>
 		</table></td></tr>

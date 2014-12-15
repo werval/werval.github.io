@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.Error
-	c15643 [label=<<table title="io.werval.api.Error" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Error.html">
+	c15560 [label=<<table title="io.werval.api.Error" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Error.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Error </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Error.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Errors
-	c15644 [label=<<table title="io.werval.api.Errors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Errors.html">
+	c15561 [label=<<table title="io.werval.api.Errors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Errors.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Errors </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Errors.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Errors NAVCOMPOSED io.werval.api.Error
-	c15644:p -> c15643:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c15561:p -> c15560:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

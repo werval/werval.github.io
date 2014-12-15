@@ -10,76 +10,76 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.events.ConnectionEvent
-	c580 [label=<<table title="io.werval.api.events.ConnectionEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.html">
+	c577 [label=<<table title="io.werval.api.events.ConnectionEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ConnectionEvent </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ConnectionEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.ConnectionEvent.Opened
-	c581 [label=<<table title="io.werval.api.events.ConnectionEvent.Opened" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.Opened.html">
+	c578 [label=<<table title="io.werval.api.events.ConnectionEvent.Opened" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.Opened.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Opened </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ConnectionEvent.Opened.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.ConnectionEvent.Closed
-	c582 [label=<<table title="io.werval.api.events.ConnectionEvent.Closed" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.Closed.html">
+	c579 [label=<<table title="io.werval.api.events.ConnectionEvent.Closed" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.Closed.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Closed </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ConnectionEvent.Closed.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Event
-	c583 [label=<<table title="io.werval.api.events.Event" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Event.html">
+	c580 [label=<<table title="io.werval.api.events.Event" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Event.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Event </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Event.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Events
-	c584 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Events.html">
+	c581 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Events.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Events </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Events.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.HttpEvent
-	c585 [label=<<table title="io.werval.api.events.HttpEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.html">
+	c582 [label=<<table title="io.werval.api.events.HttpEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpEvent </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.HttpEvent.RequestReceived
-	c586 [label=<<table title="io.werval.api.events.HttpEvent.RequestReceived" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.RequestReceived.html">
+	c583 [label=<<table title="io.werval.api.events.HttpEvent.RequestReceived" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.RequestReceived.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RequestReceived </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpEvent.RequestReceived.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.HttpEvent.ResponseSent
-	c587 [label=<<table title="io.werval.api.events.HttpEvent.ResponseSent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.ResponseSent.html">
+	c584 [label=<<table title="io.werval.api.events.HttpEvent.ResponseSent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.ResponseSent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ResponseSent </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpEvent.ResponseSent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Registration
-	c588 [label=<<table title="io.werval.api.events.Registration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Registration.html">
+	c585 [label=<<table title="io.werval.api.events.Registration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Registration.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Registration </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Registration.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.events.ConnectionEvent implements io.werval.api.events.Event
-	c583:p -> c580:p [dir=back,arrowtail=empty,style=dashed];
+	c580:p -> c577:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.api.events.ConnectionEvent.Opened extends io.werval.api.events.ConnectionEvent
-	c580:p -> c581:p [dir=back,arrowtail=empty];
+	c577:p -> c578:p [dir=back,arrowtail=empty];
 	//io.werval.api.events.ConnectionEvent.Closed extends io.werval.api.events.ConnectionEvent
-	c580:p -> c582:p [dir=back,arrowtail=empty];
+	c577:p -> c579:p [dir=back,arrowtail=empty];
 	// io.werval.api.events.Events NAVASSOC io.werval.api.events.Registration
-	c584:p -> c588:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c581:p -> c585:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.api.events.HttpEvent implements io.werval.api.events.Event
-	c583:p -> c585:p [dir=back,arrowtail=empty,style=dashed];
+	c580:p -> c582:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.api.events.HttpEvent.RequestReceived implements io.werval.api.events.HttpEvent
-	c585:p -> c586:p [dir=back,arrowtail=empty,style=dashed];
+	c582:p -> c583:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.api.events.HttpEvent.ResponseSent implements io.werval.api.events.HttpEvent
-	c585:p -> c587:p [dir=back,arrowtail=empty,style=dashed];
+	c582:p -> c584:p [dir=back,arrowtail=empty,style=dashed];
 }
 
