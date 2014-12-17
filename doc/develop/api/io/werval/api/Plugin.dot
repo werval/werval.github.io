@@ -10,44 +10,44 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.Application
-	c27723 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Application.html">
+	c28059 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Application.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Application </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Application.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Plugin<API>
-	c27732 [label=<<table title="io.werval.api.Plugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Plugin.html">
+	c28068 [label=<<table title="io.werval.api.Plugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Plugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Plugin&lt;API&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Plugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Plugin.Void
-	c27733 [label=<<table title="io.werval.api.Plugin.Void" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Plugin.Void.html">
+	c28069 [label=<<table title="io.werval.api.Plugin.Void" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Plugin.Void.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Void </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Plugin.Void.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.cache.CachePlugin
-	c27735 [label=<<table title="io.werval.api.cache.CachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./cache/CachePlugin.html">
+	c28071 [label=<<table title="io.werval.api.cache.CachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./cache/CachePlugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CachePlugin </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./cache/CachePlugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.templates.TemplatesPlugin
-	c27807 [label=<<table title="io.werval.api.templates.TemplatesPlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./templates/TemplatesPlugin.html">
+	c28143 [label=<<table title="io.werval.api.templates.TemplatesPlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./templates/TemplatesPlugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> TemplatesPlugin </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./templates/TemplatesPlugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.Plugin<API>
-	c27723:p -> c27732:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c28059:p -> c28068:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.api.Plugin.Void implements io.werval.api.Plugin<API>
-	c27732:p -> c27733:p [dir=back,arrowtail=empty,style=dashed];
+	c28068:p -> c28069:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.api.cache.CachePlugin implements io.werval.api.Plugin<API>
-	c27732:p -> c27735:p [dir=back,arrowtail=empty,style=dashed];
+	c28068:p -> c28071:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.api.templates.TemplatesPlugin implements io.werval.api.Plugin<API>
-	c27732:p -> c27807:p [dir=back,arrowtail=empty,style=dashed];
+	c28068:p -> c28143:p [dir=back,arrowtail=empty,style=dashed];
 }
 

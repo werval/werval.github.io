@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c33559 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c33926 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.SetHeader
-	c33635 [label=<<table title="io.werval.filters.SetHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.html">
+	c34002 [label=<<table title="io.werval.filters.SetHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> SetHeader </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./SetHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.SetHeader.Filter
-	c33636 [label=<<table title="io.werval.filters.SetHeader.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SetHeader.Filter.html">
+	c34003 [label=<<table title="io.werval.filters.SetHeader.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SetHeader.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SetHeader.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.SetHeader NAVASSOC io.werval.filters.SetHeader.Filter
-	c33635:p -> c33636:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c34002:p -> c34003:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.SetHeader.Filter implements io.werval.api.filters.Filter<T>
-	c33559:p -> c33636:p [dir=back,arrowtail=empty,style=dashed];
+	c33926:p -> c34003:p [dir=back,arrowtail=empty,style=dashed];
 }
 

@@ -10,22 +10,22 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.i18n.Lang
-	c22538 [label=<<table title="io.werval.api.i18n.Lang" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Lang.html">
+	c22846 [label=<<table title="io.werval.api.i18n.Lang" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Lang.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Lang </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Lang.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.i18n.Langs
-	c22539 [label=<<table title="io.werval.api.i18n.Langs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Langs.html">
+	c22847 [label=<<table title="io.werval.api.i18n.Langs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Langs.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Langs </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Langs.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.i18n.Langs NAVCOMPOSED io.werval.api.i18n.Lang
-	c22539:p -> c22538:p [taillabel="1", label="default", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c22847:p -> c22846:p [taillabel="1", label="default", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.i18n.Langs NAVCOMPOSED io.werval.api.i18n.Lang
-	c22539:p -> c22538:p [taillabel="1", label="availables", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c22847:p -> c22846:p [taillabel="1", label="availables", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

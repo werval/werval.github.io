@@ -10,37 +10,37 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.Method
-	c31510 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/Method.html">
+	c31866 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/Method.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Method </td></tr>
 		</table></td></tr>
 		</table>>, URL="../http/Method.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoute
-	c31540 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ReverseRoute.html">
+	c31896 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ReverseRoute.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReverseRoute </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ReverseRoute.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoutes
-	c31541 [label=<<table title="io.werval.api.routes.ReverseRoutes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoutes.html">
+	c31897 [label=<<table title="io.werval.api.routes.ReverseRoutes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoutes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReverseRoutes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ReverseRoutes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoute HAS io.werval.api.http.Method
-	c31540:p -> c31510:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c31896:p -> c31866:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.ReverseRoute HAS java.lang.String
-	c31540:p -> c31652:p [taillabel="1", label="uri", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c31896:p -> c32009:p [taillabel="1", label="uri", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.ReverseRoute HAS java.lang.String
-	c31540:p -> c31652:p [taillabel="1", label="query-string", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c31896:p -> c32009:p [taillabel="1", label="query-string", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.ReverseRoute HAS java.lang.String
-	c31540:p -> c31652:p [taillabel="1", label="fragment-identifier", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c31896:p -> c32009:p [taillabel="1", label="fragment-identifier", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.ReverseRoutes NAVASSOC io.werval.api.routes.ReverseRoute
-	c31541:p -> c31540:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c31897:p -> c31896:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// java.lang.String
-	c31652 [label=<<table title="java.lang.String" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">
+	c32009 [label=<<table title="java.lang.String" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> String </td></tr>
 		</table></td></tr>

@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c30375 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c30725 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.RemoveHeaders
-	c30449 [label=<<table title="io.werval.filters.RemoveHeaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RemoveHeaders.html">
+	c30799 [label=<<table title="io.werval.filters.RemoveHeaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RemoveHeaders.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> RemoveHeaders </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./RemoveHeaders.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.RemoveHeaders.Filter
-	c30450 [label=<<table title="io.werval.filters.RemoveHeaders.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RemoveHeaders.Filter.html">
+	c30800 [label=<<table title="io.werval.filters.RemoveHeaders.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RemoveHeaders.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RemoveHeaders.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.RemoveHeaders NAVASSOC io.werval.filters.RemoveHeaders.Filter
-	c30449:p -> c30450:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c30799:p -> c30800:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.RemoveHeaders.Filter implements io.werval.api.filters.Filter<T>
-	c30375:p -> c30450:p [dir=back,arrowtail=empty,style=dashed];
+	c30725:p -> c30800:p [dir=back,arrowtail=empty,style=dashed];
 }
 

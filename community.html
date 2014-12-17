@@ -47,7 +47,7 @@
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
        <li><a href="news.html">News</a></li> 
-       <li><a href="doc/index.html">Documentation</a></li> 
+       <li><a href="doc/current/index.html">Documentation</a></li> 
        <li><a href="resources/skeletons.html">Skeletons</a></li> 
        <li><a href="resources/samples.html">Samples</a></li> 
        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a> 
@@ -84,6 +84,12 @@
           <li><a href="#contribute_documentation">Contribute documentation</a></li> 
          </ul> </li> 
         <li><a href="#create_modules">Create modules</a></li> 
+        <li><a href="#core_team_workflow">Core Team workflow</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#branching_model">Branching model</a></li> 
+          <li><a href="#merging_pull_requests">Merging pull-requests</a></li> 
+         </ul> </li> 
        </ul> 
       </div> 
      </div> 
@@ -134,7 +140,7 @@
        <p>Werval is written using the Java language (but not limited to it, see the F.A.Q). The source code is managed using <code>git</code>. You’ll need to use theses two technologies for contributing new code to Werval.</p> 
       </div> 
       <div class="paragraph"> 
-       <p>Of course, the first step is to <a href="doc/current/guides.html#build_werval_from_sources">Build Werval from sources</a>.</p> 
+       <p>Of course, the first step is to <a href="doc/current/guides.html#build_werval_from_sources">build werval from sources</a>.</p> 
       </div> 
       <div class="paragraph"> 
        <p>Once you’re confident the build is working on your computer, you’ll want a convy IDE supporting Java 8. Werval is built using Gradle that is supported by many IDEs, see the <a href="http://www.gradle.org/tooling">Gradle Tooling</a> page at <code>gradle.org</code>.</p> 
@@ -145,57 +151,23 @@
       <div class="sect2"> 
        <h3 id="contribution_workflow"><a class="anchor" href="#contribution_workflow"></a>Contribution workflow</h3> 
        <div class="paragraph"> 
-        <p>We generally uses a Commit-Then-Review policy on most changes. This allows a reasonable high velocity of development.</p> 
+        <p>We accept contributions as Github Pull Requests.</p> 
        </div> 
        <div class="paragraph"> 
-        <p>Courtesy of Vincent Driessen, we borrowed the <a href="http://nvie.com/posts/a-successful-git-branching-model/">git-flow</a> branching model.</p> 
-       </div> 
-       <div class="imageblock" style="text-align: center"> 
-        <div class="content"> 
-         <img src="images/git-flow-model.png" alt="Git Flow"> 
-        </div> 
+        <p>Pull requests let you tell others about changes you’ve pushed to a repository on GitHub. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.</p> 
        </div> 
        <div class="paragraph"> 
-        <p>It looks more complicated than it is. Here are the guidelines;</p> 
+        <p>See the <a href="https://help.github.com/articles/using-pull-requests/">Using pull requests</a> guide on <a href="https://help.github.com/">Github Help</a>.</p> 
        </div> 
-       <div class="ulist"> 
-        <ul> 
-         <li> <p>Never commit to the <code>master</code> branch while developing!!</p> </li> 
-         <li> <p>The <code>develop</code> branch is the equivalent of trunk in subversion.</p> </li> 
-         <li> <p>Any changes that are not trivial, start a feature branch.</p> </li> 
-         <li> <p>The following names are reserved for not feature branches; <code>master</code>, <code>develop</code>, <code>hotfix/*</code>, <code>release/*</code></p> </li> 
-        </ul> 
-       </div> 
-       <div class="paragraph"> 
-        <p>Day-to-day development revolves around the <code>develop</code> branch and it is this branch that you typically clone from our repository if you intend to contribute to Werval itself. If you create a new feature, or make some larger piece of refactoring, then please create a <em>feature branch</em> (see article for details).</p> 
-       </div> 
-       <div class="paragraph"> 
-        <p>The <code>release/*</code> and <code>hotfix/*</code> branches are for release management only, and doesn’t affect most contributors from a commit perspective.</p> 
-       </div> 
-       <div class="paragraph"> 
-        <p>For convenience you should install and use the <a href="https://github.com/nvie/gitflow">git-flow git extension</a> that implement this branching model by adding git commands. You may find the <a href="http://danielkummer.github.io/git-flow-cheatsheet/">git-flow cheatsheet</a> helpful too. It is available in several languages.</p> 
-       </div> 
-       <div class="admonitionblock note"> 
+       <div class="admonitionblock important"> 
         <table> 
          <tbody>
           <tr> 
            <td class="icon"> 
             <div class="title">
-             Note
+             Important
             </div> </td> 
-           <td class="content"> 
-            <div class="title">
-             Gitlab Merge Requests
-            </div> 
-            <div class="paragraph"> 
-             <p>We also accept contributions as Gitlab Merge Requests.</p> 
-            </div> 
-            <div class="paragraph"> 
-             <p>Merge requests let you tell others about changes you’ve pushed to a Gitlab repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.</p> 
-            </div> 
-            <div class="paragraph"> 
-             <p>See the <a href="https://scm.codeartisans.org/help/workflow">Gitlab Help</a> about this. Choose the workflow you’re confy with.</p> 
-            </div> </td> 
+           <td class="content"> Development happens on the <code>develop</code> branch, remember to target it, not <code>master</code>, when sending pull requests. </td> 
           </tr> 
          </tbody>
         </table> 
@@ -238,6 +210,64 @@
        <p>See the <a href="/doc/current/guides.html#write_modules">Writing Werval Modules</a> guide.</p> 
       </div> 
      </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="core_team_workflow"><a class="anchor" href="#core_team_workflow"></a>Core Team workflow</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>We generally uses a Commit-Then-Review policy on most changes. This allows a reasonable high velocity of development.</p> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="branching_model"><a class="anchor" href="#branching_model"></a>Branching model</h3> 
+       <div class="paragraph"> 
+        <p>Courtesy of Vincent Driessen, we borrowed the <a href="http://nvie.com/posts/a-successful-git-branching-model/">git-flow</a> branching model.</p> 
+       </div> 
+       <div class="imageblock" style="text-align: center"> 
+        <div class="content"> 
+         <img src="images/git-flow-model.png" alt="Git Flow"> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>It looks more complicated than it is. Here are the guidelines;</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>Never commit to the <code>master</code> branch while developing!!</p> </li> 
+         <li> <p>The <code>develop</code> branch is the equivalent of trunk in subversion.</p> </li> 
+         <li> <p>Any changes that are not trivial, start a feature branch.</p> </li> 
+         <li> <p>The following names are reserved for not feature branches; <code>master</code>, <code>develop</code>, <code>hotfix/*</code>, <code>release/*</code></p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Day-to-day development revolves around the <code>develop</code> branch and it is this branch that you typically clone from our repository if you intend to contribute to Werval itself. If you create a new feature, or make some larger piece of refactoring, then please create a <em>feature branch</em> (see article for details).</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The <code>release/*</code> and <code>hotfix/*</code> branches are for release management only, and doesn’t affect most contributors from a commit perspective.</p> 
+       </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody>
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+             Tip
+            </div> </td> 
+           <td class="content"> 
+            <div class="paragraph"> 
+             <p>For convenience you should install and use the <a href="https://github.com/nvie/gitflow">git-flow git extension</a> that implement this branching model by adding git commands. You may find the <a href="http://danielkummer.github.io/git-flow-cheatsheet/">git-flow cheatsheet</a> helpful too. It is available in several languages.</p> 
+            </div> </td> 
+          </tr> 
+         </tbody>
+        </table> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="merging_pull_requests"><a class="anchor" href="#merging_pull_requests"></a>Merging pull-requests</h3> 
+       <div class="paragraph"> 
+        <p>Github pull requests must be merged to the <code>develop</code> branch only.</p> 
+       </div> 
+      </div> 
+     </div> 
     </div>
     <p></p> 
    </div> 
@@ -245,7 +275,7 @@
   </div> 
   <div id="footer"> 
    <p class="muted credit">© 2014 | The Werval Community</p> 
-   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+   <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div>  
   <!-- Le javascript
     ================================================== --> 

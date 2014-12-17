@@ -10,34 +10,34 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.events.Events
-	c16138 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Events.html">
+	c16224 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Events.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Events </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Events.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Registration
-	c16142 [label=<<table title="io.werval.api.events.Registration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Registration.html">
+	c16228 [label=<<table title="io.werval.api.events.Registration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Registration.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Registration </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Registration.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.events.EventsSPI
-	c16285 [label=<<table title="io.werval.spi.events.EventsSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/events/EventsSPI.html">
+	c16372 [label=<<table title="io.werval.spi.events.EventsSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/events/EventsSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EventsSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../spi/events/EventsSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Events NAVASSOC io.werval.api.events.Registration
-	c16138:p -> c16142:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c16224:p -> c16228:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.events.Events HAS java.util.function.Consumer<T>
-	c16138:p -> c16305:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c16224:p -> c16392:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	//io.werval.spi.events.EventsSPI implements io.werval.api.events.Events
-	c16138:p -> c16285:p [dir=back,arrowtail=empty,style=dashed];
+	c16224:p -> c16372:p [dir=back,arrowtail=empty,style=dashed];
 	// java.util.function.Consumer<T>
-	c16305 [label=<<table title="java.util.function.Consumer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html">
+	c16392 [label=<<table title="java.util.function.Consumer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Consumer&lt;T&gt; </td></tr>

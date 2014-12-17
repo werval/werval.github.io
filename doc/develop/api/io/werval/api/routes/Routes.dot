@@ -10,25 +10,25 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.routes.Route
-	c32854 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Route.html">
+	c33217 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Route.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Route </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Route.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.Routes
-	c32858 [label=<<table title="io.werval.api.routes.Routes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Routes.html">
+	c33221 [label=<<table title="io.werval.api.routes.Routes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Routes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Routes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Routes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.routes.Routes implements java.lang.Iterable<T>
-	c32964:p -> c32858:p [dir=back,arrowtail=empty,style=dashed];
+	c33328:p -> c33221:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.routes.Routes NAVCOMPOSED io.werval.api.routes.Route
-	c32858:p -> c32854:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c33221:p -> c33217:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// java.lang.Iterable<T>
-	c32964 [label=<<table title="java.lang.Iterable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">
+	c33328 [label=<<table title="java.lang.Iterable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Iterable&lt;T&gt; </td></tr>

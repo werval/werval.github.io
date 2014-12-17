@@ -10,61 +10,61 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.routes.ParameterBinder<T>
-	c1942 [label=<<table title="io.werval.api.routes.ParameterBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinder.html">
+	c1952 [label=<<table title="io.werval.api.routes.ParameterBinder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ParameterBinder&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ParameterBinder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ParameterBinders
-	c1943 [label=<<table title="io.werval.api.routes.ParameterBinders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinders.html">
+	c1953 [label=<<table title="io.werval.api.routes.ParameterBinders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinders.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ParameterBinders </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ParameterBinders.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoute
-	c1945 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoute.html">
+	c1955 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoute.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReverseRoute </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ReverseRoute.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoutes
-	c1946 [label=<<table title="io.werval.api.routes.ReverseRoutes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoutes.html">
+	c1956 [label=<<table title="io.werval.api.routes.ReverseRoutes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoutes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReverseRoutes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ReverseRoutes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.Route
-	c1947 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Route.html">
+	c1957 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Route.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Route </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Route.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.RouteBuilder
-	c1948 [label=<<table title="io.werval.api.routes.RouteBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RouteBuilder.html">
+	c1958 [label=<<table title="io.werval.api.routes.RouteBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RouteBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RouteBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RouteBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.Routes
-	c1951 [label=<<table title="io.werval.api.routes.Routes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Routes.html">
+	c1961 [label=<<table title="io.werval.api.routes.Routes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Routes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Routes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Routes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ParameterBinders COMPOSED io.werval.api.routes.ParameterBinder<T>
-	c1943:p -> c1942:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c1953:p -> c1952:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// io.werval.api.routes.ReverseRoutes NAVASSOC io.werval.api.routes.ReverseRoute
-	c1946:p -> c1945:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1956:p -> c1955:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.routes.RouteBuilder NAVASSOC io.werval.api.routes.Route
-	c1948:p -> c1947:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1958:p -> c1957:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.routes.Routes NAVCOMPOSED io.werval.api.routes.Route
-	c1951:p -> c1947:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c1961:p -> c1957:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.Maps
-	c23739 [label=<<table title="io.werval.util.Maps" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Maps.html">
+	c24054 [label=<<table title="io.werval.util.Maps" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Maps.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Maps </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c23740 [label=<<table title="io.werval.util.Maps.MapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MapBuilder.html">
+	c24055 [label=<<table title="io.werval.util.Maps.MapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MapBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MapBuilder&lt;M extends Map&lt;K, V&gt;, K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.MapBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps NAVASSOC io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c23739:p -> c23740:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c24054:p -> c24055:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

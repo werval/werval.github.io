@@ -10,223 +10,229 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.Base62
-	c2735 [label=<<table title="io.werval.util.Base62" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Base62.html">
+	c2749 [label=<<table title="io.werval.util.Base62" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Base62.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Base62 </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Base62.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.ByteArrayByteSource
-	c2736 [label=<<table title="io.werval.util.ByteArrayByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteArrayByteSource.html">
+	c2750 [label=<<table title="io.werval.util.ByteArrayByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteArrayByteSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ByteArrayByteSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ByteArrayByteSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.ByteSource
-	c2737 [label=<<table title="io.werval.util.ByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteSource.html">
+	c2751 [label=<<table title="io.werval.util.ByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ByteSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ByteSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Charsets
-	c2738 [label=<<table title="io.werval.util.Charsets" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Charsets.html">
+	c2752 [label=<<table title="io.werval.util.Charsets" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Charsets.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Charsets </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Charsets.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Classes
-	c2739 [label=<<table title="io.werval.util.Classes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Classes.html">
+	c2753 [label=<<table title="io.werval.util.Classes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Classes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Classes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Classes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.ClassLoaders
-	c2740 [label=<<table title="io.werval.util.ClassLoaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ClassLoaders.html">
+	c2754 [label=<<table title="io.werval.util.ClassLoaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ClassLoaders.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ClassLoaders </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ClassLoaders.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Closeables
-	c2741 [label=<<table title="io.werval.util.Closeables" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Closeables.html">
+	c2755 [label=<<table title="io.werval.util.Closeables" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Closeables.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Closeables </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Closeables.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Couple<L, R>
-	c2742 [label=<<table title="io.werval.util.Couple" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Couple.html">
+	c2756 [label=<<table title="io.werval.util.Couple" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Couple.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Couple&lt;L, R&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Couple.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Dates
-	c2743 [label=<<table title="io.werval.util.Dates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Dates.html">
+	c2757 [label=<<table title="io.werval.util.Dates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Dates.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Dates </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Dates.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Dates.HTTP
-	c2744 [label=<<table title="io.werval.util.Dates.HTTP" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Dates.HTTP.html">
+	c2758 [label=<<table title="io.werval.util.Dates.HTTP" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Dates.HTTP.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HTTP </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Dates.HTTP.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.DeltreeFileVisitor
-	c2745 [label=<<table title="io.werval.util.DeltreeFileVisitor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeltreeFileVisitor.html">
+	c2759 [label=<<table title="io.werval.util.DeltreeFileVisitor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DeltreeFileVisitor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DeltreeFileVisitor </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DeltreeFileVisitor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Hashids
-	c2746 [label=<<table title="io.werval.util.Hashids" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hashids.html">
+	c2760 [label=<<table title="io.werval.util.Hashids" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hashids.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Hashids </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Hashids.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Hashids.Builder
-	c2747 [label=<<table title="io.werval.util.Hashids.Builder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hashids.Builder.html">
+	c2761 [label=<<table title="io.werval.util.Hashids.Builder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hashids.Builder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Builder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Hashids.Builder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Hex
-	c2748 [label=<<table title="io.werval.util.Hex" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hex.html">
+	c2762 [label=<<table title="io.werval.util.Hex" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Hex.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Hex </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Hex.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.IdentityGenerator
-	c2749 [label=<<table title="io.werval.util.IdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IdentityGenerator.html">
+	c2763 [label=<<table title="io.werval.util.IdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IdentityGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> IdentityGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IdentityGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.IllegalArguments
-	c2750 [label=<<table title="io.werval.util.IllegalArguments" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IllegalArguments.html">
+	c2764 [label=<<table title="io.werval.util.IllegalArguments" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IllegalArguments.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> IllegalArguments </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IllegalArguments.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.InputStreamByteSource
-	c2751 [label=<<table title="io.werval.util.InputStreamByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InputStreamByteSource.html">
+	c2765 [label=<<table title="io.werval.util.InputStreamByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InputStreamByteSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> InputStreamByteSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./InputStreamByteSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.InputStreams
-	c2752 [label=<<table title="io.werval.util.InputStreams" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InputStreams.html">
+	c2766 [label=<<table title="io.werval.util.InputStreams" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./InputStreams.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> InputStreams </td></tr>
 		</table></td></tr>
 		</table>>, URL="./InputStreams.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// io.werval.util.Iterables
+	c2767 [label=<<table title="io.werval.util.Iterables" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Iterables.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> Iterables </td></tr>
+		</table></td></tr>
+		</table>>, URL="./Iterables.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.LinkedMultiValueMap<K, V>
-	c2753 [label=<<table title="io.werval.util.LinkedMultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LinkedMultiValueMap.html">
+	c2768 [label=<<table title="io.werval.util.LinkedMultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LinkedMultiValueMap.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LinkedMultiValueMap&lt;K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LinkedMultiValueMap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps
-	c2754 [label=<<table title="io.werval.util.Maps" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.html">
+	c2769 [label=<<table title="io.werval.util.Maps" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Maps </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c2755 [label=<<table title="io.werval.util.Maps.MapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MapBuilder.html">
+	c2770 [label=<<table title="io.werval.util.Maps.MapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MapBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MapBuilder&lt;M extends Map&lt;K, V&gt;, K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.MapBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps.MultiValueMapBuilder<M extends java.util.Map<K, java.util.List<V>>, K, V>
-	c2756 [label=<<table title="io.werval.util.Maps.MultiValueMapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MultiValueMapBuilder.html">
+	c2771 [label=<<table title="io.werval.util.Maps.MultiValueMapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MultiValueMapBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MultiValueMapBuilder&lt;M extends Map&lt;K, List&lt;V&gt;&gt;, K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.MultiValueMapBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.MultiValueMap<K, V>
-	c2757 [label=<<table title="io.werval.util.MultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultiValueMap.html">
+	c2772 [label=<<table title="io.werval.util.MultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultiValueMap.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MultiValueMap&lt;K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MultiValueMap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Numbers
-	c2758 [label=<<table title="io.werval.util.Numbers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Numbers.html">
+	c2773 [label=<<table title="io.werval.util.Numbers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Numbers.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Numbers </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Numbers.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Reflectively
-	c2759 [label=<<table title="io.werval.util.Reflectively" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Reflectively.html">
+	c2774 [label=<<table title="io.werval.util.Reflectively" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Reflectively.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Reflectively </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Reflectively.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Serializables
-	c2764 [label=<<table title="io.werval.util.Serializables" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Serializables.html">
+	c2779 [label=<<table title="io.werval.util.Serializables" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Serializables.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Serializables </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Serializables.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Stacktraces
-	c2765 [label=<<table title="io.werval.util.Stacktraces" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.html">
+	c2780 [label=<<table title="io.werval.util.Stacktraces" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Stacktraces </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Stacktraces.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Stacktraces.FileURLGenerator
-	c2766 [label=<<table title="io.werval.util.Stacktraces.FileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.FileURLGenerator.html">
+	c2781 [label=<<table title="io.werval.util.Stacktraces.FileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.FileURLGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FileURLGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Stacktraces.FileURLGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Stacktraces.NullFileURLGenerator
-	c2767 [label=<<table title="io.werval.util.Stacktraces.NullFileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.NullFileURLGenerator.html">
+	c2782 [label=<<table title="io.werval.util.Stacktraces.NullFileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.NullFileURLGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NullFileURLGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Stacktraces.NullFileURLGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Strings
-	c2768 [label=<<table title="io.werval.util.Strings" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Strings.html">
+	c2783 [label=<<table title="io.werval.util.Strings" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Strings.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Strings </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Strings.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.URLs
-	c2769 [label=<<table title="io.werval.util.URLs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./URLs.html">
+	c2784 [label=<<table title="io.werval.util.URLs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./URLs.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> URLs </td></tr>
 		</table></td></tr>
 		</table>>, URL="./URLs.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.UUIDIdentityGenerator
-	c2770 [label=<<table title="io.werval.util.UUIDIdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UUIDIdentityGenerator.html">
+	c2785 [label=<<table title="io.werval.util.UUIDIdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UUIDIdentityGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UUIDIdentityGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UUIDIdentityGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.util.ByteArrayByteSource implements io.werval.util.ByteSource
-	c2737:p -> c2736:p [dir=back,arrowtail=empty,style=dashed];
+	c2751:p -> c2750:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.util.Dates COMPOSED io.werval.util.Dates.HTTP
-	c2743:p -> c2744:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c2757:p -> c2758:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// io.werval.util.Hashids.Builder NAVASSOC io.werval.util.Hashids
-	c2747:p -> c2746:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2761:p -> c2760:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.util.InputStreamByteSource implements io.werval.util.ByteSource
-	c2737:p -> c2751:p [dir=back,arrowtail=empty,style=dashed];
+	c2751:p -> c2765:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.util.LinkedMultiValueMap<K, V> implements io.werval.util.MultiValueMap<K, V>
-	c2757:p -> c2753:p [dir=back,arrowtail=empty,style=dashed];
+	c2772:p -> c2768:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.util.Maps NAVASSOC io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c2754:p -> c2755:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2769:p -> c2770:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.util.Maps.MultiValueMapBuilder<M extends java.util.Map<K, java.util.List<V>>, K, V> implements io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c2755:p -> c2756:p [dir=back,arrowtail=empty,style=dashed];
+	c2770:p -> c2771:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.util.Maps.MultiValueMapBuilder<M extends java.util.Map<K, java.util.List<V>>, K, V> NAVASSOC io.werval.util.MultiValueMap<K, V>
-	c2756:p -> c2757:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2771:p -> c2772:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.util.Stacktraces.NullFileURLGenerator implements io.werval.util.Stacktraces.FileURLGenerator
-	c2766:p -> c2767:p [dir=back,arrowtail=empty,style=dashed];
+	c2781:p -> c2782:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.util.UUIDIdentityGenerator implements io.werval.util.IdentityGenerator
-	c2749:p -> c2770:p [dir=back,arrowtail=empty,style=dashed];
+	c2763:p -> c2785:p [dir=back,arrowtail=empty,style=dashed];
 }
 

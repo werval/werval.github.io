@@ -10,33 +10,33 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.RequestHeader
-	c22346 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/RequestHeader.html">
+	c22653 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../http/RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="../http/RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.i18n.Lang
-	c22351 [label=<<table title="io.werval.api.i18n.Lang" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Lang.html">
+	c22658 [label=<<table title="io.werval.api.i18n.Lang" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Lang.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Lang </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Lang.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.i18n.Langs
-	c22352 [label=<<table title="io.werval.api.i18n.Langs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Langs.html">
+	c22659 [label=<<table title="io.werval.api.i18n.Langs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Langs.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Langs </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Langs.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.i18n.Lang
-	c22346:p -> c22351:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c22653:p -> c22658:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.i18n.Lang
-	c22346:p -> c22351:p [taillabel="1", label="preferred", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c22653:p -> c22658:p [taillabel="1", label="preferred", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.i18n.Langs NAVCOMPOSED io.werval.api.i18n.Lang
-	c22352:p -> c22351:p [taillabel="1", label="default", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c22659:p -> c22658:p [taillabel="1", label="default", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.i18n.Langs NAVCOMPOSED io.werval.api.i18n.Lang
-	c22352:p -> c22351:p [taillabel="1", label="availables", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c22659:p -> c22658:p [taillabel="1", label="availables", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

@@ -10,38 +10,38 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.events.Event
-	c16325 [label=<<table title="io.werval.api.events.Event" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/events/Event.html">
+	c16412 [label=<<table title="io.werval.api.events.Event" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/events/Event.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Event </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../api/events/Event.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Events
-	c16326 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/events/Events.html">
+	c16413 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/events/Events.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Events </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../api/events/Events.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.ApplicationSPI
-	c16460 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ApplicationSPI.html">
+	c16548 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ApplicationSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="../ApplicationSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.events.EventsSPI
-	c16473 [label=<<table title="io.werval.spi.events.EventsSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EventsSPI.html">
+	c16561 [label=<<table title="io.werval.spi.events.EventsSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./EventsSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EventsSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./EventsSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.ApplicationSPI NAVCOMPOSED io.werval.spi.events.EventsSPI
-	c16460:p -> c16473:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c16548:p -> c16561:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.spi.events.EventsSPI implements io.werval.api.events.Events
-	c16326:p -> c16473:p [dir=back,arrowtail=empty,style=dashed];
+	c16413:p -> c16561:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.spi.events.EventsSPI NAVASSOC io.werval.api.events.Event
-	c16473:p -> c16325:p [taillabel="1", label="emit", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c16561:p -> c16412:p [taillabel="1", label="emit", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

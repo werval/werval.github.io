@@ -10,21 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.spi.dev.DevShellSPI
-	c15155 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DevShellSPI.html">
+	c15236 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DevShellSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DevShellSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DevShellSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.dev.DevShellSPIWrapper
-	c15160 [label=<<table title="io.werval.spi.dev.DevShellSPIWrapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DevShellSPIWrapper.html">
+	c15241 [label=<<table title="io.werval.spi.dev.DevShellSPIWrapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DevShellSPIWrapper.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DevShellSPIWrapper </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DevShellSPIWrapper.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.spi.dev.DevShellSPIWrapper implements io.werval.spi.dev.DevShellSPI
-	c15155:p -> c15160:p [dir=back,arrowtail=empty,style=dashed];
+	c15236:p -> c15241:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.spi.dev.DevShellSPIWrapper COMPOSED io.werval.spi.dev.DevShellSPI
-	c15160:p -> c15155:p [taillabel="1", label="wrap", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c15241:p -> c15236:p [taillabel="1", label="wrap", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 }
 

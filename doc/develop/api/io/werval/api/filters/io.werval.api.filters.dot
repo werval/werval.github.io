@@ -10,28 +10,28 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c967 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Filter.html">
+	c972 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.filters.FilterChain
-	c968 [label=<<table title="io.werval.api.filters.FilterChain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FilterChain.html">
+	c973 [label=<<table title="io.werval.api.filters.FilterChain" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FilterChain.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FilterChain </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FilterChain.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.filters.FilterWith
-	c969 [label=<<table title="io.werval.api.filters.FilterWith" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FilterWith.html">
+	c974 [label=<<table title="io.werval.api.filters.FilterWith" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FilterWith.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> FilterWith </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./FilterWith.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.filters.FilterChain COMPOSED io.werval.api.filters.Filter<T>
-	c968:p -> c967:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c973:p -> c972:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// io.werval.api.filters.FilterWith NAVASSOC io.werval.api.filters.Filter<T>
-	c969:p -> c967:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c974:p -> c972:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

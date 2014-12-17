@@ -10,47 +10,47 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.Headers
-	c18592 [label=<<table title="io.werval.api.http.Headers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Headers.html">
+	c18691 [label=<<table title="io.werval.api.http.Headers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Headers.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Headers </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Headers.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Headers.Names
-	c18593 [label=<<table title="io.werval.api.http.Headers.Names" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Headers.Names.html">
+	c18692 [label=<<table title="io.werval.api.http.Headers.Names" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Headers.Names.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Names </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Headers.Names.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Headers.Values
-	c18594 [label=<<table title="io.werval.api.http.Headers.Values" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Headers.Values.html">
+	c18693 [label=<<table title="io.werval.api.http.Headers.Values" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Headers.Values.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Values </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Headers.Values.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.MutableHeaders
-	c18599 [label=<<table title="io.werval.api.http.MutableHeaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MutableHeaders.html">
+	c18698 [label=<<table title="io.werval.api.http.MutableHeaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MutableHeaders.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MutableHeaders </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MutableHeaders.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader
-	c18606 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
+	c18705 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Headers HAS io.werval.api.http.Headers.Names
-	c18592:p -> c18593:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c18691:p -> c18692:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.http.Headers HAS io.werval.api.http.Headers.Values
-	c18592:p -> c18594:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c18691:p -> c18693:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	//io.werval.api.http.MutableHeaders implements io.werval.api.http.Headers
-	c18592:p -> c18599:p [dir=back,arrowtail=empty,style=dashed];
+	c18691:p -> c18698:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.Headers
-	c18606:p -> c18592:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c18705:p -> c18691:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

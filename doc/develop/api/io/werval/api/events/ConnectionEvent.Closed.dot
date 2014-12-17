@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.events.ConnectionEvent
-	c9951 [label=<<table title="io.werval.api.events.ConnectionEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.html">
+	c10004 [label=<<table title="io.werval.api.events.ConnectionEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ConnectionEvent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ConnectionEvent </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ConnectionEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.ConnectionEvent.Closed
-	c9953 [label=<<table title="io.werval.api.events.ConnectionEvent.Closed" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ConnectionEvent.Closed.html">
+	c10006 [label=<<table title="io.werval.api.events.ConnectionEvent.Closed" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ConnectionEvent.Closed.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Closed </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ConnectionEvent.Closed.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.events.ConnectionEvent.Closed extends io.werval.api.events.ConnectionEvent
-	c9951:p -> c9953:p [dir=back,arrowtail=empty];
+	c10004:p -> c10006:p [dir=back,arrowtail=empty];
 }
 

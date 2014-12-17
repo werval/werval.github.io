@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c8471 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c8516 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.Cached
-	c8531 [label=<<table title="io.werval.filters.Cached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cached.html">
+	c8576 [label=<<table title="io.werval.filters.Cached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cached.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Cached </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cached.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.Cached.Filter
-	c8532 [label=<<table title="io.werval.filters.Cached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Cached.Filter.html">
+	c8577 [label=<<table title="io.werval.filters.Cached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Cached.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cached.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.Cached NAVASSOC io.werval.filters.Cached.Filter
-	c8531:p -> c8532:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c8576:p -> c8577:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.Cached.Filter implements io.werval.api.filters.Filter<T>
-	c8471:p -> c8532:p [dir=back,arrowtail=empty,style=dashed];
+	c8516:p -> c8577:p [dir=back,arrowtail=empty,style=dashed];
 }
 

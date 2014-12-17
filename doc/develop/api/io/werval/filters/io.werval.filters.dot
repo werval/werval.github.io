@@ -10,196 +10,196 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.filters.AcceptContentTypes
-	c2521 [label=<<table title="io.werval.filters.AcceptContentTypes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AcceptContentTypes.html">
+	c2534 [label=<<table title="io.werval.filters.AcceptContentTypes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AcceptContentTypes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> AcceptContentTypes </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AcceptContentTypes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.AcceptContentTypes.Filter
-	c2522 [label=<<table title="io.werval.filters.AcceptContentTypes.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AcceptContentTypes.Filter.html">
+	c2535 [label=<<table title="io.werval.filters.AcceptContentTypes.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AcceptContentTypes.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AcceptContentTypes.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.Cached
-	c2523 [label=<<table title="io.werval.filters.Cached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cached.html">
+	c2536 [label=<<table title="io.werval.filters.Cached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cached.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Cached </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cached.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.Cached.Filter
-	c2524 [label=<<table title="io.werval.filters.Cached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cached.Filter.html">
+	c2537 [label=<<table title="io.werval.filters.Cached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cached.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cached.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy
-	c2525 [label=<<table title="io.werval.filters.ContentSecurityPolicy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.html">
+	c2538 [label=<<table title="io.werval.filters.ContentSecurityPolicy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ContentSecurityPolicy </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.Filter
-	c2526 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.Filter.html">
+	c2539 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.ViolationLogger
-	c2527 [label=<<table title="io.werval.filters.ContentSecurityPolicy.ViolationLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.ViolationLogger.html">
+	c2540 [label=<<table title="io.werval.filters.ContentSecurityPolicy.ViolationLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.ViolationLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ViolationLogger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.ViolationLogger.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.Repeat
-	c2528 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Repeat" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.Repeat.html">
+	c2541 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Repeat" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.Repeat.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Repeat </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.Repeat.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.DoNotTrack
-	c2529 [label=<<table title="io.werval.filters.DoNotTrack" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DoNotTrack.html">
+	c2542 [label=<<table title="io.werval.filters.DoNotTrack" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DoNotTrack.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> DoNotTrack </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./DoNotTrack.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.DoNotTrack.Filter
-	c2530 [label=<<table title="io.werval.filters.DoNotTrack.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DoNotTrack.Filter.html">
+	c2543 [label=<<table title="io.werval.filters.DoNotTrack.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DoNotTrack.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DoNotTrack.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.HSTS
-	c2531 [label=<<table title="io.werval.filters.HSTS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSTS.html">
+	c2544 [label=<<table title="io.werval.filters.HSTS" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSTS.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> HSTS </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./HSTS.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.HSTS.Filter
-	c2532 [label=<<table title="io.werval.filters.HSTS.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSTS.Filter.html">
+	c2545 [label=<<table title="io.werval.filters.HSTS.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HSTS.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HSTS.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.LogIfSlow
-	c2533 [label=<<table title="io.werval.filters.LogIfSlow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.html">
+	c2546 [label=<<table title="io.werval.filters.LogIfSlow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> LogIfSlow </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./LogIfSlow.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.LogIfSlow.Filter
-	c2534 [label=<<table title="io.werval.filters.LogIfSlow.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.Filter.html">
+	c2547 [label=<<table title="io.werval.filters.LogIfSlow.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LogIfSlow.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.NeverCached
-	c2535 [label=<<table title="io.werval.filters.NeverCached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NeverCached.html">
+	c2548 [label=<<table title="io.werval.filters.NeverCached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NeverCached.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> NeverCached </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./NeverCached.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.NeverCached.Filter
-	c2536 [label=<<table title="io.werval.filters.NeverCached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NeverCached.Filter.html">
+	c2549 [label=<<table title="io.werval.filters.NeverCached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NeverCached.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./NeverCached.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.RemoveHeaders
-	c2537 [label=<<table title="io.werval.filters.RemoveHeaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RemoveHeaders.html">
+	c2550 [label=<<table title="io.werval.filters.RemoveHeaders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RemoveHeaders.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> RemoveHeaders </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./RemoveHeaders.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.RemoveHeaders.Filter
-	c2538 [label=<<table title="io.werval.filters.RemoveHeaders.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RemoveHeaders.Filter.html">
+	c2551 [label=<<table title="io.werval.filters.RemoveHeaders.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RemoveHeaders.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RemoveHeaders.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.SetHeader
-	c2539 [label=<<table title="io.werval.filters.SetHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.html">
+	c2552 [label=<<table title="io.werval.filters.SetHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> SetHeader </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./SetHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.SetHeader.Filter
-	c2540 [label=<<table title="io.werval.filters.SetHeader.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.Filter.html">
+	c2553 [label=<<table title="io.werval.filters.SetHeader.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SetHeader.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.SetHeader.Repeat
-	c2541 [label=<<table title="io.werval.filters.SetHeader.Repeat" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.Repeat.html">
+	c2554 [label=<<table title="io.werval.filters.SetHeader.Repeat" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetHeader.Repeat.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Repeat </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./SetHeader.Repeat.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XContentTypeOptions
-	c2542 [label=<<table title="io.werval.filters.XContentTypeOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.html">
+	c2555 [label=<<table title="io.werval.filters.XContentTypeOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> XContentTypeOptions </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./XContentTypeOptions.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XContentTypeOptions.Filter
-	c2543 [label=<<table title="io.werval.filters.XContentTypeOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.Filter.html">
+	c2556 [label=<<table title="io.werval.filters.XContentTypeOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./XContentTypeOptions.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XFrameOptions
-	c2544 [label=<<table title="io.werval.filters.XFrameOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XFrameOptions.html">
+	c2557 [label=<<table title="io.werval.filters.XFrameOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XFrameOptions.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> XFrameOptions </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./XFrameOptions.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XFrameOptions.Filter
-	c2545 [label=<<table title="io.werval.filters.XFrameOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XFrameOptions.Filter.html">
+	c2558 [label=<<table title="io.werval.filters.XFrameOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XFrameOptions.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./XFrameOptions.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XXSSProtection
-	c2546 [label=<<table title="io.werval.filters.XXSSProtection" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XXSSProtection.html">
+	c2559 [label=<<table title="io.werval.filters.XXSSProtection" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XXSSProtection.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> XXSSProtection </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./XXSSProtection.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XXSSProtection.Filter
-	c2547 [label=<<table title="io.werval.filters.XXSSProtection.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XXSSProtection.Filter.html">
+	c2560 [label=<<table title="io.werval.filters.XXSSProtection.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XXSSProtection.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./XXSSProtection.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.AcceptContentTypes NAVASSOC io.werval.filters.AcceptContentTypes.Filter
-	c2521:p -> c2522:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2534:p -> c2535:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.filters.Cached NAVASSOC io.werval.filters.Cached.Filter
-	c2523:p -> c2524:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2536:p -> c2537:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.filters.ContentSecurityPolicy NAVASSOC io.werval.filters.ContentSecurityPolicy.Filter
-	c2525:p -> c2526:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2538:p -> c2539:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.filters.ContentSecurityPolicy.ViolationLogger NAVASSOC io.werval.filters.ContentSecurityPolicy.Filter
-	c2527:p -> c2526:p [taillabel="1", label="works-with", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2540:p -> c2539:p [taillabel="1", label="works-with", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.filters.ContentSecurityPolicy.Repeat NAVASSOC io.werval.filters.ContentSecurityPolicy
-	c2528:p -> c2525:p [taillabel="1", label="repeat", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c2541:p -> c2538:p [taillabel="1", label="repeat", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.filters.DoNotTrack NAVASSOC io.werval.filters.DoNotTrack.Filter
-	c2529:p -> c2530:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.HSTS NAVASSOC io.werval.filters.HSTS.Filter
-	c2531:p -> c2532:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.LogIfSlow NAVASSOC io.werval.filters.LogIfSlow.Filter
-	c2533:p -> c2534:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.NeverCached NAVASSOC io.werval.filters.NeverCached.Filter
-	c2535:p -> c2536:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.RemoveHeaders NAVASSOC io.werval.filters.RemoveHeaders.Filter
-	c2537:p -> c2538:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.SetHeader NAVASSOC io.werval.filters.SetHeader.Filter
-	c2539:p -> c2540:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.SetHeader.Repeat NAVASSOC io.werval.filters.SetHeader
-	c2541:p -> c2539:p [taillabel="1", label="repeat", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.XContentTypeOptions NAVASSOC io.werval.filters.XContentTypeOptions.Filter
 	c2542:p -> c2543:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.XFrameOptions NAVASSOC io.werval.filters.XFrameOptions.Filter
+	// io.werval.filters.HSTS NAVASSOC io.werval.filters.HSTS.Filter
 	c2544:p -> c2545:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// io.werval.filters.XXSSProtection NAVASSOC io.werval.filters.XXSSProtection.Filter
+	// io.werval.filters.LogIfSlow NAVASSOC io.werval.filters.LogIfSlow.Filter
 	c2546:p -> c2547:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// io.werval.filters.NeverCached NAVASSOC io.werval.filters.NeverCached.Filter
+	c2548:p -> c2549:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// io.werval.filters.RemoveHeaders NAVASSOC io.werval.filters.RemoveHeaders.Filter
+	c2550:p -> c2551:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// io.werval.filters.SetHeader NAVASSOC io.werval.filters.SetHeader.Filter
+	c2552:p -> c2553:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// io.werval.filters.SetHeader.Repeat NAVASSOC io.werval.filters.SetHeader
+	c2554:p -> c2552:p [taillabel="1", label="repeat", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// io.werval.filters.XContentTypeOptions NAVASSOC io.werval.filters.XContentTypeOptions.Filter
+	c2555:p -> c2556:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// io.werval.filters.XFrameOptions NAVASSOC io.werval.filters.XFrameOptions.Filter
+	c2557:p -> c2558:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// io.werval.filters.XXSSProtection NAVASSOC io.werval.filters.XXSSProtection.Filter
+	c2559:p -> c2560:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

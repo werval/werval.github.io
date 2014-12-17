@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>http://werval.iocommunity.html</loc>
+        <loc>http://werval.io/community.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.iofaq.html</loc>
+        <loc>http://werval.io/faq.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.ioresources/samples.html</loc>
+        <loc>http://werval.io/resources/samples.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.ioresources/skeletons.html</loc>
+        <loc>http://werval.io/resources/skeletons.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.iosecurity.html</loc>
+        <loc>http://werval.io/security.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.ionews/2014-12-14_release_0.5.1.html</loc>
+        <loc>http://werval.io/news/2014-12-14_release_0.5.1.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.ionews/2014-11-28_release_0.4.0.html</loc>
+        <loc>http://werval.io/news/2014-11-28_release_0.4.0.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.ionews.html</loc>
+        <loc>http://werval.io/news.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.iodownloads.html</loc>
+        <loc>http://werval.io/downloads.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
     <url>
-        <loc>http://werval.iodoc/index.html</loc>
+        <loc>http://werval.io/doc/index.html</loc>
         <lastmod>2014-12-17</lastmod>
     </url>
 </urlset>
