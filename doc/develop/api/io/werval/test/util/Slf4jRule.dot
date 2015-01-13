@@ -10,15 +10,15 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.test.util.Slf4jRule
-	c34457 [label=<<table title="io.werval.test.util.Slf4jRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Slf4jRule.html">
+	c35959 [label=<<table title="io.werval.test.util.Slf4jRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Slf4jRule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Slf4jRule </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Slf4jRule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.test.util.Slf4jRule extends org.junit.rules.TestWatcher
-	c34459:p -> c34457:p [dir=back,arrowtail=empty];
+	c35961:p -> c35959:p [dir=back,arrowtail=empty];
 	// org.junit.rules.TestWatcher
-	c34459 [label=<<table title="org.junit.rules.TestWatcher" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://junit.org/apidocs/org/junit/rules/TestWatcher.html">
+	c35961 [label=<<table title="org.junit.rules.TestWatcher" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://junit.org/apidocs/org/junit/rules/TestWatcher.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> TestWatcher </font></td></tr>
 		</table></td></tr>

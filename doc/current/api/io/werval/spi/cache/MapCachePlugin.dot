@@ -10,26 +10,26 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.cache.CachePlugin
-	c23428 [label=<<table title="io.werval.api.cache.CachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/cache/CachePlugin.html">
+	c24630 [label=<<table title="io.werval.api.cache.CachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/cache/CachePlugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CachePlugin </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../../api/cache/CachePlugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.cache.MapCache
-	c23574 [label=<<table title="io.werval.spi.cache.MapCache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MapCache.html">
+	c24780 [label=<<table title="io.werval.spi.cache.MapCache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MapCache.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MapCache </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MapCache.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.cache.MapCachePlugin
-	c23575 [label=<<table title="io.werval.spi.cache.MapCachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MapCachePlugin.html">
+	c24781 [label=<<table title="io.werval.spi.cache.MapCachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MapCachePlugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MapCachePlugin </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MapCachePlugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.spi.cache.MapCachePlugin extends io.werval.api.cache.CachePlugin
-	c23428:p -> c23575:p [dir=back,arrowtail=empty];
+	c24630:p -> c24781:p [dir=back,arrowtail=empty];
 	// io.werval.spi.cache.MapCachePlugin NAVCOMPOSED io.werval.spi.cache.MapCache
-	c23575:p -> c23574:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c24781:p -> c24780:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

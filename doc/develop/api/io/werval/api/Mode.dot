@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.Application
-	c25425 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Application.html">
+	c26351 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Application.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Application </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Application.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Mode
-	c25433 [label=<<table title="io.werval.api.Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Mode.html">
+	c26359 [label=<<table title="io.werval.api.Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Mode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> Mode </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Mode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Application HAS io.werval.api.Mode
-	c25425:p -> c25433:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c26351:p -> c26359:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 }
 

@@ -10,33 +10,33 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.Maps
-	c23926 [label=<<table title="io.werval.util.Maps" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.html">
+	c25142 [label=<<table title="io.werval.util.Maps" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Maps </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c23927 [label=<<table title="io.werval.util.Maps.MapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Maps.MapBuilder.html">
+	c25143 [label=<<table title="io.werval.util.Maps.MapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Maps.MapBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MapBuilder&lt;M extends Map&lt;K, V&gt;, K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.MapBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps.MultiValueMapBuilder<M extends java.util.Map<K, java.util.List<V>>, K, V>
-	c23928 [label=<<table title="io.werval.util.Maps.MultiValueMapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MultiValueMapBuilder.html">
+	c25144 [label=<<table title="io.werval.util.Maps.MultiValueMapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MultiValueMapBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MultiValueMapBuilder&lt;M extends Map&lt;K, List&lt;V&gt;&gt;, K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.MultiValueMapBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps NAVASSOC io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c23926:p -> c23927:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c25142:p -> c25143:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V> NAVASSOC java.util.Map<K, V>
-	c23927:p -> c23977:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c25143:p -> c25194:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.util.Maps.MultiValueMapBuilder<M extends java.util.Map<K, java.util.List<V>>, K, V> implements io.werval.util.Maps.MapBuilder<M extends java.util.Map<K, V>, K, V>
-	c23927:p -> c23928:p [dir=back,arrowtail=empty,style=dashed];
+	c25143:p -> c25144:p [dir=back,arrowtail=empty,style=dashed];
 	// java.util.Map<K, V>
-	c23977 [label=<<table title="java.util.Map" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html">
+	c25194 [label=<<table title="java.util.Map" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Map&lt;K, V&gt; </td></tr>

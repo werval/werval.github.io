@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c39553 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c41572 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XXSSProtection
-	c39636 [label=<<table title="io.werval.filters.XXSSProtection" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XXSSProtection.html">
+	c41655 [label=<<table title="io.werval.filters.XXSSProtection" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XXSSProtection.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> XXSSProtection </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./XXSSProtection.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XXSSProtection.Filter
-	c39637 [label=<<table title="io.werval.filters.XXSSProtection.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./XXSSProtection.Filter.html">
+	c41656 [label=<<table title="io.werval.filters.XXSSProtection.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./XXSSProtection.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./XXSSProtection.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XXSSProtection NAVASSOC io.werval.filters.XXSSProtection.Filter
-	c39636:p -> c39637:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41655:p -> c41656:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.XXSSProtection.Filter implements io.werval.api.filters.Filter<T>
-	c39553:p -> c39637:p [dir=back,arrowtail=empty,style=dashed];
+	c41572:p -> c41656:p [dir=back,arrowtail=empty,style=dashed];
 }
 

@@ -10,43 +10,43 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.Cookies
-	c12098 [label=<<table title="io.werval.api.http.Cookies" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Cookies.html">
+	c12357 [label=<<table title="io.werval.api.http.Cookies" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Cookies.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Cookies </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cookies.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Cookies.Cookie
-	c12099 [label=<<table title="io.werval.api.http.Cookies.Cookie" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cookies.Cookie.html">
+	c12358 [label=<<table title="io.werval.api.http.Cookies.Cookie" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cookies.Cookie.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Cookie </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cookies.Cookie.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.MutableCookies
-	c12109 [label=<<table title="io.werval.api.http.MutableCookies" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MutableCookies.html">
+	c12368 [label=<<table title="io.werval.api.http.MutableCookies" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MutableCookies.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MutableCookies </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MutableCookies.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader
-	c12117 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
+	c12376 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.http.Cookies implements java.lang.Iterable<T>
-	c12251:p -> c12098:p [dir=back,arrowtail=empty,style=dashed];
+	c12512:p -> c12357:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.http.Cookies NAVCOMPOSED io.werval.api.http.Cookies.Cookie
-	c12098:p -> c12099:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c12357:p -> c12358:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.api.http.MutableCookies implements io.werval.api.http.Cookies
-	c12098:p -> c12109:p [dir=back,arrowtail=empty,style=dashed];
+	c12357:p -> c12368:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.Cookies
-	c12117:p -> c12098:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c12376:p -> c12357:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// java.lang.Iterable<T>
-	c12251 [label=<<table title="java.lang.Iterable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">
+	c12512 [label=<<table title="java.lang.Iterable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Iterable&lt;T&gt; </td></tr>

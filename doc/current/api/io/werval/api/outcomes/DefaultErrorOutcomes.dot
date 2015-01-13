@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.outcomes.DefaultErrorOutcomes
-	c13560 [label=<<table title="io.werval.api.outcomes.DefaultErrorOutcomes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DefaultErrorOutcomes.html">
+	c13923 [label=<<table title="io.werval.api.outcomes.DefaultErrorOutcomes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DefaultErrorOutcomes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DefaultErrorOutcomes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DefaultErrorOutcomes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.outcomes.OutcomeBuilder
-	c13562 [label=<<table title="io.werval.api.outcomes.OutcomeBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OutcomeBuilder.html">
+	c13925 [label=<<table title="io.werval.api.outcomes.OutcomeBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OutcomeBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> OutcomeBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OutcomeBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.outcomes.DefaultErrorOutcomes NAVASSOC io.werval.api.outcomes.OutcomeBuilder
-	c13560:p -> c13562:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c13923:p -> c13925:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

@@ -10,18 +10,34 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.exceptions.ParameterBinderException
-	c27189 [label=<<table title="io.werval.api.exceptions.ParameterBinderException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ParameterBinderException.html">
+	c28492 [label=<<table title="io.werval.api.exceptions.ParameterBinderException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ParameterBinderException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ParameterBinderException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ParameterBinderException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// io.werval.api.exceptions.ParameterBindingException
+	c28493 [label=<<table title="io.werval.api.exceptions.ParameterBindingException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBindingException.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> ParameterBindingException </td></tr>
+		</table></td></tr>
+		</table>>, URL="./ParameterBindingException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	// io.werval.api.exceptions.ParameterUnbindingException
+	c28494 [label=<<table title="io.werval.api.exceptions.ParameterUnbindingException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterUnbindingException.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> ParameterUnbindingException </td></tr>
+		</table></td></tr>
+		</table>>, URL="./ParameterUnbindingException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.WervalException
-	c27193 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalException.html">
+	c28498 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.exceptions.ParameterBinderException extends io.werval.api.exceptions.WervalException
-	c27193:p -> c27189:p [dir=back,arrowtail=empty];
+	c28498:p -> c28492:p [dir=back,arrowtail=empty];
+	//io.werval.api.exceptions.ParameterBindingException extends io.werval.api.exceptions.ParameterBinderException
+	c28492:p -> c28493:p [dir=back,arrowtail=empty];
+	//io.werval.api.exceptions.ParameterUnbindingException extends io.werval.api.exceptions.ParameterBinderException
+	c28492:p -> c28494:p [dir=back,arrowtail=empty];
 }
 

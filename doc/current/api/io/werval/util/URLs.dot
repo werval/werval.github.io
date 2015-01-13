@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.URLs
-	c36861 [label=<<table title="io.werval.util.URLs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./URLs.html">
+	c38807 [label=<<table title="io.werval.util.URLs" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./URLs.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> URLs </td></tr>
 		</table></td></tr>

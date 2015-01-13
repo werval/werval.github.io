@@ -10,23 +10,23 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.filters.XContentTypeOptions
-	c38694 [label=<<table title="io.werval.filters.XContentTypeOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./XContentTypeOptions.html">
+	c40688 [label=<<table title="io.werval.filters.XContentTypeOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./XContentTypeOptions.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> XContentTypeOptions </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./XContentTypeOptions.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.XContentTypeOptions.Filter
-	c38695 [label=<<table title="io.werval.filters.XContentTypeOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.Filter.html">
+	c40689 [label=<<table title="io.werval.filters.XContentTypeOptions.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./XContentTypeOptions.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./XContentTypeOptions.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.filters.XContentTypeOptions implements java.lang.annotation.Annotation
-	c38770:p -> c38694:p [dir=back,arrowtail=empty,style=dashed];
+	c40767:p -> c40688:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.filters.XContentTypeOptions NAVASSOC io.werval.filters.XContentTypeOptions.Filter
-	c38694:p -> c38695:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c40688:p -> c40689:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// java.lang.annotation.Annotation
-	c38770 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html">
+	c40767 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Annotation </td></tr>

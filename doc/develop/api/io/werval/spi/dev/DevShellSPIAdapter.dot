@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.spi.dev.DevShellSPI
-	c15048 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DevShellSPI.html">
+	c15368 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DevShellSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DevShellSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DevShellSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.dev.DevShellSPIAdapter
-	c15052 [label=<<table title="io.werval.spi.dev.DevShellSPIAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DevShellSPIAdapter.html">
+	c15372 [label=<<table title="io.werval.spi.dev.DevShellSPIAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DevShellSPIAdapter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DevShellSPIAdapter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DevShellSPIAdapter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.spi.dev.DevShellSPIAdapter implements io.werval.spi.dev.DevShellSPI
-	c15048:p -> c15052:p [dir=back,arrowtail=empty,style=dashed];
+	c15368:p -> c15372:p [dir=back,arrowtail=empty,style=dashed];
 }
 

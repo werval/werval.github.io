@@ -1,3 +1,4 @@
 Sitemap: http://werval.io/sitemap.xml
 User-agent: *
 Disallow: /doc/develop
+Disallow: /doc/0.5.1

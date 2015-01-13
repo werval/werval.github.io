@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.Stacktraces.FileURLGenerator
-	c34612 [label=<<table title="io.werval.util.Stacktraces.FileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Stacktraces.FileURLGenerator.html">
+	c36498 [label=<<table title="io.werval.util.Stacktraces.FileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Stacktraces.FileURLGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FileURLGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Stacktraces.FileURLGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Stacktraces.NullFileURLGenerator
-	c34613 [label=<<table title="io.werval.util.Stacktraces.NullFileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.NullFileURLGenerator.html">
+	c36499 [label=<<table title="io.werval.util.Stacktraces.NullFileURLGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Stacktraces.NullFileURLGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NullFileURLGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Stacktraces.NullFileURLGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.util.Stacktraces.NullFileURLGenerator implements io.werval.util.Stacktraces.FileURLGenerator
-	c34612:p -> c34613:p [dir=back,arrowtail=empty,style=dashed];
+	c36498:p -> c36499:p [dir=back,arrowtail=empty,style=dashed];
 }
 

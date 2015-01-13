@@ -10,29 +10,29 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.context.Context
-	c26801 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../context/Context.html">
+	c28094 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../context/Context.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Context </td></tr>
 		</table></td></tr>
 		</table>>, URL="../context/Context.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.outcomes.OutcomeBuilder
-	c26854 [label=<<table title="io.werval.api.outcomes.OutcomeBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OutcomeBuilder.html">
+	c28149 [label=<<table title="io.werval.api.outcomes.OutcomeBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./OutcomeBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> OutcomeBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./OutcomeBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.outcomes.Outcomes
-	c26855 [label=<<table title="io.werval.api.outcomes.Outcomes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Outcomes.html">
+	c28150 [label=<<table title="io.werval.api.outcomes.Outcomes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Outcomes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Outcomes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Outcomes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.context.Context NAVASSOC io.werval.api.outcomes.Outcomes
-	c26801:p -> c26855:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c28094:p -> c28150:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.outcomes.Outcomes NAVASSOC io.werval.api.outcomes.OutcomeBuilder
-	c26855:p -> c26854:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c28150:p -> c28149:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

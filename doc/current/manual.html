@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="index.html">Werval 0.5.1</a> 
+      <a class="navbar-brand" href="index.html">Werval 0.6.0</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,10 @@
        <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.5.1)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.6.0)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.5.1)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.6.0)</a></li> 
+         <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
          <li><a href="/doc/develop/index.html">Development Version</a></li> 
          <li class="divider"></li> 
@@ -75,7 +76,7 @@
     <div id="preamble"> 
      <div class="sectionbody"> 
       <div class="paragraph"> 
-       <p>The Werval Manual is intended to be a comprehensive guide to the development kit version 0.5.1.</p> 
+       <p>The Werval Manual is intended to be a comprehensive guide to the development kit version 0.6.0.</p> 
       </div> 
       <div class="admonitionblock caution"> 
        <table> 
@@ -109,7 +110,8 @@
         <li><a href="#the_global_object">4. The Global object</a></li> 
         <li> 
          <ul class="sectlevel2"> 
-          <li><a href="#error_handling">4.1. Error handling</a></li> 
+          <li><a href="#configuration_2">4.1. Configuration</a></li> 
+          <li><a href="#error_handling">4.2. Error handling</a></li> 
          </ul> </li> 
         <li><a href="#lifecycle">5. Lifecycle</a></li> 
         <li> 
@@ -125,25 +127,32 @@
         <li><a href="#http">7. HTTP</a></li> 
         <li> 
          <ul class="sectlevel2"> 
-          <li><a href="#session">7.1. Session</a></li> 
-          <li><a href="#query_string">7.2. Query String</a></li> 
+          <li><a href="#configuration_3">7.1. Configuration</a></li> 
+          <li><a href="#session">7.2. Session</a></li> 
+          <li><a href="#query_string">7.3. Query String</a></li> 
          </ul> </li> 
         <li><a href="#plugins">8. Plugins</a></li> 
-        <li><a href="#testing">9. Testing</a></li> 
+        <li><a href="#core_library">9. Core Library</a></li> 
         <li> 
          <ul class="sectlevel2"> 
-          <li><a href="#werval_http_test_usage">9.1. Werval[Http]Test usage</a></li> 
-          <li><a href="#wervalrule_usage">9.2. WervalRule usage</a></li> 
-          <li><a href="#in_practice">9.3. In practice</a></li> 
-          <li><a href="#testing_http">9.4. Testing HTTP</a></li> 
-          <li><a href="#testing_browser_based_uis">9.5. Testing browser based UIs</a></li> 
+          <li><a href="#controllers">9.1. Controllers</a></li> 
+          <li><a href="#filters">9.2. Filters</a></li> 
          </ul> </li> 
-        <li><a href="#development_mode">10. Development Mode</a></li> 
-        <li><a href="#unsorted">11. UNSORTED</a></li> 
+        <li><a href="#testing">10. Testing</a></li> 
         <li> 
          <ul class="sectlevel2"> 
-          <li><a href="#logging">11.1. Logging</a></li> 
-          <li><a href="#character_encoding">11.2. Character encoding</a></li> 
+          <li><a href="#werval_http_test_usage">10.1. Werval[Http]Test usage</a></li> 
+          <li><a href="#wervalrule_usage">10.2. WervalRule usage</a></li> 
+          <li><a href="#in_practice">10.3. In practice</a></li> 
+          <li><a href="#testing_http">10.4. Testing HTTP</a></li> 
+          <li><a href="#testing_browser_based_uis">10.5. Testing browser based UIs</a></li> 
+         </ul> </li> 
+        <li><a href="#development_mode">11. Development Mode</a></li> 
+        <li><a href="#unsorted">12. UNSORTED</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#logging">12.1. Logging</a></li> 
+          <li><a href="#character_encoding">12.2. Character encoding</a></li> 
          </ul> </li> 
        </ul> 
       </div> 
@@ -233,12 +242,12 @@
       </div> 
       <div class="sect2"> 
        <h3 id="summary"><a class="anchor" href="#summary"></a>2.5. Summary</h3> 
-       <table class="tableblock frame-all grid-all" style="width:100%; "> 
+       <table class="tableblock frame-all grid-all" style="width: 100%;"> 
         <colgroup> 
-         <col style="width:14%;"> 
-         <col style="width:28%;"> 
-         <col style="width:28%;"> 
-         <col style="width:28%;"> 
+         <col style="width: 14%;"> 
+         <col style="width: 28%;"> 
+         <col style="width: 28%;"> 
+         <col style="width: 28%;"> 
         </colgroup> 
         <thead> 
          <tr> 
@@ -447,7 +456,38 @@
      <h2 id="the_global_object"><a class="anchor" href="#the_global_object"></a>4. The Global object</h2> 
      <div class="sectionbody"> 
       <div class="sect2"> 
-       <h3 id="error_handling"><a class="anchor" href="#error_handling"></a>4.1. Error handling</h3> 
+       <h3 id="configuration_2"><a class="anchor" href="#configuration_2"></a>4.1. Configuration</h3> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="json language-json"><span class="error">a</span><span class="error">p</span><span class="error">p</span><span class="error">.</span><span class="error">g</span><span class="error">l</span><span class="error">o</span><span class="error">b</span><span class="error">a</span><span class="error">l</span> <span class="error">=</span> <span class="error">c</span><span class="error">o</span><span class="error">m</span><span class="error">.</span><span class="error">a</span><span class="error">c</span><span class="error">m</span><span class="error">e</span><span class="error">.</span><span class="error">W</span><span class="error">e</span><span class="error">r</span><span class="error">v</span><span class="error">a</span><span class="error">l</span><span class="error">G</span><span class="error">l</span><span class="error">o</span><span class="error">b</span><span class="error">a</span><span class="error">l</span></code></pre> 
+        </div> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="java language-java"><span class="keyword">package</span> <span class="namespace">com.acme</span>;
+
+<span class="directive">public</span> <span class="type">class</span> <span class="class">WervalGlobal</span> <span class="directive">extends</span> io.werval.api.Global
+{
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onActivate( Application application )
+    {
+        <span class="comment">// Called on application activation</span>
+    }
+
+    <span class="annotation">@Override</span>
+    <span class="directive">public</span> <span class="type">void</span> onPassivate( Application application )
+    {
+        <span class="comment">// Called on application passivation</span>
+    }
+
+    <span class="comment">// Many other methods, see io.werval.api.Global</span>
+    <span class="comment">// ...</span>
+}</code></pre> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="error_handling"><a class="anchor" href="#error_handling"></a>4.2. Error handling</h3> 
        <div class="paragraph"> 
         <p>When an error happen inside the Application it is recorded.</p> 
        </div> 
@@ -581,7 +621,16 @@
      <h2 id="http"><a class="anchor" href="#http"></a>7. HTTP</h2> 
      <div class="sectionbody"> 
       <div class="sect2"> 
-       <h3 id="session"><a class="anchor" href="#session"></a>7.1. Session</h3> 
+       <h3 id="configuration_3"><a class="anchor" href="#configuration_3"></a>7.1. Configuration</h3> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="json language-json"><span class="error">w</span><span class="error">e</span><span class="error">r</span><span class="error">v</span><span class="error">a</span><span class="error">l</span><span class="error">.</span><span class="error">h</span><span class="error">t</span><span class="error">t</span><span class="error">p</span><span class="error">.</span><span class="error">a</span><span class="error">d</span><span class="error">d</span><span class="error">r</span><span class="error">e</span><span class="error">s</span><span class="error">s</span> <span class="error">=</span> <span class="string"><span class="delimiter">"</span><span class="content">0.0.0.0</span><span class="delimiter">"</span></span>
+<span class="error">w</span><span class="error">e</span><span class="error">r</span><span class="error">v</span><span class="error">a</span><span class="error">l</span><span class="error">.</span><span class="error">h</span><span class="error">t</span><span class="error">t</span><span class="error">p</span><span class="error">.</span><span class="error">p</span><span class="error">o</span><span class="error">r</span><span class="error">t</span> <span class="error">=</span> <span class="integer">80</span></code></pre> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="session"><a class="anchor" href="#session"></a>7.2. Session</h3> 
        <div class="paragraph"> 
         <p>As Werval is stateless oriented, it provides no way to keep session state server side. Instead a simple session Cookie is used to keep state accross user requests.</p> 
        </div> 
@@ -603,7 +652,7 @@
        </div> 
       </div> 
       <div class="sect2"> 
-       <h3 id="query_string"><a class="anchor" href="#query_string"></a>7.2. Query String</h3> 
+       <h3 id="query_string"><a class="anchor" href="#query_string"></a>7.3. Query String</h3> 
        <div class="listingblock"> 
         <div class="content"> 
          <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">static</span> <span class="include">io.werval.api.context.CurrentContext</span>.*;
@@ -617,7 +666,7 @@
         </div> 
        </div> 
        <div class="sect3"> 
-        <h4 id="multiple_values"><a class="anchor" href="#multiple_values"></a>7.2.1. Multiple values</h4> 
+        <h4 id="multiple_values"><a class="anchor" href="#multiple_values"></a>7.3.1. Multiple values</h4> 
         <div class="paragraph"> 
          <p>Query strings can contain multiple values for the same parameter. How this is handled is not stated in the HTTP 1.0 nor 1.1 RFCs and, by so, open to interpretation. You, and others, are free to do it the way you, or they, want. This while being conform to the HTTP protocol. See <a href="https://www.owasp.org/images/b/ba/AppsecEU09_CarettoniDiPaola_v0.8.pdf">HTTP Parameter Pollution</a> at OWASP.</p> 
         </div> 
@@ -781,7 +830,79 @@
      </div> 
     </div> 
     <div class="sect1"> 
-     <h2 id="testing"><a class="anchor" href="#testing"></a>9. Testing</h2> 
+     <h2 id="core_library"><a class="anchor" href="#core_library"></a>9. Core Library</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>The <code>io.werval.api</code> jar contains core controllers and filters.</p> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="controllers"><a class="anchor" href="#controllers"></a>9.1. Controllers</h3> 
+       <div class="paragraph"> 
+        <p>Core library controllers can be declared in routes by their class simple name, no need to use fully qualified class names. In other words you can use <code>Default</code> instead of <code>io.werval.controllers.Default</code>.</p> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="default"><a class="anchor" href="#default"></a>9.1.1. Default</h4> 
+        <div class="listingblock"> 
+         <div class="title">
+           routes.conf 
+         </div> 
+         <div class="content"> 
+          <pre class="CodeRay"><code>GET /ok Default.ok
+GET /ping Default.ping
+# ...</code></pre> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="classpath_resources"><a class="anchor" href="#classpath_resources"></a>9.1.2. Classpath resources</h4> 
+        <div class="listingblock"> 
+         <div class="title">
+           routes.conf 
+         </div> 
+         <div class="content"> 
+          <pre class="CodeRay"><code>GET /assets/*path   Classpath.resource( String basepath = 'assets/', String path )
+GET /favicon.ico    Classpath.resource( String path = 'assets/favicon.ico' )</code></pre> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="static_files"><a class="anchor" href="#static_files"></a>9.1.3. Static files</h4> 
+        <div class="listingblock"> 
+         <div class="title">
+           routes.conf 
+         </div> 
+         <div class="content"> 
+          <pre class="CodeRay"><code>GET /single Static.file( String file = 'path/to/single/file.png' )
+GET /tree/*path Static.tree( String root = 'path/to/tree', String path )</code></pre> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="filters"><a class="anchor" href="#filters"></a>9.2. Filters</h3> 
+       <div class="sect3"> 
+        <h4 id="logifslow"><a class="anchor" href="#logifslow"></a>9.2.1. @LogIfSlow</h4> 
+        <div class="listingblock"> 
+         <div class="content"> 
+          <pre class="CodeRay"><code class="java language-java"><span class="annotation">@io</span>.werval.filters.LogIfSlow
+<span class="directive">public</span> Outcome interaction( <span class="comment">/*..*/</span> ) { <span class="comment">/*..*/</span> }</code></pre> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="acceptcontenttypes"><a class="anchor" href="#acceptcontenttypes"></a>9.2.2. @AcceptContentTypes</h4> 
+        <div class="listingblock"> 
+         <div class="content"> 
+          <pre class="CodeRay"><code class="java language-java"><span class="annotation">@io</span>.werval.filters.AcceptContentTypes( { <span class="string"><span class="delimiter">"</span><span class="content">application/json</span><span class="delimiter">"</span></span> } )
+<span class="directive">public</span> Outcome interaction( <span class="comment">/*..*/</span> ) { <span class="comment">/*..*/</span> }</code></pre> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="testing"><a class="anchor" href="#testing"></a>10. Testing</h2> 
      <div class="sectionbody"> 
       <div class="paragraph"> 
        <p>The <code>io.werval.test</code> module provide <a href="http://junit.org">JUnit</a> based construct to ease tests implementation.</p> 
@@ -793,7 +914,7 @@
        <p>Using the JUnit Rules is the prefered way of writing Werval tests as they don’t force you to extend from any base class.</p> 
       </div> 
       <div class="sect2"> 
-       <h3 id="werval_http_test_usage"><a class="anchor" href="#werval_http_test_usage"></a>9.1. Werval[Http]Test usage</h3> 
+       <h3 id="werval_http_test_usage"><a class="anchor" href="#werval_http_test_usage"></a>10.1. Werval[Http]Test usage</h3> 
        <div class="listingblock"> 
         <div class="content"> 
          <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">org.junit.Test</span>;
@@ -812,7 +933,7 @@
        </div> 
       </div> 
       <div class="sect2"> 
-       <h3 id="wervalrule_usage"><a class="anchor" href="#wervalrule_usage"></a>9.2. WervalRule usage</h3> 
+       <h3 id="wervalrule_usage"><a class="anchor" href="#wervalrule_usage"></a>10.2. WervalRule usage</h3> 
        <div class="listingblock"> 
         <div class="content"> 
          <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">org.junit.Rule</span>;
@@ -851,7 +972,7 @@
        </div> 
       </div> 
       <div class="sect2"> 
-       <h3 id="in_practice"><a class="anchor" href="#in_practice"></a>9.3. In practice</h3> 
+       <h3 id="in_practice"><a class="anchor" href="#in_practice"></a>10.3. In practice</h3> 
        <div class="ulist"> 
         <ul> 
          <li> <p>HTTP or not HTTP</p> </li> 
@@ -863,7 +984,7 @@
        </div> 
       </div> 
       <div class="sect2"> 
-       <h3 id="testing_http"><a class="anchor" href="#testing_http"></a>9.4. Testing HTTP</h3> 
+       <h3 id="testing_http"><a class="anchor" href="#testing_http"></a>10.4. Testing HTTP</h3> 
        <div class="admonitionblock tip"> 
         <table> 
          <tbody> 
@@ -888,7 +1009,7 @@
        </div> 
       </div> 
       <div class="sect2"> 
-       <h3 id="testing_browser_based_uis"><a class="anchor" href="#testing_browser_based_uis"></a>9.5. Testing browser based UIs</h3> 
+       <h3 id="testing_browser_based_uis"><a class="anchor" href="#testing_browser_based_uis"></a>10.5. Testing browser based UIs</h3> 
        <div class="admonitionblock tip"> 
         <table> 
          <tbody> 
@@ -912,7 +1033,7 @@
      </div> 
     </div> 
     <div class="sect1"> 
-     <h2 id="development_mode"><a class="anchor" href="#development_mode"></a>10. Development Mode</h2> 
+     <h2 id="development_mode"><a class="anchor" href="#development_mode"></a>11. Development Mode</h2> 
      <div class="sectionbody"> 
       <div class="paragraph"> 
        <p>Class reloading is implemented using [ClassWorlds](<a href="https://github.com/sonatype/plexus-classworlds">https://github.com/sonatype/plexus-classworlds</a>).</p> 
@@ -931,10 +1052,10 @@
      </div> 
     </div> 
     <div class="sect1"> 
-     <h2 id="unsorted"><a class="anchor" href="#unsorted"></a>11. UNSORTED</h2> 
+     <h2 id="unsorted"><a class="anchor" href="#unsorted"></a>12. UNSORTED</h2> 
      <div class="sectionbody"> 
       <div class="sect2"> 
-       <h3 id="logging"><a class="anchor" href="#logging"></a>11.1. Logging</h3> 
+       <h3 id="logging"><a class="anchor" href="#logging"></a>12.1. Logging</h3> 
        <div class="paragraph"> 
         <p>Werval use the <a href="http://www.slf4j.org">SLF4J</a> API (Simple Logging Facade for Java) but you have to choose what SLF4J implementation to use. We strongly recommend <a href="http://logback.qos.ch/">Logback</a>. You have full control on logging configuration.</p> 
        </div> 
@@ -956,7 +1077,7 @@
        </div> 
       </div> 
       <div class="sect2"> 
-       <h3 id="character_encoding"><a class="anchor" href="#character_encoding"></a>11.2. Character encoding</h3> 
+       <h3 id="character_encoding"><a class="anchor" href="#character_encoding"></a>12.2. Character encoding</h3> 
        <div class="paragraph"> 
         <p>By default all character encoding is done in UTF-8. Character encoding can be changed by setting the <code>werval.character-encoding</code> configuration property.</p> 
        </div> 
@@ -987,8 +1108,8 @@
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2014 | Werval 0.5.1 | The Werval Community</p> 
-   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+   <p class="muted credit">© 2015 | Werval 0.6.0 | The Werval Community</p> 
+   <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div> 
   <!-- Le javascript
     ================================================== --> 

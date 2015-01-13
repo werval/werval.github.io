@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="index.html">Werval 0.5.1</a> 
+      <a class="navbar-brand" href="index.html">Werval 0.6.0</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,10 @@
        <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.5.1)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.6.0)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.5.1)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.6.0)</a></li> 
+         <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
          <li><a href="/doc/develop/index.html">Development Version</a></li> 
          <li class="divider"></li> 
@@ -147,7 +148,7 @@
        <div class="content"> 
         <pre class="CodeRay"><code class="groovy language-groovy">buildscript {
   repositories { jcenter() }    // &lt;1&gt;
-  dependencies { classpath 'io.werval:io.werval.gradle:0.5.1' } // &lt;2&gt;
+  dependencies { classpath 'io.werval:io.werval.gradle:0.6.0' } // &lt;2&gt;
 }
 
 apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre> 
@@ -500,8 +501,10 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
        <div class="paragraph"> 
         <p>Module build is easy when using Gradle as a dedicated plugin is available.</p> 
        </div> 
-       <div class="paragraph"> 
-        <p><code>apply plugin: 'io.werval.module'</code></p> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>apply plugin: 'io.werval.module'</code></pre> 
+        </div> 
        </div> 
        <div class="paragraph"> 
         <p>You can also start from the <code>werval-skel-module</code> skeleton that comes with a complete sample Plugin including unit tests.</p> 
@@ -512,8 +515,10 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
        <div class="paragraph"> 
         <p>Declare Plugins in your build:</p> 
        </div> 
-       <div class="paragraph"> 
-        <p><code>moduleDescriptor.plugin 'name', impl: 'fqcn.of.YourPlugin'</code></p> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>moduleDescriptor.plugin 'name', impl: 'fqcn.of.YourPlugin'</code></pre> 
+        </div> 
        </div> 
        <div class="paragraph"> 
         <p>You can declare several of them.</p> 
@@ -685,7 +690,7 @@ Java home: /path/to/your/java/installation <b>(3)</b></code></pre>
       <div class="sect2"> 
        <h3 id="clone_the_werval_repositories"><a class="anchor" href="#clone_the_werval_repositories"></a>Clone the Werval repositories</h3> 
        <div class="paragraph"> 
-        <p>We recommend to create a local directory to put all Werval repositories.</p> 
+        <p>We recommend to create a local directory to put all Werval clones.</p> 
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
@@ -721,13 +726,13 @@ cd ~/src/werval-related          <b>(2)</b></code></pre>
       <div class="sect2"> 
        <h3 id="configure_gradle_maven"><a class="anchor" href="#configure_gradle_maven"></a>Configure Gradle &amp; Maven</h3> 
        <div class="paragraph"> 
-        <p>Gradle and Maven both need some configuration before going any further.</p> 
+        <p>Gradle and Maven both need some global local configuration before going any further.</p> 
        </div> 
        <div class="paragraph"> 
-        <p>Moreover, the core Werval build create a local repository to deploy development versions locally.</p> 
+        <p>The core Werval build create a <code>repository/</code> sub-directory where artifacts are deployed. We need to set this directory globally so that you can build other projects (samples, skeletons, etc..) with the whole codebase on the develop branch, or any other branch, tag etc…</p> 
        </div> 
        <div class="paragraph"> 
-        <p>Theses two needs proper configuration.</p> 
+        <p>For Gradle,</p> 
        </div> 
        <div class="listingblock"> 
         <div class="title">
@@ -737,6 +742,9 @@ cd ~/src/werval-related          <b>(2)</b></code></pre>
          <pre class="CodeRay"><code class="groovy language-groovy"><span class="comment">// Werval Local Repository</span>
 wervalLocalRepository=<span class="key">file</span>:<span class="comment">///home/you/src/werval-related/werval/repository</span></code></pre> 
         </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>For Maven,</p> 
        </div> 
        <div class="listingblock"> 
         <div class="title">
@@ -779,24 +787,24 @@ wervalLocalRepository=<span class="key">file</span>:<span class="comment">///hom
        <div class="paragraph"> 
         <p>This very git repository contains several independent projects.</p> 
        </div> 
-       <div class="literalblock"> 
+       <div class="listingblock"> 
         <div class="content"> 
-         <pre>io.werval               Werval Core
+         <pre class="CodeRay"><code>io.werval               Werval Core
 io.werval.modules       Modules
 io.werval.gradle        Gradle Plugin
 io.werval.maven         Maven Plugin
-io.werval.dist          Werval Distributions</pre> 
+io.werval.dist          Werval Distributions</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
         <p>For convenience, four shell scripts are provided:</p> 
        </div> 
-       <div class="literalblock"> 
+       <div class="listingblock"> 
         <div class="content"> 
-         <pre>clean.sh                Clean the repository of built artifacts
+         <pre class="CodeRay"><code>clean.sh                Clean the repository of built artifacts
 build.sh                Quick build without tests
 check.sh                Full build with all tests
-dist.sh                 Create distributions archives, without tests</pre> 
+dist.sh                 Create distributions archives, without tests</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -849,7 +857,9 @@ dist.sh                 Create distributions archives, without tests</pre>
         <div class="paragraph"> 
          <p>Both core and dynamic documentation are written using Asciidoc and can contain other static assets such as images and the like.</p> 
         </div> 
-        <h5 id="core_documentation" class="discrete">Core documentation</h5> 
+        <div class="paragraph"> 
+         <p><strong>Core documentation</strong></p> 
+        </div> 
         <div class="paragraph"> 
          <p>Core documentation includes a getting started guide, the other guides, the manual and the API javadoc. Its sources are in the <code>io.werval.doc</code> project.</p> 
         </div> 
@@ -872,15 +882,17 @@ dist.sh                 Create distributions archives, without tests</pre>
         <div class="paragraph"> 
          <p>All documentation source is assembled in a ZIP artifact published with the <code>doc</code> classifier:</p> 
         </div> 
-        <div class="literalblock"> 
+        <div class="listingblock"> 
          <div class="content"> 
-          <pre>io.werval:io.werval.doc:{werval_version}:doc@zip</pre> 
+          <pre class="CodeRay"><code>io.werval:io.werval.doc:{werval_version}:doc@zip</code></pre> 
          </div> 
         </div> 
         <div class="paragraph"> 
          <p>It contains the complete JBake project.</p> 
         </div> 
-        <h5 id="dynamic_documentation" class="discrete">Dynamic documentation</h5> 
+        <div class="paragraph"> 
+         <p><strong>Dynamic documentation</strong></p> 
+        </div> 
         <div class="paragraph"> 
          <p>Each Werval module can have its own documentation included thanks to dynamic documentation. This is not called <strong>modules documentation</strong> on purpose, <strong>dynamic documentation</strong> way better convey what is going on under the hood. Moreover, this mechanism is applied to officially supported modules only.</p> 
         </div> 
@@ -900,12 +912,12 @@ dist.sh                 Create distributions archives, without tests</pre>
         <div class="paragraph"> 
          <p>Dynamic documentations are registered by adding the following lines to a <code>reference.conf</code> files in the module’s classpath root:</p> 
         </div> 
-        <div class="literalblock"> 
+        <div class="listingblock"> 
          <div class="content"> 
-          <pre>werval.devshell.dyndoc.your-module-id {
+          <pre class="CodeRay"><code>werval.devshell.dyndoc.your-module-id {
     name = "Your shiny module's name"
     base_path = io/werval/modules/your-module-id/doc
-}</pre> 
+}</code></pre> 
          </div> 
         </div> 
         <div class="paragraph"> 
@@ -917,9 +929,9 @@ dist.sh                 Create distributions archives, without tests</pre>
         <div class="paragraph"> 
          <p>Example for the SMTP Module:</p> 
         </div> 
-        <div class="literalblock"> 
+        <div class="listingblock"> 
          <div class="content"> 
-          <pre>io.werval:io.werval.modules.smtp:{werval_version}:doc@zip</pre> 
+          <pre class="CodeRay"><code>io.werval:io.werval.modules.smtp:{werval_version}:doc@zip</code></pre> 
          </div> 
         </div> 
         <div class="paragraph"> 
@@ -928,7 +940,9 @@ dist.sh                 Create distributions archives, without tests</pre>
        </div> 
        <div class="sect3"> 
         <h4 id="documentation_targets"><a class="anchor" href="#documentation_targets"></a>Documentation targets</h4> 
-        <h5 id="development_shell" class="discrete">Development shell</h5> 
+        <div class="paragraph"> 
+         <p><strong>Development shell</strong></p> 
+        </div> 
         <div class="paragraph"> 
          <p>The <code>io.werval.doc</code> project host the <code>DocumentationPlugin</code> that gets automatically registered in development mode and setup routes to serve documentation at <code>/@doc</code>.</p> 
         </div> 
@@ -952,7 +966,9 @@ dist.sh                 Create distributions archives, without tests</pre>
           <li> <p>refresh <code>/@doc</code>.</p> </li> 
          </ul> 
         </div> 
-        <h5 id="documentations_archives" class="discrete">Documentations archives</h5> 
+        <div class="paragraph"> 
+         <p><strong>Documentations archives</strong></p> 
+        </div> 
         <div class="paragraph"> 
          <p>The <code>io.werval.dist</code> project that create distributions, does the job of assembling documentation archives.</p> 
         </div> 
@@ -967,7 +983,9 @@ dist.sh                 Create distributions archives, without tests</pre>
           <pre>io.werval:io.werval.dist:{werval_version}:doc@zip</pre> 
          </div> 
         </div> 
-        <h5 id="website" class="discrete">Website</h5> 
+        <div class="paragraph"> 
+         <p><strong>Website</strong></p> 
+        </div> 
         <div class="paragraph"> 
          <p>The Werval website provide general information about Werval and its community and embedd documentation sites for all past, current and develop versions documentations mini-sites.</p> 
         </div> 
@@ -1007,10 +1025,10 @@ dist.sh                 Create distributions archives, without tests</pre>
         <div class="paragraph"> 
          <p>Here are the Werval specific attributes that are set while rendering the documentation:</p> 
         </div> 
-        <table class="tableblock frame-all grid-all table table-hover" style="width:100%; "> 
+        <table class="tableblock frame-all grid-all table table-hover" style="width: 100%;"> 
          <colgroup> 
-          <col style="width:50%;"> 
-          <col style="width:50%;"> 
+          <col style="width: 50%;"> 
+          <col style="width: 50%;"> 
          </colgroup> 
          <tbody> 
           <tr> 
@@ -1023,10 +1041,10 @@ dist.sh                 Create distributions archives, without tests</pre>
        <div class="sect3"> 
         <h4 id="styling"><a class="anchor" href="#styling"></a>Styling</h4> 
         <div class="paragraph"> 
-         <p><code>io.werval.doc</code> styles the Werval Documentation for DevShell and distributions archives.</p> 
+         <p><code>io.werval.doc.css</code> styles the Werval Documentation for DevShell and distributions archives.</p> 
         </div> 
         <div class="paragraph"> 
-         <p><code>io.werval.website</code> embed the Werval Documentation as is and styles the website home and some other root pages.</p> 
+         <p><code>io.werval.website.css</code> embed the Werval Documentation as is and styles the website home and some other root pages.</p> 
         </div> 
        </div> 
       </div> 
@@ -1037,8 +1055,8 @@ dist.sh                 Create distributions archives, without tests</pre>
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2014 | Werval 0.5.1 | The Werval Community</p> 
-   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+   <p class="muted credit">© 2015 | Werval 0.6.0 | The Werval Community</p> 
+   <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div> 
   <!-- Le javascript
     ================================================== --> 

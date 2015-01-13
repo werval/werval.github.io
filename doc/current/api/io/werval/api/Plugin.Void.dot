@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.Plugin<API>
-	c27919 [label=<<table title="io.werval.api.Plugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Plugin.html">
+	c29626 [label=<<table title="io.werval.api.Plugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Plugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Plugin&lt;API&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Plugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Plugin.Void
-	c27920 [label=<<table title="io.werval.api.Plugin.Void" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Plugin.Void.html">
+	c29627 [label=<<table title="io.werval.api.Plugin.Void" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Plugin.Void.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Void </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./Plugin.Void.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.Plugin.Void implements io.werval.api.Plugin<API>
-	c27919:p -> c27920:p [dir=back,arrowtail=empty,style=dashed];
+	c29626:p -> c29627:p [dir=back,arrowtail=empty,style=dashed];
 }
 

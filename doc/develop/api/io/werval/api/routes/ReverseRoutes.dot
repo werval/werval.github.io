@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.routes.ReverseRoute
-	c32085 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoute.html">
+	c33537 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ReverseRoute.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReverseRoute </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ReverseRoute.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoutes
-	c32086 [label=<<table title="io.werval.api.routes.ReverseRoutes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ReverseRoutes.html">
+	c33538 [label=<<table title="io.werval.api.routes.ReverseRoutes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ReverseRoutes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReverseRoutes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ReverseRoutes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoutes NAVASSOC io.werval.api.routes.ReverseRoute
-	c32086:p -> c32085:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c33538:p -> c33537:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

@@ -10,42 +10,42 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.ResponseHeader
-	c35080 [label=<<table title="io.werval.api.http.ResponseHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ResponseHeader.html">
+	c36979 [label=<<table title="io.werval.api.http.ResponseHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ResponseHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ResponseHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ResponseHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Status
-	c35082 [label=<<table title="io.werval.api.http.Status" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Status.html">
+	c36981 [label=<<table title="io.werval.api.http.Status" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Status.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Status </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Status.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.StatusClass
-	c35083 [label=<<table title="io.werval.api.http.StatusClass" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StatusClass.html">
+	c36982 [label=<<table title="io.werval.api.http.StatusClass" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StatusClass.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> StatusClass </td></tr>
 		</table></td></tr>
 		</table>>, URL="./StatusClass.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.ResponseHeader NAVCOMPOSED io.werval.api.http.Status
-	c35080:p -> c35082:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c36979:p -> c36981:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.api.http.Status implements java.lang.Comparable<T>
-	c35212:p -> c35082:p [dir=back,arrowtail=empty,style=dashed];
+	c37114:p -> c36981:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.api.http.Status implements java.io.Serializable
-	c35213:p -> c35082:p [dir=back,arrowtail=empty,style=dashed];
+	c37115:p -> c36981:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.http.Status NAVCOMPOSED io.werval.api.http.StatusClass
-	c35082:p -> c35083:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c36981:p -> c36982:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// java.io.Serializable
-	c35213 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
+	c37115 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Serializable </td></tr>
 		</table></td></tr>
 		</table>>, URL="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// java.lang.Comparable<T>
-	c35212 [label=<<table title="java.lang.Comparable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html">
+	c37114 [label=<<table title="java.lang.Comparable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Comparable&lt;T&gt; </td></tr>

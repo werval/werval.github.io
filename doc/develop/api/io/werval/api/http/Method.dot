@@ -10,42 +10,42 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.Method
-	c24904 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Method.html">
+	c25820 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Method.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Method </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Method.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader
-	c24913 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
+	c25829 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.ReverseRoute
-	c24934 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../routes/ReverseRoute.html">
+	c25850 [label=<<table title="io.werval.api.routes.ReverseRoute" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../routes/ReverseRoute.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ReverseRoute </td></tr>
 		</table></td></tr>
 		</table>>, URL="../routes/ReverseRoute.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.Route
-	c24936 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../routes/Route.html">
+	c25852 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../routes/Route.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Route </td></tr>
 		</table></td></tr>
 		</table>>, URL="../routes/Route.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.http.Method implements java.io.Serializable
-	c25047:p -> c24904:p [dir=back,arrowtail=empty,style=dashed];
+	c25965:p -> c25820:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.Method
-	c24913:p -> c24904:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c25829:p -> c25820:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.routes.ReverseRoute HAS io.werval.api.http.Method
-	c24934:p -> c24904:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c25850:p -> c25820:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.routes.Route HAS io.werval.api.http.Method
-	c24936:p -> c24904:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c25852:p -> c25820:p [taillabel="1", label="method", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// java.io.Serializable
-	c25047 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
+	c25965 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Serializable </td></tr>

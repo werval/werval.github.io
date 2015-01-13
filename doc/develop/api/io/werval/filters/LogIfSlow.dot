@@ -10,23 +10,23 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.filters.LogIfSlow
-	c23266 [label=<<table title="io.werval.filters.LogIfSlow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LogIfSlow.html">
+	c24145 [label=<<table title="io.werval.filters.LogIfSlow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LogIfSlow.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> LogIfSlow </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./LogIfSlow.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.LogIfSlow.Filter
-	c23267 [label=<<table title="io.werval.filters.LogIfSlow.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.Filter.html">
+	c24146 [label=<<table title="io.werval.filters.LogIfSlow.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LogIfSlow.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.filters.LogIfSlow implements java.lang.annotation.Annotation
-	c23352:p -> c23266:p [dir=back,arrowtail=empty,style=dashed];
+	c24233:p -> c24145:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.filters.LogIfSlow NAVASSOC io.werval.filters.LogIfSlow.Filter
-	c23266:p -> c23267:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c24145:p -> c24146:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// java.lang.annotation.Annotation
-	c23352 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html">
+	c24233 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Annotation </td></tr>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Method.html" title="io.werval.api.http.Method" alt="" coords="262,129,323,153"/>
+<area shape="rect" id="node1" href="./Method.html" title="&lt;TABLE&gt;" alt="" coords="251,117,334,165"/>
+<area shape="rect" id="node2_1" href="./RequestHeader.html" title="io.werval.api.http.RequestHeader" alt="" coords="16,11,127,51"/>
+<area shape="rect" id="node2" href="./RequestHeader.html" title="&lt;TABLE&gt;" alt="" coords="5,5,137,56"/>
+<area shape="rect" id="node3_2" href="../routes/ReverseRoute.html" title="io.werval.api.routes.ReverseRoute" alt="" coords="172,11,275,51"/>
+<area shape="rect" id="node3" href="../routes/ReverseRoute.html" title="&lt;TABLE&gt;" alt="" coords="161,5,285,56"/>
+<area shape="rect" id="node4_3" href="../routes/Route.html" title="io.werval.api.routes.Route" alt="" coords="320,11,404,51"/>
+<area shape="rect" id="node4" href="../routes/Route.html" title="&lt;TABLE&gt;" alt="" coords="309,5,415,56"/>
+<area shape="rect" id="node5_4" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="java.io.Serializable" alt="" coords="449,11,536,51"/>
+<area shape="rect" id="node5" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html" title="&lt;TABLE&gt;" alt="" coords="439,5,547,56"/>
+</map>

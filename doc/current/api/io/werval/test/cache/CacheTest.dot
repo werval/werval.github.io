@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.cache.Cache
-	c7888 [label=<<table title="io.werval.api.cache.Cache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/cache/Cache.html">
+	c8099 [label=<<table title="io.werval.api.cache.Cache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/cache/Cache.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Cache </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../api/cache/Cache.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalTest
-	c8055 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../WervalTest.html">
+	c8270 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../WervalTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="../WervalTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.cache.CacheTest
-	c8057 [label=<<table title="io.werval.test.cache.CacheTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CacheTest.html">
+	c8272 [label=<<table title="io.werval.test.cache.CacheTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CacheTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CacheTest </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./CacheTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.test.cache.CacheTest extends io.werval.test.WervalTest
-	c8055:p -> c8057:p [dir=back,arrowtail=empty];
+	c8270:p -> c8272:p [dir=back,arrowtail=empty];
 	// io.werval.test.cache.CacheTest NAVASSOC io.werval.api.cache.Cache
-	c8057:p -> c7888:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c8272:p -> c8099:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

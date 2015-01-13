@@ -10,35 +10,35 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.cache.Cache
-	c6990 [label=<<table title="io.werval.api.cache.Cache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Cache.html">
+	c7139 [label=<<table title="io.werval.api.cache.Cache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Cache.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Cache </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cache.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.cache.CachePlugin
-	c6991 [label=<<table title="io.werval.api.cache.CachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CachePlugin.html">
+	c7140 [label=<<table title="io.werval.api.cache.CachePlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CachePlugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CachePlugin </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./CachePlugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.cache.CacheAdapter
-	c7135 [label=<<table title="io.werval.spi.cache.CacheAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/cache/CacheAdapter.html">
+	c7287 [label=<<table title="io.werval.spi.cache.CacheAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/cache/CacheAdapter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CacheAdapter </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../../spi/cache/CacheAdapter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.cache.CacheTest
-	c7160 [label=<<table title="io.werval.test.cache.CacheTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../test/cache/CacheTest.html">
+	c7312 [label=<<table title="io.werval.test.cache.CacheTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../test/cache/CacheTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CacheTest </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../../test/cache/CacheTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.cache.CachePlugin NAVCOMPOSED io.werval.api.cache.Cache
-	c6991:p -> c6990:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c7140:p -> c7139:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.spi.cache.CacheAdapter implements io.werval.api.cache.Cache
-	c6990:p -> c7135:p [dir=back,arrowtail=empty,style=dashed];
+	c7139:p -> c7287:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.test.cache.CacheTest NAVASSOC io.werval.api.cache.Cache
-	c7160:p -> c6990:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c7312:p -> c7139:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

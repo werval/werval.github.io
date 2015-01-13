@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.Application
-	c5631 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Application.html">
+	c5782 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Application.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Application </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Application.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.ApplicationExecutors
-	c5632 [label=<<table title="io.werval.api.ApplicationExecutors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ApplicationExecutors.html">
+	c5783 [label=<<table title="io.werval.api.ApplicationExecutors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ApplicationExecutors.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationExecutors </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ApplicationExecutors.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.ApplicationExecutors
-	c5631:p -> c5632:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5782:p -> c5783:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

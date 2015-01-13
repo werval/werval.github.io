@@ -10,36 +10,36 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.templates.Template
-	c36044 [label=<<table title="io.werval.api.templates.Template" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Template.html">
+	c37968 [label=<<table title="io.werval.api.templates.Template" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Template.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Template </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Template.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.templates.Templates
-	c36045 [label=<<table title="io.werval.api.templates.Templates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Templates.html">
+	c37969 [label=<<table title="io.werval.api.templates.Templates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Templates.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Templates </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Templates.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.templates.TemplatesPlugin
-	c36046 [label=<<table title="io.werval.api.templates.TemplatesPlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemplatesPlugin.html">
+	c37970 [label=<<table title="io.werval.api.templates.TemplatesPlugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemplatesPlugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> TemplatesPlugin </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./TemplatesPlugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.templates.TemplatesTest
-	c36144 [label=<<table title="io.werval.test.templates.TemplatesTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../test/templates/TemplatesTest.html">
+	c38070 [label=<<table title="io.werval.test.templates.TemplatesTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../test/templates/TemplatesTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> TemplatesTest </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../../test/templates/TemplatesTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.templates.Templates NAVASSOC io.werval.api.templates.Template
-	c36045:p -> c36044:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c37969:p -> c37968:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.templates.TemplatesPlugin NAVCOMPOSED io.werval.api.templates.Templates
-	c36046:p -> c36045:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c37970:p -> c37969:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.test.templates.TemplatesTest NAVASSOC io.werval.api.templates.Templates
-	c36144:p -> c36045:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c38070:p -> c37969:p [taillabel="1", label="test", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.exceptions.WervalException
-	c13903 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/exceptions/WervalException.html">
+	c14276 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/exceptions/WervalException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalException </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../api/exceptions/WervalException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.dev.DevShellRebuildException
-	c14032 [label=<<table title="io.werval.spi.dev.DevShellRebuildException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DevShellRebuildException.html">
+	c14407 [label=<<table title="io.werval.spi.dev.DevShellRebuildException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DevShellRebuildException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DevShellRebuildException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DevShellRebuildException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.dev.DevShellSPI
-	c14033 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DevShellSPI.html">
+	c14408 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DevShellSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DevShellSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DevShellSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.spi.dev.DevShellRebuildException extends io.werval.api.exceptions.WervalException
-	c13903:p -> c14032:p [dir=back,arrowtail=empty];
+	c14276:p -> c14407:p [dir=back,arrowtail=empty];
 	// io.werval.spi.dev.DevShellSPI NAVASSOC io.werval.spi.dev.DevShellRebuildException
-	c14033:p -> c14032:p [taillabel="1", label="throws", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c14408:p -> c14407:p [taillabel="1", label="throws", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

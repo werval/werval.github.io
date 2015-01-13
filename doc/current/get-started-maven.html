@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="index.html">Werval 0.5.1</a> 
+      <a class="navbar-brand" href="index.html">Werval 0.6.0</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,10 @@
        <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.5.1)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.6.0)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.5.1)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.6.0)</a></li> 
+         <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
          <li><a href="/doc/develop/index.html">Development Version</a></li> 
          <li class="divider"></li> 
@@ -74,11 +75,16 @@
     <p></p> 
     <div id="preamble"> 
      <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>In this guide you’ll download a skeleton application and run it in development mode, walkthrough the application code and learn a few other things about Werval.</p> 
+      </div> 
       <div id="toc" class="toc2"> 
        <div id="toctitle" class="title">
          Get started using Maven 
        </div> 
        <ul class="sectlevel1"> 
+        <li><a href="#prerequisites">Prerequisites</a></li> 
+        <li><a href="#tl_dr">TL;DR</a></li> 
         <li><a href="#create_a_new_application">Create a new application</a></li> 
         <li><a href="#run_in_development_mode">Run in development mode</a></li> 
         <li><a href="#application_walkthrough">Application Walkthrough</a></li> 
@@ -86,77 +92,84 @@
         <li><a href="#next_steps">Next steps</a></li> 
        </ul> 
       </div> 
-      <div class="admonitionblock important"> 
-       <table> 
-        <tbody> 
-         <tr> 
-          <td class="icon"> 
-           <div class="title">
-             Important 
-           </div> </td> 
-          <td class="content"> 
-           <div class="title">
-             Install Java 8 
-           </div> 
-           <div class="paragraph"> 
-            <p>You need to install the <a href="http://www.oracle.com/technetwork/java/javase/downloads/">Java 8 JDK</a> and ensure that both of the following commands show the proper same version:</p> 
-           </div> 
-           <div class="listingblock"> 
-            <div class="content"> 
-             <pre class="CodeRay"><code class="bash language-bash">java -version
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="prerequisites"><a class="anchor" href="#prerequisites"></a>Prerequisites</h2> 
+     <div class="sectionbody"> 
+      <h3 id="java_8" class="discrete">Java &gt;= 8</h3> 
+      <div class="paragraph"> 
+       <p>You need to install the <a href="http://www.oracle.com/technetwork/java/javase/downloads/">Java 8 JDK</a> and ensure that both of the following commands show the proper same version:</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="bash language-bash">java -version
 $JAVA_HOME/bin/java -version</code></pre> 
-            </div> 
-           </div> 
-           <div class="paragraph"> 
-            <p>Should output something like:</p> 
-           </div> 
-           <div class="listingblock"> 
-            <div class="content"> 
-             <pre class="CodeRay"><code class="bash language-bash">java version "1.8.X_XX" <b>(1)</b>
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Should output something like:</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="bash language-bash">java version "1.8.X_XX" <b>(1)</b>
 Java(TM) SE Runtime Environment (build 1.8.X_XX-bXXX)
 Java HotSpot(TM) 64-Bit Server VM (build XX.XX-bXX, mixed mode)</code></pre> 
-            </div> 
-           </div> 
-           <div class="colist arabic"> 
-            <ol> 
-             <li> <p>This is Java 8</p> </li> 
-            </ol> 
-           </div> </td> 
-         </tr> 
-        </tbody> 
-       </table> 
+       </div> 
       </div> 
+      <div class="colist arabic"> 
+       <ol> 
+        <li> <p>This is Java 8</p> </li> 
+       </ol> 
+      </div> 
+      <h3 id="maven" class="discrete">Maven</h3> 
+      <div class="paragraph"> 
+       <p>You also need to install <a href="http://maven.apache.org/">Maven</a> and ensure that the following command show the proper version.</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="bash language-bash">mvn --version</code></pre> 
+       </div> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Should output something like:</p> 
+      </div> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="bash language-bash">Apache Maven 3.2.1 <b>(1)</b>
+Maven home: /path/to/your/maven/installation
+Java version: 1.8.0, vendor: Oracle Corporation <b>(2)</b>
+Java home: /path/to/your/java8/installation <b>(3)</b></code></pre> 
+       </div> 
+      </div> 
+      <div class="colist arabic"> 
+       <ol> 
+        <li> <p>This is Maven 3.2.x</p> </li> 
+        <li> <p>Using Java 8</p> </li> 
+        <li> <p>From the right JAVA_HOME</p> </li> 
+       </ol> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="tl_dr"><a class="anchor" href="#tl_dr"></a>TL;DR</h2> 
+     <div class="sectionbody"> 
       <div class="paragraph"> 
        <p>For the impatients, here is how to get a Maven skeleton running in development mode quickly:</p> 
       </div> 
-      <div class="admonitionblock tip"> 
-       <table> 
-        <tbody> 
-         <tr> 
-          <td class="icon"> 
-           <div class="title">
-             Tip 
-           </div> </td> 
-          <td class="content"> 
-           <div class="title">
-             TL;DR 
-           </div> 
-           <div class="listingblock"> 
-            <div class="content"> 
-             <pre class="CodeRay"><code>svn export https://github.com/werval/werval-skel-maven/trunk werval-maven &lt;1&gt;
-cd werval-maven
-mvn werval:devshell &lt;2&gt;</code></pre> 
-            </div> 
-           </div> 
-           <div class="colist arabic"> 
-            <ol> 
-             <li> <p>Create a new application</p> </li> 
-             <li> <p>Run in development mode</p> </li> 
-            </ol> 
-           </div> </td> 
-         </tr> 
-        </tbody> 
-       </table> 
+      <div class="listingblock"> 
+       <div class="content"> 
+        <pre class="CodeRay"><code>svn export https://github.com/werval/werval-skel-maven/trunk werval-maven &lt;1&gt;
+cd werval-maven &lt;2&gt;
+mvn werval:devshell &lt;3&gt;</code></pre> 
+       </div> 
+      </div> 
+      <div class="colist arabic"> 
+       <ol> 
+        <li> <p>Create a new application in a <code>werval-maven</code> directory</p> </li> 
+        <li> <p>Enter the newly created directory</p> </li> 
+        <li> <p>Run in development mode</p> </li> 
+       </ol> 
       </div> 
      </div> 
     </div> 
@@ -174,13 +187,13 @@ mvn werval:devshell &lt;2&gt;</code></pre>
       <div class="paragraph"> 
        <p>Where <code>YOUR_APP_NAME</code> is, well, your application name. A directory with this name will be created with the new application in it.</p> 
       </div> 
-      <div class="admonitionblock important"> 
+      <div class="admonitionblock note"> 
        <table> 
         <tbody> 
          <tr> 
           <td class="icon"> 
            <div class="title">
-             Important 
+             Note 
            </div> </td> 
           <td class="content"> 
            <div class="title">
@@ -223,13 +236,13 @@ mvn werval:devshell &lt;2&gt;</code></pre>
       <div class="paragraph"> 
        <p>As stated on the welcome page above, when running the Development Shell, the whole Werval documentation is available right from the HTTP server that run your application. Open <a href="http://localhost:23023/@doc">http://localhost:23023/@doc</a> to browse the documentation. This very article should be available at <a href="http://localhost:23023/@doc/getting-started.html">http://localhost:23023/@doc/getting-started.html</a> but maybe you are already reading it from there.</p> 
       </div> 
-      <div class="admonitionblock tip"> 
+      <div class="admonitionblock important"> 
        <table> 
         <tbody> 
          <tr> 
           <td class="icon"> 
            <div class="title">
-             Tip 
+             Important 
            </div> </td> 
           <td class="content"> 
            <div class="paragraph"> 
@@ -344,18 +357,18 @@ mvn werval:devshell &lt;2&gt;</code></pre>
         <span class="tag">&lt;dependency&gt;</span>
             <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
             <span class="tag">&lt;artifactId&gt;</span>io.werval.api<span class="tag">&lt;/artifactId&gt;</span>
-            <span class="tag">&lt;version&gt;</span>{werval_version}<span class="tag">&lt;/version&gt;</span>
+            <span class="tag">&lt;version&gt;</span>0.6.0<span class="tag">&lt;/version&gt;</span>
         <span class="tag">&lt;/dependency&gt;</span>
         <span class="tag">&lt;dependency&gt;</span>
             <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
             <span class="tag">&lt;artifactId&gt;</span>io.werval.server.bootstrap<span class="tag">&lt;/artifactId&gt;</span>
-            <span class="tag">&lt;version&gt;</span>{werval_version}<span class="tag">&lt;/version&gt;</span>
+            <span class="tag">&lt;version&gt;</span>0.6.0<span class="tag">&lt;/version&gt;</span>
             <span class="tag">&lt;scope&gt;</span>runtime<span class="tag">&lt;/scope&gt;</span>
         <span class="tag">&lt;/dependency&gt;</span>
         <span class="tag">&lt;dependency&gt;</span>
             <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
             <span class="tag">&lt;artifactId&gt;</span>io.werval.test<span class="tag">&lt;/artifactId&gt;</span>
-            <span class="tag">&lt;version&gt;</span>{werval_version}<span class="tag">&lt;/version&gt;</span>
+            <span class="tag">&lt;version&gt;</span>0.6.0<span class="tag">&lt;/version&gt;</span>
             <span class="tag">&lt;scope&gt;</span>test<span class="tag">&lt;/scope&gt;</span>
         <span class="tag">&lt;/dependency&gt;</span>
     <span class="tag">&lt;/dependencies&gt;</span>
@@ -380,7 +393,7 @@ mvn werval:devshell &lt;2&gt;</code></pre>
             <span class="tag">&lt;plugin&gt;</span>
                 <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
                 <span class="tag">&lt;artifactId&gt;</span>io.werval.maven<span class="tag">&lt;/artifactId&gt;</span>
-                <span class="tag">&lt;version&gt;</span>{werval_version}<span class="tag">&lt;/version&gt;</span>
+                <span class="tag">&lt;version&gt;</span>0.6.0<span class="tag">&lt;/version&gt;</span>
             <span class="tag">&lt;/plugin&gt;</span>
         <span class="tag">&lt;/plugins&gt;</span>
     <span class="tag">&lt;/build&gt;</span>
@@ -470,7 +483,7 @@ mvn werval:devshell &lt;2&gt;</code></pre>
        </div> 
       </div> 
       <div class="paragraph"> 
-       <p>You’ll notice that when application sources are concerned, the error page has links to open them quickly. Of course this will work better is you setup your development environment to open the files with the right applications.</p> 
+       <p>You’ll notice that when application sources are concerned, the error page has links to open them quickly. Of course this will work better if you setup your development environment to open the files with the right applications.</p> 
       </div> 
       <div class="paragraph"> 
        <p>Ok, things are failing well :-) We will now finally say "Hello World" from our HTTP Application.</p> 
@@ -526,8 +539,8 @@ mvn werval:devshell &lt;2&gt;</code></pre>
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2014 | Werval 0.5.1 | The Werval Community</p> 
-   <p class="muted credit">Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> | Baked with <a href="http://jbake.org">JBake</a></p> 
+   <p class="muted credit">© 2015 | Werval 0.6.0 | The Werval Community</p> 
+   <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div> 
   <!-- Le javascript
     ================================================== --> 

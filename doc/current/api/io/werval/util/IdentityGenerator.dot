@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.IdentityGenerator
-	c21301 [label=<<table title="io.werval.util.IdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./IdentityGenerator.html">
+	c22254 [label=<<table title="io.werval.util.IdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./IdentityGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> IdentityGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IdentityGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.UUIDIdentityGenerator
-	c21322 [label=<<table title="io.werval.util.UUIDIdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UUIDIdentityGenerator.html">
+	c22276 [label=<<table title="io.werval.util.UUIDIdentityGenerator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UUIDIdentityGenerator.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UUIDIdentityGenerator </td></tr>
 		</table></td></tr>
 		</table>>, URL="./UUIDIdentityGenerator.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.server.HttpServerHelper
-	c21342 [label=<<table title="io.werval.spi.server.HttpServerHelper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/server/HttpServerHelper.html">
+	c22296 [label=<<table title="io.werval.spi.server.HttpServerHelper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/server/HttpServerHelper.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> HttpServerHelper </td></tr>
 		</table></td></tr>
 		</table>>, URL="../spi/server/HttpServerHelper.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.util.UUIDIdentityGenerator implements io.werval.util.IdentityGenerator
-	c21301:p -> c21322:p [dir=back,arrowtail=empty,style=dashed];
+	c22254:p -> c22276:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.spi.server.HttpServerHelper COMPOSED io.werval.util.IdentityGenerator
-	c21342:p -> c21301:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c22296:p -> c22254:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 }
 

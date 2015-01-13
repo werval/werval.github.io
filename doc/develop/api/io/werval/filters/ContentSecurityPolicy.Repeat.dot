@@ -10,25 +10,25 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.filters.ContentSecurityPolicy
-	c10835 [label=<<table title="io.werval.filters.ContentSecurityPolicy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.html">
+	c11066 [label=<<table title="io.werval.filters.ContentSecurityPolicy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ContentSecurityPolicy </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.Repeat
-	c10838 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Repeat" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContentSecurityPolicy.Repeat.html">
+	c11069 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Repeat" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContentSecurityPolicy.Repeat.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> Repeat </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.Repeat.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.filters.ContentSecurityPolicy implements java.lang.annotation.Annotation
-	c10929:p -> c10835:p [dir=back,arrowtail=empty,style=dashed];
+	c11162:p -> c11066:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.filters.ContentSecurityPolicy.Repeat implements java.lang.annotation.Annotation
-	c10929:p -> c10838:p [dir=back,arrowtail=empty,style=dashed];
+	c11162:p -> c11069:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.filters.ContentSecurityPolicy.Repeat NAVASSOC io.werval.filters.ContentSecurityPolicy
-	c10838:p -> c10835:p [taillabel="1", label="repeat", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c11069:p -> c11066:p [taillabel="1", label="repeat", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// java.lang.annotation.Annotation
-	c10929 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html">
+	c11162 [label=<<table title="java.lang.annotation.Annotation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Annotation </td></tr>

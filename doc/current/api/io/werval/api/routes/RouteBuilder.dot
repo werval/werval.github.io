@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.routes.Route
-	c32106 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Route.html">
+	c33925 [label=<<table title="io.werval.api.routes.Route" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Route.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Route </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Route.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.RouteBuilder
-	c32107 [label=<<table title="io.werval.api.routes.RouteBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RouteBuilder.html">
+	c33926 [label=<<table title="io.werval.api.routes.RouteBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RouteBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RouteBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RouteBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.routes.RouteBuilder NAVASSOC io.werval.api.routes.Route
-	c32107:p -> c32106:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c33926:p -> c33925:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

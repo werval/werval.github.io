@@ -10,71 +10,71 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.exceptions.ActivationException
-	c37683 [label=<<table title="io.werval.api.exceptions.ActivationException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivationException.html">
+	c39253 [label=<<table title="io.werval.api.exceptions.ActivationException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ActivationException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ActivationException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ActivationException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.IllegalRouteException
-	c37684 [label=<<table title="io.werval.api.exceptions.IllegalRouteException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IllegalRouteException.html">
+	c39254 [label=<<table title="io.werval.api.exceptions.IllegalRouteException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./IllegalRouteException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> IllegalRouteException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IllegalRouteException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.ParameterBinderException
-	c37685 [label=<<table title="io.werval.api.exceptions.ParameterBinderException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinderException.html">
+	c39255 [label=<<table title="io.werval.api.exceptions.ParameterBinderException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ParameterBinderException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ParameterBinderException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ParameterBinderException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.PassivationException
-	c37686 [label=<<table title="io.werval.api.exceptions.PassivationException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PassivationException.html">
+	c39258 [label=<<table title="io.werval.api.exceptions.PassivationException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PassivationException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PassivationException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PassivationException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.RouteNotFoundException
-	c37687 [label=<<table title="io.werval.api.exceptions.RouteNotFoundException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RouteNotFoundException.html">
+	c39259 [label=<<table title="io.werval.api.exceptions.RouteNotFoundException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./RouteNotFoundException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RouteNotFoundException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RouteNotFoundException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.TemplateException
-	c37688 [label=<<table title="io.werval.api.exceptions.TemplateException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemplateException.html">
+	c39260 [label=<<table title="io.werval.api.exceptions.TemplateException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./TemplateException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> TemplateException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./TemplateException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.WervalException
-	c37689 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WervalException.html">
+	c39261 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WervalException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.dev.DevShellRebuildException
-	c37819 [label=<<table title="io.werval.spi.dev.DevShellRebuildException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/dev/DevShellRebuildException.html">
+	c39392 [label=<<table title="io.werval.spi.dev.DevShellRebuildException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../spi/dev/DevShellRebuildException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DevShellRebuildException </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../spi/dev/DevShellRebuildException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.exceptions.ActivationException extends io.werval.api.exceptions.WervalException
-	c37689:p -> c37683:p [dir=back,arrowtail=empty];
+	c39261:p -> c39253:p [dir=back,arrowtail=empty];
 	//io.werval.api.exceptions.IllegalRouteException extends io.werval.api.exceptions.WervalException
-	c37689:p -> c37684:p [dir=back,arrowtail=empty];
+	c39261:p -> c39254:p [dir=back,arrowtail=empty];
 	//io.werval.api.exceptions.ParameterBinderException extends io.werval.api.exceptions.WervalException
-	c37689:p -> c37685:p [dir=back,arrowtail=empty];
+	c39261:p -> c39255:p [dir=back,arrowtail=empty];
 	//io.werval.api.exceptions.PassivationException extends io.werval.api.exceptions.WervalException
-	c37689:p -> c37686:p [dir=back,arrowtail=empty];
+	c39261:p -> c39258:p [dir=back,arrowtail=empty];
 	//io.werval.api.exceptions.RouteNotFoundException extends io.werval.api.exceptions.WervalException
-	c37689:p -> c37687:p [dir=back,arrowtail=empty];
+	c39261:p -> c39259:p [dir=back,arrowtail=empty];
 	//io.werval.api.exceptions.TemplateException extends io.werval.api.exceptions.WervalException
-	c37689:p -> c37688:p [dir=back,arrowtail=empty];
+	c39261:p -> c39260:p [dir=back,arrowtail=empty];
 	//io.werval.api.exceptions.WervalException extends java.lang.RuntimeException
-	c37846:p -> c37689:p [dir=back,arrowtail=empty];
+	c39420:p -> c39261:p [dir=back,arrowtail=empty];
 	//io.werval.spi.dev.DevShellRebuildException extends io.werval.api.exceptions.WervalException
-	c37689:p -> c37819:p [dir=back,arrowtail=empty];
+	c39261:p -> c39392:p [dir=back,arrowtail=empty];
 	// java.lang.RuntimeException
-	c37846 [label=<<table title="java.lang.RuntimeException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html">
+	c39420 [label=<<table title="java.lang.RuntimeException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RuntimeException </td></tr>
 		</table></td></tr>

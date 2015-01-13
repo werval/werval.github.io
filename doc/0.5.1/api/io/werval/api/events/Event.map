@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ConnectionEvent.html" title="io.werval.api.events.ConnectionEvent" alt="" coords="16,231,135,255"/>
+<area shape="rect" id="node1" href="./ConnectionEvent.html" title="&lt;TABLE&gt;" alt="" coords="5,219,145,267"/>
+<area shape="rect" id="node2_1" href="./Event.html" title="io.werval.api.events.Event" alt="" coords="107,123,191,163"/>
+<area shape="rect" id="node2" href="./Event.html" title="&lt;TABLE&gt;" alt="" coords="96,117,201,168"/>
+<area shape="rect" id="node3_2" href="./HttpEvent.html" title="io.werval.api.events.HttpEvent" alt="" coords="180,223,264,263"/>
+<area shape="rect" id="node3" href="./HttpEvent.html" title="&lt;TABLE&gt;" alt="" coords="169,217,275,268"/>
+<area shape="rect" id="node4_3" href="../../spi/events/EventsSPI.html" title="io.werval.spi.events.EventsSPI" alt="" coords="107,11,191,51"/>
+<area shape="rect" id="node4" href="../../spi/events/EventsSPI.html" title="&lt;TABLE&gt;" alt="" coords="96,5,201,56"/>
+</map>

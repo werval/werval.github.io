@@ -10,24 +10,24 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.ByteArrayByteSource
-	c6720 [label=<<table title="io.werval.util.ByteArrayByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ByteArrayByteSource.html">
+	c6863 [label=<<table title="io.werval.util.ByteArrayByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ByteArrayByteSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ByteArrayByteSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ByteArrayByteSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.ByteSource
-	c6721 [label=<<table title="io.werval.util.ByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteSource.html">
+	c6864 [label=<<table title="io.werval.util.ByteSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ByteSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ByteSource </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ByteSource.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.util.ByteArrayByteSource implements io.werval.util.ByteSource
-	c6721:p -> c6720:p [dir=back,arrowtail=empty,style=dashed];
+	c6864:p -> c6863:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.util.ByteArrayByteSource implements java.io.Serializable
-	c6790:p -> c6720:p [dir=back,arrowtail=empty,style=dashed];
+	c6935:p -> c6863:p [dir=back,arrowtail=empty,style=dashed];
 	// java.io.Serializable
-	c6790 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
+	c6935 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Serializable </td></tr>

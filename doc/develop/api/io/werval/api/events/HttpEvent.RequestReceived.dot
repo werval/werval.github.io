@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.events.HttpEvent
-	c20364 [label=<<table title="io.werval.api.events.HttpEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.html">
+	c21181 [label=<<table title="io.werval.api.events.HttpEvent" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpEvent.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpEvent </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpEvent.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.HttpEvent.RequestReceived
-	c20365 [label=<<table title="io.werval.api.events.HttpEvent.RequestReceived" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HttpEvent.RequestReceived.html">
+	c21182 [label=<<table title="io.werval.api.events.HttpEvent.RequestReceived" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HttpEvent.RequestReceived.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RequestReceived </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpEvent.RequestReceived.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.events.HttpEvent.RequestReceived implements io.werval.api.events.HttpEvent
-	c20364:p -> c20365:p [dir=back,arrowtail=empty,style=dashed];
+	c21181:p -> c21182:p [dir=back,arrowtail=empty,style=dashed];
 }
 

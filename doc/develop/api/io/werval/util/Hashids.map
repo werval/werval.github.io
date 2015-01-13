@@ -1,6 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./Hashids.html" title="io.werval.util.Hashids" alt="" coords="16,127,81,151"/>
-<area shape="rect" id="node1" href="./Hashids.html" title="&lt;TABLE&gt;" alt="" coords="5,115,92,163"/>
-<area shape="rect" id="node2_1" href="./Hashids.Builder.html" title="io.werval.util.Hashids.Builder" alt="" coords="19,17,78,41"/>
-<area shape="rect" id="node2" href="./Hashids.Builder.html" title="&lt;TABLE&gt;" alt="" coords="9,5,89,53"/>
+<area shape="rect" id="node1_0" href="./Hashid.html" title="io.werval.util.Hashid" alt="" coords="19,236,78,260"/>
+<area shape="rect" id="node1" href="./Hashid.html" title="&lt;TABLE&gt;" alt="" coords="9,224,89,272"/>
+<area shape="rect" id="node2_1" href="./Hashids.html" title="io.werval.util.Hashids" alt="" coords="16,127,81,151"/>
+<area shape="rect" id="node2" href="./Hashids.html" title="&lt;TABLE&gt;" alt="" coords="5,115,92,163"/>
+<area shape="rect" id="node3_2" href="./Hashids.Builder.html" title="io.werval.util.Hashids.Builder" alt="" coords="19,17,78,41"/>
+<area shape="rect" id="node3" href="./Hashids.Builder.html" title="&lt;TABLE&gt;" alt="" coords="9,5,89,53"/>
 </map>

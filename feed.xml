@@ -6,11 +6,152 @@
     <atom:link href="http://werval.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>mer., 17 déc. 2014 14:54:46 +0100</pubDate>
-    <lastBuildDate>mer., 17 déc. 2014 14:54:46 +0100</lastBuildDate>
+    <pubDate>mar., 13 janv. 2015 18:20:04 +0100</pubDate>
+    <lastBuildDate>mar., 13 janv. 2015 18:20:04 +0100</lastBuildDate>
 
     <item>
-      <title>Werval 0.5.1 is out!</title>
+      <title>Werval 0.6.0</title>
+      <link>http://werval.io//news/2015-01-13_release_0.6.0.html</link>
+      <pubDate>mar., 13 janv. 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">news/2015-01-13_release_0.6.0.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.
+A lightweight core, live reload dev mode, useful modules, plugins for several build tools and
+multiple languages support leave you free to choose the right architecture for your domain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-gradle.html&quot;&gt;Get started using Gradle&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-maven.html&quot;&gt;Get started using maven&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Keep in sight that this is an early access release and that some edges may still be rough.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you encounter any issue, please report by creating a
+&lt;a href=&quot;https://github.com/werval/werval/issues/new&quot;&gt;new issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#changelog&quot;&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Release song is &lt;a href=&quot;http://grooveshark.com/s/U+Cant+Touch+This/3sWgpi&quot;&gt;U can&amp;#8217;t touch this&lt;/a&gt; by McHammer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/werval/werval/commits/0.6.0&quot;&gt;Commit history&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;breaking_changes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#breaking_changes&quot;&gt;&lt;/a&gt;Breaking changes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#233) &lt;code&gt;Config.object( String key )&lt;/code&gt; has been replaced by &lt;code&gt;Config.atKey( String key )&lt;/code&gt; and &lt;code&gt;Config.atPath( String path )&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;bug_fixes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#bug_fixes&quot;&gt;&lt;/a&gt;Bug fixes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#232 &amp;amp; #233) Fix dynamic modules documentation in development mode&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#235) Fix QueryString.Decoder that incorrectly added a null query param&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;new_features&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#new_features&quot;&gt;&lt;/a&gt;New features&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#194) Hashid parameter binder&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;enhancements&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#enhancements&quot;&gt;&lt;/a&gt;Enhancements&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#237) Controllers type lookup packages for routes can now be set in configuration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#68) Server bootstrap now loads &lt;code&gt;Application&lt;/code&gt; and &lt;code&gt;HttpServer&lt;/code&gt; implementations through &lt;code&gt;ServiceLoader&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#164) Performance enhancement, all &lt;code&gt;equals()&lt;/code&gt; methods have been short-circuited&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#193) Tests now use a randomly choosen free port in test mode allowing to run tests while development mode is running&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;dependency_changes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#dependency_changes&quot;&gt;&lt;/a&gt;Dependency changes&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Core&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade SLF4J from &lt;code&gt;1.7.7&lt;/code&gt; to &lt;code&gt;1.7.10&lt;/code&gt;, see the [annoucements](&lt;a href=&quot;http://www.slf4j.org/news.html&quot;&gt;http://www.slf4j.org/news.html&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Netty from &lt;code&gt;4.0.24&lt;/code&gt; to &lt;code&gt;4.0.25&lt;/code&gt;, see the announcement:
+[4.0.25](&lt;a href=&quot;http://netty.io/news/2014/12/31/4-0-25-Final.html&quot;&gt;http://netty.io/news/2014/12/31/4-0-25-Final.html&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modules&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Jackson from &lt;code&gt;2.4.4&lt;/code&gt; to &lt;code&gt;2.5.0&lt;/code&gt;, see the [release-notes](&lt;a href=&quot;https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.5&quot;&gt;https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.5&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Jedis from &lt;code&gt;2.6.1&lt;/code&gt; to &lt;code&gt;2.6.2&lt;/code&gt;, see the [release-notes](&lt;a href=&quot;https://github.com/xetorthio/jedis/releases&quot;&gt;https://github.com/xetorthio/jedis/releases&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Liquibase from &lt;code&gt;3.3.0&lt;/code&gt; to &lt;code&gt;3.3.2&lt;/code&gt;, see the [announcement](&lt;a href=&quot;http://blog.liquibase.org/2015/01/liquibase-3-3-2-released.html&quot;&gt;http://blog.liquibase.org/2015/01/liquibase-3-3-2-released.html&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade spymemcached from &lt;code&gt;2.11.4&lt;/code&gt; to &lt;code&gt;2.11.5&lt;/code&gt;, see the [history](&lt;a href=&quot;https://github.com/couchbase/spymemcached&quot;&gt;https://github.com/couchbase/spymemcached&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Spring from &lt;code&gt;4.1.2&lt;/code&gt; to &lt;code&gt;4.1.4&lt;/code&gt;, see the [changes-report](&lt;a href=&quot;http://docs.spring.io/spring-framework/docs/4.1.x/spring-framework-reference/htmlsingle/#new-in-4.1&quot;&gt;http://docs.spring.io/spring-framework/docs/4.1.x/spring-framework-reference/htmlsingle/#new-in-4.1&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Thymeleaf from &lt;code&gt;2.1.3&lt;/code&gt; to &lt;code&gt;2.1.4&lt;/code&gt;, see the [changelog](&lt;a href=&quot;https://github.com/thymeleaf/thymeleaf/blob/thymeleaf-2.1.4.RELEASE/ChangeLog.txt&quot;&gt;https://github.com/thymeleaf/thymeleaf/blob/thymeleaf-2.1.4.RELEASE/ChangeLog.txt&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Werval 0.5.1</title>
       <link>http://werval.io//news/2014-12-14_release_0.5.1.html</link>
       <pubDate>dim., 14 déc. 2014 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">news/2014-12-14_release_0.5.1.html</guid>
@@ -43,7 +184,7 @@ multiple languages support leave you free to choose the right architecture for y
 	</description>
     </item>
     <item>
-      <title>Werval 0.4.0 is out!</title>
+      <title>Werval 0.4.0</title>
       <link>http://werval.io//news/2014-11-28_release_0.4.0.html</link>
       <pubDate>ven., 28 nov. 2014 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">news/2014-11-28_release_0.4.0.html</guid>

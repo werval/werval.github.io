@@ -10,83 +10,83 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.Cookies
-	c31292 [label=<<table title="io.werval.api.http.Cookies" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cookies.html">
+	c32728 [label=<<table title="io.werval.api.http.Cookies" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cookies.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Cookies </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cookies.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Headers
-	c31297 [label=<<table title="io.werval.api.http.Headers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Headers.html">
+	c32733 [label=<<table title="io.werval.api.http.Headers" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Headers.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Headers </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Headers.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Method
-	c31302 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Method.html">
+	c32738 [label=<<table title="io.werval.api.http.Method" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Method.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Method </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Method.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.ProtocolVersion
-	c31305 [label=<<table title="io.werval.api.http.ProtocolVersion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProtocolVersion.html">
+	c32741 [label=<<table title="io.werval.api.http.ProtocolVersion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ProtocolVersion.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ProtocolVersion </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ProtocolVersion.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.QueryString
-	c31306 [label=<<table title="io.werval.api.http.QueryString" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QueryString.html">
+	c32742 [label=<<table title="io.werval.api.http.QueryString" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./QueryString.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> QueryString </td></tr>
 		</table></td></tr>
 		</table>>, URL="./QueryString.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Request
-	c31309 [label=<<table title="io.werval.api.http.Request" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Request.html">
+	c32745 [label=<<table title="io.werval.api.http.Request" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Request.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Request </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Request.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestHeader
-	c31311 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RequestHeader.html">
+	c32747 [label=<<table title="io.werval.api.http.RequestHeader" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RequestHeader.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestHeader </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestHeader.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.i18n.Lang
-	c31316 [label=<<table title="io.werval.api.i18n.Lang" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../i18n/Lang.html">
+	c32752 [label=<<table title="io.werval.api.i18n.Lang" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../i18n/Lang.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Lang </td></tr>
 		</table></td></tr>
 		</table>>, URL="../i18n/Lang.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.mime.MediaRange
-	c31318 [label=<<table title="io.werval.api.mime.MediaRange" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../mime/MediaRange.html">
+	c32754 [label=<<table title="io.werval.api.mime.MediaRange" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../mime/MediaRange.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MediaRange </td></tr>
 		</table></td></tr>
 		</table>>, URL="../mime/MediaRange.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.http.Request implements io.werval.api.http.RequestHeader
-	c31311:p -> c31309:p [dir=back,arrowtail=empty,style=dashed];
+	c32747:p -> c32745:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.ProtocolVersion
-	c31311:p -> c31305:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32741:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.Method
-	c31311:p -> c31302:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32738:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.QueryString
-	c31311:p -> c31306:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32742:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.Headers
-	c31311:p -> c31297:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32733:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.http.Cookies
-	c31311:p -> c31292:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32728:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.i18n.Lang
-	c31311:p -> c31316:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32752:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.i18n.Lang
-	c31311:p -> c31316:p [taillabel="1", label="preferred", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32752:p [taillabel="1", label="preferred", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestHeader NAVCOMPOSED io.werval.api.mime.MediaRange
-	c31311:p -> c31318:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32747:p -> c32754:p [taillabel="1", label="accepted", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

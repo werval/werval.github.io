@@ -10,31 +10,31 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.controllers.Classpath
-	c2329 [label=<<table title="io.werval.controllers.Classpath" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Classpath.html">
+	c2391 [label=<<table title="io.werval.controllers.Classpath" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Classpath.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Classpath </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Classpath.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.controllers.Default
-	c2330 [label=<<table title="io.werval.controllers.Default" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Default.html">
+	c2392 [label=<<table title="io.werval.controllers.Default" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Default.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Default </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Default.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.controllers.Introspect
-	c2331 [label=<<table title="io.werval.controllers.Introspect" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Introspect.html">
+	c2393 [label=<<table title="io.werval.controllers.Introspect" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Introspect.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Introspect </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Introspect.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.controllers.Static
-	c2332 [label=<<table title="io.werval.controllers.Static" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Static.html">
+	c2394 [label=<<table title="io.werval.controllers.Static" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Static.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Static </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Static.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.controllers.Welcome
-	c2333 [label=<<table title="io.werval.controllers.Welcome" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Welcome.html">
+	c2395 [label=<<table title="io.werval.controllers.Welcome" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Welcome.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Welcome </td></tr>
 		</table></td></tr>

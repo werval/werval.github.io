@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.exceptions.IllegalRouteException
-	c21685 [label=<<table title="io.werval.api.exceptions.IllegalRouteException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./IllegalRouteException.html">
+	c22530 [label=<<table title="io.werval.api.exceptions.IllegalRouteException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./IllegalRouteException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> IllegalRouteException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./IllegalRouteException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.WervalException
-	c21690 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalException.html">
+	c22537 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.exceptions.IllegalRouteException extends io.werval.api.exceptions.WervalException
-	c21690:p -> c21685:p [dir=back,arrowtail=empty];
+	c22537:p -> c22530:p [dir=back,arrowtail=empty];
 }
 

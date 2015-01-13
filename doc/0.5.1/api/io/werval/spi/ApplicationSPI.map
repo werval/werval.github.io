@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../api/Application.html" title="io.werval.api.Application" alt="" coords="16,107,100,147"/>
+<area shape="rect" id="node1" href="../api/Application.html" title="&lt;TABLE&gt;" alt="" coords="5,101,111,152"/>
+<area shape="rect" id="node2_1" href="../api/Global.html" title="io.werval.api.Global" alt="" coords="30,312,86,336"/>
+<area shape="rect" id="node2" href="../api/Global.html" title="&lt;TABLE&gt;" alt="" coords="19,300,97,348"/>
+<area shape="rect" id="node3_2" href="./ApplicationSPI.html" title="io.werval.spi.ApplicationSPI" alt="" coords="122,205,226,245"/>
+<area shape="rect" id="node3" href="./ApplicationSPI.html" title="&lt;TABLE&gt;" alt="" coords="111,200,237,251"/>
+<area shape="rect" id="node4_3" href="./events/EventsSPI.html" title="io.werval.spi.events.EventsSPI" alt="" coords="132,304,216,344"/>
+<area shape="rect" id="node4" href="./events/EventsSPI.html" title="&lt;TABLE&gt;" alt="" coords="121,299,227,349"/>
+<area shape="rect" id="node5_4" href="./http/HttpBuildersSPI.html" title="io.werval.spi.http.HttpBuildersSPI" alt="" coords="262,304,374,344"/>
+<area shape="rect" id="node5" href="./http/HttpBuildersSPI.html" title="&lt;TABLE&gt;" alt="" coords="251,299,385,349"/>
+<area shape="rect" id="node6_5" href="./server/HttpServer.html" title="io.werval.spi.server.HttpServer" alt="" coords="197,107,281,147"/>
+<area shape="rect" id="node6" href="./server/HttpServer.html" title="&lt;TABLE&gt;" alt="" coords="187,101,292,152"/>
+<area shape="rect" id="node7_6" href="../test/WervalHttpTest.html" title="io.werval.test.WervalHttpTest" alt="" coords="140,17,248,41"/>
+<area shape="rect" id="node7" href="../test/WervalHttpTest.html" title="&lt;TABLE&gt;" alt="" coords="129,5,259,53"/>
+<area shape="rect" id="node8_7" href="../test/WervalTest.html" title="io.werval.test.WervalTest" alt="" coords="327,115,410,139"/>
+<area shape="rect" id="node8" href="../test/WervalTest.html" title="&lt;TABLE&gt;" alt="" coords="317,103,421,151"/>
+</map>

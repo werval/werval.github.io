@@ -10,33 +10,33 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.LinkedMultiValueMap<K, V>
-	c25749 [label=<<table title="io.werval.util.LinkedMultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LinkedMultiValueMap.html">
+	c26682 [label=<<table title="io.werval.util.LinkedMultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LinkedMultiValueMap.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LinkedMultiValueMap&lt;K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LinkedMultiValueMap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.Maps.MultiValueMapBuilder<M extends java.util.Map<K, java.util.List<V>>, K, V>
-	c25752 [label=<<table title="io.werval.util.Maps.MultiValueMapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MultiValueMapBuilder.html">
+	c26685 [label=<<table title="io.werval.util.Maps.MultiValueMapBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Maps.MultiValueMapBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MultiValueMapBuilder&lt;M extends Map&lt;K, List&lt;V&gt;&gt;, K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Maps.MultiValueMapBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.util.MultiValueMap<K, V>
-	c25753 [label=<<table title="io.werval.util.MultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MultiValueMap.html">
+	c26686 [label=<<table title="io.werval.util.MultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./MultiValueMap.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MultiValueMap&lt;K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MultiValueMap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.util.LinkedMultiValueMap<K, V> implements io.werval.util.MultiValueMap<K, V>
-	c25753:p -> c25749:p [dir=back,arrowtail=empty,style=dashed];
+	c26686:p -> c26682:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.util.Maps.MultiValueMapBuilder<M extends java.util.Map<K, java.util.List<V>>, K, V> NAVASSOC io.werval.util.MultiValueMap<K, V>
-	c25752:p -> c25753:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c26685:p -> c26686:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.util.MultiValueMap<K, V> implements java.util.Map<K, V>
-	c25801:p -> c25753:p [dir=back,arrowtail=empty,style=dashed];
+	c26735:p -> c26686:p [dir=back,arrowtail=empty,style=dashed];
 	// java.util.Map<K, V>
-	c25801 [label=<<table title="java.util.Map" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html">
+	c26735 [label=<<table title="java.util.Map" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Map&lt;K, V&gt; </td></tr>

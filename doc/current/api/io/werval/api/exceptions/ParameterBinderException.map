@@ -1,6 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./ParameterBinderException.html" title="io.werval.api.exceptions.ParameterBinderException" alt="" coords="16,113,193,137"/>
-<area shape="rect" id="node1" href="./ParameterBinderException.html" title="&lt;TABLE&gt;" alt="" coords="5,101,204,149"/>
-<area shape="rect" id="node2_1" href="./WervalException.html" title="io.werval.api.exceptions.WervalException" alt="" coords="46,17,163,41"/>
-<area shape="rect" id="node2" href="./WervalException.html" title="&lt;TABLE&gt;" alt="" coords="35,5,174,53"/>
+<area shape="rect" id="node1_0" href="./ParameterBinderException.html" title="io.werval.api.exceptions.ParameterBinderException" alt="" coords="136,113,313,137"/>
+<area shape="rect" id="node1" href="./ParameterBinderException.html" title="&lt;TABLE&gt;" alt="" coords="125,101,324,149"/>
+<area shape="rect" id="node2_1" href="./ParameterBindingException.html" title="io.werval.api.exceptions.ParameterBindingException" alt="" coords="16,209,199,233"/>
+<area shape="rect" id="node2" href="./ParameterBindingException.html" title="&lt;TABLE&gt;" alt="" coords="5,197,209,245"/>
+<area shape="rect" id="node3_2" href="./ParameterUnbindingException.html" title="io.werval.api.exceptions.ParameterUnbindingException" alt="" coords="244,209,443,233"/>
+<area shape="rect" id="node3" href="./ParameterUnbindingException.html" title="&lt;TABLE&gt;" alt="" coords="233,197,453,245"/>
+<area shape="rect" id="node4_3" href="./WervalException.html" title="io.werval.api.exceptions.WervalException" alt="" coords="166,17,283,41"/>
+<area shape="rect" id="node4" href="./WervalException.html" title="&lt;TABLE&gt;" alt="" coords="155,5,294,53"/>
 </map>

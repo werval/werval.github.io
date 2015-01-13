@@ -10,75 +10,75 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.Application
-	c5849 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/Application.html">
+	c5974 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/Application.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Application </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/Application.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Global
-	c5855 [label=<<table title="io.werval.api.Global" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/Global.html">
+	c5980 [label=<<table title="io.werval.api.Global" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/Global.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Global </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/Global.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.ApplicationSPI
-	c6004 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ApplicationSPI.html">
+	c6132 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ApplicationSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ApplicationSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.events.EventsSPI
-	c6017 [label=<<table title="io.werval.spi.events.EventsSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./events/EventsSPI.html">
+	c6145 [label=<<table title="io.werval.spi.events.EventsSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./events/EventsSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EventsSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./events/EventsSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.http.HttpBuildersSPI
-	c6018 [label=<<table title="io.werval.spi.http.HttpBuildersSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./http/HttpBuildersSPI.html">
+	c6146 [label=<<table title="io.werval.spi.http.HttpBuildersSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./http/HttpBuildersSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpBuildersSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./http/HttpBuildersSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.server.HttpServer
-	c6020 [label=<<table title="io.werval.spi.server.HttpServer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./server/HttpServer.html">
+	c6148 [label=<<table title="io.werval.spi.server.HttpServer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./server/HttpServer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpServer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./server/HttpServer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalHttpTest
-	c6025 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../test/WervalHttpTest.html">
+	c6153 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../test/WervalHttpTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalHttpTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="../test/WervalHttpTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalTest
-	c6028 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../test/WervalTest.html">
+	c6156 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../test/WervalTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="../test/WervalTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Application COMPOSED io.werval.api.Global
-	c5849:p -> c5855:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c5974:p -> c5980:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	//io.werval.spi.ApplicationSPI implements io.werval.api.Application
-	c5849:p -> c6004:p [dir=back,arrowtail=empty,style=dashed];
+	c5974:p -> c6132:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.spi.ApplicationSPI NAVCOMPOSED io.werval.api.Global
-	c6004:p -> c5855:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c6132:p -> c5980:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.spi.ApplicationSPI NAVCOMPOSED io.werval.spi.events.EventsSPI
-	c6004:p -> c6017:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c6132:p -> c6145:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.spi.ApplicationSPI NAVCOMPOSED io.werval.spi.http.HttpBuildersSPI
-	c6004:p -> c6018:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c6132:p -> c6146:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.spi.server.HttpServer NAVCOMPOSED io.werval.spi.ApplicationSPI
-	c6020:p -> c6004:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c6148:p -> c6132:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.test.WervalHttpTest NAVCOMPOSED io.werval.spi.ApplicationSPI
-	c6025:p -> c6004:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c6153:p -> c6132:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.test.WervalHttpTest NAVCOMPOSED io.werval.spi.server.HttpServer
-	c6025:p -> c6020:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c6153:p -> c6148:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.test.WervalTest NAVCOMPOSED io.werval.spi.ApplicationSPI
-	c6028:p -> c6004:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c6156:p -> c6132:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

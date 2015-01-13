@@ -10,47 +10,47 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.spi.ApplicationSPI
-	c20763 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ApplicationSPI.html">
+	c21702 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../ApplicationSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="../ApplicationSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.dev.DevShellSPI
-	c20770 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../dev/DevShellSPI.html">
+	c21709 [label=<<table title="io.werval.spi.dev.DevShellSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../dev/DevShellSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> DevShellSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="../dev/DevShellSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.server.HttpServer
-	c20779 [label=<<table title="io.werval.spi.server.HttpServer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HttpServer.html">
+	c21718 [label=<<table title="io.werval.spi.server.HttpServer" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HttpServer.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpServer </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpServer.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.server.HttpServerAdapter
-	c20780 [label=<<table title="io.werval.spi.server.HttpServerAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpServerAdapter.html">
+	c21719 [label=<<table title="io.werval.spi.server.HttpServerAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpServerAdapter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> HttpServerAdapter </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpServerAdapter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalHttpTest
-	c20784 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../test/WervalHttpTest.html">
+	c21723 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../test/WervalHttpTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalHttpTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../test/WervalHttpTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.server.HttpServer NAVCOMPOSED io.werval.spi.ApplicationSPI
-	c20779:p -> c20763:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c21718:p -> c21702:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.spi.server.HttpServer NAVCOMPOSED io.werval.spi.dev.DevShellSPI
-	c20779:p -> c20770:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c21718:p -> c21709:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.spi.server.HttpServerAdapter implements io.werval.spi.server.HttpServer
-	c20779:p -> c20780:p [dir=back,arrowtail=empty,style=dashed];
+	c21718:p -> c21719:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.test.WervalHttpTest NAVCOMPOSED io.werval.spi.ApplicationSPI
-	c20784:p -> c20763:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c21723:p -> c21702:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.test.WervalHttpTest NAVCOMPOSED io.werval.spi.server.HttpServer
-	c20784:p -> c20779:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c21723:p -> c21718:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Werval 0.6.0</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content=""> 
+  <meta name="author" content=""> 
+  <meta name="keywords" content=""> 
+  <meta name="generator" content="Werval"> 
+  <!-- Le styles --> 
+  <!-- See https://github.com/nerk/asciidoctor-bs-themes --> 
+  <link href="../doc/develop/css/bootstrap_lumen.css" rel="stylesheet"> 
+  <link href="../doc/develop/css/base.css" rel="stylesheet"> 
+  <link href="../doc/develop/css/io.werval.doc.css" rel="stylesheet"> 
+  <link href="../doc/develop/css/prettify.css" rel="stylesheet"> 
+  <link href="../css/io.werval.website.css" rel="stylesheet"> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+  <!--[if lt IE 9]>
+      <script src="../doc/develop/js/html5shiv.min.js"></script>
+    <![endif]--> 
+  <!-- Fav and touch icons --> 
+  <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">--> 
+  <link rel="shortcut icon" href="../favicon.ico">  
+  <!-- Async Analytics --> 
+  <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-57721420-1', 'auto');
+        ga('send', 'pageview');
+    </script> 
+ </head> 
+ <body onload="prettyPrint()" class="article toc2 toc-right"> 
+  <div id="wrap"> 
+   <!-- Fixed navbar --> 
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="../index.html">Werval</a> 
+     </div> 
+     <div class="navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li><a href="../news.html">News</a></li> 
+       <li><a href="../doc/current/index.html">Documentation</a></li> 
+       <li><a href="../resources/skeletons.html">Skeletons</a></li> 
+       <li><a href="../resources/samples.html">Samples</a></li> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">More... <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="../community.html">Community</a></li> 
+         <li><a href="../faq.html">F.A.Q</a></li> 
+         <li><a href="../security.html">Security</a></li> 
+         <li><a href="../downloads.html">Downloads</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div>
+     <!--/.nav-collapse --> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <div class="page-header"> 
+     <h1>Werval 0.6.0</h1> 
+    </div> 
+    <p><em>13 janvier 2015</em></p> 
+    <p></p>
+    <div id="preamble"> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Werval is an open source JVM based toolkit for building HTTP services. A lightweight core, live reload dev mode, useful modules, plugins for several build tools and multiple languages support leave you free to choose the right architecture for your domain.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p><a href="../doc/current/get-started-gradle.html">Get started using Gradle</a></p> 
+      </div> 
+      <div class="paragraph"> 
+       <p><a href="../doc/current/get-started-maven.html">Get started using maven</a></p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Keep in sight that this is an early access release and that some edges may still be rough.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>If you encounter any issue, please report by creating a <a href="https://github.com/werval/werval/issues/new">new issue</a>.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="changelog"><a class="anchor" href="#changelog"></a>Changelog</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Release song is <a href="http://grooveshark.com/s/U+Cant+Touch+This/3sWgpi">U can’t touch this</a> by McHammer.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p><a href="https://github.com/werval/werval/commits/0.6.0">Commit history</a></p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="breaking_changes"><a class="anchor" href="#breaking_changes"></a>Breaking changes</h2> 
+     <div class="sectionbody"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>(#233) <code>Config.object( String key )</code> has been replaced by <code>Config.atKey( String key )</code> and <code>Config.atPath( String path )</code></p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="bug_fixes"><a class="anchor" href="#bug_fixes"></a>Bug fixes</h2> 
+     <div class="sectionbody"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>(#232 &amp; #233) Fix dynamic modules documentation in development mode</p> </li> 
+        <li> <p>(#235) Fix QueryString.Decoder that incorrectly added a null query param</p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="new_features"><a class="anchor" href="#new_features"></a>New features</h2> 
+     <div class="sectionbody"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>(#194) Hashid parameter binder</p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="enhancements"><a class="anchor" href="#enhancements"></a>Enhancements</h2> 
+     <div class="sectionbody"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>(#237) Controllers type lookup packages for routes can now be set in configuration</p> </li> 
+        <li> <p>(#68) Server bootstrap now loads <code>Application</code> and <code>HttpServer</code> implementations through <code>ServiceLoader</code></p> </li> 
+        <li> <p>(#164) Performance enhancement, all <code>equals()</code> methods have been short-circuited</p> </li> 
+        <li> <p>(#193) Tests now use a randomly choosen free port in test mode allowing to run tests while development mode is running</p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="dependency_changes"><a class="anchor" href="#dependency_changes"></a>Dependency changes</h2> 
+     <div class="sectionbody"> 
+      <div class="ulist"> 
+       <ul> 
+        <li> <p>Core</p> </li> 
+        <li> <p>Upgrade SLF4J from <code>1.7.7</code> to <code>1.7.10</code>, see the [annoucements](<a href="http://www.slf4j.org/news.html">http://www.slf4j.org/news.html</a>)</p> </li> 
+        <li> <p>Upgrade Netty from <code>4.0.24</code> to <code>4.0.25</code>, see the announcement: [4.0.25](<a href="http://netty.io/news/2014/12/31/4-0-25-Final.html">http://netty.io/news/2014/12/31/4-0-25-Final.html</a>)</p> </li> 
+        <li> <p>Modules</p> </li> 
+        <li> <p>Upgrade Jackson from <code>2.4.4</code> to <code>2.5.0</code>, see the [release-notes](<a href="https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.5">https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.5</a>)</p> </li> 
+        <li> <p>Upgrade Jedis from <code>2.6.1</code> to <code>2.6.2</code>, see the [release-notes](<a href="https://github.com/xetorthio/jedis/releases">https://github.com/xetorthio/jedis/releases</a>)</p> </li> 
+        <li> <p>Upgrade Liquibase from <code>3.3.0</code> to <code>3.3.2</code>, see the [announcement](<a href="http://blog.liquibase.org/2015/01/liquibase-3-3-2-released.html">http://blog.liquibase.org/2015/01/liquibase-3-3-2-released.html</a>)</p> </li> 
+        <li> <p>Upgrade spymemcached from <code>2.11.4</code> to <code>2.11.5</code>, see the [history](<a href="https://github.com/couchbase/spymemcached">https://github.com/couchbase/spymemcached</a>)</p> </li> 
+        <li> <p>Upgrade Spring from <code>4.1.2</code> to <code>4.1.4</code>, see the [changes-report](<a href="http://docs.spring.io/spring-framework/docs/4.1.x/spring-framework-reference/htmlsingle/#new-in-4.1">http://docs.spring.io/spring-framework/docs/4.1.x/spring-framework-reference/htmlsingle/#new-in-4.1</a>)</p> </li> 
+        <li> <p>Upgrade Thymeleaf from <code>2.1.3</code> to <code>2.1.4</code>, see the [changelog](<a href="https://github.com/thymeleaf/thymeleaf/blob/thymeleaf-2.1.4.RELEASE/ChangeLog.txt">https://github.com/thymeleaf/thymeleaf/blob/thymeleaf-2.1.4.RELEASE/ChangeLog.txt</a>)</p> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div>
+    <p></p> 
+   </div> 
+   <div id="push"></div> 
+  </div> 
+  <div id="footer"> 
+   <p class="muted credit">© 2015 | The Werval Community</p> 
+   <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
+  </div>  
+  <!-- Le javascript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="../doc/develop/js/jquery-1.11.1.min.js"></script> 
+  <script src="../doc/develop/js/bootstrap.min.js"></script> 
+  <script src="../doc/develop/js/prettify.js"></script> 
+  <script src="../doc/develop/js/io.werval.doc.js"></script> 
+  <script src="../js/io.werval.website.js"></script>  
+ </body>
+</html>

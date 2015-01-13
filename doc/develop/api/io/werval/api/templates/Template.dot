@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.templates.Template
-	c36048 [label=<<table title="io.werval.api.templates.Template" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Template.html">
+	c37584 [label=<<table title="io.werval.api.templates.Template" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Template.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Template </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Template.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.templates.Templates
-	c36049 [label=<<table title="io.werval.api.templates.Templates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Templates.html">
+	c37585 [label=<<table title="io.werval.api.templates.Templates" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Templates.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Templates </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Templates.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.templates.Templates NAVASSOC io.werval.api.templates.Template
-	c36049:p -> c36048:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c37585:p -> c37584:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

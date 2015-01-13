@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.events.Events
-	c30336 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Events.html">
+	c31750 [label=<<table title="io.werval.api.events.Events" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Events.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Events </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Events.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Registration
-	c30340 [label=<<table title="io.werval.api.events.Registration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Registration.html">
+	c31754 [label=<<table title="io.werval.api.events.Registration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Registration.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Registration </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Registration.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.events.Events NAVASSOC io.werval.api.events.Registration
-	c30336:p -> c30340:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c31750:p -> c31754:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

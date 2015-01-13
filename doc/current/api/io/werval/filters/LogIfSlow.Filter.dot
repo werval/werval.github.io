@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c23074 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c24268 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.LogIfSlow
-	c23144 [label=<<table title="io.werval.filters.LogIfSlow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.html">
+	c24338 [label=<<table title="io.werval.filters.LogIfSlow" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./LogIfSlow.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> LogIfSlow </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./LogIfSlow.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.LogIfSlow.Filter
-	c23145 [label=<<table title="io.werval.filters.LogIfSlow.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LogIfSlow.Filter.html">
+	c24339 [label=<<table title="io.werval.filters.LogIfSlow.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LogIfSlow.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LogIfSlow.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.LogIfSlow NAVASSOC io.werval.filters.LogIfSlow.Filter
-	c23144:p -> c23145:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c24338:p -> c24339:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.LogIfSlow.Filter implements io.werval.api.filters.Filter<T>
-	c23074:p -> c23145:p [dir=back,arrowtail=empty,style=dashed];
+	c24268:p -> c24339:p [dir=back,arrowtail=empty,style=dashed];
 }
 

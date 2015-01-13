@@ -10,38 +10,38 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.FormAttributes
-	c30754 [label=<<table title="io.werval.api.http.FormAttributes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FormAttributes.html">
+	c32538 [label=<<table title="io.werval.api.http.FormAttributes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FormAttributes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FormAttributes </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FormAttributes.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.FormUploads
-	c30755 [label=<<table title="io.werval.api.http.FormUploads" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FormUploads.html">
+	c32539 [label=<<table title="io.werval.api.http.FormUploads" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FormUploads.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FormUploads </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FormUploads.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Request
-	c30769 [label=<<table title="io.werval.api.http.Request" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Request.html">
+	c32553 [label=<<table title="io.werval.api.http.Request" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Request.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Request </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Request.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.RequestBody
-	c30770 [label=<<table title="io.werval.api.http.RequestBody" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RequestBody.html">
+	c32554 [label=<<table title="io.werval.api.http.RequestBody" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RequestBody.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> RequestBody </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RequestBody.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Request NAVCOMPOSED io.werval.api.http.RequestBody
-	c30769:p -> c30770:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32553:p -> c32554:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestBody NAVCOMPOSED io.werval.api.http.FormAttributes
-	c30770:p -> c30754:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32554:p -> c32538:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.http.RequestBody NAVCOMPOSED io.werval.api.http.FormUploads
-	c30770:p -> c30755:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c32554:p -> c32539:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 
