@@ -96,6 +96,7 @@
          <ul class="sectlevel2"> 
           <li><a href="#http_resources">HTTP Resources</a></li> 
           <li><a href="#single_page_application">Single Page Application</a></li> 
+          <li><a href="#werval_module">Werval Module</a></li> 
          </ul> </li> 
         <li><a href="#maven_skeletons">Maven Skeletons</a></li> 
         <li> 
@@ -110,7 +111,7 @@
      <h2 id="choose_a_skeleton"><a class="anchor" href="#choose_a_skeleton"></a>Choose a skeleton</h2> 
      <div class="sectionbody"> 
       <div class="paragraph"> 
-       <p>Officially supported skeletons aim to cover frequent use cases. They are for now limited to the following three types of applications: <em>HTTP Resources</em>, <em>WebApp</em> and <em>Single Page Application</em>. All skeletons have a Gradle and a Maven flavour.</p> 
+       <p>Officially supported skeletons aim to cover frequent use cases. They are for now limited to the following types of applications:</p> 
       </div> 
       <div class="hdlist"> 
        <table> 
@@ -118,10 +119,6 @@
          <tr> 
           <td class="hdlist1"> _HTTP Resources </td> 
           <td class="hdlist2"> <p>Lightweight application using only Werval’s core and the JSON module or course</p> </td> 
-         </tr> 
-         <tr> 
-          <td class="hdlist1"> WebApp </td> 
-          <td class="hdlist2"> <p>JSON resources and a server-side template engine</p> </td> 
          </tr> 
          <tr> 
           <td class="hdlist1"> Single Page Application </td> 
@@ -133,11 +130,6 @@
       <div class="paragraph"> 
        <p>None of the skeletons include a persistence mechanism, you’ll have to implement yours, see the available <a href="../doc/current/modules/index.html">modules</a>.</p> 
       </div> 
-     </div> 
-    </div> 
-    <div class="sect1"> 
-     <h2 id="gradle_skeletons"><a class="anchor" href="#gradle_skeletons"></a>Gradle Skeletons</h2> 
-     <div class="sectionbody"> 
       <div class="admonitionblock important"> 
        <table> 
         <tbody>
@@ -163,6 +155,11 @@
         </tbody>
        </table> 
       </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="gradle_skeletons"><a class="anchor" href="#gradle_skeletons"></a>Gradle Skeletons</h2> 
+     <div class="sectionbody"> 
       <div class="sect2"> 
        <h3 id="http_resources"><a class="anchor" href="#http_resources"></a>HTTP Resources</h3> 
        <div class="paragraph"> 
@@ -182,6 +179,17 @@
        <div class="listingblock"> 
         <div class="content"> 
          <pre>svn export https://github.com/werval/werval-skel-gradle-spa/trunk YOUR_APP_NAME</pre> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="werval_module"><a class="anchor" href="#werval_module"></a>Werval Module</h3> 
+       <div class="paragraph"> 
+        <p>See <a href="https://github.com/werval/werval-skel-module">https://github.com/werval/werval-skel-module</a></p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre>svn export https://github.com/werval/werval-skel-module/trunk YOUR_APP_NAME</pre> 
         </div> 
        </div> 
       </div> 
