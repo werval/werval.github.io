@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.filters.ContentSecurityPolicy.Filter
-	c11260 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.Filter.html">
+	c12126 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.ViolationLogger
-	c11261 [label=<<table title="io.werval.filters.ContentSecurityPolicy.ViolationLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContentSecurityPolicy.ViolationLogger.html">
+	c12127 [label=<<table title="io.werval.filters.ContentSecurityPolicy.ViolationLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContentSecurityPolicy.ViolationLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ViolationLogger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.ViolationLogger.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.ViolationLogger NAVASSOC io.werval.filters.ContentSecurityPolicy.Filter
-	c11261:p -> c11260:p [taillabel="1", label="works-with", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c12127:p -> c12126:p [taillabel="1", label="works-with", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

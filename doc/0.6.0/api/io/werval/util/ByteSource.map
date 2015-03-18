@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ByteArrayByteSource.html" title="io.werval.util.ByteArrayByteSource" alt="" coords="16,116,161,140"/>
+<area shape="rect" id="node1" href="./ByteArrayByteSource.html" title="&lt;TABLE&gt;" alt="" coords="5,104,172,152"/>
+<area shape="rect" id="node2_1" href="./ByteSource.html" title="io.werval.util.ByteSource" alt="" coords="144,11,231,51"/>
+<area shape="rect" id="node2" href="./ByteSource.html" title="&lt;TABLE&gt;" alt="" coords="133,5,241,56"/>
+<area shape="rect" id="node3_2" href="./InputStreamByteSource.html" title="io.werval.util.InputStreamByteSource" alt="" coords="207,116,365,140"/>
+<area shape="rect" id="node3" href="./InputStreamByteSource.html" title="&lt;TABLE&gt;" alt="" coords="196,104,376,152"/>
+</map>

@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c27347 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c29687 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.NeverCached
-	c27419 [label=<<table title="io.werval.filters.NeverCached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NeverCached.html">
+	c29762 [label=<<table title="io.werval.filters.NeverCached" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NeverCached.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> NeverCached </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./NeverCached.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.NeverCached.Filter
-	c27420 [label=<<table title="io.werval.filters.NeverCached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./NeverCached.Filter.html">
+	c29763 [label=<<table title="io.werval.filters.NeverCached.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./NeverCached.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./NeverCached.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.NeverCached NAVASSOC io.werval.filters.NeverCached.Filter
-	c27419:p -> c27420:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c29762:p -> c29763:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.NeverCached.Filter implements io.werval.api.filters.Filter<T>
-	c27347:p -> c27420:p [dir=back,arrowtail=empty,style=dashed];
+	c29687:p -> c29763:p [dir=back,arrowtail=empty,style=dashed];
 }
 

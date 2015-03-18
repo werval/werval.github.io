@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../api/http/FormAttributes.html" title="io.werval.api.http.FormAttributes" alt="" coords="16,109,121,149"/>
+<area shape="rect" id="node1" href="../api/http/FormAttributes.html" title="&lt;TABLE&gt;" alt="" coords="5,104,132,155"/>
+<area shape="rect" id="node2_1" href="../api/http/FormUploads.html" title="io.werval.api.http.FormUploads" alt="" coords="167,109,264,149"/>
+<area shape="rect" id="node2" href="../api/http/FormUploads.html" title="&lt;TABLE&gt;" alt="" coords="156,104,275,155"/>
+<area shape="rect" id="node3_2" href="../api/http/Headers.html" title="io.werval.api.http.Headers" alt="" coords="309,109,393,149"/>
+<area shape="rect" id="node3" href="../api/http/Headers.html" title="&lt;TABLE&gt;" alt="" coords="299,104,404,155"/>
+<area shape="rect" id="node4_3" href="../api/http/QueryString.html" title="io.werval.api.http.QueryString" alt="" coords="439,109,527,149"/>
+<area shape="rect" id="node4" href="../api/http/QueryString.html" title="&lt;TABLE&gt;" alt="" coords="429,104,538,155"/>
+<area shape="rect" id="node5_4" href="./MultiValued.html" title="io.werval.util.MultiValued" alt="" coords="288,11,415,51"/>
+<area shape="rect" id="node5" href="./MultiValued.html" title="&lt;TABLE&gt;" alt="" coords="277,5,425,56"/>
+<area shape="rect" id="node6_5" href="./MultiValueMapMultiValued.html" title="io.werval.util.MultiValueMapMultiValued" alt="" coords="573,117,788,141"/>
+<area shape="rect" id="node6" href="./MultiValueMapMultiValued.html" title="&lt;TABLE&gt;" alt="" coords="563,105,799,153"/>
+</map>

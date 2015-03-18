@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./LinkedMultiValueMap.html" title="io.werval.util.LinkedMultiValueMap" alt="" coords="239,229,425,253"/>
-<area shape="rect" id="node1" href="./LinkedMultiValueMap.html" title="&lt;TABLE&gt;" alt="" coords="229,217,435,265"/>
-<area shape="rect" id="node2_1" href="./Maps.MultiValueMapBuilder.html" title="io.werval.util.Maps.MultiValueMapBuilder" alt="" coords="16,11,379,51"/>
-<area shape="rect" id="node2" href="./Maps.MultiValueMapBuilder.html" title="&lt;TABLE&gt;" alt="" coords="5,5,389,56"/>
-<area shape="rect" id="node3_2" href="./MultiValueMap.html" title="io.werval.util.MultiValueMap" alt="" coords="259,123,405,163"/>
-<area shape="rect" id="node3" href="./MultiValueMap.html" title="&lt;TABLE&gt;" alt="" coords="249,117,415,168"/>
+<area shape="rect" id="node1_0" href="./Maps.MultiValueMapBuilder.html" title="io.werval.util.Maps.MultiValueMapBuilder" alt="" coords="16,11,379,51"/>
+<area shape="rect" id="node1" href="./Maps.MultiValueMapBuilder.html" title="&lt;TABLE&gt;" alt="" coords="5,5,389,56"/>
+<area shape="rect" id="node2_1" href="./MultiValueMap.html" title="io.werval.util.MultiValueMap" alt="" coords="259,123,405,163"/>
+<area shape="rect" id="node2" href="./MultiValueMap.html" title="&lt;TABLE&gt;" alt="" coords="249,117,415,168"/>
+<area shape="rect" id="node3_2" href="./MultiValueMapAdapter.html" title="io.werval.util.MultiValueMapAdapter" alt="" coords="236,229,428,253"/>
+<area shape="rect" id="node3" href="./MultiValueMapAdapter.html" title="&lt;TABLE&gt;" alt="" coords="225,217,439,265"/>
 <area shape="rect" id="node4_3" href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html" title="java.util.Map" alt="" coords="425,11,509,51"/>
 <area shape="rect" id="node4" href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html" title="&lt;TABLE&gt;" alt="" coords="414,5,519,56"/>
 </map>

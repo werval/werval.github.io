@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Cookies.html" title="io.werval.api.http.Cookies" alt="" coords="16,11,100,51"/>
+<area shape="rect" id="node1" href="./Cookies.html" title="&lt;TABLE&gt;" alt="" coords="5,5,111,56"/>
+<area shape="rect" id="node2_1" href="./Cookies.Cookie.html" title="io.werval.api.http.Cookies.Cookie" alt="" coords="153,123,237,163"/>
+<area shape="rect" id="node2" href="./Cookies.Cookie.html" title="&lt;TABLE&gt;" alt="" coords="143,117,248,168"/>
+<area shape="rect" id="node3_2" href="./HttpBuilders.CookieBuilder.html" title="io.werval.api.http.HttpBuilders.CookieBuilder" alt="" coords="145,11,245,51"/>
+<area shape="rect" id="node3" href="./HttpBuilders.CookieBuilder.html" title="&lt;TABLE&gt;" alt="" coords="135,5,256,56"/>
+<area shape="rect" id="node4_3" href="./Session.html" title="io.werval.api.http.Session" alt="" coords="291,11,375,51"/>
+<area shape="rect" id="node4" href="./Session.html" title="&lt;TABLE&gt;" alt="" coords="280,5,385,56"/>
+</map>

@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="index.html">Werval 0.6.0</a> 
+      <a class="navbar-brand" href="index.html">Werval 0.7.2</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,10 @@
        <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.6.0)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.7.2)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.6.0)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.7.2)</a></li> 
+         <li><a href="/doc/0.6.0/index.html">0.6.0</a></li> 
          <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
          <li><a href="/doc/develop/index.html">Development Version</a></li> 
@@ -148,7 +149,7 @@
        <div class="content"> 
         <pre class="CodeRay"><code class="groovy language-groovy">buildscript {
   repositories { jcenter() }    // &lt;1&gt;
-  dependencies { classpath 'io.werval:io.werval.gradle:0.6.0' } // &lt;2&gt;
+  dependencies { classpath 'io.werval:io.werval.gradle:0.7.2' } // &lt;2&gt;
 }
 
 apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre> 
@@ -778,6 +779,27 @@ wervalLocalRepository=<span class="key">file</span>:<span class="comment">///hom
        <div class="paragraph"> 
         <p>We’re now done with the setup, time to build!</p> 
        </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> 
+            <div class="paragraph"> 
+             <p>If you need to use the wervalLocalRepository in another gradle project, simply throw thie following line in its build.gradle:</p> 
+            </div> 
+            <div class="listingblock"> 
+             <div class="content"> 
+              <pre class="CodeRay"><code class="groovy language-groovy">buildscript { <span class="keyword">if</span>( project.hasProperty( <span class="string"><span class="delimiter">'</span><span class="content">wervalLocalRepository</span><span class="delimiter">'</span></span> ) ) repositories { maven { url project.wervalLocalRepository } } }</code></pre> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
       </div> 
       <div class="sect2"> 
        <h3 id="build_the_sdk"><a class="anchor" href="#build_the_sdk"></a>Build the SDK</h3> 
@@ -1055,7 +1077,7 @@ dist.sh                 Create distributions archives, without tests</code></pre
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2015 | Werval 0.6.0 | The Werval Community</p> 
+   <p class="muted credit">© 2015 | Werval 0.7.2 | The Werval Community</p> 
    <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div> 
   <!-- Le javascript

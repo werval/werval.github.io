@@ -10,103 +10,103 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.Application
-	c5587 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Application.html">
+	c5820 [label=<<table title="io.werval.api.Application" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Application.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Application </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Application.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.ApplicationExecutors
-	c5588 [label=<<table title="io.werval.api.ApplicationExecutors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ApplicationExecutors.html">
+	c5821 [label=<<table title="io.werval.api.ApplicationExecutors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ApplicationExecutors.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationExecutors </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ApplicationExecutors.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Config
-	c5589 [label=<<table title="io.werval.api.Config" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Config.html">
+	c5822 [label=<<table title="io.werval.api.Config" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Config.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Config </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Config.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Crypto
-	c5590 [label=<<table title="io.werval.api.Crypto" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Crypto.html">
+	c5823 [label=<<table title="io.werval.api.Crypto" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Crypto.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Crypto </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Crypto.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Errors
-	c5592 [label=<<table title="io.werval.api.Errors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Errors.html">
+	c5825 [label=<<table title="io.werval.api.Errors" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Errors.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Errors </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Errors.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Global
-	c5593 [label=<<table title="io.werval.api.Global" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Global.html">
+	c5826 [label=<<table title="io.werval.api.Global" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Global.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Global </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Global.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.MetaData
-	c5594 [label=<<table title="io.werval.api.MetaData" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MetaData.html">
+	c5827 [label=<<table title="io.werval.api.MetaData" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MetaData.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MetaData </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MetaData.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Mode
-	c5595 [label=<<table title="io.werval.api.Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Mode.html">
+	c5828 [label=<<table title="io.werval.api.Mode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Mode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> Mode </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Mode.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Plugin<API>
-	c5596 [label=<<table title="io.werval.api.Plugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Plugin.html">
+	c5829 [label=<<table title="io.werval.api.Plugin" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Plugin.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Plugin&lt;API&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Plugin.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.context.Context
-	c5600 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./context/Context.html">
+	c5833 [label=<<table title="io.werval.api.context.Context" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./context/Context.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Context </td></tr>
 		</table></td></tr>
 		</table>>, URL="./context/Context.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.ApplicationSPI
-	c5745 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/ApplicationSPI.html">
+	c5986 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../spi/ApplicationSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="../spi/ApplicationSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.Application HAS io.werval.api.Mode
-	c5587:p -> c5595:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
+	c5820:p -> c5828:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=ediamond, dir=both];
 	// io.werval.api.Application COMPOSED io.werval.api.Global
-	c5587:p -> c5593:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c5820:p -> c5826:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.ApplicationExecutors
-	c5587:p -> c5588:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5820:p -> c5821:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.Config
-	c5587:p -> c5589:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5820:p -> c5822:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.Crypto
-	c5587:p -> c5590:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5820:p -> c5823:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.Errors
-	c5587:p -> c5592:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5820:p -> c5825:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.MetaData
-	c5587:p -> c5594:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5820:p -> c5827:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.Application NAVCOMPOSED io.werval.api.Plugin<API>
-	c5587:p -> c5596:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5820:p -> c5829:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	// io.werval.api.context.Context NAVASSOC io.werval.api.Application
-	c5600:p -> c5587:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c5833:p -> c5820:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.context.Context NAVCOMPOSED io.werval.api.MetaData
-	c5600:p -> c5594:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5833:p -> c5827:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 	//io.werval.spi.ApplicationSPI implements io.werval.api.Application
-	c5587:p -> c5745:p [dir=back,arrowtail=empty,style=dashed];
+	c5820:p -> c5986:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.spi.ApplicationSPI NAVCOMPOSED io.werval.api.Global
-	c5745:p -> c5593:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c5986:p -> c5826:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

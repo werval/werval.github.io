@@ -10,29 +10,29 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.Cookies.Cookie
-	c20430 [label=<<table title="io.werval.api.http.Cookies.Cookie" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cookies.Cookie.html">
+	c21679 [label=<<table title="io.werval.api.http.Cookies.Cookie" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Cookies.Cookie.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Cookie </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Cookies.Cookie.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.HttpBuilders
-	c20437 [label=<<table title="io.werval.api.http.HttpBuilders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpBuilders.html">
+	c21686 [label=<<table title="io.werval.api.http.HttpBuilders" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./HttpBuilders.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> HttpBuilders </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpBuilders.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.HttpBuilders.CookieBuilder
-	c20438 [label=<<table title="io.werval.api.http.HttpBuilders.CookieBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HttpBuilders.CookieBuilder.html">
+	c21687 [label=<<table title="io.werval.api.http.HttpBuilders.CookieBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./HttpBuilders.CookieBuilder.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CookieBuilder </td></tr>
 		</table></td></tr>
 		</table>>, URL="./HttpBuilders.CookieBuilder.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.HttpBuilders NAVASSOC io.werval.api.http.HttpBuilders.CookieBuilder
-	c20437:p -> c20438:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c21686:p -> c21687:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// io.werval.api.http.HttpBuilders.CookieBuilder NAVASSOC io.werval.api.http.Cookies.Cookie
-	c20438:p -> c20430:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c21687:p -> c21679:p [taillabel="1", label="create", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

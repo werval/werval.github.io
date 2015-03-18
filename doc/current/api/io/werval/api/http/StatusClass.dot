@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.Status
-	c37175 [label=<<table title="io.werval.api.http.Status" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Status.html">
+	c39923 [label=<<table title="io.werval.api.http.Status" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Status.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Status </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Status.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.StatusClass
-	c37176 [label=<<table title="io.werval.api.http.StatusClass" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./StatusClass.html">
+	c39924 [label=<<table title="io.werval.api.http.StatusClass" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./StatusClass.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;enumeration&#187; </td></tr>
 <tr><td align="center" balign="center"> StatusClass </td></tr>
 		</table></td></tr>
 		</table>>, URL="./StatusClass.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.Status NAVCOMPOSED io.werval.api.http.StatusClass
-	c37175:p -> c37176:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c39923:p -> c39924:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 

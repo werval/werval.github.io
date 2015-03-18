@@ -2,46 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>http://werval.io/community.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/faq.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/resources/samples.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/resources/skeletons.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/security.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
+    </url>
+    <url>
+        <loc>http://werval.io/news/2015-03-18_release_0.7.2.html</loc>
+        <lastmod>2015-03-18</lastmod>
+    </url>
+    <url>
+        <loc>http://werval.io/news/2015-03-06_release_0.7.1.html</loc>
+        <lastmod>2015-03-18</lastmod>
+    </url>
+    <url>
+        <loc>http://werval.io/news/2015-03-04_release_0.7.0.html</loc>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/news/2015-01-13_release_0.6.0.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/news/2014-12-14_release_0.5.1.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/news/2014-11-28_release_0.4.0.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/news.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/downloads.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
     <url>
         <loc>http://werval.io/doc/index.html</loc>
-        <lastmod>2015-01-14</lastmod>
+        <lastmod>2015-03-18</lastmod>
     </url>
 </urlset>

@@ -10,14 +10,14 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.spi.ApplicationSPI
-	c3038 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ApplicationSPI.html">
+	c3166 [label=<<table title="io.werval.spi.ApplicationSPI" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ApplicationSPI.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ApplicationSPI </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ApplicationSPI.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.BuildVersion
-	c3057 [label=<<table title="io.werval.spi.BuildVersion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BuildVersion.html">
+	c3185 [label=<<table title="io.werval.spi.BuildVersion" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BuildVersion.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> BuildVersion </td></tr>

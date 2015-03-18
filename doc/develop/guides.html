@@ -52,7 +52,8 @@
       <ul class="nav navbar-nav navbar-right"> 
        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development Version<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.6.0)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.7.2)</a></li> 
+         <li><a href="/doc/0.6.0/index.html">0.6.0</a></li> 
          <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
          <li><a href="/doc/develop/index.html">Development Version</a></li> 
@@ -777,6 +778,27 @@ wervalLocalRepository=<span class="key">file</span>:<span class="comment">///hom
        </div> 
        <div class="paragraph"> 
         <p>We’re now done with the setup, time to build!</p> 
+       </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> 
+            <div class="paragraph"> 
+             <p>If you need to use the wervalLocalRepository in another gradle project, simply throw thie following line in its build.gradle:</p> 
+            </div> 
+            <div class="listingblock"> 
+             <div class="content"> 
+              <pre class="CodeRay"><code class="groovy language-groovy">buildscript { <span class="keyword">if</span>( project.hasProperty( <span class="string"><span class="delimiter">'</span><span class="content">wervalLocalRepository</span><span class="delimiter">'</span></span> ) ) repositories { maven { url project.wervalLocalRepository } } }</code></pre> 
+             </div> 
+            </div> </td> 
+          </tr> 
+         </tbody> 
+        </table> 
        </div> 
       </div> 
       <div class="sect2"> 

@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.exceptions.RouteNotFoundException
-	c34453 [label=<<table title="io.werval.api.exceptions.RouteNotFoundException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RouteNotFoundException.html">
+	c37089 [label=<<table title="io.werval.api.exceptions.RouteNotFoundException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./RouteNotFoundException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RouteNotFoundException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./RouteNotFoundException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.exceptions.WervalException
-	c34455 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalException.html">
+	c37091 [label=<<table title="io.werval.api.exceptions.WervalException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalException </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.api.exceptions.RouteNotFoundException extends io.werval.api.exceptions.WervalException
-	c34455:p -> c34453:p [dir=back,arrowtail=empty];
+	c37091:p -> c37089:p [dir=back,arrowtail=empty];
 }
 

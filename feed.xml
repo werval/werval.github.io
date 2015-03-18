@@ -6,9 +6,192 @@
     <atom:link href="http://werval.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>mer., 14 janv. 2015 10:53:55 +0100</pubDate>
-    <lastBuildDate>mer., 14 janv. 2015 10:53:55 +0100</lastBuildDate>
+    <pubDate>mer., 18 mars 2015 14:52:59 +0100</pubDate>
+    <lastBuildDate>mer., 18 mars 2015 14:52:59 +0100</lastBuildDate>
 
+    <item>
+      <title>Werval 0.7.2</title>
+      <link>http://werval.io//news/2015-03-18_release_0.7.2.html</link>
+      <pubDate>mer., 18 mars 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">news/2015-03-18_release_0.7.2.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.
+A lightweight core, live reload dev mode, useful modules, plugins for several build tools and
+multiple languages support leave you free to choose the right architecture for your domain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-gradle.html&quot;&gt;Get started using Gradle&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-maven.html&quot;&gt;Get started using maven&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Keep in sight that this is an early access release and that some edges may still be rough.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you encounter any issue, please report by creating a
+&lt;a href=&quot;https://github.com/werval/werval/issues/new&quot;&gt;new issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#changelog&quot;&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;bug_fixes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#bug_fixes&quot;&gt;&lt;/a&gt;Bug fixes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#249) Fix response code on request&amp;#8217;s single-value constraints violations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#250) Fix Netty server bahaviour on invalid/unparseable HTTP requests&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Werval 0.7.1</title>
+      <link>http://werval.io//news/2015-03-06_release_0.7.1.html</link>
+      <pubDate>ven., 6 mars 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">news/2015-03-06_release_0.7.1.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.
+A lightweight core, live reload dev mode, useful modules, plugins for several build tools and
+multiple languages support leave you free to choose the right architecture for your domain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-gradle.html&quot;&gt;Get started using Gradle&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-maven.html&quot;&gt;Get started using maven&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Keep in sight that this is an early access release and that some edges may still be rough.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you encounter any issue, please report by creating a
+&lt;a href=&quot;https://github.com/werval/werval/issues/new&quot;&gt;new issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#changelog&quot;&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;bug_fixes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#bug_fixes&quot;&gt;&lt;/a&gt;Bug fixes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#242) Fix &lt;code&gt;@AcceptContentType&lt;/code&gt; filter failure when &lt;code&gt;Content-Type&lt;/code&gt; header absent&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Werval 0.7.0</title>
+      <link>http://werval.io//news/2015-03-04_release_0.7.0.html</link>
+      <pubDate>mer., 4 mars 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">news/2015-03-04_release_0.7.0.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.
+A lightweight core, live reload dev mode, useful modules, plugins for several build tools and
+multiple languages support leave you free to choose the right architecture for your domain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-gradle.html&quot;&gt;Get started using Gradle&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-maven.html&quot;&gt;Get started using maven&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Keep in sight that this is an early access release and that some edges may still be rough.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you encounter any issue, please report by creating a
+&lt;a href=&quot;https://github.com/werval/werval/issues/new&quot;&gt;new issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#changelog&quot;&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/werval/werval/commits/0.7.0&quot;&gt;Commit history&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;breaking_changes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#breaking_changes&quot;&gt;&lt;/a&gt;Breaking changes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#246) APIs now leverage Java 8 &lt;code&gt;java.util.Optional&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;bug_fixes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#bug_fixes&quot;&gt;&lt;/a&gt;Bug fixes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#239) Fix ReverseRoutes NPE if controller is interface and no parameters&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#242) Fix &lt;code&gt;@AcceptContentType&lt;/code&gt; filter failure on &lt;code&gt;Content-Type&lt;/code&gt; headers with charset info&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;new_features&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#new_features&quot;&gt;&lt;/a&gt;New features&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#5) CORS support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#241) JSON Web Token support&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;enhancements&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#enhancements&quot;&gt;&lt;/a&gt;Enhancements&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(#240) Allow filter annotations on filter annotations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#243) Allow global filter annotations on Global object&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(#244) DevShell now open &lt;code&gt;http://localhost:port/&lt;/code&gt; instead of &lt;code&gt;http://0.0.0.0:port/&lt;/code&gt; when &lt;code&gt;werval.http.address&lt;/code&gt; is &lt;code&gt;0.0.0.0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Werval 0.6.0</title>
       <link>http://werval.io//news/2015-01-13_release_0.6.0.html</link>

@@ -1,12 +1,14 @@
 <map id="G" name="G">
 <area shape="rect" id="node1_0" href="./Classpath.html" title="io.werval.controllers.Classpath" alt="" coords="16,17,93,41"/>
 <area shape="rect" id="node1" href="./Classpath.html" title="&lt;TABLE&gt;" alt="" coords="5,5,104,53"/>
-<area shape="rect" id="node2_1" href="./Default.html" title="io.werval.controllers.Default" alt="" coords="139,17,199,41"/>
-<area shape="rect" id="node2" href="./Default.html" title="&lt;TABLE&gt;" alt="" coords="129,5,210,53"/>
-<area shape="rect" id="node3_2" href="./Introspect.html" title="io.werval.controllers.Introspect" alt="" coords="245,17,321,41"/>
-<area shape="rect" id="node3" href="./Introspect.html" title="&lt;TABLE&gt;" alt="" coords="234,5,331,53"/>
-<area shape="rect" id="node4_3" href="./Static.html" title="io.werval.controllers.Static" alt="" coords="367,17,417,41"/>
-<area shape="rect" id="node4" href="./Static.html" title="&lt;TABLE&gt;" alt="" coords="356,5,428,53"/>
-<area shape="rect" id="node5_4" href="./Welcome.html" title="io.werval.controllers.Welcome" alt="" coords="463,17,537,41"/>
-<area shape="rect" id="node5" href="./Welcome.html" title="&lt;TABLE&gt;" alt="" coords="453,5,547,53"/>
+<area shape="rect" id="node2_1" href="./CORS.html" title="io.werval.controllers.CORS" alt="" coords="139,17,195,41"/>
+<area shape="rect" id="node2" href="./CORS.html" title="&lt;TABLE&gt;" alt="" coords="128,5,205,53"/>
+<area shape="rect" id="node3_2" href="./Default.html" title="io.werval.controllers.Default" alt="" coords="241,17,301,41"/>
+<area shape="rect" id="node3" href="./Default.html" title="&lt;TABLE&gt;" alt="" coords="230,5,311,53"/>
+<area shape="rect" id="node4_3" href="./Introspect.html" title="io.werval.controllers.Introspect" alt="" coords="346,17,422,41"/>
+<area shape="rect" id="node4" href="./Introspect.html" title="&lt;TABLE&gt;" alt="" coords="335,5,433,53"/>
+<area shape="rect" id="node5_4" href="./Static.html" title="io.werval.controllers.Static" alt="" coords="468,17,519,41"/>
+<area shape="rect" id="node5" href="./Static.html" title="&lt;TABLE&gt;" alt="" coords="457,5,529,53"/>
+<area shape="rect" id="node6_5" href="./Welcome.html" title="io.werval.controllers.Welcome" alt="" coords="565,17,638,41"/>
+<area shape="rect" id="node6" href="./Welcome.html" title="&lt;TABLE&gt;" alt="" coords="554,5,649,53"/>
 </map>

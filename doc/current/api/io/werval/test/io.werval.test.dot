@@ -10,54 +10,54 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.test.WervalHttpRule
-	c4210 [label=<<table title="io.werval.test.WervalHttpRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpRule.html">
+	c4386 [label=<<table title="io.werval.test.WervalHttpRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpRule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalHttpRule </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalHttpRule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalHttpTest
-	c4211 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpTest.html">
+	c4387 [label=<<table title="io.werval.test.WervalHttpTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalHttpTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalHttpTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalHttpTestSupport
-	c4212 [label=<<table title="io.werval.test.WervalHttpTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpTestSupport.html">
+	c4388 [label=<<table title="io.werval.test.WervalHttpTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalHttpTestSupport.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WervalHttpTestSupport </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalHttpTestSupport.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalRule
-	c4213 [label=<<table title="io.werval.test.WervalRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalRule.html">
+	c4389 [label=<<table title="io.werval.test.WervalRule" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalRule.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalRule </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalRule.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalTest
-	c4214 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTest.html">
+	c4390 [label=<<table title="io.werval.test.WervalTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WervalTest </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalTest.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.test.WervalTestSupport
-	c4215 [label=<<table title="io.werval.test.WervalTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTestSupport.html">
+	c4391 [label=<<table title="io.werval.test.WervalTestSupport" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./WervalTestSupport.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> WervalTestSupport </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WervalTestSupport.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.test.WervalHttpRule implements io.werval.test.WervalHttpTestSupport
-	c4212:p -> c4210:p [dir=back,arrowtail=empty,style=dashed];
+	c4388:p -> c4386:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.test.WervalHttpRule COMPOSED io.werval.test.WervalHttpTest
-	c4210:p -> c4211:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c4386:p -> c4387:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	//io.werval.test.WervalHttpTest implements io.werval.test.WervalHttpTestSupport
-	c4212:p -> c4211:p [dir=back,arrowtail=empty,style=dashed];
+	c4388:p -> c4387:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.test.WervalRule implements io.werval.test.WervalTestSupport
-	c4215:p -> c4213:p [dir=back,arrowtail=empty,style=dashed];
+	c4391:p -> c4389:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.test.WervalRule COMPOSED io.werval.test.WervalTest
-	c4213:p -> c4214:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
+	c4389:p -> c4390:p [taillabel="1", label="", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=none, arrowtail=diamond, dir=both];
 	//io.werval.test.WervalTest implements io.werval.test.WervalTestSupport
-	c4215:p -> c4214:p [dir=back,arrowtail=empty,style=dashed];
+	c4391:p -> c4390:p [dir=back,arrowtail=empty,style=dashed];
 }
 

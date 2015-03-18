@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../spi/ApplicationSPI.html" title="io.werval.spi.ApplicationSPI" alt="" coords="16,301,120,341"/>
+<area shape="rect" id="node1" href="../spi/ApplicationSPI.html" title="&lt;TABLE&gt;" alt="" coords="5,296,131,347"/>
+<area shape="rect" id="node2_1" href="./WervalRule.html" title="io.werval.test.WervalRule" alt="" coords="117,116,203,140"/>
+<area shape="rect" id="node2" href="./WervalRule.html" title="&lt;TABLE&gt;" alt="" coords="106,104,214,152"/>
+<area shape="rect" id="node3_2" href="./WervalTest.html" title="io.werval.test.WervalTest" alt="" coords="164,212,247,236"/>
+<area shape="rect" id="node3" href="./WervalTest.html" title="&lt;TABLE&gt;" alt="" coords="153,200,257,248"/>
+<area shape="rect" id="node5_3" href="./cache/CacheTest.html" title="io.werval.test.cache.CacheTest" alt="" coords="165,309,245,333"/>
+<area shape="rect" id="node5" href="./cache/CacheTest.html" title="&lt;TABLE&gt;" alt="" coords="155,297,256,345"/>
+<area shape="rect" id="node6_4" href="./templates/TemplatesTest.html" title="io.werval.test.templates.TemplatesTest" alt="" coords="291,309,394,333"/>
+<area shape="rect" id="node6" href="./templates/TemplatesTest.html" title="&lt;TABLE&gt;" alt="" coords="281,297,405,345"/>
+<area shape="rect" id="node4_5" href="./WervalTestSupport.html" title="io.werval.test.WervalTestSupport" alt="" coords="141,11,270,51"/>
+<area shape="rect" id="node4" href="./WervalTestSupport.html" title="&lt;TABLE&gt;" alt="" coords="130,5,281,56"/>
+</map>

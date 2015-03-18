@@ -7,6 +7,8 @@
 <area shape="rect" id="node3" href="./Headers.Values.html" title="&lt;TABLE&gt;" alt="" coords="135,203,240,253"/>
 <area shape="rect" id="node4_3" href="./MutableHeaders.html" title="io.werval.api.http.MutableHeaders" alt="" coords="275,208,390,248"/>
 <area shape="rect" id="node4" href="./MutableHeaders.html" title="&lt;TABLE&gt;" alt="" coords="265,203,401,253"/>
-<area shape="rect" id="node5_4" href="./RequestHeader.html" title="io.werval.api.http.RequestHeader" alt="" coords="132,11,243,51"/>
-<area shape="rect" id="node5" href="./RequestHeader.html" title="&lt;TABLE&gt;" alt="" coords="121,5,253,56"/>
+<area shape="rect" id="node5_4" href="./RequestHeader.html" title="io.werval.api.http.RequestHeader" alt="" coords="51,11,161,51"/>
+<area shape="rect" id="node5" href="./RequestHeader.html" title="&lt;TABLE&gt;" alt="" coords="40,5,172,56"/>
+<area shape="rect" id="node6_5" href="../../util/MultiValued.html" title="io.werval.util.MultiValued" alt="" coords="207,11,333,51"/>
+<area shape="rect" id="node6" href="../../util/MultiValued.html" title="&lt;TABLE&gt;" alt="" coords="196,5,344,56"/>
 </map>

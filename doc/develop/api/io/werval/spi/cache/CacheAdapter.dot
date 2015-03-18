@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.cache.Cache
-	c7331 [label=<<table title="io.werval.api.cache.Cache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/cache/Cache.html">
+	c8036 [label=<<table title="io.werval.api.cache.Cache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../api/cache/Cache.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Cache </td></tr>
 		</table></td></tr>
 		</table>>, URL="../../api/cache/Cache.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.cache.CacheAdapter
-	c7479 [label=<<table title="io.werval.spi.cache.CacheAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CacheAdapter.html">
+	c8192 [label=<<table title="io.werval.spi.cache.CacheAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CacheAdapter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> CacheAdapter </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./CacheAdapter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.spi.cache.MapCache
-	c7482 [label=<<table title="io.werval.spi.cache.MapCache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MapCache.html">
+	c8195 [label=<<table title="io.werval.spi.cache.MapCache" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MapCache.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MapCache </td></tr>
 		</table></td></tr>
 		</table>>, URL="./MapCache.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	//io.werval.spi.cache.CacheAdapter implements io.werval.api.cache.Cache
-	c7331:p -> c7479:p [dir=back,arrowtail=empty,style=dashed];
+	c8036:p -> c8192:p [dir=back,arrowtail=empty,style=dashed];
 	//io.werval.spi.cache.MapCache extends io.werval.spi.cache.CacheAdapter
-	c7479:p -> c7482:p [dir=back,arrowtail=empty];
+	c8192:p -> c8195:p [dir=back,arrowtail=empty];
 }
 

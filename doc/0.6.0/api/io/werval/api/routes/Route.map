@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../context/Context.html" title="io.werval.api.context.Context" alt="" coords="16,11,100,51"/>
+<area shape="rect" id="node1" href="../context/Context.html" title="&lt;TABLE&gt;" alt="" coords="5,5,111,56"/>
+<area shape="rect" id="node3_1" href="./Route.html" title="io.werval.api.routes.Route" alt="" coords="151,123,235,163"/>
+<area shape="rect" id="node3" href="./Route.html" title="&lt;TABLE&gt;" alt="" coords="140,117,245,168"/>
+<area shape="rect" id="node2_2" href="../http/Method.html" title="io.werval.api.http.Method" alt="" coords="49,241,110,265"/>
+<area shape="rect" id="node2" href="../http/Method.html" title="&lt;TABLE&gt;" alt="" coords="38,229,121,277"/>
+<area shape="rect" id="node6_3" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html" title="java.lang.Class" alt="" coords="155,241,230,265"/>
+<area shape="rect" id="node6" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html" title="&lt;TABLE&gt;" alt="" coords="145,229,241,277"/>
+<area shape="rect" id="node7_4" href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html" title="java.lang.reflect.Method" alt="" coords="277,241,338,265"/>
+<area shape="rect" id="node7" href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html" title="&lt;TABLE&gt;" alt="" coords="266,229,349,277"/>
+<area shape="rect" id="node4_5" href="./RouteBuilder.html" title="io.werval.api.routes.RouteBuilder" alt="" coords="145,11,240,51"/>
+<area shape="rect" id="node4" href="./RouteBuilder.html" title="&lt;TABLE&gt;" alt="" coords="135,5,251,56"/>
+<area shape="rect" id="node5_6" href="./Routes.html" title="io.werval.api.routes.Routes" alt="" coords="285,11,369,51"/>
+<area shape="rect" id="node5" href="./Routes.html" title="&lt;TABLE&gt;" alt="" coords="275,5,380,56"/>
+</map>

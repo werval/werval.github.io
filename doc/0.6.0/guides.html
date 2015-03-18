@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Practical Werval guides</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Werval Documentation"> 
+  <meta name="keywords" content="werval, documentation"> 
+  <!-- Le styles --> 
+  <!-- See https://github.com/nerk/asciidoctor-bs-themes --> 
+  <link href="css/bootstrap_lumen.css" rel="stylesheet"> 
+  <link href="css/base.css" rel="stylesheet"> 
+  <link href="css/io.werval.doc.css" rel="stylesheet"> 
+  <link href="css/prettify.css" rel="stylesheet"> 
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements --> 
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->  
+  <!-- Async Analytics --> 
+  <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-57721420-1', 'auto');
+        ga('send', 'pageview');
+    </script> 
+ </head> 
+ <body onload="prettyPrint()" class="article toc2 toc-right"> 
+  <div id="wrap"> 
+   <!-- Fixed navbar --> 
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container"> 
+     <div class="navbar-header"> 
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+      <a class="navbar-brand" href="index.html">Werval 0.6.0</a> 
+     </div> 
+     <div class="navbar-collapse collapse"> 
+      <ul class="nav navbar-nav"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting started <b class="caret"></b></a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="get-started-gradle.html">Get started using Gradle</a></li> 
+         <li><a href="get-started-maven.html">Get started using Maven</a></li> 
+         <li class="divider"></li> 
+         <li><a href="getting-started.html">What are Gradle &amp; Maven?</a></li> 
+        </ul> </li> 
+       <li><a href="guides.html">Guides</a></li> 
+       <li><a href="manual.html">Manual</a></li> 
+       <li><a href="modules/index.html">Modules</a></li> 
+       <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
+      </ul> 
+      <ul class="nav navbar-nav navbar-right"> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">0.6.0<span class="caret"></span></a> 
+        <ul class="dropdown-menu" role="menu"> 
+         <li><a href="/doc/current/index.html">Current Version (0.7.2)</a></li> 
+         <li><a href="/doc/0.6.0/index.html">0.6.0</a></li> 
+         <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/doc/develop/index.html">Development Version</a></li> 
+         <li class="divider"></li> 
+         <li><a href="/">Werval Home</a></li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+     <!--/.nav-collapse --> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <ol class="breadcrumb"> 
+     <li><a href="index.html">Documentation</a></li> 
+     <li class="active">Practical Werval guides</li> 
+    </ol> 
+    <div class="page-header"> 
+     <h1>Practical Werval guides</h1> 
+    </div> 
+    <p></p> 
+    <div id="preamble"> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>In this section you’ll find guides for frequent and practical development use cases from IDE support to deployment.</p> 
+      </div> 
+      <div id="toc" class="toc2"> 
+       <div id="toctitle" class="title">
+         Guides 
+       </div> 
+       <ul class="sectlevel1"> 
+        <li><a href="#gradle_plugin">Gradle Plugin</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#werval_dependencies">Werval dependencies</a></li> 
+          <li><a href="#application_packaging">Application packaging</a></li> 
+          <li><a href="#staging_for_production">Staging for production</a></li> 
+          <li><a href="#development_mode">Development mode</a></li> 
+          <li><a href="#override_config_location">Override config location</a></li> 
+         </ul> </li> 
+        <li><a href="#maven_plugin">Maven Plugin</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#overview">Overview</a></li> 
+          <li><a href="#development_mode_2">Development mode</a></li> 
+          <li><a href="#override_config_location_2">Override config location</a></li> 
+          <li><a href="#enrich_the_application_classpath">Enrich the application classpath</a></li> 
+          <li><a href="#packaging">Packaging</a></li> 
+         </ul> </li> 
+        <li><a href="#ide_support">IDE Support</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#netbeans">Netbeans</a></li> 
+          <li><a href="#idea">IDEA</a></li> 
+          <li><a href="#eclipse">Eclipse</a></li> 
+         </ul> </li> 
+        <li><a href="#write_modules">Write Modules</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#quickstart">Quickstart</a></li> 
+          <li><a href="#plugins">Plugins</a></li> 
+          <li><a href="#documentation">Documentation</a></li> 
+         </ul> </li> 
+        <li><a href="#deploy_on_heroku">Deploy on Heroku</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#using_gradle">Using Gradle</a></li> 
+         </ul> </li> 
+        <li><a href="#build_werval_from_sources">Build Werval from sources</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#install_needed_programs">Install needed programs</a></li> 
+          <li><a href="#clone_the_werval_repositories">Clone the Werval repositories</a></li> 
+          <li><a href="#configure_gradle_maven">Configure Gradle &amp; Maven</a></li> 
+          <li><a href="#build_the_sdk">Build the SDK</a></li> 
+         </ul> </li> 
+        <li><a href="#werval_documentation">Werval Documentation</a></li> 
+        <li> 
+         <ul class="sectlevel2"> 
+          <li><a href="#toolchain_explained">Toolchain explained</a></li> 
+          <li><a href="#contributing_to_documentation">Contributing to Documentation</a></li> 
+         </ul> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="gradle_plugin"><a class="anchor" href="#gradle_plugin"></a>Gradle Plugin</h2> 
+     <div class="sectionbody"> 
+      <div class="listingblock"> 
+       <div class="title"> 
+        <code>./build.gradle</code> 
+       </div> 
+       <div class="content"> 
+        <pre class="CodeRay"><code class="groovy language-groovy">buildscript {
+  repositories { jcenter() }    // &lt;1&gt;
+  dependencies { classpath 'io.werval:io.werval.gradle:0.6.0' } // &lt;2&gt;
+}
+
+apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre> 
+       </div> 
+      </div> 
+      <div class="colist arabic"> 
+       <ol> 
+        <li> <p>Add JCenter repository</p> </li> 
+        <li> <p>Add Werval Gradle Plugin to build classpath</p> </li> 
+        <li> <p>Apply the Werval Gradle plugin</p> </li> 
+       </ol> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="werval_dependencies"><a class="anchor" href="#werval_dependencies"></a>Werval dependencies</h3> 
+       <div class="paragraph"> 
+        <p>Use Werval dependencies of the same version as the Werval Gradle plugin:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>dependencies {
+  compile werval.api
+  compile werval.module('json')
+  runtime werval.nettyServer
+  testCompile werval.test
+}</code></pre> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="application_packaging"><a class="anchor" href="#application_packaging"></a>Application packaging</h3> 
+       <div class="paragraph"> 
+        <p><code>gradle distZip</code></p> 
+       </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> If you need RPM or DEB packaging, use the <a href="https://github.com/nebula-plugins/gradle-ospackage-plugin">gradle-ospackage-plugin</a>. </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="staging_for_production"><a class="anchor" href="#staging_for_production"></a>Staging for production</h3> 
+       <div class="paragraph"> 
+        <p><code>gradle stage</code></p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="development_mode"><a class="anchor" href="#development_mode"></a>Development mode</h3> 
+       <h4 id="build_logic" class="discrete">Build logic</h4> 
+       <div class="paragraph"> 
+        <p>The Werval Gradle plugin:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>declare a <code>devshell</code> task that depend on the <code>classes</code> task.</p> </li> 
+         <li> <p>declare a <code>devshell_rebuild</code> task that depend on the <code>classes</code> task too.</p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>When running the <code>devshell</code> task it will run <code>classes</code> and other dependents tasks and then the Werval DevShell, embedded. The application is now running in development mode.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Once a source code change is detected, the first request received by the application summon a gradle daemon to run the <code>devshell_rebuild</code> task on the application project.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You add dependent tasks to the <code>devshell</code> and <code>devshell_rebuild</code> that way;</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>devshell.dependsOn gulp_bower, gulp_dev
+devshell_rebuild.dependsOn gulp_dev</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>This example is from an application that use <code>bower</code> and <code>gulp</code> for client javascript build, thanks to the <code>gradle-gulp-plugin</code>.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Configuring theses tasks in your build allow you to fine tune the work needed to get your app in dev mode and what should be done when the source has changed.</p> 
+       </div> 
+       <h4 id="watch_extra_files_or_directories" class="discrete">Watch extra files or directories</h4> 
+       <div class="paragraph"> 
+        <p>The <code>devshell</code> task has an <code>extraWatch</code> property that allow one to add files or directories to watch for changes in dev mode:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>devshell.extraWatch += "path/to/dir"
+devshell.extraWatch += [ "path/to/elsewhere", "and/anywhere" ]</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Thanks to Gradle’s incredible incremental build behaviour, handling complex build scenarios is both confy and productive.</p> 
+       </div> 
+       <h4 id="development_only_dependencies" class="discrete">Development only dependencies</h4> 
+       <div class="paragraph"> 
+        <p>You can enrich the application classpath in development mode by adding dependencies to the <code>devshell</code> configuration:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>dependencies {
+  devshell 'group:id:version'
+}</code></pre> 
+        </div> 
+       </div> 
+       <h4 id="development_only_sources" class="discrete">Development only sources</h4> 
+       <div class="paragraph"> 
+        <p>You can also enrich the application classpath in development mode by adding files to the <code>dev</code> <a href="http://www.gradle.org/docs/current/userguide/java_plugin.html">source-set</a>, that is in <code>src/dev/java</code> and <code>src/dev/resources</code>.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Typical usage is to use development specific configuration. Putting it in the <code>dev</code> source-set prevent it to be in the application distribution.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>This is achieved in two steps,</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>add a <code>developement.conf</code> file in <code>src/dev/resources</code> with at least <code>include "application.conf"</code> in it ;</p> </li> 
+         <li> <p>use <code>development.conf</code> as application configuration in development mode:</p> </li> 
+        </ul> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>devshell.configResource 'development.conf'</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You can now add content to <code>development.conf</code> to define configuration properties that will be used in development mode only.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="override_config_location"><a class="anchor" href="#override_config_location"></a>Override config location</h3> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="groovy language-groovy">devshell {
+  <span class="comment">// Only one of theses three can be set</span>
+  configResource = <span class="string"><span class="delimiter">"</span><span class="content">application-dev.conf</span><span class="delimiter">"</span></span>
+  configFile = file( <span class="string"><span class="delimiter">"</span><span class="content">path/to/file.conf</span><span class="delimiter">"</span></span> )
+  configUrl = <span class="keyword">new</span> <span class="predefined-type">URL</span>( <span class="string"><span class="delimiter">"</span><span class="content">http://url.to/file.conf</span><span class="delimiter">"</span></span> )
+}
+
+start {
+  <span class="comment">// Only one of theses three can be set</span>
+  configResource = <span class="string"><span class="delimiter">"</span><span class="content">application-dev.conf</span><span class="delimiter">"</span></span>
+  configFile = file( <span class="string"><span class="delimiter">"</span><span class="content">path/to/file.conf</span><span class="delimiter">"</span></span> )
+  configUrl = <span class="keyword">new</span> <span class="predefined-type">URL</span>( <span class="string"><span class="delimiter">"</span><span class="content">http://url.to/file.conf</span><span class="delimiter">"</span></span> )
+}
+
+<span class="comment">// Sample custom start task</span>
+task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
+{
+  configResource = <span class="string"><span class="delimiter">"</span><span class="content">application-custom.conf</span><span class="delimiter">"</span></span>
+}</code></pre> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="maven_plugin"><a class="anchor" href="#maven_plugin"></a>Maven Plugin</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="overview"><a class="anchor" href="#overview"></a>Overview</h3> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="development_mode_2"><a class="anchor" href="#development_mode_2"></a>Development mode</h3> 
+       <h4 id="build_logic_2" class="discrete">Build logic</h4> 
+       <div class="paragraph"> 
+        <p>The <code>werval:devshell</code> goal depends on the <code>compile</code> phase by default.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Rebuilds trigger the <code>compile</code> phase by default too.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>In other words, the project is compiled before running the development mode and at each rebuild triggered by a source code change.</p> 
+       </div> 
+       <h4 id="watch_extra_files_or_directories_2" class="discrete">Watch extra files or directories</h4> 
+       <div class="paragraph"> 
+        <p>The <code>werval:devshell</code> goal has an <code>extraWatch</code> property that allow one to add files or directories to watch for changes in dev mode:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="title"> 
+         <code>./pom.xml</code> 
+        </div> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="xml language-xml">    <span class="tag">&lt;build&gt;</span>
+      <span class="tag">&lt;plugins&gt;</span>
+        <span class="tag">&lt;plugin&gt;</span>
+          <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
+          <span class="tag">&lt;artifactId&gt;</span>io.werval.maven<span class="tag">&lt;/artifactId&gt;</span>
+          <span class="tag">&lt;version&gt;</span>{werval_version}<span class="tag">&lt;/version&gt;</span>
+          <span class="tag">&lt;configuration&gt;</span>
+            <span class="tag">&lt;extraWatch&gt;</span>
+              <span class="tag">&lt;param&gt;</span>path/to/dir<span class="tag">&lt;/param&gt;</span>
+              <span class="tag">&lt;param&gt;</span>another/path/to/file.ext<span class="tag">&lt;/param&gt;</span>
+            <span class="tag">&lt;/extraWatch&gt;</span>
+          <span class="tag">&lt;/configuration&gt;</span>
+        <span class="tag">&lt;/plugin&gt;</span>
+      <span class="tag">&lt;/plugins&gt;</span>
+    <span class="tag">&lt;/build&gt;</span></code></pre> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="override_config_location_2"><a class="anchor" href="#override_config_location_2"></a>Override config location</h3> 
+       <div class="listingblock"> 
+        <div class="title"> 
+         <code>./pom.xml</code> 
+        </div> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="xml language-xml">    <span class="tag">&lt;build&gt;</span>
+      <span class="tag">&lt;plugins&gt;</span>
+        <span class="tag">&lt;plugin&gt;</span>
+          <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
+          <span class="tag">&lt;artifactId&gt;</span>io.werval.maven<span class="tag">&lt;/artifactId&gt;</span>
+          <span class="tag">&lt;version&gt;</span>{werval_version}<span class="tag">&lt;/version&gt;</span>
+          <span class="tag">&lt;configuration&gt;</span>
+            <span class="comment">&lt;!-- Only one of theses three can be set --&gt;</span>
+            <span class="tag">&lt;configResource&gt;</span>application-dev.conf<span class="tag">&lt;/configResource&gt;</span>
+            <span class="tag">&lt;configFile&gt;</span>path/to/file.conf<span class="tag">&lt;/configFile&gt;</span>
+            <span class="tag">&lt;configUrl&gt;</span>http://url.to/file.conf<span class="tag">&lt;/configUrl&gt;</span>
+          <span class="tag">&lt;/configuration&gt;</span>
+        <span class="tag">&lt;/plugin&gt;</span>
+      <span class="tag">&lt;/plugins&gt;</span>
+    <span class="tag">&lt;/build&gt;</span></code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Using Maven plugin <code>&lt;executions/&gt;</code> you can override config location for both the <code>werval:devshell</code> and <code>werval:start</code> goals.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="enrich_the_application_classpath"><a class="anchor" href="#enrich_the_application_classpath"></a>Enrich the application classpath</h3> 
+       <div class="listingblock"> 
+        <div class="title"> 
+         <code>./pom.xml</code> 
+        </div> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="xml language-xml">    <span class="tag">&lt;build&gt;</span>
+      <span class="tag">&lt;plugins&gt;</span>
+        <span class="tag">&lt;plugin&gt;</span>
+          <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
+          <span class="tag">&lt;artifactId&gt;</span>io.werval.maven<span class="tag">&lt;/artifactId&gt;</span>
+          <span class="tag">&lt;version&gt;</span>{werval_version}<span class="tag">&lt;/version&gt;</span>
+          <span class="tag">&lt;configuration&gt;</span>
+            <span class="tag">&lt;extraClassPath&gt;</span>
+              <span class="tag">&lt;param&gt;</span>custom/dir<span class="tag">&lt;/param&gt;</span>
+              <span class="tag">&lt;param&gt;</span>custom-file.jar<span class="tag">&lt;/param&gt;</span>
+            <span class="tag">&lt;/extraClassPath&gt;</span>
+          <span class="tag">&lt;/configuration&gt;</span>
+        <span class="tag">&lt;/plugin&gt;</span>
+      <span class="tag">&lt;/plugins&gt;</span>
+    <span class="tag">&lt;/build&gt;</span></code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Using Maven plugin <code>&lt;executions/&gt;</code> you can enrich the application classpath for both the <code>werval:devshell</code> and <code>werval:start</code> goals.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="packaging"><a class="anchor" href="#packaging"></a>Packaging</h3> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> If you need RPM or DEB packaging, use the <a href="http://mojo.codehaus.org/rpm-maven-plugin">rpm-maven-plugin</a> and <a href="https://github.com/tcurdt/jdeb">jdeb-maven-plugin</a> </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="ide_support"><a class="anchor" href="#ide_support"></a>IDE Support</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Werval is build system agnostic. As long as your IDE support the one you choose you’re good to go. Depending on the language you write your applications you’ll want to choose the IDE that best suit your needs. Two types of files needs special attention here: the routes and the configuration. No IDE will give you syntax highlighting nor autocompletion in theses.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Below are some quick pointers to get started with the three main Java IDEs.</p> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="netbeans"><a class="anchor" href="#netbeans"></a>Netbeans</h3> 
+       <div class="paragraph"> 
+        <p>Netbeans comes with Maven support out of the box. For Gradle support you need to install the <a href="https://github.com/kelemen/netbeans-gradle-project">appropriate</a> Netbeans plugin. The latest release can be downloaded from the <a href="http://plugins.netbeans.org/plugin/44510/gradle-support">Netbeans Plugins Portal</a> and is also available via the Update Center (Tools/Plugins: Look for "Gradle Support").</p> 
+       </div> 
+       <div class="admonitionblock tip"> 
+        <table> 
+         <tbody> 
+          <tr> 
+           <td class="icon"> 
+            <div class="title">
+              Tip 
+            </div> </td> 
+           <td class="content"> 
+            <div class="title">
+              Dependencies Sources and Javadocs 
+            </div> 
+            <div class="paragraph"> 
+             <p>The easiest way to get dependencies sources and javadocs in your Netbeans IDE is to apply the IDEA plugin to your project:</p> 
+            </div> 
+            <div class="listingblock"> 
+             <div class="title">
+               build.gradle 
+             </div> 
+             <div class="content"> 
+              <pre class="CodeRay"><code class="groovy language-groovy">apply <span class="key">plugin</span>:<span class="string"><span class="delimiter">'</span><span class="content">idea</span><span class="delimiter">'</span></span></code></pre> 
+             </div> 
+            </div> 
+            <div class="paragraph"> 
+             <p>and run <code>gradle idea</code>.</p> 
+            </div> 
+            <div class="paragraph"> 
+             <p>This will download all project’s dependencies source and javadoc and thus make them available in Netbeans.</p> 
+            </div> </td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="idea"><a class="anchor" href="#idea"></a>IDEA</h3> 
+       <div class="paragraph"> 
+        <p>IDEA comes with both Maven and Gradle support out of the box. You can also use the <a href="http://www.gradle.org/docs/current/userguide/idea_plugin.html">IDEA plugin for Gradle</a> to generate the IDEA metadata.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="eclipse"><a class="anchor" href="#eclipse"></a>Eclipse</h3> 
+       <div class="paragraph"> 
+        <p>Eclipse comes with no Maven nor Gradle support out of the box. For Maven support you need to install the <a href="http://www.eclipse.org/m2e/">appropriate</a> Eclipse plugin. For Gradle support you need to install the <a href="https://github.com/spring-projects/eclipse-integration-gradle/">appropriate</a> Eclipse plugin. You can also use the <a href="http://www.gradle.org/docs/current/userguide/eclipse_plugin.html">Eclipse plugin for Gradle</a> to generate the Eclipse metadata.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="write_modules"><a class="anchor" href="#write_modules"></a>Write Modules</h2> 
+     <div class="sectionbody"> 
+      <div class="sect2"> 
+       <h3 id="quickstart"><a class="anchor" href="#quickstart"></a>Quickstart</h3> 
+       <div class="paragraph"> 
+        <p>Module build is easy when using Gradle as a dedicated plugin is available.</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>apply plugin: 'io.werval.module'</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You can also start from the <code>werval-skel-module</code> skeleton that comes with a complete sample Plugin including unit tests.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="plugins"><a class="anchor" href="#plugins"></a>Plugins</h3> 
+       <div class="paragraph"> 
+        <p>Declare Plugins in your build:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>moduleDescriptor.plugin 'name', impl: 'fqcn.of.YourPlugin'</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You can declare several of them.</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="documentation"><a class="anchor" href="#documentation"></a>Documentation</h3> 
+       <div class="paragraph"> 
+        <p>Documentation must be put in <code>src/doc</code> in Asciidoc format. At least the <code>index.adoc</code> file must be present. You can add other files and resources (images…).</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>When your module is present in an application classpath, its documentation will be automatically listed at <code>/@doc/modules/index.html</code> and integrated at <code>/@doc/modules/your-module-id</code> in development mode.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="deploy_on_heroku"><a class="anchor" href="#deploy_on_heroku"></a>Deploy on Heroku</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>Deploy a Werval Application on Heroku is rather simple: launching the main class with a correct classpath is enough. Application classpath building is a good job for a build system with dependency management like Gradle or Maven.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Deploying on Heroku means building an executable version of the application and writing a <code>Procfile</code> file relaying the Heroku environment variables to our application. If you are not familiar with Heroku, see the <a href="https://devcenter.heroku.com/articles/java">Java</a> and <a href="https://devcenter.heroku.com/articles/procfile">Procfile</a> documentation.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Werval Applications configuration properties can easily be set from the command line, you can use this mechanism in your <code>Procfile</code>. However, if you feel the need, nothing stops you to gather System Properties directly from your Application’s code.</p> 
+      </div> 
+      <div class="paragraph"> 
+       <p>Now that we saw the basics we’ll walk through two practical cases. The first one using Gradle, the second one using Maven. In theses two samples, we pass the HTTP server listening port to the application. Heroku set the port to use in the <code>POST</code> environment variable.</p> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="using_gradle"><a class="anchor" href="#using_gradle"></a>Using Gradle</h3> 
+       <div class="paragraph"> 
+        <p>Given that your application is named <code>app</code>, put the following in a file named <code>Procfile</code> at the root of your project:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">web: ./build/install/app/bin/app.sh -Dwerval.http.address=0.0.0.0 -Dwerval.http.port=$PORT</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Heroku Gradle support will invoke the <code>stage</code> task provided by the <code>io.werval.application</code> plugin. This task deploy the application distribution filetree in <code>build/install/app</code>. The <code>Procfile</code> will then run your application.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>You can use the <code>stage</code> task to test locally:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">user@host $ gradle stage
+# [Removed output]
+
+BUILD SUCCESSFUL
+
+user@host $ ./build/install/app/bin/app</code></pre> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="build_werval_from_sources"><a class="anchor" href="#build_werval_from_sources"></a>Build Werval from sources</h2> 
+     <div class="sectionbody"> 
+      <div class="admonitionblock important"> 
+       <table> 
+        <tbody> 
+         <tr> 
+          <td class="icon"> 
+           <div class="title">
+             Important 
+           </div> </td> 
+          <td class="content"> This guide is intended for developers who want to build applications against the development version of Werval or want to contribute code or documentation. </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="install_needed_programs"><a class="anchor" href="#install_needed_programs"></a>Install needed programs</h3> 
+       <div class="paragraph"> 
+        <p>You need to install:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>The <a href="http://www.oracle.com/technetwork/java/javase/downloads/">Java 8 JDK</a></p> </li> 
+         <li> <p><a href="http://www.gradle.org/">Gradle</a></p> </li> 
+         <li> <p><a href="http://maven.apache.org/">Maven</a></p> </li> 
+         <li> <p><a href="http://www.graphviz.org/">GraphViz</a>, optional</p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Before going any further, ensure that the following commands show proper versions:</p> 
+       </div> 
+       <h4 id="java" class="discrete">Java</h4> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">java -version</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Should output something like:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">java version "1.8.0" <b>(1)</b>
+Java(TM) SE Runtime Environment (build 1.8.0-bXXX)
+Java HotSpot(TM) 64-Bit Server VM (build 25.0-bXX, mixed mode)</code></pre> 
+        </div> 
+       </div> 
+       <div class="colist arabic"> 
+        <ol> 
+         <li> <p>This is Java 8</p> </li> 
+        </ol> 
+       </div> 
+       <h4 id="gradle" class="discrete">Gradle</h4> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">gradle --version</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Should output something like:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">------------------------------------------------------------
+Gradle 2.1 <b>(1)</b>
+------------------------------------------------------------
+
+Build time:   2014-09-08 10:40:39 UTC
+Build number: none
+Revision:     e6cf70745ac11fa943e19294d19a2c527a669a53
+
+Groovy:       2.3.6
+Ant:          Apache Ant(TM) version 1.9.3 compiled on December 23 2013
+JVM:          1.8.0_11 (Oracle Corporation 25.11-b03) <b>(2)</b></code></pre> 
+        </div> 
+       </div> 
+       <div class="colist arabic"> 
+        <ol> 
+         <li> <p>This is Gradle 2.1</p> </li> 
+         <li> <p>Using Java 8</p> </li> 
+        </ol> 
+       </div> 
+       <h4 id="maven" class="discrete">Maven</h4> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">mvn --version</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Should output something like:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">Apache Maven 3.2.1 <b>(1)</b>
+Maven home: /path/to/your/maven/installation
+Java version: 1.8.0, vendor: Oracle Corporation <b>(2)</b>
+Java home: /path/to/your/java/installation <b>(3)</b></code></pre> 
+        </div> 
+       </div> 
+       <div class="colist arabic"> 
+        <ol> 
+         <li> <p>This is Maven 3.2.x</p> </li> 
+         <li> <p>Using Java 8</p> </li> 
+         <li> <p>From the right JAVA_HOME</p> </li> 
+        </ol> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="clone_the_werval_repositories"><a class="anchor" href="#clone_the_werval_repositories"></a>Clone the Werval repositories</h3> 
+       <div class="paragraph"> 
+        <p>We recommend to create a local directory to put all Werval clones.</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">mkdir -p ~/src/werval-related    <b>(1)</b>
+cd ~/src/werval-related          <b>(2)</b></code></pre> 
+        </div> 
+       </div> 
+       <div class="colist arabic"> 
+        <ol> 
+         <li> <p>Create a <code>werval-related</code> directory</p> </li> 
+         <li> <p>Move into the <code>werval-related</code> directory</p> </li> 
+        </ol> 
+       </div> 
+       <h4 id="werval_sdk" class="discrete">Werval SDK</h4> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">git clone git@github.com:werval/werval.git</code></pre> 
+        </div> 
+       </div> 
+       <h4 id="werval_website" class="discrete">Werval WebSite</h4> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">git clone git@github.com:werval/werval-website.git</code></pre> 
+        </div> 
+       </div> 
+       <h4 id="werval_samples" class="discrete">Werval Samples</h4> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="bash language-bash">git clone git@github.com:werval/werval-sample-beerdb.git</code></pre> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="configure_gradle_maven"><a class="anchor" href="#configure_gradle_maven"></a>Configure Gradle &amp; Maven</h3> 
+       <div class="paragraph"> 
+        <p>Gradle and Maven both need some global local configuration before going any further.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The core Werval build create a <code>repository/</code> sub-directory where artifacts are deployed. We need to set this directory globally so that you can build other projects (samples, skeletons, etc..) with the whole codebase on the develop branch, or any other branch, tag etc…</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>For Gradle,</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="title">
+          ~/.gradle/gradle.properties 
+        </div> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="groovy language-groovy"><span class="comment">// Werval Local Repository</span>
+wervalLocalRepository=<span class="key">file</span>:<span class="comment">///home/you/src/werval-related/werval/repository</span></code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>For Maven,</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="title">
+          ~/.m2/settings.xml 
+        </div> 
+        <div class="content"> 
+         <pre class="CodeRay"><code class="xml language-xml"><span class="tag">&lt;settings&gt;</span>
+    <span class="tag">&lt;profiles&gt;</span>
+        <span class="tag">&lt;profile&gt;</span>
+            <span class="tag">&lt;id&gt;</span>wervalDevelopment<span class="tag">&lt;/id&gt;</span>
+            <span class="tag">&lt;activation&gt;</span>
+                <span class="tag">&lt;activeByDefault&gt;</span>true<span class="tag">&lt;/activeByDefault&gt;</span>
+            <span class="tag">&lt;/activation&gt;</span>
+            <span class="tag">&lt;repositories&gt;</span>
+                <span class="tag">&lt;repository&gt;</span>
+                    <span class="tag">&lt;id&gt;</span>wervalLocalRepository<span class="tag">&lt;/id&gt;</span>
+                    <span class="tag">&lt;url&gt;</span>file:///home/you/src/werval-related/werval/repository<span class="tag">&lt;/url&gt;</span>
+                <span class="tag">&lt;/repository&gt;</span>
+            <span class="tag">&lt;/repositories&gt;</span>
+            <span class="tag">&lt;pluginRepositories&gt;</span>
+                <span class="tag">&lt;pluginRepository&gt;</span>
+                    <span class="tag">&lt;id&gt;</span>wervalLocalRepository<span class="tag">&lt;/id&gt;</span>
+                    <span class="tag">&lt;url&gt;</span>file:///home/you/src/werval-related/werval/repository<span class="tag">&lt;/url&gt;</span>
+                <span class="tag">&lt;/pluginRepository&gt;</span>
+            <span class="tag">&lt;/pluginRepositories&gt;</span>
+        <span class="tag">&lt;/profile&gt;</span>
+    <span class="tag">&lt;/profiles&gt;</span>
+<span class="tag">&lt;/settings&gt;</span></code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>We’re now done with the setup, time to build!</p> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="build_the_sdk"><a class="anchor" href="#build_the_sdk"></a>Build the SDK</h3> 
+       <div class="paragraph"> 
+        <p>The Werval SDK lies in the <code>werval</code> repository, previously cloned into <code>~/src/werval/related/werval</code>.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>This very git repository contains several independent projects.</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>io.werval               Werval Core
+io.werval.modules       Modules
+io.werval.gradle        Gradle Plugin
+io.werval.maven         Maven Plugin
+io.werval.dist          Werval Distributions</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>For convenience, four shell scripts are provided:</p> 
+       </div> 
+       <div class="listingblock"> 
+        <div class="content"> 
+         <pre class="CodeRay"><code>clean.sh                Clean the repository of built artifacts
+build.sh                Quick build without tests
+check.sh                Full build with all tests
+dist.sh                 Create distributions archives, without tests</code></pre> 
+        </div> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Please note that if you want to get UML diagrams generated in Javadocs you’ll need to have GraphViz installed. The build will pass without though. But with less fun.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>When working on the Werval source code, it is recommended to run all tests first, giving you confidence that the whole thing work on your computer. You can do that easily by running the <code>check.sh</code> build script.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Werval do not have much dependencies but the build system and the tests do. As a consequence, a vast amount of code is downloaded the first time you run a build. Theses downloads are cached in <code>~/.gradle/caches</code>.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Werval artifacts produced by the build are installed in the local Werval repository (<code>~/src/werval-related/werval/repository</code>) for use by other projects.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>By default version number <code>0</code> is used, you can override this with <code>-Dversion=WHATEVER</code>.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>If you encounter any problem, please <a href="https://github.com/werval/werval/issues/new">fill an issue</a> with the output of the build process.</p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sect1"> 
+     <h2 id="werval_documentation"><a class="anchor" href="#werval_documentation"></a>Werval Documentation</h2> 
+     <div class="sectionbody"> 
+      <div class="paragraph"> 
+       <p>The whole Werval documentation is built using Gradle alongside the codebase.</p> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="toolchain_explained"><a class="anchor" href="#toolchain_explained"></a>Toolchain explained</h3> 
+       <div class="paragraph"> 
+        <p>The complete documentation toolchain involve more than Gradle itself, it is use as an orchestrator of Asciidoctor for Asciidoc support, Freemarker for templating and finally, JBake to bake the static websites</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Documentation of a given Werval version includes core documentation plus dynamic documentation for officially supported modules.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>The documentation build is organized to allow documentation:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>to be hosted in development mode, including the documentation of modules found in your application classpath ;</p> </li> 
+         <li> <p>to be packaged as downloadable archives including documentation for all officialy supported modules ;</p> </li> 
+         <li> <p>and to be included in the Werval website, versionned, for all Werval releases.</p> </li> 
+        </ul> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="core_dynamic_documentation"><a class="anchor" href="#core_dynamic_documentation"></a>Core &amp; Dynamic documentation</h4> 
+        <div class="paragraph"> 
+         <p>Both core and dynamic documentation are written using Asciidoc and can contain other static assets such as images and the like.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p><strong>Core documentation</strong></p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Core documentation includes a getting started guide, the other guides, the manual and the API javadoc. Its sources are in the <code>io.werval.doc</code> project.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The <code>io.werval.doc</code> build generates the core documentation using JBake. The resulting files are included in the JAR at <code>io/werval/doc/html</code>.</p> 
+        </div> 
+        <div class="admonitionblock note"> 
+         <table> 
+          <tbody> 
+           <tr> 
+            <td class="icon"> 
+             <div class="title">
+               Note 
+             </div> </td> 
+            <td class="content"> <code>io.werval.doc</code> contains the JBake project that is used later to build the Werval Documentation </td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <div class="paragraph"> 
+         <p>All documentation source is assembled in a ZIP artifact published with the <code>doc</code> classifier:</p> 
+        </div> 
+        <div class="listingblock"> 
+         <div class="content"> 
+          <pre class="CodeRay"><code>io.werval:io.werval.doc:{werval_version}:doc@zip</code></pre> 
+         </div> 
+        </div> 
+        <div class="paragraph"> 
+         <p>It contains the complete JBake project.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p><strong>Dynamic documentation</strong></p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Each Werval module can have its own documentation included thanks to dynamic documentation. This is not called <strong>modules documentation</strong> on purpose, <strong>dynamic documentation</strong> way better convey what is going on under the hood. Moreover, this mechanism is applied to officially supported modules only.</p> 
+        </div> 
+        <div class="admonitionblock tip"> 
+         <table> 
+          <tbody> 
+           <tr> 
+            <td class="icon"> 
+             <div class="title">
+               Tip 
+             </div> </td> 
+            <td class="content"> Community modules are documented as explained in the <a href="write-modules.html#documentation">module writing guide</a>. </td> 
+           </tr> 
+          </tbody> 
+         </table> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Dynamic documentations are registered by adding the following lines to a <code>reference.conf</code> files in the module’s classpath root:</p> 
+        </div> 
+        <div class="listingblock"> 
+         <div class="content"> 
+          <pre class="CodeRay"><code>werval.devshell.dyndoc.your-module-id {
+    name = "Your shiny module's name"
+    base_path = io/werval/modules/your-module-id/doc
+}</code></pre> 
+         </div> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Static documentation is then be generated at <code>base_path</code> in the module’s classpath.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>All documentation source is assembled in a ZIP artifact published with the <code>doc</code> classifier.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Example for the SMTP Module:</p> 
+        </div> 
+        <div class="listingblock"> 
+         <div class="content"> 
+          <pre class="CodeRay"><code>io.werval:io.werval.modules.smtp:{werval_version}:doc@zip</code></pre> 
+         </div> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The build system of <code>io.werval.modules</code> do all that automatically as soon as it can find the <code>src/doc</code> directory in a module’s project.</p> 
+        </div> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="documentation_targets"><a class="anchor" href="#documentation_targets"></a>Documentation targets</h4> 
+        <div class="paragraph"> 
+         <p><strong>Development shell</strong></p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The <code>io.werval.doc</code> project host the <code>DocumentationPlugin</code> that gets automatically registered in development mode and setup routes to serve documentation at <code>/@doc</code>.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The <code>DocumentationPlugin</code> serve core and dynamic documentations directly from the classpath. It generates a dynamic page with links to all registered dynamic documentations found in the application classpath. Dynamic documentation and its index are passed through SiteMesh to decorate them with the documentation website layout.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>There’s no easy way to get live reload of changes made in <code>io.werval.doc</code>.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The <code>jbake</code> Gradle task generates the development mode documentation static part in the <code>build/jbake</code> directory. You can open the static website from there and run <code>gradle jbake</code> to see changes applied.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Or, to see the result in-situ, with dynamic documentation served, you can:</p> 
+        </div> 
+        <div class="ulist"> 
+         <ul> 
+          <li> <p>use any application that depends on the Werval development version ;</p> </li> 
+          <li> <p><code>gradle install</code> the <code>io.werval.doc</code> project ;</p> </li> 
+          <li> <p><code>gradle devshell</code> your application ;</p> </li> 
+          <li> <p>refresh <code>/@doc</code>.</p> </li> 
+         </ul> 
+        </div> 
+        <div class="paragraph"> 
+         <p><strong>Documentations archives</strong></p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The <code>io.werval.dist</code> project that create distributions, does the job of assembling documentation archives.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>It depends on <code>io.werval:io.werval.doc::doc@zip</code> and all the <code>doc</code> classified ZIP artifacts from officially supported modules to generate the documentation website. Dynamic documentation index is generated as an Asciidoc file.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Aggregated documentation JBake project is then processed. The result is assembled in a ZIP archive published with the <code>doc</code> classifier for easy download and offline browsing.</p> 
+        </div> 
+        <div class="literalblock"> 
+         <div class="content"> 
+          <pre>io.werval:io.werval.dist:{werval_version}:doc@zip</pre> 
+         </div> 
+        </div> 
+        <div class="paragraph"> 
+         <p><strong>Website</strong></p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The Werval website provide general information about Werval and its community and embedd documentation sites for all past, current and develop versions documentations mini-sites.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Notable things included in the website are out of the Werval releases lifecycle, like Skeletons and Samples. Thus, this is built in a separate project, in a separate git repository named <code>werval-website</code>.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The Werval website is generated using JBake again.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The project depends on documentation archives of the past releases, current stable release and development version. All documentation websites are extracted and used as JBake assets under <code>/doc</code>.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>The project use the Gradle Werval plugin allowing you to get live reload on changes made in the JBake project (<code>gradle devshell</code>).</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>A <code>deployWebsite</code> task allow to deploy the website with a single command line, it is for internal use only though.</p> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sect2"> 
+       <h3 id="contributing_to_documentation"><a class="anchor" href="#contributing_to_documentation"></a>Contributing to Documentation</h3> 
+       <div class="paragraph"> 
+        <p>As the documentation is stored alongside the code, the contribution workflow is the same as for code contributions.</p> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="content"><a class="anchor" href="#content"></a>Content</h4> 
+        <div class="paragraph"> 
+         <p>The documents can use code snippets which will extract code from the project. This is preferred way to include source code in the documentation, since any refactoring will be reflected in the documentation.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Try to put one sentence on each line. Lines without empty lines between them still belongs to the same paragraph. This makes it easy to move content around and produce easier to review patches.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>As <code>{}</code> are used for Asciidoc attributes, everything inside will be treated as an attribute. What you have to do is to escape the opening brace: <code>\{</code>. If you don’t, the braces and the text inside them will be removed without any warning being issued!</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p>Here are the Werval specific attributes that are set while rendering the documentation:</p> 
+        </div> 
+        <table class="tableblock frame-all grid-all table table-hover" style="width: 100%;"> 
+         <colgroup> 
+          <col style="width: 50%;"> 
+          <col style="width: 50%;"> 
+         </colgroup> 
+         <tbody> 
+          <tr> 
+           <td class="tableblock halign-left valign-top"><p class="tableblock"><code>werval_version</code></p></td> 
+           <td class="tableblock halign-left valign-top"><p class="tableblock">The version of Werval that is being built</p></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+       <div class="sect3"> 
+        <h4 id="styling"><a class="anchor" href="#styling"></a>Styling</h4> 
+        <div class="paragraph"> 
+         <p><code>io.werval.doc.css</code> styles the Werval Documentation for DevShell and distributions archives.</p> 
+        </div> 
+        <div class="paragraph"> 
+         <p><code>io.werval.website.css</code> embed the Werval Documentation as is and styles the website home and some other root pages.</p> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <p></p> 
+   </div> 
+   <div id="push"></div> 
+  </div> 
+  <div id="footer"> 
+   <p class="muted credit">© 2015 | Werval 0.6.0 | The Werval Community</p> 
+   <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
+  </div> 
+  <!-- Le javascript
+    ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="js/jquery-1.11.1.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/prettify.js"></script> 
+  <script src="js/io.werval.doc.js"></script>  
+ </body>
+</html>

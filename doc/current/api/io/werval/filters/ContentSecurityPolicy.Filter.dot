@@ -10,35 +10,35 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.filters.Filter<T>
-	c10812 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
+	c11661 [label=<<table title="io.werval.api.filters.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../api/filters/Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Filter&lt;T&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="../api/filters/Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy
-	c10874 [label=<<table title="io.werval.filters.ContentSecurityPolicy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.html">
+	c11724 [label=<<table title="io.werval.filters.ContentSecurityPolicy" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> ContentSecurityPolicy </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.Filter
-	c10875 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContentSecurityPolicy.Filter.html">
+	c11725 [label=<<table title="io.werval.filters.ContentSecurityPolicy.Filter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ContentSecurityPolicy.Filter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Filter </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.Filter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy.ViolationLogger
-	c10876 [label=<<table title="io.werval.filters.ContentSecurityPolicy.ViolationLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.ViolationLogger.html">
+	c11726 [label=<<table title="io.werval.filters.ContentSecurityPolicy.ViolationLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ContentSecurityPolicy.ViolationLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ViolationLogger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./ContentSecurityPolicy.ViolationLogger.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.filters.ContentSecurityPolicy NAVASSOC io.werval.filters.ContentSecurityPolicy.Filter
-	c10874:p -> c10875:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c11724:p -> c11725:p [taillabel="1", label="apply", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	//io.werval.filters.ContentSecurityPolicy.Filter implements io.werval.api.filters.Filter<T>
-	c10812:p -> c10875:p [dir=back,arrowtail=empty,style=dashed];
+	c11661:p -> c11725:p [dir=back,arrowtail=empty,style=dashed];
 	// io.werval.filters.ContentSecurityPolicy.ViolationLogger NAVASSOC io.werval.filters.ContentSecurityPolicy.Filter
-	c10876:p -> c10875:p [taillabel="1", label="works-with", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c11726:p -> c11725:p [taillabel="1", label="works-with", headlabel="1", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

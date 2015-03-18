@@ -10,24 +10,25 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.util.LinkedMultiValueMap<K, V>
-	c23987 [label=<<table title="io.werval.util.LinkedMultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LinkedMultiValueMap.html">
+	c25383 [label=<<table title="io.werval.util.LinkedMultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./LinkedMultiValueMap.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> LinkedMultiValueMap&lt;K, V&gt; </td></tr>
 		</table></td></tr>
 		</table>>, URL="./LinkedMultiValueMap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	// io.werval.util.MultiValueMap<K, V>
-	c23991 [label=<<table title="io.werval.util.MultiValueMap" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultiValueMap.html">
+	// io.werval.util.MultiValueMapAdapter<K, V>
+	c25390 [label=<<table title="io.werval.util.MultiValueMapAdapter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MultiValueMapAdapter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
-<tr><td align="center" balign="center"> MultiValueMap&lt;K, V&gt; </td></tr>
+<tr><td align="center" balign="center"><font face="Helvetica-Oblique"> MultiValueMapAdapter&lt;K, V&gt; </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="./MultiValueMap.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
-	//io.werval.util.LinkedMultiValueMap<K, V> implements io.werval.util.MultiValueMap<K, V>
-	c23991:p -> c23987:p [dir=back,arrowtail=empty,style=dashed];
+		</table>>, URL="./MultiValueMapAdapter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
+	//io.werval.util.LinkedMultiValueMap<K, V> extends io.werval.util.MultiValueMapAdapter<K, V>
+	c25390:p -> c25383:p [dir=back,arrowtail=empty];
 	//io.werval.util.LinkedMultiValueMap<K, V> implements java.io.Serializable
-	c24040:p -> c23987:p [dir=back,arrowtail=empty,style=dashed];
+	c25441:p -> c25383:p [dir=back,arrowtail=empty,style=dashed];
+	//io.werval.util.MultiValueMapAdapter<K, V> implements java.io.Serializable
+	c25441:p -> c25390:p [dir=back,arrowtail=empty,style=dashed];
 	// java.io.Serializable
-	c24040 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
+	c25441 [label=<<table title="java.io.Serializable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Serializable </td></tr>

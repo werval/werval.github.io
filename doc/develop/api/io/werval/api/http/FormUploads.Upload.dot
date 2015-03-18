@@ -10,20 +10,20 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// io.werval.api.http.FormUploads
-	c17935 [label=<<table title="io.werval.api.http.FormUploads" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FormUploads.html">
+	c19080 [label=<<table title="io.werval.api.http.FormUploads" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./FormUploads.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> FormUploads </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FormUploads.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.FormUploads.Upload
-	c17936 [label=<<table title="io.werval.api.http.FormUploads.Upload" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./FormUploads.Upload.html">
+	c19081 [label=<<table title="io.werval.api.http.FormUploads.Upload" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./FormUploads.Upload.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Upload </td></tr>
 		</table></td></tr>
 		</table>>, URL="./FormUploads.Upload.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// io.werval.api.http.FormUploads NAVCOMPOSED io.werval.api.http.FormUploads.Upload
-	c17935:p -> c17936:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
+	c19080:p -> c19081:p [taillabel="1", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, arrowtail=diamond, dir=both];
 }
 
