@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="../../index.html">Werval 0.7.2</a> 
+      <a class="navbar-brand" href="../../index.html">Werval 0.7.4</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,9 @@
        <li><a href="../../api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.7.2)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.7.4)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.7.2)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.7.4)</a></li> 
          <li><a href="/doc/0.6.0/index.html">0.6.0</a></li> 
          <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
@@ -121,7 +121,7 @@
          build.gradle 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="groovy language-groovy">compile <span class="string"><span class="delimiter">'</span><span class="content">io.werval:io.werval.modules.jpa:{werval-version}</span><span class="delimiter">'</span></span></code></pre> 
+        <pre class="CodeRay highlight"><code data-lang="groovy">compile <span class="string"><span class="delimiter">'</span><span class="content">io.werval:io.werval.modules.jpa:{werval-version}</span><span class="delimiter">'</span></span></code></pre> 
        </div> 
       </div> 
       <div class="paragraph"> 
@@ -132,7 +132,7 @@
          pom.xml 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="xml language-xml"><span class="tag">&lt;dependency&gt;</span>
+        <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;dependency&gt;</span>
     <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
     <span class="tag">&lt;artifactId&gt;</span>io.werval.modules.jpa<span class="tag">&lt;/artifactId&gt;</span>
     <span class="tag">&lt;version&gt;</span>{werval-version}<span class="tag">&lt;/version&gt;</span>
@@ -147,7 +147,7 @@
          application.conf 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="json language-json"><span class="error">a</span><span class="error">p</span><span class="error">p</span><span class="error">.</span><span class="error">p</span><span class="error">l</span><span class="error">u</span><span class="error">g</span><span class="error">i</span><span class="error">n</span><span class="error">s</span><span class="error">.</span><span class="error">e</span><span class="error">n</span><span class="error">a</span><span class="error">b</span><span class="error">l</span><span class="error">e</span><span class="error">d</span> <span class="error">+</span><span class="error">=</span> <span class="error">j</span><span class="error">p</span><span class="error">a</span></code></pre> 
+        <pre class="CodeRay highlight"><code data-lang="json"><span class="error">a</span><span class="error">p</span><span class="error">p</span><span class="error">.</span><span class="error">p</span><span class="error">l</span><span class="error">u</span><span class="error">g</span><span class="error">i</span><span class="error">n</span><span class="error">s</span><span class="error">.</span><span class="error">e</span><span class="error">n</span><span class="error">a</span><span class="error">b</span><span class="error">l</span><span class="error">e</span><span class="error">d</span> <span class="error">+</span><span class="error">=</span> <span class="error">j</span><span class="error">p</span><span class="error">a</span></code></pre> 
        </div> 
       </div> 
       <div class="admonitionblock caution"> 
@@ -185,7 +185,7 @@
          application.conf 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="json language-json"><span class="error">j</span><span class="error">d</span><span class="error">b</span><span class="error">c</span> {
+        <pre class="CodeRay highlight"><code data-lang="json"><span class="error">j</span><span class="error">d</span><span class="error">b</span><span class="error">c</span> {
     <span class="error">d</span><span class="error">a</span><span class="error">t</span><span class="error">a</span><span class="error">s</span><span class="error">o</span><span class="error">u</span><span class="error">r</span><span class="error">c</span><span class="error">e</span><span class="error">s</span><span class="error">.</span><span class="error">d</span><span class="error">e</span><span class="error">f</span><span class="error">a</span><span class="error">u</span><span class="error">l</span><span class="error">t</span> {
         <span class="error">d</span><span class="error">r</span><span class="error">i</span><span class="error">v</span><span class="error">e</span><span class="error">r</span> <span class="error">=</span> <span class="string"><span class="delimiter">"</span><span class="content">org.h2.Driver</span><span class="delimiter">"</span></span>
         <span class="error">u</span><span class="error">r</span><span class="error">l</span> <span class="error">=</span> <span class="string"><span class="delimiter">"</span><span class="content">jdbc:h2:mem:default;DB_CLOSE_DELAY=-1;MVCC=TRUE</span><span class="delimiter">"</span></span>
@@ -209,7 +209,7 @@
          application.conf 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="json language-json"><span class="error">j</span><span class="error">d</span><span class="error">b</span><span class="error">c</span> {
+        <pre class="CodeRay highlight"><code data-lang="json"><span class="error">j</span><span class="error">d</span><span class="error">b</span><span class="error">c</span> {
     <span class="error">d</span><span class="error">a</span><span class="error">t</span><span class="error">a</span><span class="error">s</span><span class="error">o</span><span class="error">u</span><span class="error">r</span><span class="error">c</span><span class="error">e</span><span class="error">s</span><span class="error">.</span><span class="error">d</span><span class="error">e</span><span class="error">f</span><span class="error">a</span><span class="error">u</span><span class="error">l</span><span class="error">t</span> {
         <span class="error">d</span><span class="error">r</span><span class="error">i</span><span class="error">v</span><span class="error">e</span><span class="error">r</span> <span class="error">=</span> <span class="string"><span class="delimiter">"</span><span class="content">org.h2.Driver</span><span class="delimiter">"</span></span>
         <span class="error">u</span><span class="error">r</span><span class="error">l</span> <span class="error">=</span> <span class="string"><span class="delimiter">"</span><span class="content">jdbc:h2:mem:default;DB_CLOSE_DELAY=-1;MVCC=TRUE</span><span class="delimiter">"</span></span>
@@ -228,7 +228,7 @@
          META-INF/persistence.xml 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="xml language-xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+        <pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
 <span class="tag">&lt;persistence</span> <span class="attribute-name">xmlns:xsi</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/XMLSchema-instance</span><span class="delimiter">"</span></span>
              <span class="attribute-name">xsi:schemaLocation</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd</span><span class="delimiter">"</span></span>
              <span class="attribute-name">version</span>=<span class="string"><span class="delimiter">"</span><span class="content">2.0</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://java.sun.com/xml/ns/persistence</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
@@ -259,7 +259,9 @@
          SomeController.java 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"></code></pre> 
+        <pre class="CodeRay highlight"><code data-lang="java">Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/DocumentationSupport.java[lines=<span class="integer">18</span>.<span class="float">.22</span>,indent=<span class="integer">0</span>]
+
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/DocumentationSupport.java[lines=<span class="integer">26</span>.<span class="float">.35</span>,indent=<span class="integer">0</span>]</code></pre> 
        </div> 
       </div> 
       <div class="paragraph"> 
@@ -270,7 +272,7 @@
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"></code></pre> 
+        <pre class="CodeRay highlight"><code data-lang="java">Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/DocumentationSupport.java[lines=<span class="integer">39</span>.<span class="float">.47</span>,indent=<span class="integer">0</span>]</code></pre> 
        </div> 
       </div> 
       <div class="sect2"> 
@@ -283,7 +285,7 @@
           application.conf 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="json language-json"><span class="error">j</span><span class="error">d</span><span class="error">b</span><span class="error">c</span> {
+         <pre class="CodeRay highlight"><code data-lang="json"><span class="error">j</span><span class="error">d</span><span class="error">b</span><span class="error">c</span> {
     <span class="error">d</span><span class="error">a</span><span class="error">t</span><span class="error">a</span><span class="error">s</span><span class="error">o</span><span class="error">u</span><span class="error">r</span><span class="error">c</span><span class="error">e</span><span class="error">s</span><span class="error">.</span><span class="error">d</span><span class="error">e</span><span class="error">f</span><span class="error">a</span><span class="error">u</span><span class="error">l</span><span class="error">t</span> {
         <span class="error">d</span><span class="error">r</span><span class="error">i</span><span class="error">v</span><span class="error">e</span><span class="error">r</span> <span class="error">=</span> <span class="string"><span class="delimiter">"</span><span class="content">org.h2.Driver</span><span class="delimiter">"</span></span>
         <span class="error">u</span><span class="error">r</span><span class="error">l</span> <span class="error">=</span> <span class="string"><span class="delimiter">"</span><span class="content">jdbc:h2:mem:default;DB_CLOSE_DELAY=-1;MVCC=TRUE</span><span class="delimiter">"</span></span>
@@ -309,7 +311,7 @@
           META-INF/persistence.xml 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="xml language-xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+         <pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
 <span class="tag">&lt;persistence</span> <span class="attribute-name">xmlns:xsi</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/XMLSchema-instance</span><span class="delimiter">"</span></span>
              <span class="attribute-name">xsi:schemaLocation</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd</span><span class="delimiter">"</span></span>
              <span class="attribute-name">version</span>=<span class="string"><span class="delimiter">"</span><span class="content">2.0</span><span class="delimiter">"</span></span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://java.sun.com/xml/ns/persistence</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
@@ -338,7 +340,9 @@
           AnotherController.java 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="java language-java"></code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="java">Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/DocumentationSupport.java[lines=<span class="integer">18</span>.<span class="float">.22</span>,indent=<span class="integer">0</span>]
+
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/DocumentationSupport.java[lines=<span class="integer">50</span>.<span class="float">.59</span>,indent=<span class="integer">0</span>]</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -346,7 +350,7 @@
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="java language-java"></code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="java">Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/DocumentationSupport.java[lines=<span class="integer">63</span>.<span class="float">.71</span>,indent=<span class="integer">0</span>]</code></pre> 
         </div> 
        </div> 
       </div> 
@@ -395,11 +399,14 @@
          Using the JPA API 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">io.werval.modules.jpa.JPA</span>;
+        <pre class="CodeRay highlight"><code data-lang="java">Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">19</span>.<span class="float">.20</span>,indent=<span class="integer">0</span>]
+<span class="keyword">import</span> <span class="include">io.werval.modules.jpa.JPA</span>;
 
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">23</span>.<span class="float">.24</span>,indent=<span class="integer">0</span>]
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">AnyController</span>
 {
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">31</span>.<span class="float">.47</span>,indent=<span class="integer">4</span>]
 }</code></pre> 
        </div> 
       </div> 
@@ -408,11 +415,14 @@
          Using the JPA Plugin helper methods 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">io.werval.modules.jpa.JPA</span>;
+        <pre class="CodeRay highlight"><code data-lang="java">Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">19</span>.<span class="float">.20</span>,indent=<span class="integer">0</span>]
+<span class="keyword">import</span> <span class="include">io.werval.modules.jpa.JPA</span>;
 
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">23</span>.<span class="float">.24</span>,indent=<span class="integer">0</span>]
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">AnyController</span>
 {
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">49</span>.<span class="float">.67</span>,indent=<span class="integer">4</span>]
 }</code></pre> 
        </div> 
       </div> 
@@ -421,11 +431,14 @@
          Using the @JPA.Transactional annotation 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"><span class="keyword">import</span> <span class="include">io.werval.modules.jpa.JPA</span>;
+        <pre class="CodeRay highlight"><code data-lang="java">Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">19</span>.<span class="float">.20</span>,indent=<span class="integer">0</span>]
+<span class="keyword">import</span> <span class="include">io.werval.modules.jpa.JPA</span>;
 
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">23</span>.<span class="float">.24</span>,indent=<span class="integer">0</span>]
 
 <span class="directive">public</span> <span class="type">class</span> <span class="class">AnyController</span>
 {
+Unresolved directive in &lt;stdin&gt; - include::src/test/java/io/werval/modules/jpa/Controller.java[lines=<span class="integer">69</span>.<span class="float">.76</span>,indent=<span class="integer">4</span>]
 }</code></pre> 
        </div> 
       </div> 
@@ -436,7 +449,7 @@
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2015 | Werval 0.7.2 | The Werval Community</p> 
+   <p class="muted credit">© 2015 | Werval 0.7.4 | The Werval Community</p> 
    <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div> 
   <!-- Le javascript

@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="index.html">Werval 0.7.2</a> 
+      <a class="navbar-brand" href="index.html">Werval 0.7.4</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,9 @@
        <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.7.2)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.7.4)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.7.2)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.7.4)</a></li> 
          <li><a href="/doc/0.6.0/index.html">0.6.0</a></li> 
          <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
@@ -79,64 +79,7 @@
       <div class="paragraph"> 
        <p>In this section you’ll find guides for frequent and practical development use cases from IDE support to deployment.</p> 
       </div> 
-      <div id="toc" class="toc2"> 
-       <div id="toctitle" class="title">
-         Guides 
-       </div> 
-       <ul class="sectlevel1"> 
-        <li><a href="#gradle_plugin">Gradle Plugin</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#werval_dependencies">Werval dependencies</a></li> 
-          <li><a href="#application_packaging">Application packaging</a></li> 
-          <li><a href="#staging_for_production">Staging for production</a></li> 
-          <li><a href="#development_mode">Development mode</a></li> 
-          <li><a href="#override_config_location">Override config location</a></li> 
-         </ul> </li> 
-        <li><a href="#maven_plugin">Maven Plugin</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#overview">Overview</a></li> 
-          <li><a href="#development_mode_2">Development mode</a></li> 
-          <li><a href="#override_config_location_2">Override config location</a></li> 
-          <li><a href="#enrich_the_application_classpath">Enrich the application classpath</a></li> 
-          <li><a href="#packaging">Packaging</a></li> 
-         </ul> </li> 
-        <li><a href="#ide_support">IDE Support</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#netbeans">Netbeans</a></li> 
-          <li><a href="#idea">IDEA</a></li> 
-          <li><a href="#eclipse">Eclipse</a></li> 
-         </ul> </li> 
-        <li><a href="#write_modules">Write Modules</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#quickstart">Quickstart</a></li> 
-          <li><a href="#plugins">Plugins</a></li> 
-          <li><a href="#documentation">Documentation</a></li> 
-         </ul> </li> 
-        <li><a href="#deploy_on_heroku">Deploy on Heroku</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#using_gradle">Using Gradle</a></li> 
-         </ul> </li> 
-        <li><a href="#build_werval_from_sources">Build Werval from sources</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#install_needed_programs">Install needed programs</a></li> 
-          <li><a href="#clone_the_werval_repositories">Clone the Werval repositories</a></li> 
-          <li><a href="#configure_gradle_maven">Configure Gradle &amp; Maven</a></li> 
-          <li><a href="#build_the_sdk">Build the SDK</a></li> 
-         </ul> </li> 
-        <li><a href="#werval_documentation">Werval Documentation</a></li> 
-        <li> 
-         <ul class="sectlevel2"> 
-          <li><a href="#toolchain_explained">Toolchain explained</a></li> 
-          <li><a href="#contributing_to_documentation">Contributing to Documentation</a></li> 
-         </ul> </li> 
-       </ul> 
-      </div> 
+      <!-- toc disabled --> 
      </div> 
     </div> 
     <div class="sect1"> 
@@ -147,9 +90,9 @@
         <code>./build.gradle</code> 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="groovy language-groovy">buildscript {
+        <pre class="CodeRay highlight"><code data-lang="groovy">buildscript {
   repositories { jcenter() }    // &lt;1&gt;
-  dependencies { classpath 'io.werval:io.werval.gradle:0.7.2' } // &lt;2&gt;
+  dependencies { classpath 'io.werval:io.werval.gradle:0.7.4' } // &lt;2&gt;
 }
 
 apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre> 
@@ -169,7 +112,7 @@ apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>dependencies {
+         <pre class="CodeRay highlight"><code>dependencies {
   compile werval.api
   compile werval.module('json')
   runtime werval.nettyServer
@@ -226,7 +169,7 @@ apply plugin: 'io.werval.application'       // &lt;3&gt;</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>devshell.dependsOn gulp_bower, gulp_dev
+         <pre class="CodeRay highlight"><code>devshell.dependsOn gulp_bower, gulp_dev
 devshell_rebuild.dependsOn gulp_dev</code></pre> 
         </div> 
        </div> 
@@ -242,7 +185,7 @@ devshell_rebuild.dependsOn gulp_dev</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>devshell.extraWatch += "path/to/dir"
+         <pre class="CodeRay highlight"><code>devshell.extraWatch += "path/to/dir"
 devshell.extraWatch += [ "path/to/elsewhere", "and/anywhere" ]</code></pre> 
         </div> 
        </div> 
@@ -255,7 +198,7 @@ devshell.extraWatch += [ "path/to/elsewhere", "and/anywhere" ]</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>dependencies {
+         <pre class="CodeRay highlight"><code>dependencies {
   devshell 'group:id:version'
 }</code></pre> 
         </div> 
@@ -278,7 +221,7 @@ devshell.extraWatch += [ "path/to/elsewhere", "and/anywhere" ]</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>devshell.configResource 'development.conf'</code></pre> 
+         <pre class="CodeRay highlight"><code>devshell.configResource 'development.conf'</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -289,7 +232,7 @@ devshell.extraWatch += [ "path/to/elsewhere", "and/anywhere" ]</code></pre>
        <h3 id="override_config_location"><a class="anchor" href="#override_config_location"></a>Override config location</h3> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="groovy language-groovy">devshell {
+         <pre class="CodeRay highlight"><code data-lang="groovy">devshell {
   <span class="comment">// Only one of theses three can be set</span>
   configResource = <span class="string"><span class="delimiter">"</span><span class="content">application-dev.conf</span><span class="delimiter">"</span></span>
   configFile = file( <span class="string"><span class="delimiter">"</span><span class="content">path/to/file.conf</span><span class="delimiter">"</span></span> )
@@ -340,7 +283,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
          <code>./pom.xml</code> 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="xml language-xml">    <span class="tag">&lt;build&gt;</span>
+         <pre class="CodeRay highlight"><code data-lang="xml">    <span class="tag">&lt;build&gt;</span>
       <span class="tag">&lt;plugins&gt;</span>
         <span class="tag">&lt;plugin&gt;</span>
           <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
@@ -365,7 +308,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
          <code>./pom.xml</code> 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="xml language-xml">    <span class="tag">&lt;build&gt;</span>
+         <pre class="CodeRay highlight"><code data-lang="xml">    <span class="tag">&lt;build&gt;</span>
       <span class="tag">&lt;plugins&gt;</span>
         <span class="tag">&lt;plugin&gt;</span>
           <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
@@ -393,7 +336,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
          <code>./pom.xml</code> 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="xml language-xml">    <span class="tag">&lt;build&gt;</span>
+         <pre class="CodeRay highlight"><code data-lang="xml">    <span class="tag">&lt;build&gt;</span>
       <span class="tag">&lt;plugins&gt;</span>
         <span class="tag">&lt;plugin&gt;</span>
           <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
@@ -466,7 +409,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
                build.gradle 
              </div> 
              <div class="content"> 
-              <pre class="CodeRay"><code class="groovy language-groovy">apply <span class="key">plugin</span>:<span class="string"><span class="delimiter">'</span><span class="content">idea</span><span class="delimiter">'</span></span></code></pre> 
+              <pre class="CodeRay highlight"><code data-lang="groovy">apply <span class="key">plugin</span>:<span class="string"><span class="delimiter">'</span><span class="content">idea</span><span class="delimiter">'</span></span></code></pre> 
              </div> 
             </div> 
             <div class="paragraph"> 
@@ -504,7 +447,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>apply plugin: 'io.werval.module'</code></pre> 
+         <pre class="CodeRay highlight"><code>apply plugin: 'io.werval.module'</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -518,7 +461,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>moduleDescriptor.plugin 'name', impl: 'fqcn.of.YourPlugin'</code></pre> 
+         <pre class="CodeRay highlight"><code>moduleDescriptor.plugin 'name', impl: 'fqcn.of.YourPlugin'</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -528,7 +471,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
       <div class="sect2"> 
        <h3 id="documentation"><a class="anchor" href="#documentation"></a>Documentation</h3> 
        <div class="paragraph"> 
-        <p>Documentation must be put in <code>src/doc</code> in Asciidoc format. At least the <code>index.adoc</code> file must be present. You can add other files and resources (images…).</p> 
+        <p>Documentation must be put in <code>src/doc</code> in Asciidoc format. At least the <code>index.adoc</code> file must be present. You can add other files and resources (images…​).</p> 
        </div> 
        <div class="paragraph"> 
         <p>When your module is present in an application classpath, its documentation will be automatically listed at <code>/@doc/modules/index.html</code> and integrated at <code>/@doc/modules/your-module-id</code> in development mode.</p> 
@@ -558,7 +501,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">web: ./build/install/app/bin/app.sh -Dwerval.http.address=0.0.0.0 -Dwerval.http.port=$PORT</code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">web: ./build/install/app/bin/app.sh -Dwerval.http.address=0.0.0.0 -Dwerval.http.port=$PORT</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -569,7 +512,7 @@ task customStart( <span class="key">type</span>: io.werval.gradle.StartTask )
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">user@host $ gradle stage
+         <pre class="CodeRay highlight"><code data-lang="bash">user@host $ gradle stage
 # [Removed output]
 
 BUILD SUCCESSFUL
@@ -615,7 +558,7 @@ user@host $ ./build/install/app/bin/app</code></pre>
        <h4 id="java" class="discrete">Java</h4> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">java -version</code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">java -version</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -623,7 +566,7 @@ user@host $ ./build/install/app/bin/app</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">java version "1.8.0" <b>(1)</b>
+         <pre class="CodeRay highlight"><code data-lang="bash">java version "1.8.0" <b class="conum">(1)</b>
 Java(TM) SE Runtime Environment (build 1.8.0-bXXX)
 Java HotSpot(TM) 64-Bit Server VM (build 25.0-bXX, mixed mode)</code></pre> 
         </div> 
@@ -636,7 +579,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.0-bXX, mixed mode)</code></pre>
        <h4 id="gradle" class="discrete">Gradle</h4> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">gradle --version</code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">gradle --version</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -644,8 +587,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.0-bXX, mixed mode)</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">------------------------------------------------------------
-Gradle 2.1 <b>(1)</b>
+         <pre class="CodeRay highlight"><code data-lang="bash">------------------------------------------------------------
+Gradle 2.1 <b class="conum">(1)</b>
 ------------------------------------------------------------
 
 Build time:   2014-09-08 10:40:39 UTC
@@ -654,7 +597,7 @@ Revision:     e6cf70745ac11fa943e19294d19a2c527a669a53
 
 Groovy:       2.3.6
 Ant:          Apache Ant(TM) version 1.9.3 compiled on December 23 2013
-JVM:          1.8.0_11 (Oracle Corporation 25.11-b03) <b>(2)</b></code></pre> 
+JVM:          1.8.0_11 (Oracle Corporation 25.11-b03) <b class="conum">(2)</b></code></pre> 
         </div> 
        </div> 
        <div class="colist arabic"> 
@@ -666,7 +609,7 @@ JVM:          1.8.0_11 (Oracle Corporation 25.11-b03) <b>(2)</b></code></pre>
        <h4 id="maven" class="discrete">Maven</h4> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">mvn --version</code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">mvn --version</code></pre> 
         </div> 
        </div> 
        <div class="paragraph"> 
@@ -674,10 +617,10 @@ JVM:          1.8.0_11 (Oracle Corporation 25.11-b03) <b>(2)</b></code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">Apache Maven 3.2.1 <b>(1)</b>
+         <pre class="CodeRay highlight"><code data-lang="bash">Apache Maven 3.2.1 <b class="conum">(1)</b>
 Maven home: /path/to/your/maven/installation
-Java version: 1.8.0, vendor: Oracle Corporation <b>(2)</b>
-Java home: /path/to/your/java/installation <b>(3)</b></code></pre> 
+Java version: 1.8.0, vendor: Oracle Corporation <b class="conum">(2)</b>
+Java home: /path/to/your/java/installation <b class="conum">(3)</b></code></pre> 
         </div> 
        </div> 
        <div class="colist arabic"> 
@@ -695,8 +638,8 @@ Java home: /path/to/your/java/installation <b>(3)</b></code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">mkdir -p ~/src/werval-related    <b>(1)</b>
-cd ~/src/werval-related          <b>(2)</b></code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">mkdir -p ~/src/werval-related    <b class="conum">(1)</b>
+cd ~/src/werval-related          <b class="conum">(2)</b></code></pre> 
         </div> 
        </div> 
        <div class="colist arabic"> 
@@ -708,19 +651,19 @@ cd ~/src/werval-related          <b>(2)</b></code></pre>
        <h4 id="werval_sdk" class="discrete">Werval SDK</h4> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">git clone git@github.com:werval/werval.git</code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">git clone git@github.com:werval/werval.git</code></pre> 
         </div> 
        </div> 
        <h4 id="werval_website" class="discrete">Werval WebSite</h4> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">git clone git@github.com:werval/werval-website.git</code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">git clone git@github.com:werval/werval-website.git</code></pre> 
         </div> 
        </div> 
        <h4 id="werval_samples" class="discrete">Werval Samples</h4> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="bash language-bash">git clone git@github.com:werval/werval-sample-beerdb.git</code></pre> 
+         <pre class="CodeRay highlight"><code data-lang="bash">git clone git@github.com:werval/werval-sample-beerdb.git</code></pre> 
         </div> 
        </div> 
       </div> 
@@ -730,7 +673,7 @@ cd ~/src/werval-related          <b>(2)</b></code></pre>
         <p>Gradle and Maven both need some global local configuration before going any further.</p> 
        </div> 
        <div class="paragraph"> 
-        <p>The core Werval build create a <code>repository/</code> sub-directory where artifacts are deployed. We need to set this directory globally so that you can build other projects (samples, skeletons, etc..) with the whole codebase on the develop branch, or any other branch, tag etc…</p> 
+        <p>The core Werval build create a <code>repository/</code> sub-directory where artifacts are deployed. We need to set this directory globally so that you can build other projects (samples, skeletons, etc..) with the whole codebase on the develop branch, or any other branch, tag etc…​</p> 
        </div> 
        <div class="paragraph"> 
         <p>For Gradle,</p> 
@@ -740,7 +683,7 @@ cd ~/src/werval-related          <b>(2)</b></code></pre>
           ~/.gradle/gradle.properties 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="groovy language-groovy"><span class="comment">// Werval Local Repository</span>
+         <pre class="CodeRay highlight"><code data-lang="groovy"><span class="comment">// Werval Local Repository</span>
 wervalLocalRepository=<span class="key">file</span>:<span class="comment">///home/you/src/werval-related/werval/repository</span></code></pre> 
         </div> 
        </div> 
@@ -752,7 +695,7 @@ wervalLocalRepository=<span class="key">file</span>:<span class="comment">///hom
           ~/.m2/settings.xml 
         </div> 
         <div class="content"> 
-         <pre class="CodeRay"><code class="xml language-xml"><span class="tag">&lt;settings&gt;</span>
+         <pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;settings&gt;</span>
     <span class="tag">&lt;profiles&gt;</span>
         <span class="tag">&lt;profile&gt;</span>
             <span class="tag">&lt;id&gt;</span>wervalDevelopment<span class="tag">&lt;/id&gt;</span>
@@ -793,7 +736,7 @@ wervalLocalRepository=<span class="key">file</span>:<span class="comment">///hom
             </div> 
             <div class="listingblock"> 
              <div class="content"> 
-              <pre class="CodeRay"><code class="groovy language-groovy">buildscript { <span class="keyword">if</span>( project.hasProperty( <span class="string"><span class="delimiter">'</span><span class="content">wervalLocalRepository</span><span class="delimiter">'</span></span> ) ) repositories { maven { url project.wervalLocalRepository } } }</code></pre> 
+              <pre class="CodeRay highlight"><code data-lang="groovy">buildscript { <span class="keyword">if</span>( project.hasProperty( <span class="string"><span class="delimiter">'</span><span class="content">wervalLocalRepository</span><span class="delimiter">'</span></span> ) ) repositories { maven { url project.wervalLocalRepository } } }</code></pre> 
              </div> 
             </div> </td> 
           </tr> 
@@ -811,7 +754,7 @@ wervalLocalRepository=<span class="key">file</span>:<span class="comment">///hom
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>io.werval               Werval Core
+         <pre class="CodeRay highlight"><code>io.werval               Werval Core
 io.werval.modules       Modules
 io.werval.gradle        Gradle Plugin
 io.werval.maven         Maven Plugin
@@ -823,7 +766,7 @@ io.werval.dist          Werval Distributions</code></pre>
        </div> 
        <div class="listingblock"> 
         <div class="content"> 
-         <pre class="CodeRay"><code>clean.sh                Clean the repository of built artifacts
+         <pre class="CodeRay highlight"><code>clean.sh                Clean the repository of built artifacts
 build.sh                Quick build without tests
 check.sh                Full build with all tests
 dist.sh                 Create distributions archives, without tests</code></pre> 
@@ -906,7 +849,7 @@ dist.sh                 Create distributions archives, without tests</code></pre
         </div> 
         <div class="listingblock"> 
          <div class="content"> 
-          <pre class="CodeRay"><code>io.werval:io.werval.doc:{werval_version}:doc@zip</code></pre> 
+          <pre class="CodeRay highlight"><code>io.werval:io.werval.doc:{werval_version}:doc@zip</code></pre> 
          </div> 
         </div> 
         <div class="paragraph"> 
@@ -936,7 +879,7 @@ dist.sh                 Create distributions archives, without tests</code></pre
         </div> 
         <div class="listingblock"> 
          <div class="content"> 
-          <pre class="CodeRay"><code>werval.devshell.dyndoc.your-module-id {
+          <pre class="CodeRay highlight"><code>werval.devshell.dyndoc.your-module-id {
     name = "Your shiny module's name"
     base_path = io/werval/modules/your-module-id/doc
 }</code></pre> 
@@ -953,7 +896,7 @@ dist.sh                 Create distributions archives, without tests</code></pre
         </div> 
         <div class="listingblock"> 
          <div class="content"> 
-          <pre class="CodeRay"><code>io.werval:io.werval.modules.smtp:{werval_version}:doc@zip</code></pre> 
+          <pre class="CodeRay highlight"><code>io.werval:io.werval.modules.smtp:{werval_version}:doc@zip</code></pre> 
          </div> 
         </div> 
         <div class="paragraph"> 
@@ -1047,7 +990,7 @@ dist.sh                 Create distributions archives, without tests</code></pre
         <div class="paragraph"> 
          <p>Here are the Werval specific attributes that are set while rendering the documentation:</p> 
         </div> 
-        <table class="tableblock frame-all grid-all table table-hover" style="width: 100%;"> 
+        <table class="tableblock frame-all grid-all spread table table-hover"> 
          <colgroup> 
           <col style="width: 50%;"> 
           <col style="width: 50%;"> 
@@ -1077,7 +1020,7 @@ dist.sh                 Create distributions archives, without tests</code></pre
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2015 | Werval 0.7.2 | The Werval Community</p> 
+   <p class="muted credit">© 2015 | Werval 0.7.4 | The Werval Community</p> 
    <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div> 
   <!-- Le javascript

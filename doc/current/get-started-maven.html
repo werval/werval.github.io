@@ -33,7 +33,7 @@
     <div class="container"> 
      <div class="navbar-header"> 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
-      <a class="navbar-brand" href="index.html">Werval 0.7.2</a> 
+      <a class="navbar-brand" href="index.html">Werval 0.7.4</a> 
      </div> 
      <div class="navbar-collapse collapse"> 
       <ul class="nav navbar-nav"> 
@@ -50,9 +50,9 @@
        <li><a href="api/index.html" target="_blank">API Javadoc</a></li> 
       </ul> 
       <ul class="nav navbar-nav navbar-right"> 
-       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.7.2)<span class="caret"></span></a> 
+       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Current Version (0.7.4)<span class="caret"></span></a> 
         <ul class="dropdown-menu" role="menu"> 
-         <li><a href="/doc/current/index.html">Current Version (0.7.2)</a></li> 
+         <li><a href="/doc/current/index.html">Current Version (0.7.4)</a></li> 
          <li><a href="/doc/0.6.0/index.html">0.6.0</a></li> 
          <li><a href="/doc/0.5.1/index.html">0.5.1</a></li> 
          <li class="divider"></li> 
@@ -79,20 +79,7 @@
       <div class="paragraph"> 
        <p>In this guide you’ll download a skeleton application and run it in development mode, walkthrough the application code and learn a few other things about Werval.</p> 
       </div> 
-      <div id="toc" class="toc2"> 
-       <div id="toctitle" class="title">
-         Get started using Maven 
-       </div> 
-       <ul class="sectlevel1"> 
-        <li><a href="#prerequisites">Prerequisites</a></li> 
-        <li><a href="#tl_dr">TL;DR</a></li> 
-        <li><a href="#create_a_new_application">Create a new application</a></li> 
-        <li><a href="#run_in_development_mode">Run in development mode</a></li> 
-        <li><a href="#application_walkthrough">Application Walkthrough</a></li> 
-        <li><a href="#using_the_devshell">Using the DevShell</a></li> 
-        <li><a href="#next_steps">Next steps</a></li> 
-       </ul> 
-      </div> 
+      <!-- toc disabled --> 
      </div> 
     </div> 
     <div class="sect1"> 
@@ -104,7 +91,7 @@
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="bash language-bash">java -version
+        <pre class="CodeRay highlight"><code data-lang="bash">java -version
 $JAVA_HOME/bin/java -version</code></pre> 
        </div> 
       </div> 
@@ -113,7 +100,7 @@ $JAVA_HOME/bin/java -version</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="bash language-bash">java version "1.8.X_XX" <b>(1)</b>
+        <pre class="CodeRay highlight"><code data-lang="bash">java version "1.8.X_XX" <b class="conum">(1)</b>
 Java(TM) SE Runtime Environment (build 1.8.X_XX-bXXX)
 Java HotSpot(TM) 64-Bit Server VM (build XX.XX-bXX, mixed mode)</code></pre> 
        </div> 
@@ -129,7 +116,7 @@ Java HotSpot(TM) 64-Bit Server VM (build XX.XX-bXX, mixed mode)</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="bash language-bash">mvn --version</code></pre> 
+        <pre class="CodeRay highlight"><code data-lang="bash">mvn --version</code></pre> 
        </div> 
       </div> 
       <div class="paragraph"> 
@@ -137,10 +124,10 @@ Java HotSpot(TM) 64-Bit Server VM (build XX.XX-bXX, mixed mode)</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="bash language-bash">Apache Maven 3.2.1 <b>(1)</b>
+        <pre class="CodeRay highlight"><code data-lang="bash">Apache Maven 3.2.1 <b class="conum">(1)</b>
 Maven home: /path/to/your/maven/installation
-Java version: 1.8.0, vendor: Oracle Corporation <b>(2)</b>
-Java home: /path/to/your/java8/installation <b>(3)</b></code></pre> 
+Java version: 1.8.0, vendor: Oracle Corporation <b class="conum">(2)</b>
+Java home: /path/to/your/java8/installation <b class="conum">(3)</b></code></pre> 
        </div> 
       </div> 
       <div class="colist arabic"> 
@@ -160,7 +147,7 @@ Java home: /path/to/your/java8/installation <b>(3)</b></code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code>svn export https://github.com/werval/werval-skel-maven/trunk werval-maven &lt;1&gt;
+        <pre class="CodeRay highlight"><code>svn export https://github.com/werval/werval-skel-maven/trunk werval-maven &lt;1&gt;
 cd werval-maven &lt;2&gt;
 mvn werval:devshell &lt;3&gt;</code></pre> 
        </div> 
@@ -182,7 +169,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="bash language-bash">svn export https://github.com/werval/werval-skel-maven/trunk YOUR_APP_NAME</code></pre> 
+        <pre class="CodeRay highlight"><code data-lang="bash">svn export https://github.com/werval/werval-skel-maven/trunk YOUR_APP_NAME</code></pre> 
        </div> 
       </div> 
       <div class="paragraph"> 
@@ -204,7 +191,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
             <p>Github does not support <code>git archive</code> which is the equivalent of <code>svn export</code>. Github provide a subversion view of git repositories, we’re leveraging that.</p> 
            </div> 
            <div class="paragraph"> 
-            <p><code>trunk</code> contains the <code>master</code> branch. You can list available branches and tags using <code>svn ls https://github.com/werval/werval-skel-gradle</code>.</p> 
+            <p><code>trunk</code> contains the <code>master</code> branch. You can list available branches and tags using <code>svn ls <a href="https://github.com/werval/werval-skel-gradle" class="bare">https://github.com/werval/werval-skel-gradle</a></code>.</p> 
            </div> 
            <div class="paragraph"> 
             <p>A command line client for easy usage of application skeletons is under active discussion, planned and will be added in a future release.</p> 
@@ -223,11 +210,11 @@ mvn werval:devshell &lt;3&gt;</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code>mvn werval:devshell</code></pre> 
+        <pre class="CodeRay highlight"><code>mvn werval:devshell</code></pre> 
        </div> 
       </div> 
       <div class="paragraph"> 
-       <p>Your default browser should have opened <a href="http://localhost:23023/">http://localhost:23023/</a> showing the following welcome page:</p> 
+       <p>Your default browser should have opened <a href="http://localhost:23023/" class="bare">http://localhost:23023/</a> showing the following welcome page:</p> 
       </div> 
       <div class="imageblock"> 
        <div class="content"> 
@@ -235,7 +222,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
        </div> 
       </div> 
       <div class="paragraph"> 
-       <p>As stated on the welcome page above, when running the Development Shell, the whole Werval documentation is available right from the HTTP server that run your application. Open <a href="http://localhost:23023/@doc">http://localhost:23023/@doc</a> to browse the documentation. This very article should be available at <a href="http://localhost:23023/@doc/getting-started.html">http://localhost:23023/@doc/getting-started.html</a> but maybe you are already reading it from there.</p> 
+       <p>As stated on the welcome page above, when running the Development Shell, the whole Werval documentation is available right from the HTTP server that run your application. Open <a href="http://localhost:23023/@doc" class="bare">http://localhost:23023/@doc</a> to browse the documentation. This very article should be available at <a href="http://localhost:23023/@doc/getting-started.html" class="bare">http://localhost:23023/@doc/getting-started.html</a> but maybe you are already reading it from there.</p> 
       </div> 
       <div class="admonitionblock important"> 
        <table> 
@@ -287,7 +274,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
         <code>./src/main/resources/routes.conf</code> 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="routes language-routes">GET / controllers.Application.index</code></pre> 
+        <pre class="CodeRay highlight"><code data-lang="routes">GET / controllers.Application.index</code></pre> 
        </div> 
       </div> 
       <div class="paragraph"> 
@@ -298,7 +285,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
         <code>./src/main/java/controllers/Application.java</code> 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"><span class="directive">public</span> Outcome index()
+        <pre class="CodeRay highlight"><code data-lang="java"><span class="directive">public</span> Outcome index()
 {
     <span class="keyword">return</span> outcomes().ok( <span class="string"><span class="delimiter">"</span><span class="content">It works!</span><span class="delimiter">"</span></span> ).build();
 }</code></pre> 
@@ -332,7 +319,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
         <code>./pom.xml</code> 
        </div> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="xml language-xml"><span class="preprocessor">&lt;?xml version="1.0"?&gt;</span>
+        <pre class="CodeRay highlight"><code data-lang="xml"><span class="preprocessor">&lt;?xml version="1.0"?&gt;</span>
 <span class="tag">&lt;project</span> <span class="attribute-name">xmlns</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://maven.apache.org/POM/4.0.0</span><span class="delimiter">"</span></span>
          <span class="attribute-name">xmlns:xsi</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://www.w3.org/2001/XMLSchema-instance</span><span class="delimiter">"</span></span>
          <span class="attribute-name">xsi:schemaLocation</span>=<span class="string"><span class="delimiter">"</span><span class="content">http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd</span><span class="delimiter">"</span></span><span class="tag">&gt;</span>
@@ -358,18 +345,18 @@ mvn werval:devshell &lt;3&gt;</code></pre>
         <span class="tag">&lt;dependency&gt;</span>
             <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
             <span class="tag">&lt;artifactId&gt;</span>io.werval.api<span class="tag">&lt;/artifactId&gt;</span>
-            <span class="tag">&lt;version&gt;</span>0.7.2<span class="tag">&lt;/version&gt;</span>
+            <span class="tag">&lt;version&gt;</span>0.7.4<span class="tag">&lt;/version&gt;</span>
         <span class="tag">&lt;/dependency&gt;</span>
         <span class="tag">&lt;dependency&gt;</span>
             <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
             <span class="tag">&lt;artifactId&gt;</span>io.werval.server.bootstrap<span class="tag">&lt;/artifactId&gt;</span>
-            <span class="tag">&lt;version&gt;</span>0.7.2<span class="tag">&lt;/version&gt;</span>
+            <span class="tag">&lt;version&gt;</span>0.7.4<span class="tag">&lt;/version&gt;</span>
             <span class="tag">&lt;scope&gt;</span>runtime<span class="tag">&lt;/scope&gt;</span>
         <span class="tag">&lt;/dependency&gt;</span>
         <span class="tag">&lt;dependency&gt;</span>
             <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
             <span class="tag">&lt;artifactId&gt;</span>io.werval.test<span class="tag">&lt;/artifactId&gt;</span>
-            <span class="tag">&lt;version&gt;</span>0.7.2<span class="tag">&lt;/version&gt;</span>
+            <span class="tag">&lt;version&gt;</span>0.7.4<span class="tag">&lt;/version&gt;</span>
             <span class="tag">&lt;scope&gt;</span>test<span class="tag">&lt;/scope&gt;</span>
         <span class="tag">&lt;/dependency&gt;</span>
     <span class="tag">&lt;/dependencies&gt;</span>
@@ -394,7 +381,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
             <span class="tag">&lt;plugin&gt;</span>
                 <span class="tag">&lt;groupId&gt;</span>io.werval<span class="tag">&lt;/groupId&gt;</span>
                 <span class="tag">&lt;artifactId&gt;</span>io.werval.maven<span class="tag">&lt;/artifactId&gt;</span>
-                <span class="tag">&lt;version&gt;</span>0.7.2<span class="tag">&lt;/version&gt;</span>
+                <span class="tag">&lt;version&gt;</span>0.7.4<span class="tag">&lt;/version&gt;</span>
             <span class="tag">&lt;/plugin&gt;</span>
         <span class="tag">&lt;/plugins&gt;</span>
     <span class="tag">&lt;/build&gt;</span>
@@ -428,7 +415,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"><span class="keyword">package</span> <span class="namespace">controllers</span>;
+        <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">controllers</span>;
 
 <span class="keyword">import</span> <span class="include">io.werval.controllers</span>.*;
 
@@ -455,7 +442,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"><span class="keyword">package</span> <span class="namespace">controllers</span>;
+        <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">controllers</span>;
 
 <span class="keyword">import</span> <span class="include">io.werval.controllers</span>.*;
 
@@ -494,7 +481,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
       </div> 
       <div class="listingblock"> 
        <div class="content"> 
-        <pre class="CodeRay"><code class="java language-java"><span class="keyword">package</span> <span class="namespace">controllers</span>;
+        <pre class="CodeRay highlight"><code data-lang="java"><span class="keyword">package</span> <span class="namespace">controllers</span>;
 
 <span class="keyword">import</span> <span class="include">io.werval.api.context</span>.*;
 
@@ -540,7 +527,7 @@ mvn werval:devshell &lt;3&gt;</code></pre>
    <div id="push"></div> 
   </div> 
   <div id="footer"> 
-   <p class="muted credit">© 2015 | Werval 0.7.2 | The Werval Community</p> 
+   <p class="muted credit">© 2015 | Werval 0.7.4 | The Werval Community</p> 
    <p class="muted credit"> Authored with <a href="http://asciidoctor.org/">Asciidoctor</a> | Baked with <a href="http://jbake.org">JBake</a> | Mixed with <a href="http://getbootstrap.com/">Bootstrap</a> </p> 
   </div> 
   <!-- Le javascript
