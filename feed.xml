@@ -6,9 +6,72 @@
     <atom:link href="http://werval.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>ven., 28 août 2015 14:51:46 +0200</pubDate>
-    <lastBuildDate>ven., 28 août 2015 14:51:46 +0200</lastBuildDate>
+    <pubDate>mar., 1 sept. 2015 18:49:04 +0200</pubDate>
+    <lastBuildDate>mar., 1 sept. 2015 18:49:04 +0200</lastBuildDate>
 
+    <item>
+      <title>Werval 0.7.5</title>
+      <link>http://werval.io//news/2015-09-01_release_0.7.5.html</link>
+      <pubDate>mar., 1 sept. 2015 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">news/2015-09-01_release_0.7.5.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Werval is an open source JVM based toolkit for building HTTP services.
+A lightweight core, live reload dev mode, useful modules, plugins for several build tools and
+multiple languages support leave you free to choose the right architecture for your domain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-gradle.html&quot;&gt;Get started using Gradle&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;../doc/current/get-started-maven.html&quot;&gt;Get started using maven&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Keep in sight that this is an early access release and that some edges may still be rough.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you encounter any issue, please report by creating a
+&lt;a href=&quot;https://github.com/werval/werval/issues/new&quot;&gt;new issue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#changelog&quot;&gt;&lt;/a&gt;Changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;dependency_changes&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#dependency_changes&quot;&gt;&lt;/a&gt;Dependency changes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Core&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Javassist from &lt;code&gt;3.19&lt;/code&gt; to &lt;code&gt;3.20&lt;/code&gt;, see the &lt;a href=&quot;https://github.com/jboss-javassist/javassist/commits/3.20&quot;&gt;history&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modules&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade HikariCP from &lt;code&gt;2.3&lt;/code&gt; to &lt;code&gt;2.4&lt;/code&gt;, see the &lt;a href=&quot;https://github.com/brettwooldridge/HikariCP/commits/master&quot;&gt;history&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Jackson from &lt;code&gt;2.5&lt;/code&gt; to &lt;code&gt;2.6&lt;/code&gt;, see the &lt;a href=&quot;https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.6&quot;&gt;release-notes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade spymemcached from &lt;code&gt;2.11&lt;/code&gt; to &lt;code&gt;2.12&lt;/code&gt;, see the &lt;a href=&quot;https://github.com/couchbase/spymemcached&quot;&gt;history&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Upgrade Spring from &lt;code&gt;4.1&lt;/code&gt; to &lt;code&gt;4.2&lt;/code&gt;, see the &lt;a href=&quot;http://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/htmlsingle/#new-in-4.2&quot;&gt;changes-report&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Werval 0.7.4</title>
       <link>http://werval.io//news/2015-08-28_release_0.7.4.html</link>
@@ -84,22 +147,22 @@ multiple languages support leave you free to choose the right architecture for y
 &lt;p&gt;Core&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Upgrade Netty from &lt;code&gt;4.0.27&lt;/code&gt; to &lt;code&gt;4.0.30&lt;/code&gt;, see the announcements: [4.0.28](&lt;a href=&quot;http://netty.io/news/2015/05/07/4-0-28-Final.html&quot; class=&quot;bare&quot;&gt;http://netty.io/news/2015/05/07/4-0-28-Final.html&lt;/a&gt;), [4.0.29](&lt;a href=&quot;http://netty.io/news/2015/06/23/4-0-29-Final.html&quot; class=&quot;bare&quot;&gt;http://netty.io/news/2015/06/23/4-0-29-Final.html&lt;/a&gt;) and [4.0.30](&lt;a href=&quot;http://netty.io/news/2015/07/24/4-0-30-Final.html&quot; class=&quot;bare&quot;&gt;http://netty.io/news/2015/07/24/4-0-30-Final.html&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Upgrade Netty from &lt;code&gt;4.0.27&lt;/code&gt; to &lt;code&gt;4.0.30&lt;/code&gt;, see the announcements: &lt;a href=&quot;http://netty.io/news/2015/05/07/4-0-28-Final.html&quot;&gt;4.0.28&lt;/a&gt;, &lt;a href=&quot;http://netty.io/news/2015/06/23/4-0-29-Final.html&quot;&gt;4.0.29&lt;/a&gt; and &lt;a href=&quot;http://netty.io/news/2015/07/24/4-0-30-Final.html&quot;&gt;4.0.30&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Upgrade Typesafe Config from &lt;code&gt;1.2.1&lt;/code&gt; to &lt;code&gt;1.3.0&lt;/code&gt;, see the [changelog](&lt;a href=&quot;https://github.com/typesafehub/config/blob/v1.3.0/NEWS.md&quot; class=&quot;bare&quot;&gt;https://github.com/typesafehub/config/blob/v1.3.0/NEWS.md&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Upgrade Typesafe Config from &lt;code&gt;1.2.1&lt;/code&gt; to &lt;code&gt;1.3.0&lt;/code&gt;, see the &lt;a href=&quot;https://github.com/typesafehub/config/blob/v1.3.0/NEWS.md&quot;&gt;changelog&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Modules&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Upgrade Commons Email from &lt;code&gt;1.3.3&lt;/code&gt; to &lt;code&gt;1.4&lt;/code&gt;, see the [changes-report](&lt;a href=&quot;http://commons.apache.org/proper/commons-email/changes-report.html&quot; class=&quot;bare&quot;&gt;http://commons.apache.org/proper/commons-email/changes-report.html&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Upgrade Commons Email from &lt;code&gt;1.3.3&lt;/code&gt; to &lt;code&gt;1.4&lt;/code&gt;, see the &lt;a href=&quot;http://commons.apache.org/proper/commons-email/changes-report.html&quot;&gt;changes-report&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Upgrade Liquibase from &lt;code&gt;3.3.2&lt;/code&gt; to &lt;code&gt;3.4.1&lt;/code&gt;, see the [announcement](&lt;a href=&quot;http://www.liquibase.org/2015/07/liquibase-3-4-1-released.html&quot; class=&quot;bare&quot;&gt;http://www.liquibase.org/2015/07/liquibase-3-4-1-released.html&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Upgrade Liquibase from &lt;code&gt;3.3.2&lt;/code&gt; to &lt;code&gt;3.4.1&lt;/code&gt;, see the &lt;a href=&quot;http://www.liquibase.org/2015/07/liquibase-3-4-1-released.html&quot;&gt;announcement&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Upgrade Guice from &lt;code&gt;4.0-beta5&lt;/code&gt; to &lt;code&gt;4.0&lt;/code&gt;, see the [wiki](&lt;a href=&quot;https://github.com/google/guice/wiki/Guice40&quot; class=&quot;bare&quot;&gt;https://github.com/google/guice/wiki/Guice40&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Upgrade Guice from &lt;code&gt;4.0-beta5&lt;/code&gt; to &lt;code&gt;4.0&lt;/code&gt;, see the &lt;a href=&quot;https://github.com/google/guice/wiki/Guice40&quot;&gt;wiki&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
